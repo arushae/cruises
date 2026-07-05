@@ -35,6 +35,12 @@ jobs:
             echo "No data changes to publish."
           else
             git commit -m "Update cruise rewards"
+            for attempt in 1 2 3; do
+              if git push; then
+                exit 0
+              fi
+              echo "Push failed on attempt ${attempt}; pulling latest changes and retrying."
+              git pull --rebase origin main
+            done
             git push
           fi
-
