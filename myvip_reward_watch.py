@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 
 import json
+import html as html_lib
 import os
+import re
 import sys
 import subprocess
 from datetime import datetime
@@ -10,6 +12,7 @@ from urllib.request import Request, urlopen
 from urllib.error import URLError, HTTPError
 
 API_URL = "https://loyalty-award-api.myvip.co/api/proxy/rewards/section/destination/8"
+REWARD_DETAIL_URL = "https://loyalty-award-api.myvip.co/api/proxy/rewards/award/{offer_id}"
 
 SNAPSHOT_DIR = Path(
     os.environ.get("MYVIP_SNAPSHOT_DIR", Path.home() / "myvip-reward-snapshots")
@@ -22,6 +25,8 @@ WEBSITE_DATA_FILE = Path(
 CHANGE_FIELDS = [
     "OfferID", "Partner", "Reward title", "Port", "Points", "Quantity",
     "SnipeText", "SnipeCategory", "StrikeOutPrice", "ExpireTime", "IsPremium",
+    "RewardDescription",
+    "RewardUseByText",
 ]
 
 WEBSITE_FIELDS = [
@@ -42,6 +47,7 @@ WEBSITE_FIELDS = [
     "IsPremium",
     "RewardURL",
     "RewardDescription",
+    "RewardUseByText",
     "ChangeHistory",
 ]
 
@@ -57,6 +63,76 @@ def fetch_json(url: str) -> dict:
 
     with urlopen(request, timeout=30) as response:
         return json.loads(response.read().decode("utf-8"))
+
+
+def clean_detail_text(value: str | None) -> str | None:
+    if not value:
+        return None
+
+    text = re.sub(r"<br\s*/?>", "\n", value, flags=re.IGNORECASE)
+    text = re.sub(r"</p\s*>", "\n\n", text, flags=re.IGNORECASE)
+    text = re.sub(r"</div\s*>", "\n", text, flags=re.IGNORECASE)
+    text = re.sub(r"<[^>]+>", "", text)
+    text = html_lib.unescape(text)
+    text = text.replace("\r\n", "\n").replace("\r", "\n")
+    text = re.sub(r"[ \t]+", " ", text)
+    text = re.sub(r"\n[ \t]+", "\n", text)
+    text = re.sub(r"\n{3,}", "\n\n", text)
+    return text.strip() or None
+
+
+def extract_use_by_text(popouts: list[dict] | None) -> str | None:
+    for popout in popouts or []:
+        title = clean_detail_text(popout.get("Title"))
+        if not title or not re.search(r"learn\s+more", title, re.IGNORECASE):
+            continue
+
+        body = popout.get("Body") or ""
+        for block in re.split(r"\r?\n\r?\n", body):
+            parts = re.split(r"\r?\n", block, maxsplit=1)
+            heading = parts[0]
+            content = parts[1] if len(parts) > 1 else ""
+            heading = clean_detail_text(heading)
+            if content and heading and re.search(r"use\s+by\s+date", heading, re.IGNORECASE):
+                use_by_text = clean_detail_text(content)
+                if use_by_text:
+                    return re.sub(
+                        r"^Must be redeemed",
+                        "This reward must be redeemed",
+                        use_by_text,
+                        flags=re.IGNORECASE,
+                    )
+
+    return None
+
+
+def enrich_rewards_with_detail(rewards: dict) -> None:
+    detail_cache = {}
+
+    for reward in rewards.values():
+        offer_id = reward.get("OfferID")
+        if offer_id in (None, ""):
+            continue
+
+        offer_key = str(offer_id)
+        if offer_key not in detail_cache:
+            try:
+                detail_cache[offer_key] = fetch_json(REWARD_DETAIL_URL.format(offer_id=offer_key))
+            except (HTTPError, URLError, json.JSONDecodeError, TimeoutError, OSError) as e:
+                print(f"Could not fetch reward detail for offer {offer_key}: {e}", file=sys.stderr)
+                detail_cache[offer_key] = None
+
+        detail = detail_cache.get(offer_key)
+        if not isinstance(detail, dict):
+            continue
+
+        reward["RewardPageTitle"] = clean_detail_text(detail.get("Title")) or reward.get("RewardPageTitle")
+        reward["RewardDescription"] = (
+            clean_detail_text(detail.get("Description"))
+            or clean_detail_text(detail.get("ShortDescription"))
+            or reward.get("RewardDescription")
+        )
+        reward["RewardUseByText"] = extract_use_by_text(detail.get("Popouts"))
 
 
 def extract_rewards(data: dict) -> dict:
@@ -99,6 +175,7 @@ def extract_rewards(data: dict) -> dict:
                 "IsPremium": award.get("IsPremium"),
                 "RewardURL": award.get("ForwardLink"),
                 "RewardDescription": award.get("ShortDescription"),
+                "RewardUseByText": None,
             }
 
     return rewards
@@ -246,6 +323,8 @@ def save_website_data(rewards: dict) -> None:
             website_reward["RewardPageTitle"] = reward.get("Reward title")
         if not website_reward.get("RewardDescription") and previous_reward:
             website_reward["RewardDescription"] = previous_reward.get("RewardDescription")
+        if not website_reward.get("RewardUseByText") and previous_reward:
+            website_reward["RewardUseByText"] = previous_reward.get("RewardUseByText")
         current_quantity = reward.get("Quantity")
         observed_quantities = [previous_highs.get(award_id)]
         if isinstance(current_quantity, (int, float)) and not isinstance(current_quantity, bool):
@@ -406,6 +485,7 @@ def main() -> int:
         return 1
 
     current_rewards = extract_rewards(data)
+    enrich_rewards_with_detail(current_rewards)
     previous_payload = load_previous_snapshot()
 
     messages = compare_rewards(previous_payload, current_rewards)

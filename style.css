@@ -40,7 +40,8 @@ th, td { padding: 13px 14px; border-bottom: 1px solid #edf1f3; vertical-align: t
 th[aria-sort="ascending"] .sort-button span::after { content: "▲"; }
 th[aria-sort="descending"] .sort-button span::after { content: "▼"; }
 th:not([aria-sort]) .sort-button span::after { content: "↕"; color: #93a0a8; }
-td.points { text-align: right; font-variant-numeric: tabular-nums; font-weight: 750; }
+td.points { text-align: left; font-variant-numeric: tabular-nums; font-weight: 750; }
+td.expiry, #checked-at { white-space: pre-line; }
 .previous-points { display: block; margin-top: 3px; color: #687781; font-size: .74rem; font-weight: 500; line-height: 1.25; white-space: pre-line; overflow-wrap: anywhere; }
 .point-history-button { position: relative; width: 1.35rem; height: 1.35rem; margin-left: 6px; padding: 0; border: 1px solid #7bbbc0; border-radius: 50%; color: #087f8c; background: #e8f5f6; font: 700 .75rem/1 sans-serif; cursor: pointer; }
 .point-history-button:hover { color: white; background: #087f8c; }
@@ -58,6 +59,8 @@ td.sold-out { color: #9b3131; font-weight: 700; }
 .reward-details-content h3 { margin: 0 0 10px; font-size: .95rem; }
 .reward-page-title { color: #17252f; font-size: 1.05rem !important; letter-spacing: -.01em; }
 .reward-description { margin: 0 0 14px; color: #263843; line-height: 1.55; }
+.reward-use-by { margin: -4px 0 14px; color: #374a56; line-height: 1.45; }
+.reward-use-by strong { color: #263843; }
 .reward-meta { margin: 0 0 12px; color: #52616b; font-size: .86rem; }
 .reward-meta strong { color: #263843; }
 .reward-details-content ul { margin: 0 0 14px; padding-left: 1.3rem; color: #52616b; }

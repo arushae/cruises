@@ -27,35 +27,40 @@ const checkHistoryDialog = document.querySelector('#check-history-dialog');
 const checkHistoryTitle = document.querySelector('#check-history-title');
 const checkHistoryBody = document.querySelector('#check-history-body');
 const checkHistoryClose = document.querySelector('#check-history-close');
+const EXPIRE_TIME_CHANGE_DISPLAY_THRESHOLD_MS = 12 * 60 * 60 * 1000;
 
 function text(value) { return value == null || value === '' ? '—' : String(value); }
-function formatDate(value) {
+function formatDate(value, multiline = false) {
   if (!value) return 'Unknown';
   const date = new Date(value);
   if (Number.isNaN(date.getTime())) return value;
-  return new Intl.DateTimeFormat('en-GB', {
+  const datePart = new Intl.DateTimeFormat('en-GB', {
     day: '2-digit',
     month: 'short',
     year: 'numeric',
+    timeZone: 'UTC',
+  }).format(date);
+  const timePart = new Intl.DateTimeFormat('en-GB', {
     hour: '2-digit',
     minute: '2-digit',
-    second: '2-digit',
     hour12: false,
+    timeZone: 'UTC',
     timeZoneName: 'short',
   }).format(date);
+  return multiline ? `${datePart}\n${timePart}` : `${datePart}, ${timePart}`;
 }
 
 function formatHistoryDate(value) {
   const date = new Date(value);
   return Number.isNaN(date.getTime()) ? text(value) : new Intl.DateTimeFormat('en-GB', {
-    day: '2-digit', month: 'short', year: 'numeric',
+    day: '2-digit', month: 'short', year: 'numeric', timeZone: 'UTC',
   }).format(date);
 }
 
 function formatHistoryTime(value) {
   const date = new Date(value);
   return Number.isNaN(date.getTime()) ? '—' : new Intl.DateTimeFormat('en-GB', {
-    hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false, timeZoneName: 'short',
+    hour: '2-digit', minute: '2-digit', hour12: false, timeZone: 'UTC', timeZoneName: 'short',
   }).format(date);
 }
 
@@ -103,6 +108,20 @@ function formatChangeValue(field, value) {
   if ((field === 'Points' || field === 'Quantity' || field === 'StrikeOutPrice') && typeof value === 'number') return value.toLocaleString();
   if (typeof value === 'boolean') return value ? 'Yes' : 'No';
   return text(value);
+}
+
+function shouldDisplayObservedChange(change) {
+  if (change.field === 'RewardDescription') return false;
+  if (
+    change.field === 'RewardUseByText'
+    && (change.from == null || change.from === '')
+    && change.to
+  ) return false;
+  if (change.field !== 'ExpireTime') return true;
+  const fromTime = new Date(change.from).getTime();
+  const toTime = new Date(change.to).getTime();
+  if (Number.isNaN(fromTime) || Number.isNaN(toTime)) return true;
+  return Math.abs(toTime - fromTime) > EXPIRE_TIME_CHANGE_DISPLAY_THRESHOLD_MS;
 }
 
 function formatNumber(value) {
@@ -161,7 +180,7 @@ function createRewardRows(reward) {
       `(previously seen\nat ${formatNumber(reward.HighestQuantityObserved)})`,
     );
   }
-  addCell(row, formatDate(reward.ExpireTime));
+  addCell(row, formatDate(reward.ExpireTime, true), 'expiry');
   addCell(row, reward.IsPremium ? 'Yes' : 'No');
 
   const detailRow = document.createElement('tr');
@@ -187,6 +206,15 @@ function createRewardRows(reward) {
     detailContent.appendChild(description);
   }
 
+  if (reward.RewardUseByText) {
+    const useBy = document.createElement('p');
+    useBy.className = 'reward-use-by';
+    const useByLabel = document.createElement('strong');
+    useByLabel.textContent = 'Use by date:';
+    useBy.append(useByLabel, ` ${reward.RewardUseByText}`);
+    detailContent.appendChild(useBy);
+  }
+
   const offerMeta = document.createElement('p');
   offerMeta.className = 'reward-meta';
   const offerLabel = document.createElement('strong');
@@ -200,21 +228,25 @@ function createRewardRows(reward) {
 
   const changeHistory = Array.isArray(reward.ChangeHistory) ? reward.ChangeHistory : [];
   const changeList = document.createElement('ul');
+  let displayedChanges = 0;
   if (changeHistory.length) {
     changeHistory.forEach((event) => {
       if (event.note) {
         const noteItem = document.createElement('li');
         noteItem.textContent = event.note;
         changeList.appendChild(noteItem);
+        displayedChanges += 1;
       }
-      (event.changes || []).forEach((change) => {
+      (event.changes || []).filter(shouldDisplayObservedChange).forEach((change) => {
         const item = document.createElement('li');
         const when = `${formatHistoryDate(event.observed_at)}, ${formatHistoryTime(event.observed_at)}`;
         item.textContent = `${when} — ${change.field}: ${formatChangeValue(change.field, change.from)} → ${formatChangeValue(change.field, change.to)}`;
         changeList.appendChild(item);
+        displayedChanges += 1;
       });
     });
-  } else {
+  }
+  if (!displayedChanges) {
     const item = document.createElement('li');
     item.textContent = 'No changes observed yet.';
     changeList.appendChild(item);
@@ -306,7 +338,7 @@ async function loadRewards() {
     state.rewards = Array.isArray(data.rewards) ? data.rewards : [];
     state.expiredRewards = Array.isArray(expiredData.rewards) ? expiredData.rewards : [];
     state.checkHistory = Array.isArray(data.check_history) ? data.check_history : [data.checked_at].filter(Boolean);
-    checkedAt.textContent = `Last checked: ${formatDate(data.checked_at)}`;
+    checkedAt.textContent = `Last checked: ${formatDate(data.checked_at, true)}`;
     sourceLink.href = data.source_url || '#';
     updatePartners();
     render();
