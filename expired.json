@@ -1,0 +1,80 @@
+{
+  "rewards": [
+    {
+      "AwardID": "manual-expired-ncl-mexican-riviera",
+      "OfferID": null,
+      "Partner": "Norwegian Cruise Line",
+      "Reward title": "Free 7 Night Cruise",
+      "Port": "Mexican Riviera",
+      "Points": 250000,
+      "PointHistory": [],
+      "Quantity": null,
+      "HighestQuantityObserved": null,
+      "SnipeText": null,
+      "SnipeCategory": null,
+      "StrikeOutPrice": null,
+      "ExpireTime": null,
+      "IsPremium": false,
+      "RewardURL": null,
+      "ChangeHistory": [
+        { "note": "Arusha manually added this reward retrospectively" }
+      ]
+    },
+    {
+      "AwardID": "manual-expired-ncl-vancouver-alaska",
+      "OfferID": null,
+      "Partner": "Norwegian Cruise Line",
+      "Reward title": "Free 7 Night Cruise",
+      "Port": "Vancouver/Alaska",
+      "Points": 250000,
+      "PointHistory": [],
+      "Quantity": null,
+      "HighestQuantityObserved": null,
+      "SnipeText": null,
+      "SnipeCategory": null,
+      "StrikeOutPrice": null,
+      "ExpireTime": null,
+      "IsPremium": false,
+      "RewardURL": null,
+      "ChangeHistory": [
+        { "note": "Arusha manually added this reward retrospectively" }
+      ]
+    },
+    {
+      "AwardID": "manual-expired-ncl-1000-off-black-friday-2025",
+      "OfferID": null,
+      "Partner": "Norwegian Cruise Line",
+      "Reward title": "Enjoy $1000 off at NCL",
+      "Port": "Various Ports",
+      "Points": 500000,
+      "PointHistory": [
+        { "observed_at": "2025-11-27T00:00:00Z", "value": 500000 },
+        { "observed_at": "2025-11-28T00:00:00Z", "value": 250000 },
+        { "observed_at": "2025-11-29T00:00:00Z", "value": 500000 }
+      ],
+      "Quantity": null,
+      "HighestQuantityObserved": null,
+      "SnipeText": null,
+      "SnipeCategory": null,
+      "StrikeOutPrice": null,
+      "ExpireTime": null,
+      "IsPremium": false,
+      "RewardURL": null,
+      "ChangeHistory": [
+        { "note": "Arusha manually added this reward retrospectively" },
+        {
+          "observed_at": "2025-11-28T00:00:00Z",
+          "changes": [
+            { "field": "Points", "from": 500000, "to": 250000 }
+          ]
+        },
+        {
+          "observed_at": "2025-11-29T00:00:00Z",
+          "changes": [
+            { "field": "Points", "from": 250000, "to": 500000 }
+          ]
+        }
+      ]
+    }
+  ]
+}
