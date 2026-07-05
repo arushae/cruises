@@ -28,7 +28,6 @@ const checkHistoryBody = document.querySelector('#check-history-body');
 const checkHistoryClose = document.querySelector('#check-history-close');
 
 function text(value) { return value == null || value === '' ? '—' : String(value); }
-function isNcl(partner) { return /norwegian cruise line|\bncl\b/i.test(partner || ''); }
 function formatDate(value) {
   if (!value) return 'Unknown';
   const date = new Date(value);
@@ -114,7 +113,6 @@ function createRewardRows(reward) {
   row.setAttribute('aria-expanded', 'false');
   row.setAttribute('aria-controls', detailId);
   row.dataset.awardId = reward.AwardID;
-  if (isNcl(reward.Partner)) row.classList.add('ncl');
   addCell(row, reward.Partner);
   const titleCell = addCell(row, reward['Reward title']);
   if (reward.SnipeText) {
@@ -292,17 +290,25 @@ loadRewards();
 setInterval(loadRewards, REFRESH_INTERVAL);
 
 function openPointHistory(awardId) {
-  const reward = state.rewards.find((item) => String(item.AwardID) === String(awardId));
+  const reward = [...state.rewards, ...state.expiredRewards].find((item) => String(item.AwardID) === String(awardId));
   if (!reward) return;
   pointHistoryTitle.textContent = `${reward.Partner} — ${reward['Reward title']}`;
   const history = Array.isArray(reward.PointHistory) ? reward.PointHistory : [];
-  pointHistoryBody.replaceChildren(...history.map((entry) => {
+  const rows = history.length ? history.map((entry) => {
     const row = document.createElement('tr');
     addCell(row, formatHistoryDate(entry.observed_at));
     addCell(row, formatHistoryTime(entry.observed_at));
     addCell(row, typeof entry.value === 'number' ? entry.value.toLocaleString() : entry.value, 'points');
     return row;
-  }));
+  }) : [(() => {
+    const row = document.createElement('tr');
+    const cell = document.createElement('td');
+    cell.colSpan = 3;
+    cell.textContent = 'No point history recorded yet.';
+    row.appendChild(cell);
+    return row;
+  })()];
+  pointHistoryBody.replaceChildren(...rows);
   pointHistoryDialog.showModal();
 }
 
@@ -320,6 +326,8 @@ function openCheckHistory() {
 document.addEventListener('click', (event) => {
   const historyButton = event.target.closest('.point-history-button');
   if (historyButton) {
+    event.preventDefault();
+    event.stopPropagation();
     openPointHistory(historyButton.dataset.awardId);
     return;
   }
