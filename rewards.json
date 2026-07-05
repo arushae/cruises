@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-07-05T14:42:06+00:00",
+  "checked_at": "2026-07-05T15:56:59+00:00",
   "check_history": [
     "2026-07-05T09:51:27",
     "2026-07-05T11:04:19",
@@ -9,7 +9,8 @@
     "2026-07-05T11:33:30+01:00",
     "2026-07-05T12:17:09+00:00",
     "2026-07-05T12:51:52+00:00",
-    "2026-07-05T14:42:06+00:00"
+    "2026-07-05T14:42:06+00:00",
+    "2026-07-05T15:56:59+00:00"
   ],
   "source_url": "https://loyalty-award-api.myvip.co/api/proxy/rewards/section/destination/8",
   "rewards": [
@@ -31,7 +32,7 @@
       "SnipeText": null,
       "SnipeCategory": null,
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-04T14:42:06.8058216+00:00",
+      "ExpireTime": "2026-08-04T15:56:59.7039919+00:00",
       "IsPremium": false,
       "RewardURL": null,
       "ChangeHistory": [
@@ -52,6 +53,16 @@
               "field": "ExpireTime",
               "from": "2026-08-04T12:51:52.1270536+00:00",
               "to": "2026-08-04T14:42:06.8058216+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-07-05T15:56:59+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-08-04T14:42:06.8058216+00:00",
+              "to": "2026-08-04T15:56:59.7039919+00:00"
             }
           ]
         }
@@ -75,7 +86,7 @@
       "SnipeText": null,
       "SnipeCategory": null,
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-04T14:42:06.8058216+00:00",
+      "ExpireTime": "2026-08-04T15:56:59.7039919+00:00",
       "IsPremium": false,
       "RewardURL": null,
       "ChangeHistory": [
@@ -96,6 +107,16 @@
               "field": "ExpireTime",
               "from": "2026-08-04T12:51:52.1270536+00:00",
               "to": "2026-08-04T14:42:06.8058216+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-07-05T15:56:59+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-08-04T14:42:06.8058216+00:00",
+              "to": "2026-08-04T15:56:59.7039919+00:00"
             }
           ]
         }
@@ -119,7 +140,7 @@
       "SnipeText": null,
       "SnipeCategory": null,
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-04T14:42:06.8058216+00:00",
+      "ExpireTime": "2026-08-04T15:56:59.7039919+00:00",
       "IsPremium": false,
       "RewardURL": null,
       "ChangeHistory": [
@@ -140,6 +161,16 @@
               "field": "ExpireTime",
               "from": "2026-08-04T12:51:52.1270536+00:00",
               "to": "2026-08-04T14:42:06.8058216+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-07-05T15:56:59+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-08-04T14:42:06.8058216+00:00",
+              "to": "2026-08-04T15:56:59.7039919+00:00"
             }
           ]
         }
@@ -163,7 +194,7 @@
       "SnipeText": null,
       "SnipeCategory": null,
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-04T14:42:06.8058216+00:00",
+      "ExpireTime": "2026-08-04T15:56:59.7039919+00:00",
       "IsPremium": true,
       "RewardURL": null,
       "ChangeHistory": [
@@ -184,6 +215,16 @@
               "field": "ExpireTime",
               "from": "2026-08-04T12:51:52.1270536+00:00",
               "to": "2026-08-04T14:42:06.8058216+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-07-05T15:56:59+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-08-04T14:42:06.8058216+00:00",
+              "to": "2026-08-04T15:56:59.7039919+00:00"
             }
           ]
         }
@@ -207,7 +248,7 @@
       "SnipeText": null,
       "SnipeCategory": null,
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-04T14:42:06.8058216+00:00",
+      "ExpireTime": "2026-08-04T15:56:59.7039919+00:00",
       "IsPremium": false,
       "RewardURL": null,
       "ChangeHistory": [
@@ -228,6 +269,16 @@
               "field": "ExpireTime",
               "from": "2026-08-04T12:51:52.1270536+00:00",
               "to": "2026-08-04T14:42:06.8058216+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-07-05T15:56:59+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-08-04T14:42:06.8058216+00:00",
+              "to": "2026-08-04T15:56:59.7039919+00:00"
             }
           ]
         }
@@ -246,12 +297,12 @@
           "value": 30000
         }
       ],
-      "Quantity": 40,
+      "Quantity": 39,
       "HighestQuantityObserved": 40,
       "SnipeText": null,
       "SnipeCategory": null,
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-04T14:42:06.8058216+00:00",
+      "ExpireTime": "2026-08-04T15:56:59.7039919+00:00",
       "IsPremium": false,
       "RewardURL": null,
       "ChangeHistory": [
@@ -274,6 +325,21 @@
               "to": "2026-08-04T14:42:06.8058216+00:00"
             }
           ]
+        },
+        {
+          "observed_at": "2026-07-05T15:56:59+00:00",
+          "changes": [
+            {
+              "field": "Quantity",
+              "from": 40,
+              "to": 39
+            },
+            {
+              "field": "ExpireTime",
+              "from": "2026-08-04T14:42:06.8058216+00:00",
+              "to": "2026-08-04T15:56:59.7039919+00:00"
+            }
+          ]
         }
       ]
     },
@@ -290,12 +356,12 @@
           "value": 35000
         }
       ],
-      "Quantity": 42,
+      "Quantity": 40,
       "HighestQuantityObserved": 45,
       "SnipeText": null,
       "SnipeCategory": null,
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-04T14:42:06.8058216+00:00",
+      "ExpireTime": "2026-08-04T15:56:59.7039919+00:00",
       "IsPremium": true,
       "RewardURL": null,
       "ChangeHistory": [
@@ -328,6 +394,21 @@
               "to": "2026-08-04T14:42:06.8058216+00:00"
             }
           ]
+        },
+        {
+          "observed_at": "2026-07-05T15:56:59+00:00",
+          "changes": [
+            {
+              "field": "Quantity",
+              "from": 42,
+              "to": 40
+            },
+            {
+              "field": "ExpireTime",
+              "from": "2026-08-04T14:42:06.8058216+00:00",
+              "to": "2026-08-04T15:56:59.7039919+00:00"
+            }
+          ]
         }
       ]
     },
@@ -349,7 +430,7 @@
       "SnipeText": null,
       "SnipeCategory": null,
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-04T14:42:06.8058216+00:00",
+      "ExpireTime": "2026-08-04T15:56:59.7039919+00:00",
       "IsPremium": false,
       "RewardURL": null,
       "ChangeHistory": [
@@ -372,6 +453,16 @@
               "to": "2026-08-04T14:42:06.8058216+00:00"
             }
           ]
+        },
+        {
+          "observed_at": "2026-07-05T15:56:59+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-08-04T14:42:06.8058216+00:00",
+              "to": "2026-08-04T15:56:59.7039919+00:00"
+            }
+          ]
         }
       ]
     },
@@ -388,12 +479,12 @@
           "value": 140000
         }
       ],
-      "Quantity": 19,
+      "Quantity": 18,
       "HighestQuantityObserved": 20,
       "SnipeText": null,
       "SnipeCategory": null,
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-04T14:42:06.8058216+00:00",
+      "ExpireTime": "2026-08-04T15:56:59.7039919+00:00",
       "IsPremium": false,
       "RewardURL": null,
       "ChangeHistory": [
@@ -419,6 +510,21 @@
               "field": "ExpireTime",
               "from": "2026-08-04T12:51:52.1270536+00:00",
               "to": "2026-08-04T14:42:06.8058216+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-07-05T15:56:59+00:00",
+          "changes": [
+            {
+              "field": "Quantity",
+              "from": 19,
+              "to": 18
+            },
+            {
+              "field": "ExpireTime",
+              "from": "2026-08-04T14:42:06.8058216+00:00",
+              "to": "2026-08-04T15:56:59.7039919+00:00"
             }
           ]
         }
@@ -642,7 +748,7 @@
       "SnipeText": "1 left",
       "SnipeCategory": "NLeft",
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-04T14:42:06.8058216+00:00",
+      "ExpireTime": "2026-08-04T15:56:59.7039919+00:00",
       "IsPremium": false,
       "RewardURL": null,
       "ChangeHistory": [
@@ -673,6 +779,16 @@
               "field": "ExpireTime",
               "from": "2026-08-04T12:51:52.1270536+00:00",
               "to": "2026-08-04T14:42:06.8058216+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-07-05T15:56:59+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-08-04T14:42:06.8058216+00:00",
+              "to": "2026-08-04T15:56:59.7039919+00:00"
             }
           ]
         }
@@ -949,7 +1065,7 @@
       "SnipeText": "NEW PORTS",
       "SnipeCategory": "Custom",
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-04T14:42:06.8058216+00:00",
+      "ExpireTime": "2026-08-04T15:56:59.7039919+00:00",
       "IsPremium": false,
       "RewardURL": null,
       "ChangeHistory": [
@@ -970,6 +1086,16 @@
               "field": "ExpireTime",
               "from": "2026-08-04T12:51:52.1270536+00:00",
               "to": "2026-08-04T14:42:06.8058216+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-07-05T15:56:59+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-08-04T14:42:06.8058216+00:00",
+              "to": "2026-08-04T15:56:59.7039919+00:00"
             }
           ]
         }
@@ -993,7 +1119,7 @@
       "SnipeText": "NEW PORTS",
       "SnipeCategory": "Custom",
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-04T14:42:06.8058216+00:00",
+      "ExpireTime": "2026-08-04T15:56:59.7039919+00:00",
       "IsPremium": false,
       "RewardURL": null,
       "ChangeHistory": [
@@ -1014,6 +1140,16 @@
               "field": "ExpireTime",
               "from": "2026-08-04T12:51:52.1270536+00:00",
               "to": "2026-08-04T14:42:06.8058216+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-07-05T15:56:59+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-08-04T14:42:06.8058216+00:00",
+              "to": "2026-08-04T15:56:59.7039919+00:00"
             }
           ]
         }
@@ -1037,7 +1173,7 @@
       "SnipeText": "NEW PORTS",
       "SnipeCategory": "Custom",
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-04T14:42:06.8058216+00:00",
+      "ExpireTime": "2026-08-04T15:56:59.7039919+00:00",
       "IsPremium": false,
       "RewardURL": null,
       "ChangeHistory": [
@@ -1058,6 +1194,16 @@
               "field": "ExpireTime",
               "from": "2026-08-04T12:51:52.1270536+00:00",
               "to": "2026-08-04T14:42:06.8058216+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-07-05T15:56:59+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-08-04T14:42:06.8058216+00:00",
+              "to": "2026-08-04T15:56:59.7039919+00:00"
             }
           ]
         }
