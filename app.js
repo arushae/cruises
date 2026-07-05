@@ -21,6 +21,7 @@ const pointHistoryDialog = document.querySelector('#points-history-dialog');
 const pointHistoryTitle = document.querySelector('#points-history-title');
 const pointHistoryBody = document.querySelector('#points-history-body');
 const pointHistoryClose = document.querySelector('#points-history-close');
+const valueHistoryHeading = document.querySelector('#value-history-heading');
 const checkHistoryButton = document.querySelector('#check-history-button');
 const checkHistoryDialog = document.querySelector('#check-history-dialog');
 const checkHistoryTitle = document.querySelector('#check-history-title');
@@ -104,6 +105,25 @@ function formatChangeValue(field, value) {
   return text(value);
 }
 
+function formatNumber(value) {
+  return typeof value === 'number' ? value.toLocaleString() : text(value);
+}
+
+function addInlineHistoryButton(cell, reward, type, labelText) {
+  const previousLabel = document.createElement('span');
+  previousLabel.className = 'previous-points';
+  previousLabel.textContent = labelText;
+  const historyButton = document.createElement('button');
+  historyButton.type = 'button';
+  historyButton.className = 'point-history-button';
+  historyButton.dataset.awardId = reward.AwardID;
+  historyButton.dataset.historyType = type;
+  historyButton.setAttribute('aria-label', `View ${type} history for ${reward['Reward title']}`);
+  historyButton.title = `View ${type} history`;
+  historyButton.textContent = '?';
+  cell.append(document.createElement('br'), previousLabel, historyButton);
+}
+
 function createRewardRows(reward) {
   const row = document.createElement('tr');
   const detailId = `reward-details-${reward.AwardID}`;
@@ -122,25 +142,25 @@ function createRewardRows(reward) {
     titleCell.append(document.createElement('br'), badge);
   }
   addCell(row, reward.Port);
-  const pointsCell = addCell(row, typeof reward.Points === 'number' ? reward.Points.toLocaleString() : reward.Points, 'points');
+  const pointsCell = addCell(row, formatNumber(reward.Points), 'points');
   const pointHistory = Array.isArray(reward.PointHistory) ? reward.PointHistory : [];
   const previousDifferent = [...pointHistory].reverse().find((entry) => entry.value !== reward.Points);
   if (previousDifferent) {
-    const previousLabel = document.createElement('span');
-    previousLabel.className = 'previous-points';
-    previousLabel.textContent = `(previously seen at ${typeof previousDifferent.value === 'number' ? previousDifferent.value.toLocaleString() : text(previousDifferent.value)})`;
-    const historyButton = document.createElement('button');
-    historyButton.type = 'button';
-    historyButton.className = 'point-history-button';
-    historyButton.dataset.awardId = reward.AwardID;
-    historyButton.setAttribute('aria-label', `View point history for ${reward['Reward title']}`);
-    historyButton.title = 'View point history';
-    historyButton.textContent = 'i';
-    pointsCell.append(document.createElement('br'), previousLabel, historyButton);
+    addInlineHistoryButton(pointsCell, reward, 'points', `(previously seen\nat ${formatNumber(previousDifferent.value)})`);
   }
-  addCell(row, reward.Quantity, reward.Quantity === 0 ? 'quantity sold-out' : 'quantity');
-  addCell(row, reward.HighestQuantityObserved, 'quantity previously-observed');
-  addCell(row, reward.OfferID);
+  const quantityCell = addCell(row, reward.Quantity, reward.Quantity === 0 ? 'quantity sold-out' : 'quantity');
+  if (
+    reward.HighestQuantityObserved != null
+    && reward.HighestQuantityObserved !== ''
+    && reward.HighestQuantityObserved !== reward.Quantity
+  ) {
+    addInlineHistoryButton(
+      quantityCell,
+      reward,
+      'quantity',
+      `(previously seen\nat ${formatNumber(reward.HighestQuantityObserved)})`,
+    );
+  }
   addCell(row, formatDate(reward.ExpireTime));
   addCell(row, reward.IsPremium ? 'Yes' : 'No');
 
@@ -149,9 +169,31 @@ function createRewardRows(reward) {
   detailRow.className = 'reward-details';
   detailRow.hidden = true;
   const detailCell = document.createElement('td');
-  detailCell.colSpan = 9;
+  detailCell.colSpan = 7;
   const detailContent = document.createElement('div');
   detailContent.className = 'reward-details-content';
+
+  if (reward.RewardPageTitle) {
+    const pageTitle = document.createElement('h3');
+    pageTitle.className = 'reward-page-title';
+    pageTitle.textContent = reward.RewardPageTitle;
+    detailContent.appendChild(pageTitle);
+  }
+
+  if (reward.RewardDescription) {
+    const description = document.createElement('p');
+    description.className = 'reward-description';
+    description.textContent = reward.RewardDescription;
+    detailContent.appendChild(description);
+  }
+
+  const offerMeta = document.createElement('p');
+  offerMeta.className = 'reward-meta';
+  const offerLabel = document.createElement('strong');
+  offerLabel.textContent = 'Offer ID:';
+  offerMeta.append(offerLabel, ` ${text(reward.OfferID)}`);
+  detailContent.appendChild(offerMeta);
+
   const heading = document.createElement('h3');
   heading.textContent = 'Observed changes';
   detailContent.appendChild(heading);
@@ -293,6 +335,7 @@ function openPointHistory(awardId) {
   const reward = [...state.rewards, ...state.expiredRewards].find((item) => String(item.AwardID) === String(awardId));
   if (!reward) return;
   pointHistoryTitle.textContent = `${reward.Partner} — ${reward['Reward title']}`;
+  valueHistoryHeading.textContent = 'Points';
   const history = Array.isArray(reward.PointHistory) ? reward.PointHistory : [];
   const rows = history.length ? history.map((entry) => {
     const row = document.createElement('tr');
@@ -312,6 +355,49 @@ function openPointHistory(awardId) {
   pointHistoryDialog.showModal();
 }
 
+function openQuantityHistory(awardId) {
+  const reward = [...state.rewards, ...state.expiredRewards].find((item) => String(item.AwardID) === String(awardId));
+  if (!reward) return;
+  pointHistoryTitle.textContent = `${reward.Partner} — ${reward['Reward title']}`;
+  valueHistoryHeading.textContent = 'Quantity';
+  const seen = new Set();
+  const rowsData = [];
+  const addHistoryValue = (observedAt, value) => {
+    const key = `${observedAt || ''}|${value}`;
+    if (value == null || value === '' || seen.has(key)) return;
+    seen.add(key);
+    rowsData.push({ observed_at: observedAt, value });
+  };
+  const changeHistory = Array.isArray(reward.ChangeHistory) ? reward.ChangeHistory : [];
+  changeHistory.forEach((event) => {
+    (event.changes || [])
+      .filter((change) => change.field === 'Quantity')
+      .forEach((change) => {
+        addHistoryValue(event.observed_at, change.from);
+        addHistoryValue(event.observed_at, change.to);
+      });
+  });
+  if (reward.HighestQuantityObserved != null && reward.HighestQuantityObserved !== '') {
+    addHistoryValue(reward.checked_at || state.checkHistory[0], reward.HighestQuantityObserved);
+  }
+  addHistoryValue(state.checkHistory[state.checkHistory.length - 1], reward.Quantity);
+  pointHistoryBody.replaceChildren(...(rowsData.length ? rowsData.map((entry) => {
+    const row = document.createElement('tr');
+    addCell(row, formatHistoryDate(entry.observed_at));
+    addCell(row, formatHistoryTime(entry.observed_at));
+    addCell(row, formatNumber(entry.value), 'points');
+    return row;
+  }) : [(() => {
+    const row = document.createElement('tr');
+    const cell = document.createElement('td');
+    cell.colSpan = 3;
+    cell.textContent = 'No quantity history recorded yet.';
+    row.appendChild(cell);
+    return row;
+  })()]));
+  pointHistoryDialog.showModal();
+}
+
 function openCheckHistory() {
   checkHistoryTitle.textContent = `Site check history (${state.checkHistory.length})`;
   checkHistoryBody.replaceChildren(...[...state.checkHistory].reverse().map((observedAt) => {
@@ -328,7 +414,8 @@ document.addEventListener('click', (event) => {
   if (historyButton) {
     event.preventDefault();
     event.stopPropagation();
-    openPointHistory(historyButton.dataset.awardId);
+    if (historyButton.dataset.historyType === 'quantity') openQuantityHistory(historyButton.dataset.awardId);
+    else openPointHistory(historyButton.dataset.awardId);
     return;
   }
   if (event.target.closest('a, button, input, select')) return;
