@@ -23,17 +23,16 @@ input:focus, select:focus { outline: 3px solid #8dd9dc; border-color: #087f8c; }
 .table-wrap { overflow-x: auto; background: white; border-radius: 14px; box-shadow: 0 12px 32px rgb(35 55 65 / 8%); }
 table { width: 100%; border-collapse: collapse; font-size: .9rem; }
 .reward-table { width: max(100%, 1180px); table-layout: fixed; }
-.reward-table .col-partner { width: 13%; }
-.reward-table .col-reward { width: 20%; }
-.reward-table .col-port { width: 13%; }
-.reward-table .col-points { width: 11%; }
-.reward-table .col-quantity { width: 8%; }
-.reward-table .col-previous { width: 10%; }
-.reward-table .col-offer { width: 7%; }
-.reward-table .col-expires { width: 13%; }
-.reward-table .col-premium { width: 5%; }
+.reward-table .col-partner { width: 200px; min-width: 200px; }
+.reward-table .col-reward { width: 23%; }
+.reward-table .col-port { width: 14%; }
+.reward-table .col-points { width: 13%; }
+.reward-table .col-quantity { width: 14%; }
+.reward-table .col-expires { width: 16%; }
+.reward-table .col-premium { width: 6%; }
 th { text-align: left; color: #53636e; background: #f8fafb; font-size: .72rem; text-transform: uppercase; letter-spacing: .05em; }
 th, td { padding: 13px 14px; border-bottom: 1px solid #edf1f3; vertical-align: top; }
+.reward-table tbody td:first-child { font-size: .84rem; }
 .sort-button { display: inline-flex; align-items: center; gap: 6px; max-width: 100%; margin: -8px -9px; padding: 8px 9px; border: 0; border-radius: 6px; color: inherit; background: transparent; font: inherit; font-weight: 750; line-height: 1.25; text-align: left; text-transform: inherit; letter-spacing: inherit; cursor: pointer; white-space: normal; }
 .sort-button:hover { color: #087f8c; background: #e8f5f6; }
 .sort-button:focus-visible { outline: 3px solid #8dd9dc; }
@@ -42,7 +41,7 @@ th[aria-sort="ascending"] .sort-button span::after { content: "▲"; }
 th[aria-sort="descending"] .sort-button span::after { content: "▼"; }
 th:not([aria-sort]) .sort-button span::after { content: "↕"; color: #93a0a8; }
 td.points { text-align: right; font-variant-numeric: tabular-nums; font-weight: 750; }
-.previous-points { display: block; margin-top: 3px; color: #687781; font-size: .74rem; font-weight: 500; line-height: 1.25; white-space: normal; overflow-wrap: anywhere; }
+.previous-points { display: block; margin-top: 3px; color: #687781; font-size: .74rem; font-weight: 500; line-height: 1.25; white-space: pre-line; overflow-wrap: anywhere; }
 .point-history-button { position: relative; width: 1.35rem; height: 1.35rem; margin-left: 6px; padding: 0; border: 1px solid #7bbbc0; border-radius: 50%; color: #087f8c; background: #e8f5f6; font: 700 .75rem/1 sans-serif; cursor: pointer; }
 .point-history-button:hover { color: white; background: #087f8c; }
 .point-history-button:focus-visible, .header-info-button:focus-visible, .dialog-close:focus-visible { outline: 3px solid #8dd9dc; outline-offset: 2px; }
@@ -57,6 +56,10 @@ td.sold-out { color: #9b3131; font-weight: 700; }
 .reward-details td { padding: 0; background: #f6f9fa; }
 .reward-details-content { padding: 18px 28px 22px 44px; border-bottom: 1px solid #dce5e8; }
 .reward-details-content h3 { margin: 0 0 10px; font-size: .95rem; }
+.reward-page-title { color: #17252f; font-size: 1.05rem !important; letter-spacing: -.01em; }
+.reward-description { margin: 0 0 14px; color: #263843; line-height: 1.55; }
+.reward-meta { margin: 0 0 12px; color: #52616b; font-size: .86rem; }
+.reward-meta strong { color: #263843; }
 .reward-details-content ul { margin: 0 0 14px; padding-left: 1.3rem; color: #52616b; }
 .reward-details-content li + li { margin-top: 6px; }
 .reward-link { display: inline-block; font-weight: 700; }
