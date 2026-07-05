@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-07-05T15:56:59",
+  "checked_at": "2026-07-05T17:30:43",
   "source_url": "https://loyalty-award-api.myvip.co/api/proxy/rewards/section/destination/8",
   "rewards": {
     "894": {
@@ -9,11 +9,11 @@
       "Reward title": "$25 in Free Play",
       "Port": "Any Sailing",
       "Points": 13000,
-      "Quantity": 59,
+      "Quantity": 60,
       "SnipeText": null,
       "SnipeCategory": null,
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-04T15:56:59.7039919+00:00",
+      "ExpireTime": "2026-08-04T17:30:43.198356+00:00",
       "IsPremium": true,
       "RewardURL": null
     },
@@ -28,7 +28,7 @@
       "SnipeText": null,
       "SnipeCategory": null,
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-04T15:56:59.7039919+00:00",
+      "ExpireTime": "2026-08-04T17:30:43.198356+00:00",
       "IsPremium": false,
       "RewardURL": null
     },
@@ -39,11 +39,11 @@
       "Reward title": "Wild Card 10% Discount",
       "Port": "Any Sailing",
       "Points": 30000,
-      "Quantity": 39,
+      "Quantity": 40,
       "SnipeText": null,
       "SnipeCategory": null,
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-04T15:56:59.7039919+00:00",
+      "ExpireTime": "2026-08-04T17:30:43.198356+00:00",
       "IsPremium": false,
       "RewardURL": null
     },
@@ -54,11 +54,11 @@
       "Reward title": "$100 in Onboard Credit",
       "Port": "Any Sailing",
       "Points": 35000,
-      "Quantity": 40,
+      "Quantity": 50,
       "SnipeText": null,
       "SnipeCategory": null,
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-04T15:56:59.7039919+00:00",
+      "ExpireTime": "2026-08-04T17:30:43.198356+00:00",
       "IsPremium": true,
       "RewardURL": null
     },
@@ -73,7 +73,7 @@
       "SnipeText": null,
       "SnipeCategory": null,
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-04T15:56:59.7039919+00:00",
+      "ExpireTime": "2026-08-04T17:30:43.198356+00:00",
       "IsPremium": false,
       "RewardURL": null
     },
@@ -84,11 +84,11 @@
       "Reward title": "RCCL $150 in FREEPLAY",
       "Port": "Any Sailing",
       "Points": 140000,
-      "Quantity": 18,
+      "Quantity": 25,
       "SnipeText": null,
       "SnipeCategory": null,
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-04T15:56:59.7039919+00:00",
+      "ExpireTime": "2026-08-04T17:30:43.198356+00:00",
       "IsPremium": false,
       "RewardURL": null
     },
@@ -223,7 +223,7 @@
       "SnipeText": "1 left",
       "SnipeCategory": "NLeft",
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-04T15:56:59.7039919+00:00",
+      "ExpireTime": "2026-08-04T17:30:43.198356+00:00",
       "IsPremium": false,
       "RewardURL": null
     },
@@ -403,7 +403,7 @@
       "SnipeText": "NEW PORTS",
       "SnipeCategory": "Custom",
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-04T15:56:59.7039919+00:00",
+      "ExpireTime": "2026-08-04T17:30:43.198356+00:00",
       "IsPremium": false,
       "RewardURL": null
     },
@@ -418,7 +418,7 @@
       "SnipeText": "NEW PORTS",
       "SnipeCategory": "Custom",
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-04T15:56:59.7039919+00:00",
+      "ExpireTime": "2026-08-04T17:30:43.198356+00:00",
       "IsPremium": false,
       "RewardURL": null
     },
@@ -433,7 +433,7 @@
       "SnipeText": "NEW PORTS",
       "SnipeCategory": "Custom",
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-04T15:56:59.7039919+00:00",
+      "ExpireTime": "2026-08-04T17:30:43.198356+00:00",
       "IsPremium": false,
       "RewardURL": null
     },
@@ -448,7 +448,7 @@
       "SnipeText": null,
       "SnipeCategory": null,
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-04T15:56:59.7039919+00:00",
+      "ExpireTime": "2026-08-04T17:30:43.198356+00:00",
       "IsPremium": false,
       "RewardURL": null
     },
@@ -463,7 +463,7 @@
       "SnipeText": null,
       "SnipeCategory": null,
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-04T15:56:59.7039919+00:00",
+      "ExpireTime": "2026-08-04T17:30:43.198356+00:00",
       "IsPremium": false,
       "RewardURL": null
     },
@@ -478,7 +478,7 @@
       "SnipeText": null,
       "SnipeCategory": null,
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-04T15:56:59.7039919+00:00",
+      "ExpireTime": "2026-08-04T17:30:43.198356+00:00",
       "IsPremium": false,
       "RewardURL": null
     }
