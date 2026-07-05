@@ -88,7 +88,7 @@ def extract_rewards(data: dict) -> dict:
                 "OfferID": award.get("OfferID"),
                 "Partner": partner,
                 "Reward title": title,
-                "RewardPageTitle": title,
+                "RewardPageTitle": None,
                 "Port": port,
                 "Points": award.get("Price"),
                 "Quantity": award.get("Quantity"),
@@ -242,6 +242,8 @@ def save_website_data(rewards: dict) -> None:
         previous_reward = previous_rewards_by_id.get(award_id)
         if not website_reward.get("RewardPageTitle") and previous_reward:
             website_reward["RewardPageTitle"] = previous_reward.get("RewardPageTitle")
+        if not website_reward.get("RewardPageTitle"):
+            website_reward["RewardPageTitle"] = reward.get("Reward title")
         if not website_reward.get("RewardDescription") and previous_reward:
             website_reward["RewardDescription"] = previous_reward.get("RewardDescription")
         current_quantity = reward.get("Quantity")
