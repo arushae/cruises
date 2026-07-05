@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-07-05T19:22:19+00:00",
+  "checked_at": "2026-07-05T19:37:15+00:00",
   "check_history": [
     "2026-07-05T09:51:27",
     "2026-07-05T11:04:19",
@@ -16,7 +16,8 @@
     "2026-07-05T18:58:06+00:00",
     "2026-07-05T19:02:15+00:00",
     "2026-07-05T19:07:16+00:00",
-    "2026-07-05T19:22:19+00:00"
+    "2026-07-05T19:22:19+00:00",
+    "2026-07-05T19:37:15+00:00"
   ],
   "source_url": "https://loyalty-award-api.myvip.co/api/proxy/rewards/section/destination/8",
   "rewards": [
@@ -39,7 +40,7 @@
       "SnipeText": null,
       "SnipeCategory": null,
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-04T19:22:18.9173331+00:00",
+      "ExpireTime": "2026-08-04T19:37:15.4486891+00:00",
       "IsPremium": false,
       "RewardURL": null,
       "RewardDescription": "Our award-winning ships are designed for you to enjoy as you choose while cruising to beautiful destinations around the world. Add a wide range of superb dining options and spectacular entertainment and you’ll experience your best vacation ever.",
@@ -131,6 +132,16 @@
               "field": "ExpireTime",
               "from": "2026-08-04T19:07:16.7450887+00:00",
               "to": "2026-08-04T19:22:18.9173331+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-07-05T19:37:15+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-08-04T19:22:18.9173331+00:00",
+              "to": "2026-08-04T19:37:15.4486891+00:00"
             }
           ]
         }
@@ -155,7 +166,7 @@
       "SnipeText": null,
       "SnipeCategory": null,
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-04T19:22:18.9173331+00:00",
+      "ExpireTime": "2026-08-04T19:37:15.4486891+00:00",
       "IsPremium": false,
       "RewardURL": null,
       "RewardDescription": "Our award-winning ships are designed for you to enjoy as you choose while cruising to beautiful destinations around the world. Add a wide range of superb dining options and spectacular entertainment and you’ll experience your best vacation ever.",
@@ -247,6 +258,16 @@
               "field": "ExpireTime",
               "from": "2026-08-04T19:07:16.7450887+00:00",
               "to": "2026-08-04T19:22:18.9173331+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-07-05T19:37:15+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-08-04T19:22:18.9173331+00:00",
+              "to": "2026-08-04T19:37:15.4486891+00:00"
             }
           ]
         }
@@ -271,7 +292,7 @@
       "SnipeText": null,
       "SnipeCategory": null,
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-04T19:22:18.9173331+00:00",
+      "ExpireTime": "2026-08-04T19:37:15.4486891+00:00",
       "IsPremium": false,
       "RewardURL": null,
       "RewardDescription": "Our award-winning ships are designed for you to enjoy as you choose while cruising to beautiful destinations around the world. Add a wide range of superb dining options and spectacular entertainment and you’ll experience your best vacation ever.",
@@ -365,6 +386,16 @@
               "to": "2026-08-04T19:22:18.9173331+00:00"
             }
           ]
+        },
+        {
+          "observed_at": "2026-07-05T19:37:15+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-08-04T19:22:18.9173331+00:00",
+              "to": "2026-08-04T19:37:15.4486891+00:00"
+            }
+          ]
         }
       ]
     },
@@ -387,7 +418,7 @@
       "SnipeText": null,
       "SnipeCategory": null,
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-04T19:22:18.9173331+00:00",
+      "ExpireTime": "2026-08-04T19:37:15.4486891+00:00",
       "IsPremium": true,
       "RewardURL": null,
       "RewardDescription": "This reward entitles you to $25 in Free Play inside Casino Royale, with the purchase of a Royal Caribbean International cruise. Experience the most innovative and exciting cruise line in the travel industry. You will enjoy casual and fine dining, 24 hour room service, daily entertainment, activities and spa facilities, in some of the world’s most breathtaking locations. Contact Royal Caribbean’s Casino Royale Reservation Center at clubroyale@rccl.com in order to redeem this offer.",
@@ -486,6 +517,16 @@
               "to": "2026-08-04T19:22:18.9173331+00:00"
             }
           ]
+        },
+        {
+          "observed_at": "2026-07-05T19:37:15+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-08-04T19:22:18.9173331+00:00",
+              "to": "2026-08-04T19:37:15.4486891+00:00"
+            }
+          ]
         }
       ]
     },
@@ -508,7 +549,7 @@
       "SnipeText": null,
       "SnipeCategory": null,
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-04T19:22:18.9173331+00:00",
+      "ExpireTime": "2026-08-04T19:37:15.4486891+00:00",
       "IsPremium": false,
       "RewardURL": null,
       "RewardDescription": "This reward entitles you to $50 in Free Play inside Casino Royale, with the purchase of a Royal Caribbean International cruise. Experience the most innovative and exciting cruise line in the travel industry. You will enjoy casual and fine dining, 24 hour room service, daily entertainment, activities and spa facilities, in some of the world’s most breathtaking locations. Contact Royal Caribbean’s Casino Royale Reservation Center at clubroyale@rccl.com in order to redeem this offer.",
@@ -602,6 +643,16 @@
               "to": "2026-08-04T19:22:18.9173331+00:00"
             }
           ]
+        },
+        {
+          "observed_at": "2026-07-05T19:37:15+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-08-04T19:22:18.9173331+00:00",
+              "to": "2026-08-04T19:37:15.4486891+00:00"
+            }
+          ]
         }
       ]
     },
@@ -624,7 +675,7 @@
       "SnipeText": null,
       "SnipeCategory": null,
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-04T19:22:18.9173331+00:00",
+      "ExpireTime": "2026-08-04T19:37:15.4486891+00:00",
       "IsPremium": false,
       "RewardURL": null,
       "RewardDescription": "Enjoy the exclusive Wild Card 10% discount from myVEGAS when you purchase an Interior, Ocean View, or Balcony Stateroom. Contact Royal Caribbean’s Casino Royale Reservation Center at clubroyale@rccl.com in order to redeem this offer.",
@@ -728,6 +779,16 @@
               "to": "2026-08-04T19:22:18.9173331+00:00"
             }
           ]
+        },
+        {
+          "observed_at": "2026-07-05T19:37:15+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-08-04T19:22:18.9173331+00:00",
+              "to": "2026-08-04T19:37:15.4486891+00:00"
+            }
+          ]
         }
       ]
     },
@@ -750,7 +811,7 @@
       "SnipeText": null,
       "SnipeCategory": null,
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-04T19:22:18.9173331+00:00",
+      "ExpireTime": "2026-08-04T19:37:15.4486891+00:00",
       "IsPremium": true,
       "RewardURL": null,
       "RewardDescription": "This reward entitles you to a $100 Onboard Credit, with the purchase of a Royal Caribbean International cruise (new booking only). Contact Royal Caribbean’s Casino Royale Reservation Center at clubroyale@rccl.com in order to redeem this offer.",
@@ -869,6 +930,16 @@
               "to": "2026-08-04T19:22:18.9173331+00:00"
             }
           ]
+        },
+        {
+          "observed_at": "2026-07-05T19:37:15+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-08-04T19:22:18.9173331+00:00",
+              "to": "2026-08-04T19:37:15.4486891+00:00"
+            }
+          ]
         }
       ]
     },
@@ -891,7 +962,7 @@
       "SnipeText": null,
       "SnipeCategory": null,
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-04T19:22:18.9173331+00:00",
+      "ExpireTime": "2026-08-04T19:37:15.4486891+00:00",
       "IsPremium": false,
       "RewardURL": null,
       "RewardDescription": "This reward entitles you to a $100 FREEPLAY, with the purchase of a Royal Caribbean International cruise (new booking only). Must be redeemed within 30 days of a new cruise reservation. Contact Royal Caribbean’s Casino Royale Reservation Center at clubroyale@rccl.com in order to redeem this offer.",
@@ -985,6 +1056,16 @@
               "to": "2026-08-04T19:22:18.9173331+00:00"
             }
           ]
+        },
+        {
+          "observed_at": "2026-07-05T19:37:15+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-08-04T19:22:18.9173331+00:00",
+              "to": "2026-08-04T19:37:15.4486891+00:00"
+            }
+          ]
         }
       ]
     },
@@ -1007,7 +1088,7 @@
       "SnipeText": null,
       "SnipeCategory": null,
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-04T19:22:18.9173331+00:00",
+      "ExpireTime": "2026-08-04T19:37:15.4486891+00:00",
       "IsPremium": false,
       "RewardURL": null,
       "RewardDescription": "This reward entitles you to a $150 FREEPLAY, with the purchase of a Royal Caribbean International cruise (new booking only). Must be redeemed within 30 days of a new cruise reservation. Contact Royal Caribbean’s Casino Royale Reservation Center at clubroyale@rccl.com in order to redeem this offer.",
@@ -1119,6 +1200,16 @@
               "field": "ExpireTime",
               "from": "2026-08-04T19:07:16.7450887+00:00",
               "to": "2026-08-04T19:22:18.9173331+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-07-05T19:37:15+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-08-04T19:22:18.9173331+00:00",
+              "to": "2026-08-04T19:37:15.4486891+00:00"
             }
           ]
         }
@@ -1359,7 +1450,7 @@
       "SnipeText": "1 left",
       "SnipeCategory": "NLeft",
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-04T19:22:18.9173331+00:00",
+      "ExpireTime": "2026-08-04T19:37:15.4486891+00:00",
       "IsPremium": false,
       "RewardURL": null,
       "RewardDescription": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Shanghai (Baoshan), China for 4 nights sailing on 9/23/2026 in an interior cabin. Taxes, gratuities, and other fees may apply. Dive headfirst into adventure on a 4-night cruise to discover the wonders of Asia. Depart from Shanghai (Baoshan), China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region.",
@@ -1461,6 +1552,16 @@
               "field": "ExpireTime",
               "from": "2026-08-04T19:07:16.7450887+00:00",
               "to": "2026-08-04T19:22:18.9173331+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-07-05T19:37:15+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-08-04T19:22:18.9173331+00:00",
+              "to": "2026-08-04T19:37:15.4486891+00:00"
             }
           ]
         }
@@ -1760,7 +1861,7 @@
       "SnipeText": "NEW PORTS",
       "SnipeCategory": "Custom",
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-04T19:22:18.9173331+00:00",
+      "ExpireTime": "2026-08-04T19:37:15.4486891+00:00",
       "IsPremium": false,
       "RewardURL": null,
       "RewardDescription": "Now, exclusively with myVIP, enjoy a highly discounted rate with added benefits on your next voyage from ports in San Juan & North America. Set Sail with a $1,200 double-occupancy rate for a 6-Night Cruise in an UPGRADED SEA TERRACE on Virgin Voyages out of San Juan & North America! Complimentary beverages at the casino bar and waived withdrawal fees are included in this offer. Taxes & Port Fees apply. Sailings subject to change. Ready for an adults-only escape at sea? Virgin Voyages is redefining the cruise experience with award-winning dining, immersive entertainment, and luxurious, always-included perks—no buffets, no kids, no ordinary cruises",
@@ -1854,6 +1955,16 @@
               "to": "2026-08-04T19:22:18.9173331+00:00"
             }
           ]
+        },
+        {
+          "observed_at": "2026-07-05T19:37:15+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-08-04T19:22:18.9173331+00:00",
+              "to": "2026-08-04T19:37:15.4486891+00:00"
+            }
+          ]
         }
       ]
     },
@@ -1876,7 +1987,7 @@
       "SnipeText": "NEW PORTS",
       "SnipeCategory": "Custom",
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-04T19:22:18.9173331+00:00",
+      "ExpireTime": "2026-08-04T19:37:15.4486891+00:00",
       "IsPremium": false,
       "RewardURL": null,
       "RewardDescription": "Now, exclusively with myVIP, enjoy a highly discounted rate with added benefits on your next voyage from ports in San Juan & North America. Set Sail with a $1000 double-occupancy rate for a 5-Night Cruise in an UPGRADED SEA TERRACE on Virgin Voyages out of San Juan & North America! Complimentary beverages at the casino bar and waived withdrawal fees are included in this offer. Taxes & Port Fees apply. Sailings subject to change. Ready for an adults-only escape at sea? Virgin Voyages is redefining the cruise experience with award-winning dining, immersive entertainment, and luxurious, always-included perks—no buffets, no kids, no ordinary cruises.",
@@ -1970,6 +2081,16 @@
               "to": "2026-08-04T19:22:18.9173331+00:00"
             }
           ]
+        },
+        {
+          "observed_at": "2026-07-05T19:37:15+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-08-04T19:22:18.9173331+00:00",
+              "to": "2026-08-04T19:37:15.4486891+00:00"
+            }
+          ]
         }
       ]
     },
@@ -1992,7 +2113,7 @@
       "SnipeText": "NEW PORTS",
       "SnipeCategory": "Custom",
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-04T19:22:18.9173331+00:00",
+      "ExpireTime": "2026-08-04T19:37:15.4486891+00:00",
       "IsPremium": false,
       "RewardURL": null,
       "RewardDescription": "Now, exclusively with myVIP, enjoy a highly discounted rate with added benefits on your next voyage from ports in San Juan & North America. Set Sail with a $1,400 double-occupancy rate for a 7-Night Cruise in an UPGRADED SEA TERRACE on Virgin Voyages out of San Juan & North America! Complimentary beverages at the casino bar and waived withdrawal fees are included in this offer. Taxes & Port Fees apply. Sailings subject to change. Ready for an adults-only escape at sea? Virgin Voyages is redefining the cruise experience with award-winning dining, immersive entertainment, and luxurious, always-included perks—no buffets, no kids, no ordinary cruises.",
@@ -2084,6 +2205,16 @@
               "field": "ExpireTime",
               "from": "2026-08-04T19:07:16.7450887+00:00",
               "to": "2026-08-04T19:22:18.9173331+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-07-05T19:37:15+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-08-04T19:22:18.9173331+00:00",
+              "to": "2026-08-04T19:37:15.4486891+00:00"
             }
           ]
         }
