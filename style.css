@@ -1,4 +1,4 @@
-:root { color-scheme: light; font-family: Inter, ui-sans-serif, system-ui, sans-serif; color: #16212a; background: #eef3f5; }
+:root { color-scheme: light; font-family: Inter, ui-sans-serif, system-ui, sans-serif; color: #16212a; background: #eef3f5; -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 * { box-sizing: border-box; }
 body { margin: 0; }
 main { width: min(1400px, calc(100% - 32px)); margin: 36px auto; }
@@ -55,7 +55,7 @@ td.sold-out { color: #9b3131; font-weight: 700; }
 .reward-row[aria-expanded="true"] td:first-child::before { transform: rotate(90deg); }
 .reward-details[hidden] { display: none; }
 .reward-details td { padding: 0; background: #f6f9fa; }
-.reward-details-content { padding: 18px 28px 22px 44px; border-bottom: 1px solid #dce5e8; }
+.reward-details-content { position: sticky; left: 0; width: min(calc(100vw - 32px), 720px); max-width: min(calc(100vw - 32px), 720px); padding: 18px 28px 22px 44px; border-bottom: 1px solid #dce5e8; font-size: .9rem; overflow-wrap: anywhere; }
 .reward-details-content h3 { margin: 0 0 10px; font-size: .95rem; }
 .reward-page-title { color: #17252f; font-size: 1.05rem !important; letter-spacing: -.01em; }
 .reward-description { margin: 0 0 14px; color: #263843; line-height: 1.55; }
@@ -78,4 +78,4 @@ dialog::backdrop { background: rgb(18 35 44 / 55%); backdrop-filter: blur(3px); 
 .dialog-table-wrap th { position: sticky; top: 0; }
 footer { color: #6c7a83; font-size: .82rem; padding: 18px 4px; }
 a { color: #087f8c; }
-@media (max-width: 720px) { main { width: min(100% - 16px, 1400px); margin-top: 18px; } header { align-items: start; flex-direction: column; } .status { text-align: left; } .status-line { justify-content: flex-start; } .filters { grid-template-columns: 1fr; } #result-count { margin: 0; } }
+@media (max-width: 720px) { main { width: min(100% - 16px, 1400px); margin-top: 18px; } header { align-items: start; flex-direction: column; } .status { text-align: left; } .status-line { justify-content: flex-start; } .filters { grid-template-columns: 1fr; } #result-count { margin: 0; } .reward-details-content { width: calc(100vw - 16px); max-width: calc(100vw - 16px); padding: 16px 18px 20px 32px; } }
