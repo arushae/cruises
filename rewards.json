@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-07-05T20:22:18+00:00",
+  "checked_at": "2026-07-05T20:37:25+00:00",
   "check_history": [
     "2026-07-05T09:51:27",
     "2026-07-05T11:04:19",
@@ -21,7 +21,8 @@
     "2026-07-05T19:52:20+00:00",
     "2026-07-05T20:03:38+00:00",
     "2026-07-05T20:07:17+00:00",
-    "2026-07-05T20:22:18+00:00"
+    "2026-07-05T20:22:18+00:00",
+    "2026-07-05T20:37:25+00:00"
   ],
   "source_url": "https://loyalty-award-api.myvip.co/api/proxy/rewards/section/destination/8",
   "rewards": [
@@ -44,10 +45,11 @@
       "SnipeText": null,
       "SnipeCategory": null,
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-04T20:22:18.162251+00:00",
+      "ExpireTime": "2026-08-04T20:37:17.9115062+00:00",
       "IsPremium": false,
       "RewardURL": null,
       "RewardDescription": "Our award-winning ships are designed for you to enjoy as you choose while cruising to beautiful destinations around the world. Add a wide range of superb dining options and spectacular entertainment and you’ll experience your best vacation ever.",
+      "RewardUseByText": "This reward must be redeemed by 8/4/2026 8:37:25 PM (UTC).",
       "ChangeHistory": [
         {
           "observed_at": "2026-07-05T12:51:52+00:00",
@@ -186,6 +188,21 @@
               "field": "ExpireTime",
               "from": "2026-08-04T20:07:17.0773063+00:00",
               "to": "2026-08-04T20:22:18.162251+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-07-05T20:37:25+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-08-04T20:22:18.162251+00:00",
+              "to": "2026-08-04T20:37:17.9115062+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": null,
+              "to": "This reward must be redeemed by 8/4/2026 8:37:25 PM (UTC)."
             }
           ]
         }
@@ -210,10 +227,11 @@
       "SnipeText": null,
       "SnipeCategory": null,
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-04T20:22:18.162251+00:00",
+      "ExpireTime": "2026-08-04T20:37:17.9115062+00:00",
       "IsPremium": false,
       "RewardURL": null,
       "RewardDescription": "Our award-winning ships are designed for you to enjoy as you choose while cruising to beautiful destinations around the world. Add a wide range of superb dining options and spectacular entertainment and you’ll experience your best vacation ever.",
+      "RewardUseByText": "This reward must be redeemed by 8/4/2026 8:37:25 PM (UTC).",
       "ChangeHistory": [
         {
           "observed_at": "2026-07-05T12:51:52+00:00",
@@ -352,6 +370,21 @@
               "field": "ExpireTime",
               "from": "2026-08-04T20:07:17.0773063+00:00",
               "to": "2026-08-04T20:22:18.162251+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-07-05T20:37:25+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-08-04T20:22:18.162251+00:00",
+              "to": "2026-08-04T20:37:17.9115062+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": null,
+              "to": "This reward must be redeemed by 8/4/2026 8:37:25 PM (UTC)."
             }
           ]
         }
@@ -376,10 +409,11 @@
       "SnipeText": null,
       "SnipeCategory": null,
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-04T20:22:18.162251+00:00",
+      "ExpireTime": "2026-08-04T20:37:17.9115062+00:00",
       "IsPremium": false,
       "RewardURL": null,
       "RewardDescription": "Our award-winning ships are designed for you to enjoy as you choose while cruising to beautiful destinations around the world. Add a wide range of superb dining options and spectacular entertainment and you’ll experience your best vacation ever.",
+      "RewardUseByText": "This reward must be redeemed by 8/4/2026 8:37:25 PM (UTC).",
       "ChangeHistory": [
         {
           "observed_at": "2026-07-05T12:51:52+00:00",
@@ -520,6 +554,21 @@
               "to": "2026-08-04T20:22:18.162251+00:00"
             }
           ]
+        },
+        {
+          "observed_at": "2026-07-05T20:37:25+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-08-04T20:22:18.162251+00:00",
+              "to": "2026-08-04T20:37:17.9115062+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": null,
+              "to": "This reward must be redeemed by 8/4/2026 8:37:25 PM (UTC)."
+            }
+          ]
         }
       ]
     },
@@ -542,10 +591,11 @@
       "SnipeText": null,
       "SnipeCategory": null,
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-04T20:22:18.162251+00:00",
+      "ExpireTime": "2026-08-04T20:37:17.9115062+00:00",
       "IsPremium": true,
       "RewardURL": null,
-      "RewardDescription": "This reward entitles you to $25 in Free Play inside Casino Royale, with the purchase of a Royal Caribbean International cruise. Experience the most innovative and exciting cruise line in the travel industry. You will enjoy casual and fine dining, 24 hour room service, daily entertainment, activities and spa facilities, in some of the world’s most breathtaking locations. Contact Royal Caribbean’s Casino Royale Reservation Center at clubroyale@rccl.com in order to redeem this offer.",
+      "RewardDescription": "This reward entitles you to $25 in Free Play inside Casino Royale, with the purchase of a Royal Caribbean International cruise. Experience the most innovative and exciting cruise line in the travel industry. You will enjoy casual and fine dining, 24 hour room service, daily entertainment, activities and spa facilities, in some of the world’s most breathtaking locations.\n\nContact Royal Caribbean’s Casino Royale Reservation Center at clubroyale@rccl.com in order to redeem this offer.",
+      "RewardUseByText": "This reward must be redeemed by 8/4/2026 8:37:18 PM (UTC).",
       "ChangeHistory": [
         {
           "observed_at": "2026-07-05T12:51:52+00:00",
@@ -691,6 +741,26 @@
               "to": "2026-08-04T20:22:18.162251+00:00"
             }
           ]
+        },
+        {
+          "observed_at": "2026-07-05T20:37:25+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-08-04T20:22:18.162251+00:00",
+              "to": "2026-08-04T20:37:17.9115062+00:00"
+            },
+            {
+              "field": "RewardDescription",
+              "from": "This reward entitles you to $25 in Free Play inside Casino Royale, with the purchase of a Royal Caribbean International cruise. Experience the most innovative and exciting cruise line in the travel industry. You will enjoy casual and fine dining, 24 hour room service, daily entertainment, activities and spa facilities, in some of the world’s most breathtaking locations. Contact Royal Caribbean’s Casino Royale Reservation Center at clubroyale@rccl.com in order to redeem this offer.",
+              "to": "This reward entitles you to $25 in Free Play inside Casino Royale, with the purchase of a Royal Caribbean International cruise. Experience the most innovative and exciting cruise line in the travel industry. You will enjoy casual and fine dining, 24 hour room service, daily entertainment, activities and spa facilities, in some of the world’s most breathtaking locations.\n\nContact Royal Caribbean’s Casino Royale Reservation Center at clubroyale@rccl.com in order to redeem this offer."
+            },
+            {
+              "field": "RewardUseByText",
+              "from": null,
+              "to": "This reward must be redeemed by 8/4/2026 8:37:18 PM (UTC)."
+            }
+          ]
         }
       ]
     },
@@ -713,10 +783,11 @@
       "SnipeText": null,
       "SnipeCategory": null,
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-04T20:22:18.162251+00:00",
+      "ExpireTime": "2026-08-04T20:37:17.9115062+00:00",
       "IsPremium": false,
       "RewardURL": null,
-      "RewardDescription": "This reward entitles you to $50 in Free Play inside Casino Royale, with the purchase of a Royal Caribbean International cruise. Experience the most innovative and exciting cruise line in the travel industry. You will enjoy casual and fine dining, 24 hour room service, daily entertainment, activities and spa facilities, in some of the world’s most breathtaking locations. Contact Royal Caribbean’s Casino Royale Reservation Center at clubroyale@rccl.com in order to redeem this offer.",
+      "RewardDescription": "This reward entitles you to $50 in Free Play inside Casino Royale, with the purchase of a Royal Caribbean International cruise. Experience the most innovative and exciting cruise line in the travel industry. You will enjoy casual and fine dining, 24 hour room service, daily entertainment, activities and spa facilities, in some of the world’s most breathtaking locations.\n\nContact Royal Caribbean’s Casino Royale Reservation Center at clubroyale@rccl.com in order to redeem this offer.",
+      "RewardUseByText": "This reward must be redeemed by 8/4/2026 8:37:18 PM (UTC).",
       "ChangeHistory": [
         {
           "observed_at": "2026-07-05T12:51:52+00:00",
@@ -857,6 +928,26 @@
               "to": "2026-08-04T20:22:18.162251+00:00"
             }
           ]
+        },
+        {
+          "observed_at": "2026-07-05T20:37:25+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-08-04T20:22:18.162251+00:00",
+              "to": "2026-08-04T20:37:17.9115062+00:00"
+            },
+            {
+              "field": "RewardDescription",
+              "from": "This reward entitles you to $50 in Free Play inside Casino Royale, with the purchase of a Royal Caribbean International cruise. Experience the most innovative and exciting cruise line in the travel industry. You will enjoy casual and fine dining, 24 hour room service, daily entertainment, activities and spa facilities, in some of the world’s most breathtaking locations. Contact Royal Caribbean’s Casino Royale Reservation Center at clubroyale@rccl.com in order to redeem this offer.",
+              "to": "This reward entitles you to $50 in Free Play inside Casino Royale, with the purchase of a Royal Caribbean International cruise. Experience the most innovative and exciting cruise line in the travel industry. You will enjoy casual and fine dining, 24 hour room service, daily entertainment, activities and spa facilities, in some of the world’s most breathtaking locations.\n\nContact Royal Caribbean’s Casino Royale Reservation Center at clubroyale@rccl.com in order to redeem this offer."
+            },
+            {
+              "field": "RewardUseByText",
+              "from": null,
+              "to": "This reward must be redeemed by 8/4/2026 8:37:18 PM (UTC)."
+            }
+          ]
         }
       ]
     },
@@ -879,10 +970,11 @@
       "SnipeText": null,
       "SnipeCategory": null,
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-04T20:22:18.162251+00:00",
+      "ExpireTime": "2026-08-04T20:37:17.9115062+00:00",
       "IsPremium": false,
       "RewardURL": null,
-      "RewardDescription": "Enjoy the exclusive Wild Card 10% discount from myVEGAS when you purchase an Interior, Ocean View, or Balcony Stateroom. Contact Royal Caribbean’s Casino Royale Reservation Center at clubroyale@rccl.com in order to redeem this offer.",
+      "RewardDescription": "Enjoy the exclusive Wild Card 10% discount from myVEGAS when you purchase an Interior, Ocean View, or Balcony Stateroom.\n\nContact Royal Caribbean’s Casino Royale Reservation Center at clubroyale@rccl.com in order to redeem this offer.",
+      "RewardUseByText": "This reward must be redeemed by 8/4/2026 8:37:18 PM (UTC).",
       "ChangeHistory": [
         {
           "observed_at": "2026-07-05T12:51:52+00:00",
@@ -1033,6 +1125,26 @@
               "to": "2026-08-04T20:22:18.162251+00:00"
             }
           ]
+        },
+        {
+          "observed_at": "2026-07-05T20:37:25+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-08-04T20:22:18.162251+00:00",
+              "to": "2026-08-04T20:37:17.9115062+00:00"
+            },
+            {
+              "field": "RewardDescription",
+              "from": "Enjoy the exclusive Wild Card 10% discount from myVEGAS when you purchase an Interior, Ocean View, or Balcony Stateroom. Contact Royal Caribbean’s Casino Royale Reservation Center at clubroyale@rccl.com in order to redeem this offer.",
+              "to": "Enjoy the exclusive Wild Card 10% discount from myVEGAS when you purchase an Interior, Ocean View, or Balcony Stateroom.\n\nContact Royal Caribbean’s Casino Royale Reservation Center at clubroyale@rccl.com in order to redeem this offer."
+            },
+            {
+              "field": "RewardUseByText",
+              "from": null,
+              "to": "This reward must be redeemed by 8/4/2026 8:37:18 PM (UTC)."
+            }
+          ]
         }
       ]
     },
@@ -1055,10 +1167,11 @@
       "SnipeText": null,
       "SnipeCategory": null,
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-04T20:22:18.162251+00:00",
+      "ExpireTime": "2026-08-04T20:37:17.9115062+00:00",
       "IsPremium": true,
       "RewardURL": null,
-      "RewardDescription": "This reward entitles you to a $100 Onboard Credit, with the purchase of a Royal Caribbean International cruise (new booking only). Contact Royal Caribbean’s Casino Royale Reservation Center at clubroyale@rccl.com in order to redeem this offer.",
+      "RewardDescription": "This reward entitles you to a $100 Onboard Credit, with the purchase of a Royal Caribbean International cruise (new booking only).\n\nContact Royal Caribbean’s Casino Royale Reservation Center at clubroyale@rccl.com in order to redeem this offer.",
+      "RewardUseByText": "This reward must be redeemed by 8/4/2026 8:37:18 PM (UTC).",
       "ChangeHistory": [
         {
           "observed_at": "2026-07-05T12:51:52+00:00",
@@ -1229,6 +1342,26 @@
               "to": "2026-08-04T20:22:18.162251+00:00"
             }
           ]
+        },
+        {
+          "observed_at": "2026-07-05T20:37:25+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-08-04T20:22:18.162251+00:00",
+              "to": "2026-08-04T20:37:17.9115062+00:00"
+            },
+            {
+              "field": "RewardDescription",
+              "from": "This reward entitles you to a $100 Onboard Credit, with the purchase of a Royal Caribbean International cruise (new booking only). Contact Royal Caribbean’s Casino Royale Reservation Center at clubroyale@rccl.com in order to redeem this offer.",
+              "to": "This reward entitles you to a $100 Onboard Credit, with the purchase of a Royal Caribbean International cruise (new booking only).\n\nContact Royal Caribbean’s Casino Royale Reservation Center at clubroyale@rccl.com in order to redeem this offer."
+            },
+            {
+              "field": "RewardUseByText",
+              "from": null,
+              "to": "This reward must be redeemed by 8/4/2026 8:37:18 PM (UTC)."
+            }
+          ]
         }
       ]
     },
@@ -1246,15 +1379,16 @@
           "value": 50000
         }
       ],
-      "Quantity": 60,
+      "Quantity": 59,
       "HighestQuantityObserved": 60,
       "SnipeText": null,
       "SnipeCategory": null,
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-04T20:22:18.162251+00:00",
+      "ExpireTime": "2026-08-04T20:37:17.9115062+00:00",
       "IsPremium": false,
       "RewardURL": null,
-      "RewardDescription": "This reward entitles you to a $100 FREEPLAY, with the purchase of a Royal Caribbean International cruise (new booking only). Must be redeemed within 30 days of a new cruise reservation. Contact Royal Caribbean’s Casino Royale Reservation Center at clubroyale@rccl.com in order to redeem this offer.",
+      "RewardDescription": "This reward entitles you to a $100 FREEPLAY, with the purchase of a Royal Caribbean International cruise (new booking only). Must be redeemed within 30 days of a new cruise reservation.\n\nContact Royal Caribbean’s Casino Royale Reservation Center at clubroyale@rccl.com in order to redeem this offer.",
+      "RewardUseByText": "This reward must be redeemed by 8/4/2026 8:37:19 PM (UTC).",
       "ChangeHistory": [
         {
           "observed_at": "2026-07-05T12:51:52+00:00",
@@ -1395,6 +1529,31 @@
               "to": "2026-08-04T20:22:18.162251+00:00"
             }
           ]
+        },
+        {
+          "observed_at": "2026-07-05T20:37:25+00:00",
+          "changes": [
+            {
+              "field": "Quantity",
+              "from": 60,
+              "to": 59
+            },
+            {
+              "field": "ExpireTime",
+              "from": "2026-08-04T20:22:18.162251+00:00",
+              "to": "2026-08-04T20:37:17.9115062+00:00"
+            },
+            {
+              "field": "RewardDescription",
+              "from": "This reward entitles you to a $100 FREEPLAY, with the purchase of a Royal Caribbean International cruise (new booking only). Must be redeemed within 30 days of a new cruise reservation. Contact Royal Caribbean’s Casino Royale Reservation Center at clubroyale@rccl.com in order to redeem this offer.",
+              "to": "This reward entitles you to a $100 FREEPLAY, with the purchase of a Royal Caribbean International cruise (new booking only). Must be redeemed within 30 days of a new cruise reservation.\n\nContact Royal Caribbean’s Casino Royale Reservation Center at clubroyale@rccl.com in order to redeem this offer."
+            },
+            {
+              "field": "RewardUseByText",
+              "from": null,
+              "to": "This reward must be redeemed by 8/4/2026 8:37:19 PM (UTC)."
+            }
+          ]
         }
       ]
     },
@@ -1417,10 +1576,11 @@
       "SnipeText": null,
       "SnipeCategory": null,
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-04T20:22:18.162251+00:00",
+      "ExpireTime": "2026-08-04T20:37:17.9115062+00:00",
       "IsPremium": false,
       "RewardURL": null,
-      "RewardDescription": "This reward entitles you to a $150 FREEPLAY, with the purchase of a Royal Caribbean International cruise (new booking only). Must be redeemed within 30 days of a new cruise reservation. Contact Royal Caribbean’s Casino Royale Reservation Center at clubroyale@rccl.com in order to redeem this offer.",
+      "RewardDescription": "This reward entitles you to a $150 FREEPLAY, with the purchase of a Royal Caribbean International cruise (new booking only). Must be redeemed within 30 days of a new cruise reservation.\n\nContact Royal Caribbean’s Casino Royale Reservation Center at clubroyale@rccl.com in order to redeem this offer.",
+      "RewardUseByText": "This reward must be redeemed by 8/4/2026 8:37:19 PM (UTC).",
       "ChangeHistory": [
         {
           "observed_at": "2026-07-05T12:51:52+00:00",
@@ -1591,6 +1751,26 @@
               "to": "2026-08-04T20:22:18.162251+00:00"
             }
           ]
+        },
+        {
+          "observed_at": "2026-07-05T20:37:25+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-08-04T20:22:18.162251+00:00",
+              "to": "2026-08-04T20:37:17.9115062+00:00"
+            },
+            {
+              "field": "RewardDescription",
+              "from": "This reward entitles you to a $150 FREEPLAY, with the purchase of a Royal Caribbean International cruise (new booking only). Must be redeemed within 30 days of a new cruise reservation. Contact Royal Caribbean’s Casino Royale Reservation Center at clubroyale@rccl.com in order to redeem this offer.",
+              "to": "This reward entitles you to a $150 FREEPLAY, with the purchase of a Royal Caribbean International cruise (new booking only). Must be redeemed within 30 days of a new cruise reservation.\n\nContact Royal Caribbean’s Casino Royale Reservation Center at clubroyale@rccl.com in order to redeem this offer."
+            },
+            {
+              "field": "RewardUseByText",
+              "from": null,
+              "to": "This reward must be redeemed by 8/4/2026 8:37:19 PM (UTC)."
+            }
+          ]
         }
       ]
     },
@@ -1616,7 +1796,8 @@
       "ExpireTime": "2026-08-01T06:59:59+00:00",
       "IsPremium": false,
       "RewardURL": null,
-      "RewardDescription": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Shanghai (Baoshan), China for 4 nights sailing on 9/27/2026 in an interior cabin. Taxes, gratuities, and other fees may apply. Dive headfirst into adventure on a 4-night cruise to discover the wonders of Asia. Depart from Shanghai (Baoshan), China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region.",
+      "RewardDescription": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Shanghai (Baoshan), China for 4 nights sailing on 9/27/2026 in an interior cabin. Taxes, gratuities, and other fees may apply. \n\nDive headfirst into adventure on a 4-night cruise to discover the wonders of Asia. Depart from Shanghai (Baoshan), China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region.",
+      "RewardUseByText": "This reward must be redeemed by 8/1/2026 6:59:59 AM (UTC).",
       "ChangeHistory": [
         {
           "observed_at": "2026-07-05T12:51:52+00:00",
@@ -1630,6 +1811,21 @@
               "field": "SnipeText",
               "from": "1 left",
               "to": "2 left"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-07-05T20:37:25+00:00",
+          "changes": [
+            {
+              "field": "RewardDescription",
+              "from": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Shanghai (Baoshan), China for 4 nights sailing on 9/27/2026 in an interior cabin. Taxes, gratuities, and other fees may apply. Dive headfirst into adventure on a 4-night cruise to discover the wonders of Asia. Depart from Shanghai (Baoshan), China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region.",
+              "to": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Shanghai (Baoshan), China for 4 nights sailing on 9/27/2026 in an interior cabin. Taxes, gratuities, and other fees may apply. \n\nDive headfirst into adventure on a 4-night cruise to discover the wonders of Asia. Depart from Shanghai (Baoshan), China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region."
+            },
+            {
+              "field": "RewardUseByText",
+              "from": null,
+              "to": "This reward must be redeemed by 8/1/2026 6:59:59 AM (UTC)."
             }
           ]
         }
@@ -1657,8 +1853,25 @@
       "ExpireTime": "2026-08-01T06:59:59+00:00",
       "IsPremium": false,
       "RewardURL": null,
-      "RewardDescription": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Shanghai (Baoshan), China for 4 nights sailing on 8/24/2026 in an interior cabin. Taxes, gratuities, and other fees may apply. Dive headfirst into adventure on a 4-night cruise to discover the wonders of Asia. Depart from Shanghai (Baoshan), China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region.",
-      "ChangeHistory": []
+      "RewardDescription": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Shanghai (Baoshan), China for 4 nights sailing on 8/24/2026 in an interior cabin. Taxes, gratuities, and other fees may apply. \n\nDive headfirst into adventure on a 4-night cruise to discover the wonders of Asia. Depart from Shanghai (Baoshan), China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region.",
+      "RewardUseByText": "This reward must be redeemed by 8/1/2026 6:59:59 AM (UTC).",
+      "ChangeHistory": [
+        {
+          "observed_at": "2026-07-05T20:37:25+00:00",
+          "changes": [
+            {
+              "field": "RewardDescription",
+              "from": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Shanghai (Baoshan), China for 4 nights sailing on 8/24/2026 in an interior cabin. Taxes, gratuities, and other fees may apply. Dive headfirst into adventure on a 4-night cruise to discover the wonders of Asia. Depart from Shanghai (Baoshan), China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region.",
+              "to": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Shanghai (Baoshan), China for 4 nights sailing on 8/24/2026 in an interior cabin. Taxes, gratuities, and other fees may apply. \n\nDive headfirst into adventure on a 4-night cruise to discover the wonders of Asia. Depart from Shanghai (Baoshan), China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region."
+            },
+            {
+              "field": "RewardUseByText",
+              "from": null,
+              "to": "This reward must be redeemed by 8/1/2026 6:59:59 AM (UTC)."
+            }
+          ]
+        }
+      ]
     },
     {
       "AwardID": 11024,
@@ -1682,8 +1895,25 @@
       "ExpireTime": "2026-08-01T06:59:59+00:00",
       "IsPremium": false,
       "RewardURL": null,
-      "RewardDescription": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Hong Kong, China for 4 nights sailing on 11/16/2026 in an interior cabin. Taxes, gratuities, and other fees may apply. Dive headfirst into adventure on a 4-night cruise to discover the wonders of Asia. Depart from Hong Kong, China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region.",
-      "ChangeHistory": []
+      "RewardDescription": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Hong Kong, China for 4 nights sailing on 11/16/2026 in an interior cabin. Taxes, gratuities, and other fees may apply. \n\nDive headfirst into adventure on a 4-night cruise to discover the wonders of Asia. Depart from Hong Kong, China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region.",
+      "RewardUseByText": "This reward must be redeemed by 8/1/2026 6:59:59 AM (UTC).",
+      "ChangeHistory": [
+        {
+          "observed_at": "2026-07-05T20:37:25+00:00",
+          "changes": [
+            {
+              "field": "RewardDescription",
+              "from": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Hong Kong, China for 4 nights sailing on 11/16/2026 in an interior cabin. Taxes, gratuities, and other fees may apply. Dive headfirst into adventure on a 4-night cruise to discover the wonders of Asia. Depart from Hong Kong, China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region.",
+              "to": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Hong Kong, China for 4 nights sailing on 11/16/2026 in an interior cabin. Taxes, gratuities, and other fees may apply. \n\nDive headfirst into adventure on a 4-night cruise to discover the wonders of Asia. Depart from Hong Kong, China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region."
+            },
+            {
+              "field": "RewardUseByText",
+              "from": null,
+              "to": "This reward must be redeemed by 8/1/2026 6:59:59 AM (UTC)."
+            }
+          ]
+        }
+      ]
     },
     {
       "AwardID": 11018,
@@ -1707,8 +1937,25 @@
       "ExpireTime": "2026-08-01T06:59:59+00:00",
       "IsPremium": false,
       "RewardURL": null,
-      "RewardDescription": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Shanghai (Baoshan), China for 4 nights sailing on 10/20/2026 in an interior cabin. Taxes, gratuities, and other fees may apply. Dive headfirst into adventure on a 4-night cruise to discover the wonders of Asia. Depart from Shanghai (Baoshan), China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region.",
-      "ChangeHistory": []
+      "RewardDescription": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Shanghai (Baoshan), China for 4 nights sailing on 10/20/2026 in an interior cabin. Taxes, gratuities, and other fees may apply. \n\nDive headfirst into adventure on a 4-night cruise to discover the wonders of Asia. Depart from Shanghai (Baoshan), China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region.",
+      "RewardUseByText": "This reward must be redeemed by 8/1/2026 6:59:59 AM (UTC).",
+      "ChangeHistory": [
+        {
+          "observed_at": "2026-07-05T20:37:25+00:00",
+          "changes": [
+            {
+              "field": "RewardDescription",
+              "from": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Shanghai (Baoshan), China for 4 nights sailing on 10/20/2026 in an interior cabin. Taxes, gratuities, and other fees may apply. Dive headfirst into adventure on a 4-night cruise to discover the wonders of Asia. Depart from Shanghai (Baoshan), China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region.",
+              "to": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Shanghai (Baoshan), China for 4 nights sailing on 10/20/2026 in an interior cabin. Taxes, gratuities, and other fees may apply. \n\nDive headfirst into adventure on a 4-night cruise to discover the wonders of Asia. Depart from Shanghai (Baoshan), China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region."
+            },
+            {
+              "field": "RewardUseByText",
+              "from": null,
+              "to": "This reward must be redeemed by 8/1/2026 6:59:59 AM (UTC)."
+            }
+          ]
+        }
+      ]
     },
     {
       "AwardID": 11007,
@@ -1732,8 +1979,25 @@
       "ExpireTime": "2026-07-28T06:59:59+00:00",
       "IsPremium": false,
       "RewardURL": null,
-      "RewardDescription": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Shanghai (Baoshan), China for 4 nights sailing on 7/27/2026 in an interior cabin. Taxes, gratuities, and other fees may apply. Dive headfirst into adventure on a 4-night cruise to discover the wonders of Asia. Depart from Shanghai (Baoshan), China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region.",
-      "ChangeHistory": []
+      "RewardDescription": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Shanghai (Baoshan), China for 4 nights sailing on 7/27/2026 in an interior cabin. Taxes, gratuities, and other fees may apply. \n\nDive headfirst into adventure on a 4-night cruise to discover the wonders of Asia. Depart from Shanghai (Baoshan), China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region.",
+      "RewardUseByText": "This reward must be redeemed by 7/28/2026 6:59:59 AM (UTC).",
+      "ChangeHistory": [
+        {
+          "observed_at": "2026-07-05T20:37:25+00:00",
+          "changes": [
+            {
+              "field": "RewardDescription",
+              "from": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Shanghai (Baoshan), China for 4 nights sailing on 7/27/2026 in an interior cabin. Taxes, gratuities, and other fees may apply. Dive headfirst into adventure on a 4-night cruise to discover the wonders of Asia. Depart from Shanghai (Baoshan), China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region.",
+              "to": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Shanghai (Baoshan), China for 4 nights sailing on 7/27/2026 in an interior cabin. Taxes, gratuities, and other fees may apply. \n\nDive headfirst into adventure on a 4-night cruise to discover the wonders of Asia. Depart from Shanghai (Baoshan), China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region."
+            },
+            {
+              "field": "RewardUseByText",
+              "from": null,
+              "to": "This reward must be redeemed by 7/28/2026 6:59:59 AM (UTC)."
+            }
+          ]
+        }
+      ]
     },
     {
       "AwardID": 11010,
@@ -1757,8 +2021,25 @@
       "ExpireTime": "2026-07-31T18:59:59+00:00",
       "IsPremium": false,
       "RewardURL": null,
-      "RewardDescription": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Shanghai (Baoshan), China for 4 nights sailing on 8/28/2026 in an interior cabin. Taxes, gratuities, and other fees may apply. Dive headfirst into adventure on a 4-night cruise to discover the wonders of Asia. Depart from Shanghai (Baoshan), China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region.",
-      "ChangeHistory": []
+      "RewardDescription": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Shanghai (Baoshan), China for 4 nights sailing on 8/28/2026 in an interior cabin. Taxes, gratuities, and other fees may apply. \n\nDive headfirst into adventure on a 4-night cruise to discover the wonders of Asia. Depart from Shanghai (Baoshan), China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region.",
+      "RewardUseByText": "This reward must be redeemed by 7/31/2026 6:59:59 PM (UTC).",
+      "ChangeHistory": [
+        {
+          "observed_at": "2026-07-05T20:37:25+00:00",
+          "changes": [
+            {
+              "field": "RewardDescription",
+              "from": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Shanghai (Baoshan), China for 4 nights sailing on 8/28/2026 in an interior cabin. Taxes, gratuities, and other fees may apply. Dive headfirst into adventure on a 4-night cruise to discover the wonders of Asia. Depart from Shanghai (Baoshan), China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region.",
+              "to": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Shanghai (Baoshan), China for 4 nights sailing on 8/28/2026 in an interior cabin. Taxes, gratuities, and other fees may apply. \n\nDive headfirst into adventure on a 4-night cruise to discover the wonders of Asia. Depart from Shanghai (Baoshan), China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region."
+            },
+            {
+              "field": "RewardUseByText",
+              "from": null,
+              "to": "This reward must be redeemed by 7/31/2026 6:59:59 PM (UTC)."
+            }
+          ]
+        }
+      ]
     },
     {
       "AwardID": 11013,
@@ -1782,8 +2063,25 @@
       "ExpireTime": "2026-08-01T06:59:59+00:00",
       "IsPremium": false,
       "RewardURL": null,
-      "RewardDescription": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Shanghai (Baoshan), China for 4 nights sailing on 9/19/2026 in an interior cabin. Taxes, gratuities, and other fees may apply. Dive headfirst into adventure on a 4-night cruise to discover the wonders of Asia. Depart from Shanghai (Baoshan), China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region.",
-      "ChangeHistory": []
+      "RewardDescription": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Shanghai (Baoshan), China for 4 nights sailing on 9/19/2026 in an interior cabin. Taxes, gratuities, and other fees may apply. \n\nDive headfirst into adventure on a 4-night cruise to discover the wonders of Asia. Depart from Shanghai (Baoshan), China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region.",
+      "RewardUseByText": "This reward must be redeemed by 8/1/2026 6:59:59 AM (UTC).",
+      "ChangeHistory": [
+        {
+          "observed_at": "2026-07-05T20:37:25+00:00",
+          "changes": [
+            {
+              "field": "RewardDescription",
+              "from": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Shanghai (Baoshan), China for 4 nights sailing on 9/19/2026 in an interior cabin. Taxes, gratuities, and other fees may apply. Dive headfirst into adventure on a 4-night cruise to discover the wonders of Asia. Depart from Shanghai (Baoshan), China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region.",
+              "to": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Shanghai (Baoshan), China for 4 nights sailing on 9/19/2026 in an interior cabin. Taxes, gratuities, and other fees may apply. \n\nDive headfirst into adventure on a 4-night cruise to discover the wonders of Asia. Depart from Shanghai (Baoshan), China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region."
+            },
+            {
+              "field": "RewardUseByText",
+              "from": null,
+              "to": "This reward must be redeemed by 8/1/2026 6:59:59 AM (UTC)."
+            }
+          ]
+        }
+      ]
     },
     {
       "AwardID": 11016,
@@ -1807,8 +2105,25 @@
       "ExpireTime": "2026-08-01T06:59:59+00:00",
       "IsPremium": false,
       "RewardURL": null,
-      "RewardDescription": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Shanghai (Baoshan), China for 4 nights sailing on 10/07/2026 in an interior cabin. Taxes, gratuities, and other fees may apply. Dive headfirst into adventure on a 4-night cruise to discover the wonders of Asia. Depart from Shanghai (Baoshan), China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region.",
-      "ChangeHistory": []
+      "RewardDescription": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Shanghai (Baoshan), China for 4 nights sailing on 10/07/2026 in an interior cabin. Taxes, gratuities, and other fees may apply. \n\nDive headfirst into adventure on a 4-night cruise to discover the wonders of Asia. Depart from Shanghai (Baoshan), China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region.",
+      "RewardUseByText": "This reward must be redeemed by 8/1/2026 6:59:59 AM (UTC).",
+      "ChangeHistory": [
+        {
+          "observed_at": "2026-07-05T20:37:25+00:00",
+          "changes": [
+            {
+              "field": "RewardDescription",
+              "from": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Shanghai (Baoshan), China for 4 nights sailing on 10/07/2026 in an interior cabin. Taxes, gratuities, and other fees may apply. Dive headfirst into adventure on a 4-night cruise to discover the wonders of Asia. Depart from Shanghai (Baoshan), China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region.",
+              "to": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Shanghai (Baoshan), China for 4 nights sailing on 10/07/2026 in an interior cabin. Taxes, gratuities, and other fees may apply. \n\nDive headfirst into adventure on a 4-night cruise to discover the wonders of Asia. Depart from Shanghai (Baoshan), China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region."
+            },
+            {
+              "field": "RewardUseByText",
+              "from": null,
+              "to": "This reward must be redeemed by 8/1/2026 6:59:59 AM (UTC)."
+            }
+          ]
+        }
+      ]
     },
     {
       "AwardID": 11014,
@@ -1829,10 +2144,11 @@
       "SnipeText": "1 left",
       "SnipeCategory": "NLeft",
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-04T20:22:18.162251+00:00",
+      "ExpireTime": "2026-08-04T20:37:17.9115062+00:00",
       "IsPremium": false,
       "RewardURL": null,
-      "RewardDescription": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Shanghai (Baoshan), China for 4 nights sailing on 9/23/2026 in an interior cabin. Taxes, gratuities, and other fees may apply. Dive headfirst into adventure on a 4-night cruise to discover the wonders of Asia. Depart from Shanghai (Baoshan), China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region.",
+      "RewardDescription": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Shanghai (Baoshan), China for 4 nights sailing on 9/23/2026 in an interior cabin. Taxes, gratuities, and other fees may apply. \n\nDive headfirst into adventure on a 4-night cruise to discover the wonders of Asia. Depart from Shanghai (Baoshan), China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region.",
+      "RewardUseByText": "This reward must be redeemed by 8/4/2026 8:37:21 PM (UTC).",
       "ChangeHistory": [
         {
           "observed_at": "2026-07-05T12:51:52+00:00",
@@ -1983,6 +2299,26 @@
               "to": "2026-08-04T20:22:18.162251+00:00"
             }
           ]
+        },
+        {
+          "observed_at": "2026-07-05T20:37:25+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-08-04T20:22:18.162251+00:00",
+              "to": "2026-08-04T20:37:17.9115062+00:00"
+            },
+            {
+              "field": "RewardDescription",
+              "from": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Shanghai (Baoshan), China for 4 nights sailing on 9/23/2026 in an interior cabin. Taxes, gratuities, and other fees may apply. Dive headfirst into adventure on a 4-night cruise to discover the wonders of Asia. Depart from Shanghai (Baoshan), China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region.",
+              "to": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Shanghai (Baoshan), China for 4 nights sailing on 9/23/2026 in an interior cabin. Taxes, gratuities, and other fees may apply. \n\nDive headfirst into adventure on a 4-night cruise to discover the wonders of Asia. Depart from Shanghai (Baoshan), China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region."
+            },
+            {
+              "field": "RewardUseByText",
+              "from": null,
+              "to": "This reward must be redeemed by 8/4/2026 8:37:21 PM (UTC)."
+            }
+          ]
         }
       ]
     },
@@ -2008,8 +2344,25 @@
       "ExpireTime": "2026-07-24T06:59:59+00:00",
       "IsPremium": false,
       "RewardURL": null,
-      "RewardDescription": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Shanghai (Baoshan), China for 4 nights sailing on 7/23/2026 in an interior cabin. Taxes, gratuities, and other fees may apply. Dive headfirst into adventure on a 4-night cruise to discover the wonders of Asia. Depart from Shanghai (Baoshan), China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region.",
-      "ChangeHistory": []
+      "RewardDescription": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Shanghai (Baoshan), China for 4 nights sailing on 7/23/2026 in an interior cabin. Taxes, gratuities, and other fees may apply. \n\nDive headfirst into adventure on a 4-night cruise to discover the wonders of Asia. Depart from Shanghai (Baoshan), China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region.",
+      "RewardUseByText": "This reward must be redeemed by 7/24/2026 6:59:59 AM (UTC).",
+      "ChangeHistory": [
+        {
+          "observed_at": "2026-07-05T20:37:25+00:00",
+          "changes": [
+            {
+              "field": "RewardDescription",
+              "from": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Shanghai (Baoshan), China for 4 nights sailing on 7/23/2026 in an interior cabin. Taxes, gratuities, and other fees may apply. Dive headfirst into adventure on a 4-night cruise to discover the wonders of Asia. Depart from Shanghai (Baoshan), China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region.",
+              "to": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Shanghai (Baoshan), China for 4 nights sailing on 7/23/2026 in an interior cabin. Taxes, gratuities, and other fees may apply. \n\nDive headfirst into adventure on a 4-night cruise to discover the wonders of Asia. Depart from Shanghai (Baoshan), China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region."
+            },
+            {
+              "field": "RewardUseByText",
+              "from": null,
+              "to": "This reward must be redeemed by 7/24/2026 6:59:59 AM (UTC)."
+            }
+          ]
+        }
+      ]
     },
     {
       "AwardID": 11025,
@@ -2033,8 +2386,25 @@
       "ExpireTime": "2026-08-01T06:59:59+00:00",
       "IsPremium": false,
       "RewardURL": null,
-      "RewardDescription": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Hong Kong, China for 5 nights sailing on 11/06/2026 in an interior cabin. Taxes, gratuities, and other fees may apply. Dive headfirst into adventure on a 5-night cruise to discover the wonders of Asia. Depart from Hong Kong, China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region.",
-      "ChangeHistory": []
+      "RewardDescription": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Hong Kong, China for 5 nights sailing on 11/06/2026 in an interior cabin. Taxes, gratuities, and other fees may apply. \n\nDive headfirst into adventure on a 5-night cruise to discover the wonders of Asia. Depart from Hong Kong, China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region.",
+      "RewardUseByText": "This reward must be redeemed by 8/1/2026 6:59:59 AM (UTC).",
+      "ChangeHistory": [
+        {
+          "observed_at": "2026-07-05T20:37:25+00:00",
+          "changes": [
+            {
+              "field": "RewardDescription",
+              "from": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Hong Kong, China for 5 nights sailing on 11/06/2026 in an interior cabin. Taxes, gratuities, and other fees may apply. Dive headfirst into adventure on a 5-night cruise to discover the wonders of Asia. Depart from Hong Kong, China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region.",
+              "to": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Hong Kong, China for 5 nights sailing on 11/06/2026 in an interior cabin. Taxes, gratuities, and other fees may apply. \n\nDive headfirst into adventure on a 5-night cruise to discover the wonders of Asia. Depart from Hong Kong, China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region."
+            },
+            {
+              "field": "RewardUseByText",
+              "from": null,
+              "to": "This reward must be redeemed by 8/1/2026 6:59:59 AM (UTC)."
+            }
+          ]
+        }
+      ]
     },
     {
       "AwardID": 11008,
@@ -2058,8 +2428,25 @@
       "ExpireTime": "2026-08-01T06:59:59+00:00",
       "IsPremium": false,
       "RewardURL": null,
-      "RewardDescription": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Shanghai (Baoshan), China for 5 nights sailing on 8/03/2026 in an interior cabin. Taxes, gratuities, and other fees may apply. Dive headfirst into adventure on a 5-night cruise to discover the wonders of Asia. Depart from Shanghai (Baoshan), China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region.",
-      "ChangeHistory": []
+      "RewardDescription": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Shanghai (Baoshan), China for 5 nights sailing on 8/03/2026 in an interior cabin. Taxes, gratuities, and other fees may apply. \n\nDive headfirst into adventure on a 5-night cruise to discover the wonders of Asia. Depart from Shanghai (Baoshan), China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region.",
+      "RewardUseByText": "This reward must be redeemed by 8/1/2026 6:59:59 AM (UTC).",
+      "ChangeHistory": [
+        {
+          "observed_at": "2026-07-05T20:37:25+00:00",
+          "changes": [
+            {
+              "field": "RewardDescription",
+              "from": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Shanghai (Baoshan), China for 5 nights sailing on 8/03/2026 in an interior cabin. Taxes, gratuities, and other fees may apply. Dive headfirst into adventure on a 5-night cruise to discover the wonders of Asia. Depart from Shanghai (Baoshan), China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region.",
+              "to": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Shanghai (Baoshan), China for 5 nights sailing on 8/03/2026 in an interior cabin. Taxes, gratuities, and other fees may apply. \n\nDive headfirst into adventure on a 5-night cruise to discover the wonders of Asia. Depart from Shanghai (Baoshan), China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region."
+            },
+            {
+              "field": "RewardUseByText",
+              "from": null,
+              "to": "This reward must be redeemed by 8/1/2026 6:59:59 AM (UTC)."
+            }
+          ]
+        }
+      ]
     },
     {
       "AwardID": 11011,
@@ -2083,8 +2470,25 @@
       "ExpireTime": "2026-07-31T18:59:59+00:00",
       "IsPremium": false,
       "RewardURL": null,
-      "RewardDescription": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Shanghai (Baoshan), China for 5 nights sailing on 9/01/2026 in an interior cabin. Taxes, gratuities, and other fees may apply. Dive headfirst into adventure on a 5-night cruise to discover the wonders of Asia. Depart from Shanghai (Baoshan), China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region.",
-      "ChangeHistory": []
+      "RewardDescription": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Shanghai (Baoshan), China for 5 nights sailing on 9/01/2026 in an interior cabin. Taxes, gratuities, and other fees may apply. \n\nDive headfirst into adventure on a 5-night cruise to discover the wonders of Asia. Depart from Shanghai (Baoshan), China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region.",
+      "RewardUseByText": "This reward must be redeemed by 7/31/2026 6:59:59 PM (UTC).",
+      "ChangeHistory": [
+        {
+          "observed_at": "2026-07-05T20:37:25+00:00",
+          "changes": [
+            {
+              "field": "RewardDescription",
+              "from": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Shanghai (Baoshan), China for 5 nights sailing on 9/01/2026 in an interior cabin. Taxes, gratuities, and other fees may apply. Dive headfirst into adventure on a 5-night cruise to discover the wonders of Asia. Depart from Shanghai (Baoshan), China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region.",
+              "to": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Shanghai (Baoshan), China for 5 nights sailing on 9/01/2026 in an interior cabin. Taxes, gratuities, and other fees may apply. \n\nDive headfirst into adventure on a 5-night cruise to discover the wonders of Asia. Depart from Shanghai (Baoshan), China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region."
+            },
+            {
+              "field": "RewardUseByText",
+              "from": null,
+              "to": "This reward must be redeemed by 7/31/2026 6:59:59 PM (UTC)."
+            }
+          ]
+        }
+      ]
     },
     {
       "AwardID": 11017,
@@ -2108,8 +2512,25 @@
       "ExpireTime": "2026-08-01T06:59:59+00:00",
       "IsPremium": false,
       "RewardURL": null,
-      "RewardDescription": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Shanghai (Baoshan), China for 5 nights sailing on 10/11/2026 in an interior cabin. Taxes, gratuities, and other fees may apply. Dive headfirst into adventure on a 5-night cruise to discover the wonders of Asia. Depart from Shanghai (Baoshan), China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region.",
-      "ChangeHistory": []
+      "RewardDescription": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Shanghai (Baoshan), China for 5 nights sailing on 10/11/2026 in an interior cabin. Taxes, gratuities, and other fees may apply. \n\nDive headfirst into adventure on a 5-night cruise to discover the wonders of Asia. Depart from Shanghai (Baoshan), China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region.",
+      "RewardUseByText": "This reward must be redeemed by 8/1/2026 6:59:59 AM (UTC).",
+      "ChangeHistory": [
+        {
+          "observed_at": "2026-07-05T20:37:25+00:00",
+          "changes": [
+            {
+              "field": "RewardDescription",
+              "from": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Shanghai (Baoshan), China for 5 nights sailing on 10/11/2026 in an interior cabin. Taxes, gratuities, and other fees may apply. Dive headfirst into adventure on a 5-night cruise to discover the wonders of Asia. Depart from Shanghai (Baoshan), China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region.",
+              "to": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Shanghai (Baoshan), China for 5 nights sailing on 10/11/2026 in an interior cabin. Taxes, gratuities, and other fees may apply. \n\nDive headfirst into adventure on a 5-night cruise to discover the wonders of Asia. Depart from Shanghai (Baoshan), China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region."
+            },
+            {
+              "field": "RewardUseByText",
+              "from": null,
+              "to": "This reward must be redeemed by 8/1/2026 6:59:59 AM (UTC)."
+            }
+          ]
+        }
+      ]
     },
     {
       "AwardID": 11020,
@@ -2133,8 +2554,25 @@
       "ExpireTime": "2026-08-01T06:59:59+00:00",
       "IsPremium": false,
       "RewardURL": null,
-      "RewardDescription": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Shanghai (Baoshan), China for 5 nights sailing on 11/01/2026 in an interior cabin. Taxes, gratuities, and other fees may apply. Dive headfirst into adventure on a 5-night cruise to discover the wonders of Asia. Depart from Shanghai (Baoshan), China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region.",
-      "ChangeHistory": []
+      "RewardDescription": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Shanghai (Baoshan), China for 5 nights sailing on 11/01/2026 in an interior cabin. Taxes, gratuities, and other fees may apply. \n\nDive headfirst into adventure on a 5-night cruise to discover the wonders of Asia. Depart from Shanghai (Baoshan), China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region.",
+      "RewardUseByText": "This reward must be redeemed by 8/1/2026 6:59:59 AM (UTC).",
+      "ChangeHistory": [
+        {
+          "observed_at": "2026-07-05T20:37:25+00:00",
+          "changes": [
+            {
+              "field": "RewardDescription",
+              "from": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Shanghai (Baoshan), China for 5 nights sailing on 11/01/2026 in an interior cabin. Taxes, gratuities, and other fees may apply. Dive headfirst into adventure on a 5-night cruise to discover the wonders of Asia. Depart from Shanghai (Baoshan), China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region.",
+              "to": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Shanghai (Baoshan), China for 5 nights sailing on 11/01/2026 in an interior cabin. Taxes, gratuities, and other fees may apply. \n\nDive headfirst into adventure on a 5-night cruise to discover the wonders of Asia. Depart from Shanghai (Baoshan), China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region."
+            },
+            {
+              "field": "RewardUseByText",
+              "from": null,
+              "to": "This reward must be redeemed by 8/1/2026 6:59:59 AM (UTC)."
+            }
+          ]
+        }
+      ]
     },
     {
       "AwardID": 11023,
@@ -2158,8 +2596,25 @@
       "ExpireTime": "2026-08-01T06:59:59+00:00",
       "IsPremium": false,
       "RewardURL": null,
-      "RewardDescription": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Hong Kong, China for 5 nights sailing on 12/13/2026 in an interior cabin. Taxes, gratuities, and other fees may apply. Dive headfirst into adventure on a 5-night cruise to discover the wonders of Asia. Depart from Hong Kong, China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region.",
-      "ChangeHistory": []
+      "RewardDescription": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Hong Kong, China for 5 nights sailing on 12/13/2026 in an interior cabin. Taxes, gratuities, and other fees may apply. \n\nDive headfirst into adventure on a 5-night cruise to discover the wonders of Asia. Depart from Hong Kong, China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region.",
+      "RewardUseByText": "This reward must be redeemed by 8/1/2026 6:59:59 AM (UTC).",
+      "ChangeHistory": [
+        {
+          "observed_at": "2026-07-05T20:37:25+00:00",
+          "changes": [
+            {
+              "field": "RewardDescription",
+              "from": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Hong Kong, China for 5 nights sailing on 12/13/2026 in an interior cabin. Taxes, gratuities, and other fees may apply. Dive headfirst into adventure on a 5-night cruise to discover the wonders of Asia. Depart from Hong Kong, China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region.",
+              "to": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Hong Kong, China for 5 nights sailing on 12/13/2026 in an interior cabin. Taxes, gratuities, and other fees may apply. \n\nDive headfirst into adventure on a 5-night cruise to discover the wonders of Asia. Depart from Hong Kong, China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region."
+            },
+            {
+              "field": "RewardUseByText",
+              "from": null,
+              "to": "This reward must be redeemed by 8/1/2026 6:59:59 AM (UTC)."
+            }
+          ]
+        }
+      ]
     },
     {
       "AwardID": 11012,
@@ -2183,8 +2638,25 @@
       "ExpireTime": "2026-07-31T18:59:59+00:00",
       "IsPremium": false,
       "RewardURL": null,
-      "RewardDescription": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Shanghai (Baoshan), China for 8 nights sailing on 9/11/2026 in an interior cabin. Taxes, gratuities, and other fees may apply. Dive headfirst into adventure on a 8-night cruise to discover the wonders of Asia. Depart from Shanghai (Baoshan), China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region.",
-      "ChangeHistory": []
+      "RewardDescription": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Shanghai (Baoshan), China for 8 nights sailing on 9/11/2026 in an interior cabin. Taxes, gratuities, and other fees may apply. \n\nDive headfirst into adventure on a 8-night cruise to discover the wonders of Asia. Depart from Shanghai (Baoshan), China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region.",
+      "RewardUseByText": "This reward must be redeemed by 7/31/2026 6:59:59 PM (UTC).",
+      "ChangeHistory": [
+        {
+          "observed_at": "2026-07-05T20:37:25+00:00",
+          "changes": [
+            {
+              "field": "RewardDescription",
+              "from": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Shanghai (Baoshan), China for 8 nights sailing on 9/11/2026 in an interior cabin. Taxes, gratuities, and other fees may apply. Dive headfirst into adventure on a 8-night cruise to discover the wonders of Asia. Depart from Shanghai (Baoshan), China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region.",
+              "to": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Shanghai (Baoshan), China for 8 nights sailing on 9/11/2026 in an interior cabin. Taxes, gratuities, and other fees may apply. \n\nDive headfirst into adventure on a 8-night cruise to discover the wonders of Asia. Depart from Shanghai (Baoshan), China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region."
+            },
+            {
+              "field": "RewardUseByText",
+              "from": null,
+              "to": "This reward must be redeemed by 7/31/2026 6:59:59 PM (UTC)."
+            }
+          ]
+        }
+      ]
     },
     {
       "AwardID": 11021,
@@ -2208,8 +2680,25 @@
       "ExpireTime": "2026-08-01T06:59:59+00:00",
       "IsPremium": false,
       "RewardURL": null,
-      "RewardDescription": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Hong Kong, China for 8 nights sailing on 1/03/2027 in an interior cabin. Taxes, gratuities, and other fees may apply. Dive headfirst into adventure on a 8-night cruise to discover the wonders of Asia. Depart from Hong Kong, China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region.",
-      "ChangeHistory": []
+      "RewardDescription": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Hong Kong, China for 8 nights sailing on 1/03/2027 in an interior cabin. Taxes, gratuities, and other fees may apply. \n\nDive headfirst into adventure on a 8-night cruise to discover the wonders of Asia. Depart from Hong Kong, China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region.",
+      "RewardUseByText": "This reward must be redeemed by 8/1/2026 6:59:59 AM (UTC).",
+      "ChangeHistory": [
+        {
+          "observed_at": "2026-07-05T20:37:25+00:00",
+          "changes": [
+            {
+              "field": "RewardDescription",
+              "from": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Hong Kong, China for 8 nights sailing on 1/03/2027 in an interior cabin. Taxes, gratuities, and other fees may apply. Dive headfirst into adventure on a 8-night cruise to discover the wonders of Asia. Depart from Hong Kong, China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region.",
+              "to": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Hong Kong, China for 8 nights sailing on 1/03/2027 in an interior cabin. Taxes, gratuities, and other fees may apply. \n\nDive headfirst into adventure on a 8-night cruise to discover the wonders of Asia. Depart from Hong Kong, China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region."
+            },
+            {
+              "field": "RewardUseByText",
+              "from": null,
+              "to": "This reward must be redeemed by 8/1/2026 6:59:59 AM (UTC)."
+            }
+          ]
+        }
+      ]
     },
     {
       "AwardID": 11019,
@@ -2233,8 +2722,25 @@
       "ExpireTime": "2026-08-01T06:59:59+00:00",
       "IsPremium": false,
       "RewardURL": null,
-      "RewardDescription": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Shanghai (Baoshan), China for 8 nights sailing on 10/24/2026 in an interior cabin. Taxes, gratuities, and other fees may apply. Dive headfirst into adventure on a 8-night cruise to discover the wonders of Asia. Depart from Shanghai (Baoshan), China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region.",
-      "ChangeHistory": []
+      "RewardDescription": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Shanghai (Baoshan), China for 8 nights sailing on 10/24/2026 in an interior cabin. Taxes, gratuities, and other fees may apply. \n\nDive headfirst into adventure on a 8-night cruise to discover the wonders of Asia. Depart from Shanghai (Baoshan), China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region.",
+      "RewardUseByText": "This reward must be redeemed by 8/1/2026 6:59:59 AM (UTC).",
+      "ChangeHistory": [
+        {
+          "observed_at": "2026-07-05T20:37:25+00:00",
+          "changes": [
+            {
+              "field": "RewardDescription",
+              "from": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Shanghai (Baoshan), China for 8 nights sailing on 10/24/2026 in an interior cabin. Taxes, gratuities, and other fees may apply. Dive headfirst into adventure on a 8-night cruise to discover the wonders of Asia. Depart from Shanghai (Baoshan), China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region.",
+              "to": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Shanghai (Baoshan), China for 8 nights sailing on 10/24/2026 in an interior cabin. Taxes, gratuities, and other fees may apply. \n\nDive headfirst into adventure on a 8-night cruise to discover the wonders of Asia. Depart from Shanghai (Baoshan), China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region."
+            },
+            {
+              "field": "RewardUseByText",
+              "from": null,
+              "to": "This reward must be redeemed by 8/1/2026 6:59:59 AM (UTC)."
+            }
+          ]
+        }
+      ]
     },
     {
       "AwardID": 11022,
@@ -2258,8 +2764,25 @@
       "ExpireTime": "2026-08-01T06:59:59+00:00",
       "IsPremium": false,
       "RewardURL": null,
-      "RewardDescription": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Hong Kong, China for 9 nights sailing on 12/20/2026 in an interior cabin. Taxes, gratuities, and other fees may apply. Dive headfirst into adventure on a 9-night cruise to discover the wonders of Asia. Depart from Hong Kong, China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region.",
-      "ChangeHistory": []
+      "RewardDescription": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Hong Kong, China for 9 nights sailing on 12/20/2026 in an interior cabin. Taxes, gratuities, and other fees may apply. \n\nDive headfirst into adventure on a 9-night cruise to discover the wonders of Asia. Depart from Hong Kong, China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region.",
+      "RewardUseByText": "This reward must be redeemed by 8/1/2026 6:59:59 AM (UTC).",
+      "ChangeHistory": [
+        {
+          "observed_at": "2026-07-05T20:37:25+00:00",
+          "changes": [
+            {
+              "field": "RewardDescription",
+              "from": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Hong Kong, China for 9 nights sailing on 12/20/2026 in an interior cabin. Taxes, gratuities, and other fees may apply. Dive headfirst into adventure on a 9-night cruise to discover the wonders of Asia. Depart from Hong Kong, China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region.",
+              "to": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Hong Kong, China for 9 nights sailing on 12/20/2026 in an interior cabin. Taxes, gratuities, and other fees may apply. \n\nDive headfirst into adventure on a 9-night cruise to discover the wonders of Asia. Depart from Hong Kong, China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region."
+            },
+            {
+              "field": "RewardUseByText",
+              "from": null,
+              "to": "This reward must be redeemed by 8/1/2026 6:59:59 AM (UTC)."
+            }
+          ]
+        }
+      ]
     },
     {
       "AwardID": 10371,
@@ -2280,10 +2803,11 @@
       "SnipeText": "NEW PORTS",
       "SnipeCategory": "Custom",
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-04T20:22:18.162251+00:00",
+      "ExpireTime": "2026-08-04T20:37:17.9115062+00:00",
       "IsPremium": false,
       "RewardURL": null,
-      "RewardDescription": "Now, exclusively with myVIP, enjoy a highly discounted rate with added benefits on your next voyage from ports in San Juan & North America. Set Sail with a $1,200 double-occupancy rate for a 6-Night Cruise in an UPGRADED SEA TERRACE on Virgin Voyages out of San Juan & North America! Complimentary beverages at the casino bar and waived withdrawal fees are included in this offer. Taxes & Port Fees apply. Sailings subject to change. Ready for an adults-only escape at sea? Virgin Voyages is redefining the cruise experience with award-winning dining, immersive entertainment, and luxurious, always-included perks—no buffets, no kids, no ordinary cruises",
+      "RewardDescription": "Now, exclusively with myVIP, enjoy a highly discounted rate with added benefits on your next voyage from ports in San Juan & North America. \n\nSet Sail with a $1,200 double-occupancy rate for a 6-Night Cruise in an UPGRADED SEA TERRACE on Virgin Voyages out of San Juan & North America! Complimentary beverages at the casino bar and waived withdrawal fees are included in this offer. Taxes & Port Fees apply. Sailings subject to change. \n\nReady for an adults-only escape at sea? Virgin Voyages is redefining the cruise experience with award-winning dining, immersive entertainment, and luxurious, always-included perks—no buffets, no kids, no ordinary cruises",
+      "RewardUseByText": "This reward must be redeemed by 8/4/2026 8:37:24 PM (UTC).",
       "ChangeHistory": [
         {
           "observed_at": "2026-07-05T12:51:52+00:00",
@@ -2422,6 +2946,26 @@
               "field": "ExpireTime",
               "from": "2026-08-04T20:07:17.0773063+00:00",
               "to": "2026-08-04T20:22:18.162251+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-07-05T20:37:25+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-08-04T20:22:18.162251+00:00",
+              "to": "2026-08-04T20:37:17.9115062+00:00"
+            },
+            {
+              "field": "RewardDescription",
+              "from": "Now, exclusively with myVIP, enjoy a highly discounted rate with added benefits on your next voyage from ports in San Juan & North America. Set Sail with a $1,200 double-occupancy rate for a 6-Night Cruise in an UPGRADED SEA TERRACE on Virgin Voyages out of San Juan & North America! Complimentary beverages at the casino bar and waived withdrawal fees are included in this offer. Taxes & Port Fees apply. Sailings subject to change. Ready for an adults-only escape at sea? Virgin Voyages is redefining the cruise experience with award-winning dining, immersive entertainment, and luxurious, always-included perks—no buffets, no kids, no ordinary cruises",
+              "to": "Now, exclusively with myVIP, enjoy a highly discounted rate with added benefits on your next voyage from ports in San Juan & North America. \n\nSet Sail with a $1,200 double-occupancy rate for a 6-Night Cruise in an UPGRADED SEA TERRACE on Virgin Voyages out of San Juan & North America! Complimentary beverages at the casino bar and waived withdrawal fees are included in this offer. Taxes & Port Fees apply. Sailings subject to change. \n\nReady for an adults-only escape at sea? Virgin Voyages is redefining the cruise experience with award-winning dining, immersive entertainment, and luxurious, always-included perks—no buffets, no kids, no ordinary cruises"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": null,
+              "to": "This reward must be redeemed by 8/4/2026 8:37:24 PM (UTC)."
             }
           ]
         }
@@ -2446,10 +2990,11 @@
       "SnipeText": "NEW PORTS",
       "SnipeCategory": "Custom",
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-04T20:22:18.162251+00:00",
+      "ExpireTime": "2026-08-04T20:37:17.9115062+00:00",
       "IsPremium": false,
       "RewardURL": null,
-      "RewardDescription": "Now, exclusively with myVIP, enjoy a highly discounted rate with added benefits on your next voyage from ports in San Juan & North America. Set Sail with a $1000 double-occupancy rate for a 5-Night Cruise in an UPGRADED SEA TERRACE on Virgin Voyages out of San Juan & North America! Complimentary beverages at the casino bar and waived withdrawal fees are included in this offer. Taxes & Port Fees apply. Sailings subject to change. Ready for an adults-only escape at sea? Virgin Voyages is redefining the cruise experience with award-winning dining, immersive entertainment, and luxurious, always-included perks—no buffets, no kids, no ordinary cruises.",
+      "RewardDescription": "Now, exclusively with myVIP, enjoy a highly discounted rate with added benefits on your next voyage from ports in San Juan & North America. \n\nSet Sail with a $1000 double-occupancy rate for a 5-Night Cruise in an UPGRADED SEA TERRACE on Virgin Voyages out of San Juan & North America! Complimentary beverages at the casino bar and waived withdrawal fees are included in this offer. Taxes & Port Fees apply. Sailings subject to change. \n\nReady for an adults-only escape at sea? Virgin Voyages is redefining the cruise experience with award-winning dining, immersive entertainment, and luxurious, always-included perks—no buffets, no kids, no ordinary cruises.",
+      "RewardUseByText": "This reward must be redeemed by 8/4/2026 8:37:24 PM (UTC).",
       "ChangeHistory": [
         {
           "observed_at": "2026-07-05T12:51:52+00:00",
@@ -2588,6 +3133,26 @@
               "field": "ExpireTime",
               "from": "2026-08-04T20:07:17.0773063+00:00",
               "to": "2026-08-04T20:22:18.162251+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-07-05T20:37:25+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-08-04T20:22:18.162251+00:00",
+              "to": "2026-08-04T20:37:17.9115062+00:00"
+            },
+            {
+              "field": "RewardDescription",
+              "from": "Now, exclusively with myVIP, enjoy a highly discounted rate with added benefits on your next voyage from ports in San Juan & North America. Set Sail with a $1000 double-occupancy rate for a 5-Night Cruise in an UPGRADED SEA TERRACE on Virgin Voyages out of San Juan & North America! Complimentary beverages at the casino bar and waived withdrawal fees are included in this offer. Taxes & Port Fees apply. Sailings subject to change. Ready for an adults-only escape at sea? Virgin Voyages is redefining the cruise experience with award-winning dining, immersive entertainment, and luxurious, always-included perks—no buffets, no kids, no ordinary cruises.",
+              "to": "Now, exclusively with myVIP, enjoy a highly discounted rate with added benefits on your next voyage from ports in San Juan & North America. \n\nSet Sail with a $1000 double-occupancy rate for a 5-Night Cruise in an UPGRADED SEA TERRACE on Virgin Voyages out of San Juan & North America! Complimentary beverages at the casino bar and waived withdrawal fees are included in this offer. Taxes & Port Fees apply. Sailings subject to change. \n\nReady for an adults-only escape at sea? Virgin Voyages is redefining the cruise experience with award-winning dining, immersive entertainment, and luxurious, always-included perks—no buffets, no kids, no ordinary cruises."
+            },
+            {
+              "field": "RewardUseByText",
+              "from": null,
+              "to": "This reward must be redeemed by 8/4/2026 8:37:24 PM (UTC)."
             }
           ]
         }
@@ -2612,10 +3177,11 @@
       "SnipeText": "NEW PORTS",
       "SnipeCategory": "Custom",
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-04T20:22:18.162251+00:00",
+      "ExpireTime": "2026-08-04T20:37:17.9115062+00:00",
       "IsPremium": false,
       "RewardURL": null,
-      "RewardDescription": "Now, exclusively with myVIP, enjoy a highly discounted rate with added benefits on your next voyage from ports in San Juan & North America. Set Sail with a $1,400 double-occupancy rate for a 7-Night Cruise in an UPGRADED SEA TERRACE on Virgin Voyages out of San Juan & North America! Complimentary beverages at the casino bar and waived withdrawal fees are included in this offer. Taxes & Port Fees apply. Sailings subject to change. Ready for an adults-only escape at sea? Virgin Voyages is redefining the cruise experience with award-winning dining, immersive entertainment, and luxurious, always-included perks—no buffets, no kids, no ordinary cruises.",
+      "RewardDescription": "Now, exclusively with myVIP, enjoy a highly discounted rate with added benefits on your next voyage from ports in San Juan & North America. \n\nSet Sail with a $1,400 double-occupancy rate for a 7-Night Cruise in an UPGRADED SEA TERRACE on Virgin Voyages out of San Juan & North America! Complimentary beverages at the casino bar and waived withdrawal fees are included in this offer. Taxes & Port Fees apply. Sailings subject to change. \n\nReady for an adults-only escape at sea? Virgin Voyages is redefining the cruise experience with award-winning dining, immersive entertainment, and luxurious, always-included perks—no buffets, no kids, no ordinary cruises.",
+      "RewardUseByText": "This reward must be redeemed by 8/4/2026 8:37:24 PM (UTC).",
       "ChangeHistory": [
         {
           "observed_at": "2026-07-05T12:51:52+00:00",
@@ -2754,6 +3320,26 @@
               "field": "ExpireTime",
               "from": "2026-08-04T20:07:17.0773063+00:00",
               "to": "2026-08-04T20:22:18.162251+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-07-05T20:37:25+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-08-04T20:22:18.162251+00:00",
+              "to": "2026-08-04T20:37:17.9115062+00:00"
+            },
+            {
+              "field": "RewardDescription",
+              "from": "Now, exclusively with myVIP, enjoy a highly discounted rate with added benefits on your next voyage from ports in San Juan & North America. Set Sail with a $1,400 double-occupancy rate for a 7-Night Cruise in an UPGRADED SEA TERRACE on Virgin Voyages out of San Juan & North America! Complimentary beverages at the casino bar and waived withdrawal fees are included in this offer. Taxes & Port Fees apply. Sailings subject to change. Ready for an adults-only escape at sea? Virgin Voyages is redefining the cruise experience with award-winning dining, immersive entertainment, and luxurious, always-included perks—no buffets, no kids, no ordinary cruises.",
+              "to": "Now, exclusively with myVIP, enjoy a highly discounted rate with added benefits on your next voyage from ports in San Juan & North America. \n\nSet Sail with a $1,400 double-occupancy rate for a 7-Night Cruise in an UPGRADED SEA TERRACE on Virgin Voyages out of San Juan & North America! Complimentary beverages at the casino bar and waived withdrawal fees are included in this offer. Taxes & Port Fees apply. Sailings subject to change. \n\nReady for an adults-only escape at sea? Virgin Voyages is redefining the cruise experience with award-winning dining, immersive entertainment, and luxurious, always-included perks—no buffets, no kids, no ordinary cruises."
+            },
+            {
+              "field": "RewardUseByText",
+              "from": null,
+              "to": "This reward must be redeemed by 8/4/2026 8:37:24 PM (UTC)."
             }
           ]
         }
