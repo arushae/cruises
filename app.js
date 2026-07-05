@@ -125,12 +125,7 @@ function formatChangeValue(field, value) {
 }
 
 function shouldDisplayObservedChange(change) {
-  if (change.field === 'RewardDescription') return false;
-  if (
-    change.field === 'RewardUseByText'
-    && (change.from == null || change.from === '')
-    && change.to
-  ) return false;
+  if (['RewardDescription', 'RewardUseByText', 'SnipeText'].includes(change.field)) return false;
   if (change.field !== 'ExpireTime') return true;
   const fromTime = new Date(change.from).getTime();
   const toTime = new Date(change.to).getTime();

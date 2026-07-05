@@ -43,6 +43,7 @@ td.toggle-cell { position: relative; }
 .sort-button:hover { color: #087f8c; background: #e8f5f6; }
 .sort-button:focus-visible { outline: 3px solid #8dd9dc; }
 .sort-button span { display: inline-block; flex: 0 0 .8em; width: .8em; color: #087f8c; font-size: .9rem; }
+.column-label { font-weight: 750; line-height: 1.25; }
 .column-help-button { width: 1rem; height: 1rem; margin-left: 5px; padding: 0; border: 1px solid #7bbbc0; border-radius: 50%; color: #087f8c; background: #e8f5f6; font: 700 .62rem/1 sans-serif; cursor: pointer; vertical-align: middle; }
 .column-help-button:hover { color: white; background: #087f8c; }
 .column-help-button:focus-visible { outline: 3px solid #8dd9dc; outline-offset: 2px; }
