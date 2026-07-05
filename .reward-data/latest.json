@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-07-05T19:52:20",
+  "checked_at": "2026-07-05T20:03:38",
   "source_url": "https://loyalty-award-api.myvip.co/api/proxy/rewards/section/destination/8",
   "rewards": {
     "894": {
@@ -14,7 +14,7 @@
       "SnipeText": null,
       "SnipeCategory": null,
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-04T19:52:20.3416222+00:00",
+      "ExpireTime": "2026-08-04T20:03:38.5380892+00:00",
       "IsPremium": true,
       "RewardURL": null,
       "RewardDescription": null
@@ -31,7 +31,7 @@
       "SnipeText": null,
       "SnipeCategory": null,
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-04T19:52:20.3416222+00:00",
+      "ExpireTime": "2026-08-04T20:03:38.5380892+00:00",
       "IsPremium": false,
       "RewardURL": null,
       "RewardDescription": null
@@ -48,7 +48,7 @@
       "SnipeText": null,
       "SnipeCategory": null,
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-04T19:52:20.3416222+00:00",
+      "ExpireTime": "2026-08-04T20:03:38.5380892+00:00",
       "IsPremium": false,
       "RewardURL": null,
       "RewardDescription": null
@@ -65,7 +65,7 @@
       "SnipeText": null,
       "SnipeCategory": null,
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-04T19:52:20.3416222+00:00",
+      "ExpireTime": "2026-08-04T20:03:38.5380892+00:00",
       "IsPremium": true,
       "RewardURL": null,
       "RewardDescription": null
@@ -82,7 +82,7 @@
       "SnipeText": null,
       "SnipeCategory": null,
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-04T19:52:20.3416222+00:00",
+      "ExpireTime": "2026-08-04T20:03:38.5380892+00:00",
       "IsPremium": false,
       "RewardURL": null,
       "RewardDescription": null
@@ -99,7 +99,7 @@
       "SnipeText": null,
       "SnipeCategory": null,
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-04T19:52:20.3416222+00:00",
+      "ExpireTime": "2026-08-04T20:03:38.5380892+00:00",
       "IsPremium": false,
       "RewardURL": null,
       "RewardDescription": null
@@ -252,7 +252,7 @@
       "SnipeText": "1 left",
       "SnipeCategory": "NLeft",
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-04T19:52:20.3416222+00:00",
+      "ExpireTime": "2026-08-04T20:03:38.5380892+00:00",
       "IsPremium": false,
       "RewardURL": null,
       "RewardDescription": null
@@ -456,7 +456,7 @@
       "SnipeText": "NEW PORTS",
       "SnipeCategory": "Custom",
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-04T19:52:20.3416222+00:00",
+      "ExpireTime": "2026-08-04T20:03:38.5380892+00:00",
       "IsPremium": false,
       "RewardURL": null,
       "RewardDescription": null
@@ -473,7 +473,7 @@
       "SnipeText": "NEW PORTS",
       "SnipeCategory": "Custom",
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-04T19:52:20.3416222+00:00",
+      "ExpireTime": "2026-08-04T20:03:38.5380892+00:00",
       "IsPremium": false,
       "RewardURL": null,
       "RewardDescription": null
@@ -490,7 +490,7 @@
       "SnipeText": "NEW PORTS",
       "SnipeCategory": "Custom",
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-04T19:52:20.3416222+00:00",
+      "ExpireTime": "2026-08-04T20:03:38.5380892+00:00",
       "IsPremium": false,
       "RewardURL": null,
       "RewardDescription": null
@@ -507,7 +507,7 @@
       "SnipeText": null,
       "SnipeCategory": null,
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-04T19:52:20.3416222+00:00",
+      "ExpireTime": "2026-08-04T20:03:38.5380892+00:00",
       "IsPremium": false,
       "RewardURL": null,
       "RewardDescription": null
@@ -524,7 +524,7 @@
       "SnipeText": null,
       "SnipeCategory": null,
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-04T19:52:20.3416222+00:00",
+      "ExpireTime": "2026-08-04T20:03:38.5380892+00:00",
       "IsPremium": false,
       "RewardURL": null,
       "RewardDescription": null
@@ -541,7 +541,7 @@
       "SnipeText": null,
       "SnipeCategory": null,
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-04T19:52:20.3416222+00:00",
+      "ExpireTime": "2026-08-04T20:03:38.5380892+00:00",
       "IsPremium": false,
       "RewardURL": null,
       "RewardDescription": null
