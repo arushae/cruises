@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-07-05T12:17:09",
+  "checked_at": "2026-07-05T12:51:52",
   "source_url": "https://loyalty-award-api.myvip.co/api/proxy/rewards/section/destination/8",
   "rewards": {
     "894": {
@@ -13,7 +13,7 @@
       "SnipeText": null,
       "SnipeCategory": null,
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-04T12:17:09.0111413+00:00",
+      "ExpireTime": "2026-08-04T12:51:52.1270536+00:00",
       "IsPremium": true,
       "RewardURL": null
     },
@@ -28,7 +28,7 @@
       "SnipeText": null,
       "SnipeCategory": null,
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-04T12:17:09.0111413+00:00",
+      "ExpireTime": "2026-08-04T12:51:52.1270536+00:00",
       "IsPremium": false,
       "RewardURL": null
     },
@@ -43,7 +43,7 @@
       "SnipeText": null,
       "SnipeCategory": null,
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-04T12:17:09.0111413+00:00",
+      "ExpireTime": "2026-08-04T12:51:52.1270536+00:00",
       "IsPremium": false,
       "RewardURL": null
     },
@@ -54,11 +54,11 @@
       "Reward title": "$100 in Onboard Credit",
       "Port": "Any Sailing",
       "Points": 35000,
-      "Quantity": 44,
+      "Quantity": 43,
       "SnipeText": null,
       "SnipeCategory": null,
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-04T12:17:09.0111413+00:00",
+      "ExpireTime": "2026-08-04T12:51:52.1270536+00:00",
       "IsPremium": true,
       "RewardURL": null
     },
@@ -73,7 +73,7 @@
       "SnipeText": null,
       "SnipeCategory": null,
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-04T12:17:09.0111413+00:00",
+      "ExpireTime": "2026-08-04T12:51:52.1270536+00:00",
       "IsPremium": false,
       "RewardURL": null
     },
@@ -88,7 +88,7 @@
       "SnipeText": null,
       "SnipeCategory": null,
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-04T12:17:09.0111413+00:00",
+      "ExpireTime": "2026-08-04T12:51:52.1270536+00:00",
       "IsPremium": false,
       "RewardURL": null
     },
@@ -99,8 +99,8 @@
       "Reward title": "4 Night Jeju Cruise",
       "Port": "Spectrum of the Seas",
       "Points": 230000,
-      "Quantity": 1,
-      "SnipeText": "1 left",
+      "Quantity": 2,
+      "SnipeText": "2 left",
       "SnipeCategory": "NLeft",
       "StrikeOutPrice": null,
       "ExpireTime": "2026-08-01T06:59:59+00:00",
@@ -219,11 +219,11 @@
       "Reward title": "4 Night Busan Cruise",
       "Port": "Spectrum of the Seas",
       "Points": 230000,
-      "Quantity": 2,
-      "SnipeText": "2 left",
+      "Quantity": 1,
+      "SnipeText": "1 left",
       "SnipeCategory": "NLeft",
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-04T12:17:09.0111413+00:00",
+      "ExpireTime": "2026-08-04T12:51:52.1270536+00:00",
       "IsPremium": false,
       "RewardURL": null
     },
@@ -403,7 +403,7 @@
       "SnipeText": "NEW PORTS",
       "SnipeCategory": "Custom",
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-04T12:17:09.0111413+00:00",
+      "ExpireTime": "2026-08-04T12:51:52.1270536+00:00",
       "IsPremium": false,
       "RewardURL": null
     },
@@ -418,7 +418,7 @@
       "SnipeText": "NEW PORTS",
       "SnipeCategory": "Custom",
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-04T12:17:09.0111413+00:00",
+      "ExpireTime": "2026-08-04T12:51:52.1270536+00:00",
       "IsPremium": false,
       "RewardURL": null
     },
@@ -433,7 +433,7 @@
       "SnipeText": "NEW PORTS",
       "SnipeCategory": "Custom",
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-04T12:17:09.0111413+00:00",
+      "ExpireTime": "2026-08-04T12:51:52.1270536+00:00",
       "IsPremium": false,
       "RewardURL": null
     },
@@ -448,7 +448,7 @@
       "SnipeText": null,
       "SnipeCategory": null,
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-04T12:17:09.0111413+00:00",
+      "ExpireTime": "2026-08-04T12:51:52.1270536+00:00",
       "IsPremium": false,
       "RewardURL": null
     },
@@ -463,7 +463,7 @@
       "SnipeText": null,
       "SnipeCategory": null,
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-04T12:17:09.0111413+00:00",
+      "ExpireTime": "2026-08-04T12:51:52.1270536+00:00",
       "IsPremium": false,
       "RewardURL": null
     },
@@ -478,7 +478,7 @@
       "SnipeText": null,
       "SnipeCategory": null,
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-04T12:17:09.0111413+00:00",
+      "ExpireTime": "2026-08-04T12:51:52.1270536+00:00",
       "IsPremium": false,
       "RewardURL": null
     }
