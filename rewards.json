@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-07-05T15:56:59+00:00",
+  "checked_at": "2026-07-05T18:22:29+00:00",
   "check_history": [
     "2026-07-05T09:51:27",
     "2026-07-05T11:04:19",
@@ -10,7 +10,8 @@
     "2026-07-05T12:17:09+00:00",
     "2026-07-05T12:51:52+00:00",
     "2026-07-05T14:42:06+00:00",
-    "2026-07-05T15:56:59+00:00"
+    "2026-07-05T15:56:59+00:00",
+    "2026-07-05T18:22:29+00:00"
   ],
   "source_url": "https://loyalty-award-api.myvip.co/api/proxy/rewards/section/destination/8",
   "rewards": [
@@ -19,6 +20,7 @@
       "OfferID": 40275,
       "Partner": "Norwegian Cruise Line",
       "Reward title": "Enjoy $200 off at NCL",
+      "RewardPageTitle": "Enjoy $200 off at NCL",
       "Port": "Various Ports",
       "Points": 45000,
       "PointHistory": [
@@ -32,9 +34,10 @@
       "SnipeText": null,
       "SnipeCategory": null,
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-04T15:56:59.7039919+00:00",
+      "ExpireTime": "2026-08-04T18:22:29.2032136+00:00",
       "IsPremium": false,
       "RewardURL": null,
+      "RewardDescription": "Our award-winning ships are designed for you to enjoy as you choose while cruising to beautiful destinations around the world. Add a wide range of superb dining options and spectacular entertainment and you’ll experience your best vacation ever.",
       "ChangeHistory": [
         {
           "observed_at": "2026-07-05T12:51:52+00:00",
@@ -65,16 +68,25 @@
               "to": "2026-08-04T15:56:59.7039919+00:00"
             }
           ]
+        },
+        {
+          "observed_at": "2026-07-05T18:22:29+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-08-04T15:56:59.7039919+00:00",
+              "to": "2026-08-04T18:22:29.2032136+00:00"
+            }
+          ]
         }
-      ],
-      "RewardDescription": "Our award-winning ships are designed for you to enjoy as you choose while cruising to beautiful destinations around the world. Add a wide range of superb dining options and spectacular entertainment and you’ll experience your best vacation ever.",
-      "RewardPageTitle": "$200 off your next cruise with Norwegian"
+      ]
     },
     {
       "AwardID": 11001,
       "OfferID": 40274,
       "Partner": "Norwegian Cruise Line",
       "Reward title": "Enjoy $400 off at NCL",
+      "RewardPageTitle": "Enjoy $400 off at NCL",
       "Port": "Various Ports",
       "Points": 65000,
       "PointHistory": [
@@ -88,9 +100,10 @@
       "SnipeText": null,
       "SnipeCategory": null,
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-04T15:56:59.7039919+00:00",
+      "ExpireTime": "2026-08-04T18:22:29.2032136+00:00",
       "IsPremium": false,
       "RewardURL": null,
+      "RewardDescription": "Our award-winning ships are designed for you to enjoy as you choose while cruising to beautiful destinations around the world. Add a wide range of superb dining options and spectacular entertainment and you’ll experience your best vacation ever.",
       "ChangeHistory": [
         {
           "observed_at": "2026-07-05T12:51:52+00:00",
@@ -121,16 +134,25 @@
               "to": "2026-08-04T15:56:59.7039919+00:00"
             }
           ]
+        },
+        {
+          "observed_at": "2026-07-05T18:22:29+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-08-04T15:56:59.7039919+00:00",
+              "to": "2026-08-04T18:22:29.2032136+00:00"
+            }
+          ]
         }
-      ],
-      "RewardDescription": "Our award-winning ships are designed for you to enjoy as you choose while cruising to beautiful destinations around the world. Add a wide range of superb dining options and spectacular entertainment and you’ll experience your best vacation ever.",
-      "RewardPageTitle": "$400 off your next cruise with Norwegian"
+      ]
     },
     {
       "AwardID": 11002,
       "OfferID": 40273,
       "Partner": "Norwegian Cruise Line",
       "Reward title": "Enjoy $600 off at NCL",
+      "RewardPageTitle": "Enjoy $600 off at NCL",
       "Port": "San Diego",
       "Points": 85000,
       "PointHistory": [
@@ -144,9 +166,10 @@
       "SnipeText": null,
       "SnipeCategory": null,
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-04T15:56:59.7039919+00:00",
+      "ExpireTime": "2026-08-04T18:22:29.2032136+00:00",
       "IsPremium": false,
       "RewardURL": null,
+      "RewardDescription": "Our award-winning ships are designed for you to enjoy as you choose while cruising to beautiful destinations around the world. Add a wide range of superb dining options and spectacular entertainment and you’ll experience your best vacation ever.",
       "ChangeHistory": [
         {
           "observed_at": "2026-07-05T12:51:52+00:00",
@@ -177,16 +200,25 @@
               "to": "2026-08-04T15:56:59.7039919+00:00"
             }
           ]
+        },
+        {
+          "observed_at": "2026-07-05T18:22:29+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-08-04T15:56:59.7039919+00:00",
+              "to": "2026-08-04T18:22:29.2032136+00:00"
+            }
+          ]
         }
-      ],
-      "RewardDescription": "Our award-winning ships are designed for you to enjoy as you choose while cruising to beautiful destinations around the world. Add a wide range of superb dining options and spectacular entertainment and you’ll experience your best vacation ever.",
-      "RewardPageTitle": "$600 off your next cruise with Norwegian"
+      ]
     },
     {
       "AwardID": 894,
       "OfferID": 39942,
       "Partner": "Royal Caribbean",
       "Reward title": "$25 in Free Play",
+      "RewardPageTitle": "$25 in Free Play",
       "Port": "Any Sailing",
       "Points": 13000,
       "PointHistory": [
@@ -195,14 +227,15 @@
           "value": 13000
         }
       ],
-      "Quantity": 59,
-      "HighestQuantityObserved": 59,
+      "Quantity": 60,
+      "HighestQuantityObserved": 60,
       "SnipeText": null,
       "SnipeCategory": null,
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-04T15:56:59.7039919+00:00",
+      "ExpireTime": "2026-08-04T18:22:29.2032136+00:00",
       "IsPremium": true,
       "RewardURL": null,
+      "RewardDescription": "This reward entitles you to $25 in Free Play inside Casino Royale, with the purchase of a Royal Caribbean International cruise. Experience the most innovative and exciting cruise line in the travel industry. You will enjoy casual and fine dining, 24 hour room service, daily entertainment, activities and spa facilities, in some of the world’s most breathtaking locations. Contact Royal Caribbean’s Casino Royale Reservation Center at clubroyale@rccl.com in order to redeem this offer.",
       "ChangeHistory": [
         {
           "observed_at": "2026-07-05T12:51:52+00:00",
@@ -233,16 +266,30 @@
               "to": "2026-08-04T15:56:59.7039919+00:00"
             }
           ]
+        },
+        {
+          "observed_at": "2026-07-05T18:22:29+00:00",
+          "changes": [
+            {
+              "field": "Quantity",
+              "from": 59,
+              "to": 60
+            },
+            {
+              "field": "ExpireTime",
+              "from": "2026-08-04T15:56:59.7039919+00:00",
+              "to": "2026-08-04T18:22:29.2032136+00:00"
+            }
+          ]
         }
-      ],
-      "RewardDescription": "This reward entitles you to $25 in Free Play inside Casino Royale, with the purchase of a Royal Caribbean International cruise. Experience the most innovative and exciting cruise line in the travel industry. You will enjoy casual and fine dining, 24 hour room service, daily entertainment, activities and spa facilities, in some of the world’s most breathtaking locations. Contact Royal Caribbean’s Casino Royale Reservation Center at clubroyale@rccl.com in order to redeem this offer.",
-      "RewardPageTitle": "$25 in Free Play at Casino Royale®"
+      ]
     },
     {
       "AwardID": 892,
       "OfferID": 39943,
       "Partner": "Royal Caribbean",
       "Reward title": "$50 in Free Play",
+      "RewardPageTitle": "$50 in Free Play",
       "Port": "Any Sailing",
       "Points": 25000,
       "PointHistory": [
@@ -256,9 +303,10 @@
       "SnipeText": null,
       "SnipeCategory": null,
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-04T15:56:59.7039919+00:00",
+      "ExpireTime": "2026-08-04T18:22:29.2032136+00:00",
       "IsPremium": false,
       "RewardURL": null,
+      "RewardDescription": "This reward entitles you to $50 in Free Play inside Casino Royale, with the purchase of a Royal Caribbean International cruise. Experience the most innovative and exciting cruise line in the travel industry. You will enjoy casual and fine dining, 24 hour room service, daily entertainment, activities and spa facilities, in some of the world’s most breathtaking locations. Contact Royal Caribbean’s Casino Royale Reservation Center at clubroyale@rccl.com in order to redeem this offer.",
       "ChangeHistory": [
         {
           "observed_at": "2026-07-05T12:51:52+00:00",
@@ -289,16 +337,25 @@
               "to": "2026-08-04T15:56:59.7039919+00:00"
             }
           ]
+        },
+        {
+          "observed_at": "2026-07-05T18:22:29+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-08-04T15:56:59.7039919+00:00",
+              "to": "2026-08-04T18:22:29.2032136+00:00"
+            }
+          ]
         }
-      ],
-      "RewardDescription": "This reward entitles you to $50 in Free Play inside Casino Royale, with the purchase of a Royal Caribbean International cruise. Experience the most innovative and exciting cruise line in the travel industry. You will enjoy casual and fine dining, 24 hour room service, daily entertainment, activities and spa facilities, in some of the world’s most breathtaking locations. Contact Royal Caribbean’s Casino Royale Reservation Center at clubroyale@rccl.com in order to redeem this offer.",
-      "RewardPageTitle": "$50 in Free Play at Casino Royale®"
+      ]
     },
     {
       "AwardID": 2485,
       "OfferID": 39941,
       "Partner": "Royal Caribbean",
       "Reward title": "Wild Card 10% Discount",
+      "RewardPageTitle": "Wild Card 10% Discount",
       "Port": "Any Sailing",
       "Points": 30000,
       "PointHistory": [
@@ -307,14 +364,15 @@
           "value": 30000
         }
       ],
-      "Quantity": 39,
+      "Quantity": 40,
       "HighestQuantityObserved": 40,
       "SnipeText": null,
       "SnipeCategory": null,
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-04T15:56:59.7039919+00:00",
+      "ExpireTime": "2026-08-04T18:22:29.2032136+00:00",
       "IsPremium": false,
       "RewardURL": null,
+      "RewardDescription": "Enjoy the exclusive Wild Card 10% discount from myVEGAS when you purchase an Interior, Ocean View, or Balcony Stateroom. Contact Royal Caribbean’s Casino Royale Reservation Center at clubroyale@rccl.com in order to redeem this offer.",
       "ChangeHistory": [
         {
           "observed_at": "2026-07-05T12:51:52+00:00",
@@ -350,16 +408,30 @@
               "to": "2026-08-04T15:56:59.7039919+00:00"
             }
           ]
+        },
+        {
+          "observed_at": "2026-07-05T18:22:29+00:00",
+          "changes": [
+            {
+              "field": "Quantity",
+              "from": 39,
+              "to": 40
+            },
+            {
+              "field": "ExpireTime",
+              "from": "2026-08-04T15:56:59.7039919+00:00",
+              "to": "2026-08-04T18:22:29.2032136+00:00"
+            }
+          ]
         }
-      ],
-      "RewardDescription": "Enjoy the exclusive Wild Card 10% discount from myVEGAS when you purchase an Interior, Ocean View, or Balcony Stateroom. Contact Royal Caribbean’s Casino Royale Reservation Center at clubroyale@rccl.com in order to redeem this offer.",
-      "RewardPageTitle": "Exclusive Wild Card 10% Discount"
+      ]
     },
     {
       "AwardID": 4338,
       "OfferID": 39940,
       "Partner": "Royal Caribbean",
       "Reward title": "$100 in Onboard Credit",
+      "RewardPageTitle": "$100 in Onboard Credit",
       "Port": "Any Sailing",
       "Points": 35000,
       "PointHistory": [
@@ -368,14 +440,15 @@
           "value": 35000
         }
       ],
-      "Quantity": 40,
-      "HighestQuantityObserved": 45,
+      "Quantity": 49,
+      "HighestQuantityObserved": 49,
       "SnipeText": null,
       "SnipeCategory": null,
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-04T15:56:59.7039919+00:00",
+      "ExpireTime": "2026-08-04T18:22:29.2032136+00:00",
       "IsPremium": true,
       "RewardURL": null,
+      "RewardDescription": "This reward entitles you to a $100 Onboard Credit, with the purchase of a Royal Caribbean International cruise (new booking only). Contact Royal Caribbean’s Casino Royale Reservation Center at clubroyale@rccl.com in order to redeem this offer.",
       "ChangeHistory": [
         {
           "observed_at": "2026-07-05T12:51:52+00:00",
@@ -421,16 +494,30 @@
               "to": "2026-08-04T15:56:59.7039919+00:00"
             }
           ]
+        },
+        {
+          "observed_at": "2026-07-05T18:22:29+00:00",
+          "changes": [
+            {
+              "field": "Quantity",
+              "from": 40,
+              "to": 49
+            },
+            {
+              "field": "ExpireTime",
+              "from": "2026-08-04T15:56:59.7039919+00:00",
+              "to": "2026-08-04T18:22:29.2032136+00:00"
+            }
+          ]
         }
-      ],
-      "RewardDescription": "This reward entitles you to a $100 Onboard Credit, with the purchase of a Royal Caribbean International cruise (new booking only). Contact Royal Caribbean’s Casino Royale Reservation Center at clubroyale@rccl.com in order to redeem this offer.",
-      "RewardPageTitle": "$100 in Onboard Credit"
+      ]
     },
     {
       "AwardID": 4719,
       "OfferID": 39939,
       "Partner": "Royal Caribbean",
       "Reward title": "$100 in FREEPLAY",
+      "RewardPageTitle": "$100 in FREEPLAY",
       "Port": "Any Sailing",
       "Points": 50000,
       "PointHistory": [
@@ -444,9 +531,10 @@
       "SnipeText": null,
       "SnipeCategory": null,
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-04T15:56:59.7039919+00:00",
+      "ExpireTime": "2026-08-04T18:22:29.2032136+00:00",
       "IsPremium": false,
       "RewardURL": null,
+      "RewardDescription": "This reward entitles you to a $100 FREEPLAY, with the purchase of a Royal Caribbean International cruise (new booking only). Must be redeemed within 30 days of a new cruise reservation. Contact Royal Caribbean’s Casino Royale Reservation Center at clubroyale@rccl.com in order to redeem this offer.",
       "ChangeHistory": [
         {
           "observed_at": "2026-07-05T12:51:52+00:00",
@@ -477,16 +565,25 @@
               "to": "2026-08-04T15:56:59.7039919+00:00"
             }
           ]
+        },
+        {
+          "observed_at": "2026-07-05T18:22:29+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-08-04T15:56:59.7039919+00:00",
+              "to": "2026-08-04T18:22:29.2032136+00:00"
+            }
+          ]
         }
-      ],
-      "RewardDescription": "This reward entitles you to a $100 FREEPLAY, with the purchase of a Royal Caribbean International cruise (new booking only). Must be redeemed within 30 days of a new cruise reservation. Contact Royal Caribbean’s Casino Royale Reservation Center at clubroyale@rccl.com in order to redeem this offer.",
-      "RewardPageTitle": "$100 in FREEPLAY"
+      ]
     },
     {
       "AwardID": 6713,
       "OfferID": 39938,
       "Partner": "Royal Caribbean",
       "Reward title": "RCCL $150 in FREEPLAY",
+      "RewardPageTitle": "RCCL $150 in FREEPLAY",
       "Port": "Any Sailing",
       "Points": 140000,
       "PointHistory": [
@@ -495,14 +592,15 @@
           "value": 140000
         }
       ],
-      "Quantity": 18,
-      "HighestQuantityObserved": 20,
+      "Quantity": 24,
+      "HighestQuantityObserved": 24,
       "SnipeText": null,
       "SnipeCategory": null,
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-04T15:56:59.7039919+00:00",
+      "ExpireTime": "2026-08-04T18:22:29.2032136+00:00",
       "IsPremium": false,
       "RewardURL": null,
+      "RewardDescription": "This reward entitles you to a $150 FREEPLAY, with the purchase of a Royal Caribbean International cruise (new booking only). Must be redeemed within 30 days of a new cruise reservation. Contact Royal Caribbean’s Casino Royale Reservation Center at clubroyale@rccl.com in order to redeem this offer.",
       "ChangeHistory": [
         {
           "observed_at": "2026-07-05T12:51:52+00:00",
@@ -543,16 +641,30 @@
               "to": "2026-08-04T15:56:59.7039919+00:00"
             }
           ]
+        },
+        {
+          "observed_at": "2026-07-05T18:22:29+00:00",
+          "changes": [
+            {
+              "field": "Quantity",
+              "from": 18,
+              "to": 24
+            },
+            {
+              "field": "ExpireTime",
+              "from": "2026-08-04T15:56:59.7039919+00:00",
+              "to": "2026-08-04T18:22:29.2032136+00:00"
+            }
+          ]
         }
-      ],
-      "RewardDescription": "This reward entitles you to a $150 FREEPLAY, with the purchase of a Royal Caribbean International cruise (new booking only). Must be redeemed within 30 days of a new cruise reservation. Contact Royal Caribbean’s Casino Royale Reservation Center at clubroyale@rccl.com in order to redeem this offer.",
-      "RewardPageTitle": "$150 in FREEPLAY with Royal Caribbean"
+      ]
     },
     {
       "AwardID": 11015,
       "OfferID": 40320,
       "Partner": "Royal Caribbean",
       "Reward title": "4 Night Jeju Cruise",
+      "RewardPageTitle": "4 Night Jeju Cruise",
       "Port": "Spectrum of the Seas",
       "Points": 230000,
       "PointHistory": [
@@ -569,6 +681,7 @@
       "ExpireTime": "2026-08-01T06:59:59+00:00",
       "IsPremium": false,
       "RewardURL": null,
+      "RewardDescription": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Shanghai (Baoshan), China for 4 nights sailing on 9/27/2026 in an interior cabin. Taxes, gratuities, and other fees may apply. Dive headfirst into adventure on a 4-night cruise to discover the wonders of Asia. Depart from Shanghai (Baoshan), China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region.",
       "ChangeHistory": [
         {
           "observed_at": "2026-07-05T12:51:52+00:00",
@@ -585,15 +698,14 @@
             }
           ]
         }
-      ],
-      "RewardDescription": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Shanghai (Baoshan), China for 4 nights sailing on 9/27/2026 in an interior cabin. Taxes, gratuities, and other fees may apply. Dive headfirst into adventure on a 4-night cruise to discover the wonders of Asia. Depart from Shanghai (Baoshan), China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region.",
-      "RewardPageTitle": "A Cruise for Two - 4 Night Jeju Cruise 9/27"
+      ]
     },
     {
       "AwardID": 11009,
       "OfferID": 40314,
       "Partner": "Royal Caribbean",
       "Reward title": "4 Night Busan Cruise",
+      "RewardPageTitle": "4 Night Busan Cruise",
       "Port": "Spectrum of the Seas",
       "Points": 230000,
       "PointHistory": [
@@ -610,15 +722,15 @@
       "ExpireTime": "2026-08-01T06:59:59+00:00",
       "IsPremium": false,
       "RewardURL": null,
-      "ChangeHistory": [],
       "RewardDescription": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Shanghai (Baoshan), China for 4 nights sailing on 8/24/2026 in an interior cabin. Taxes, gratuities, and other fees may apply. Dive headfirst into adventure on a 4-night cruise to discover the wonders of Asia. Depart from Shanghai (Baoshan), China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region.",
-      "RewardPageTitle": "A Cruise for Two - 4 Night Busan Cruise 8/24"
+      "ChangeHistory": []
     },
     {
       "AwardID": 11024,
       "OfferID": 40329,
       "Partner": "Royal Caribbean",
       "Reward title": "4 Night Chan May Cruise",
+      "RewardPageTitle": "4 Night Chan May Cruise",
       "Port": "Spectrum of the Seas",
       "Points": 230000,
       "PointHistory": [
@@ -635,15 +747,15 @@
       "ExpireTime": "2026-08-01T06:59:59+00:00",
       "IsPremium": false,
       "RewardURL": null,
-      "ChangeHistory": [],
       "RewardDescription": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Hong Kong, China for 4 nights sailing on 11/16/2026 in an interior cabin. Taxes, gratuities, and other fees may apply. Dive headfirst into adventure on a 4-night cruise to discover the wonders of Asia. Depart from Hong Kong, China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region.",
-      "RewardPageTitle": "A Cruise for Two - 4 Night Chan May Cruise 11/16"
+      "ChangeHistory": []
     },
     {
       "AwardID": 11018,
       "OfferID": 40323,
       "Partner": "Royal Caribbean",
       "Reward title": "4 Night Okinawa Cruise",
+      "RewardPageTitle": "4 Night Okinawa Cruise",
       "Port": "Spectrum of the Seas",
       "Points": 230000,
       "PointHistory": [
@@ -660,15 +772,15 @@
       "ExpireTime": "2026-08-01T06:59:59+00:00",
       "IsPremium": false,
       "RewardURL": null,
-      "ChangeHistory": [],
       "RewardDescription": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Shanghai (Baoshan), China for 4 nights sailing on 10/20/2026 in an interior cabin. Taxes, gratuities, and other fees may apply. Dive headfirst into adventure on a 4-night cruise to discover the wonders of Asia. Depart from Shanghai (Baoshan), China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region.",
-      "RewardPageTitle": "A Cruise for Two - 4 Night Okinawa Cruise 10/20"
+      "ChangeHistory": []
     },
     {
       "AwardID": 11007,
       "OfferID": 40312,
       "Partner": "Royal Caribbean",
       "Reward title": "4 Night Busan Cruise",
+      "RewardPageTitle": "4 Night Busan Cruise",
       "Port": "Spectrum of the Seas",
       "Points": 230000,
       "PointHistory": [
@@ -685,15 +797,15 @@
       "ExpireTime": "2026-07-28T06:59:59+00:00",
       "IsPremium": false,
       "RewardURL": null,
-      "ChangeHistory": [],
       "RewardDescription": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Shanghai (Baoshan), China for 4 nights sailing on 7/27/2026 in an interior cabin. Taxes, gratuities, and other fees may apply. Dive headfirst into adventure on a 4-night cruise to discover the wonders of Asia. Depart from Shanghai (Baoshan), China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region.",
-      "RewardPageTitle": "A Cruise for Two - 4 Night Busan Cruise 7/27"
+      "ChangeHistory": []
     },
     {
       "AwardID": 11010,
       "OfferID": 40315,
       "Partner": "Royal Caribbean",
       "Reward title": "4 Night Seoul Cruise",
+      "RewardPageTitle": "4 Night Seoul Cruise",
       "Port": "Spectrum of the Seas",
       "Points": 230000,
       "PointHistory": [
@@ -710,15 +822,15 @@
       "ExpireTime": "2026-07-31T18:59:59+00:00",
       "IsPremium": false,
       "RewardURL": null,
-      "ChangeHistory": [],
       "RewardDescription": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Shanghai (Baoshan), China for 4 nights sailing on 8/28/2026 in an interior cabin. Taxes, gratuities, and other fees may apply. Dive headfirst into adventure on a 4-night cruise to discover the wonders of Asia. Depart from Shanghai (Baoshan), China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region.",
-      "RewardPageTitle": "A Cruise for Two - 4 Night Seoul Cruise 8/28"
+      "ChangeHistory": []
     },
     {
       "AwardID": 11013,
       "OfferID": 40318,
       "Partner": "Royal Caribbean",
       "Reward title": "4 Night Jeju Cruise",
+      "RewardPageTitle": "4 Night Jeju Cruise",
       "Port": "Spectrum of the Seas",
       "Points": 230000,
       "PointHistory": [
@@ -735,15 +847,15 @@
       "ExpireTime": "2026-08-01T06:59:59+00:00",
       "IsPremium": false,
       "RewardURL": null,
-      "ChangeHistory": [],
       "RewardDescription": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Shanghai (Baoshan), China for 4 nights sailing on 9/19/2026 in an interior cabin. Taxes, gratuities, and other fees may apply. Dive headfirst into adventure on a 4-night cruise to discover the wonders of Asia. Depart from Shanghai (Baoshan), China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region.",
-      "RewardPageTitle": "A Cruise for Two - 4 Night Jeju Cruise 9/19"
+      "ChangeHistory": []
     },
     {
       "AwardID": 11016,
       "OfferID": 40321,
       "Partner": "Royal Caribbean",
       "Reward title": "4 Night Busan Cruise",
+      "RewardPageTitle": "4 Night Busan Cruise",
       "Port": "Spectrum of the Seas",
       "Points": 230000,
       "PointHistory": [
@@ -760,15 +872,15 @@
       "ExpireTime": "2026-08-01T06:59:59+00:00",
       "IsPremium": false,
       "RewardURL": null,
-      "ChangeHistory": [],
       "RewardDescription": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Shanghai (Baoshan), China for 4 nights sailing on 10/07/2026 in an interior cabin. Taxes, gratuities, and other fees may apply. Dive headfirst into adventure on a 4-night cruise to discover the wonders of Asia. Depart from Shanghai (Baoshan), China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region.",
-      "RewardPageTitle": "A Cruise for Two - 4 Night Busan Cruise 10/7"
+      "ChangeHistory": []
     },
     {
       "AwardID": 11014,
       "OfferID": 40319,
       "Partner": "Royal Caribbean",
       "Reward title": "4 Night Busan Cruise",
+      "RewardPageTitle": "4 Night Busan Cruise",
       "Port": "Spectrum of the Seas",
       "Points": 230000,
       "PointHistory": [
@@ -782,9 +894,10 @@
       "SnipeText": "1 left",
       "SnipeCategory": "NLeft",
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-04T15:56:59.7039919+00:00",
+      "ExpireTime": "2026-08-04T18:22:29.2032136+00:00",
       "IsPremium": false,
       "RewardURL": null,
+      "RewardDescription": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Shanghai (Baoshan), China for 4 nights sailing on 9/23/2026 in an interior cabin. Taxes, gratuities, and other fees may apply. Dive headfirst into adventure on a 4-night cruise to discover the wonders of Asia. Depart from Shanghai (Baoshan), China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region.",
       "ChangeHistory": [
         {
           "observed_at": "2026-07-05T12:51:52+00:00",
@@ -825,16 +938,25 @@
               "to": "2026-08-04T15:56:59.7039919+00:00"
             }
           ]
+        },
+        {
+          "observed_at": "2026-07-05T18:22:29+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-08-04T15:56:59.7039919+00:00",
+              "to": "2026-08-04T18:22:29.2032136+00:00"
+            }
+          ]
         }
-      ],
-      "RewardDescription": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Shanghai (Baoshan), China for 4 nights sailing on 9/23/2026 in an interior cabin. Taxes, gratuities, and other fees may apply. Dive headfirst into adventure on a 4-night cruise to discover the wonders of Asia. Depart from Shanghai (Baoshan), China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region.",
-      "RewardPageTitle": "A Cruise for Two - 4 Night Busan Cruise 9/23"
+      ]
     },
     {
       "AwardID": 11006,
       "OfferID": 40311,
       "Partner": "Royal Caribbean",
       "Reward title": "4 Night Seoul Cruise",
+      "RewardPageTitle": "4 Night Seoul Cruise",
       "Port": "Spectrum of the Seas",
       "Points": 230000,
       "PointHistory": [
@@ -851,15 +973,15 @@
       "ExpireTime": "2026-07-24T06:59:59+00:00",
       "IsPremium": false,
       "RewardURL": null,
-      "ChangeHistory": [],
       "RewardDescription": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Shanghai (Baoshan), China for 4 nights sailing on 7/23/2026 in an interior cabin. Taxes, gratuities, and other fees may apply. Dive headfirst into adventure on a 4-night cruise to discover the wonders of Asia. Depart from Shanghai (Baoshan), China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region.",
-      "RewardPageTitle": "A Cruise for Two - 4 Night Seoul Cruise 7/23"
+      "ChangeHistory": []
     },
     {
       "AwardID": 11025,
       "OfferID": 40330,
       "Partner": "Royal Caribbean",
       "Reward title": "5 Night Okinawa Cruise",
+      "RewardPageTitle": "5 Night Okinawa Cruise",
       "Port": "Spectrum of the Seas",
       "Points": 280000,
       "PointHistory": [
@@ -876,15 +998,15 @@
       "ExpireTime": "2026-08-01T06:59:59+00:00",
       "IsPremium": false,
       "RewardURL": null,
-      "ChangeHistory": [],
       "RewardDescription": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Hong Kong, China for 5 nights sailing on 11/06/2026 in an interior cabin. Taxes, gratuities, and other fees may apply. Dive headfirst into adventure on a 5-night cruise to discover the wonders of Asia. Depart from Hong Kong, China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region.",
-      "RewardPageTitle": "A Cruise for Two - 5 Night Okinawa Cruise 11/6"
+      "ChangeHistory": []
     },
     {
       "AwardID": 11008,
       "OfferID": 40313,
       "Partner": "Royal Caribbean",
       "Reward title": "5 Night Busan & Yeosu",
+      "RewardPageTitle": "5 Night Busan & Yeosu",
       "Port": "Spectrum of the Seas",
       "Points": 280000,
       "PointHistory": [
@@ -901,15 +1023,15 @@
       "ExpireTime": "2026-08-01T06:59:59+00:00",
       "IsPremium": false,
       "RewardURL": null,
-      "ChangeHistory": [],
       "RewardDescription": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Shanghai (Baoshan), China for 5 nights sailing on 8/03/2026 in an interior cabin. Taxes, gratuities, and other fees may apply. Dive headfirst into adventure on a 5-night cruise to discover the wonders of Asia. Depart from Shanghai (Baoshan), China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region.",
-      "RewardPageTitle": "A Cruise for Two - 5 Night Busan-Yeosu Cruise 8/3"
+      "ChangeHistory": []
     },
     {
       "AwardID": 11011,
       "OfferID": 40316,
       "Partner": "Royal Caribbean",
       "Reward title": "5 Night Fukuoka-Nagasaki",
+      "RewardPageTitle": "5 Night Fukuoka-Nagasaki",
       "Port": "Spectrum of the Seas",
       "Points": 280000,
       "PointHistory": [
@@ -926,15 +1048,15 @@
       "ExpireTime": "2026-07-31T18:59:59+00:00",
       "IsPremium": false,
       "RewardURL": null,
-      "ChangeHistory": [],
       "RewardDescription": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Shanghai (Baoshan), China for 5 nights sailing on 9/01/2026 in an interior cabin. Taxes, gratuities, and other fees may apply. Dive headfirst into adventure on a 5-night cruise to discover the wonders of Asia. Depart from Shanghai (Baoshan), China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region.",
-      "RewardPageTitle": "A Cruise for Two - 5 Night Fukuoka & Nagasaki 9/1"
+      "ChangeHistory": []
     },
     {
       "AwardID": 11017,
       "OfferID": 40322,
       "Partner": "Royal Caribbean",
       "Reward title": "5 Night Kagoshima-Okinawa",
+      "RewardPageTitle": "5 Night Kagoshima-Okinawa",
       "Port": "Spectrum of the Seas",
       "Points": 280000,
       "PointHistory": [
@@ -951,15 +1073,15 @@
       "ExpireTime": "2026-08-01T06:59:59+00:00",
       "IsPremium": false,
       "RewardURL": null,
-      "ChangeHistory": [],
       "RewardDescription": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Shanghai (Baoshan), China for 5 nights sailing on 10/11/2026 in an interior cabin. Taxes, gratuities, and other fees may apply. Dive headfirst into adventure on a 5-night cruise to discover the wonders of Asia. Depart from Shanghai (Baoshan), China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region.",
-      "RewardPageTitle": "A Cruise for Two - 5 Night Kagoshima-Okinawa 10/11"
+      "ChangeHistory": []
     },
     {
       "AwardID": 11020,
       "OfferID": 40325,
       "Partner": "Royal Caribbean",
       "Reward title": "4 Night Jeju & Busan",
+      "RewardPageTitle": "4 Night Jeju & Busan",
       "Port": "Spectrum of the Seas",
       "Points": 280000,
       "PointHistory": [
@@ -976,15 +1098,15 @@
       "ExpireTime": "2026-08-01T06:59:59+00:00",
       "IsPremium": false,
       "RewardURL": null,
-      "ChangeHistory": [],
       "RewardDescription": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Shanghai (Baoshan), China for 5 nights sailing on 11/01/2026 in an interior cabin. Taxes, gratuities, and other fees may apply. Dive headfirst into adventure on a 5-night cruise to discover the wonders of Asia. Depart from Shanghai (Baoshan), China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region.",
-      "RewardPageTitle": "A Cruise for Two - 5 Night Jeju & Busan 11/1"
+      "ChangeHistory": []
     },
     {
       "AwardID": 11023,
       "OfferID": 40328,
       "Partner": "Royal Caribbean",
       "Reward title": "5 Night Okinawa-Ishigaki",
+      "RewardPageTitle": "5 Night Okinawa-Ishigaki",
       "Port": "Spectrum of the Seas",
       "Points": 280000,
       "PointHistory": [
@@ -1001,15 +1123,15 @@
       "ExpireTime": "2026-08-01T06:59:59+00:00",
       "IsPremium": false,
       "RewardURL": null,
-      "ChangeHistory": [],
       "RewardDescription": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Hong Kong, China for 5 nights sailing on 12/13/2026 in an interior cabin. Taxes, gratuities, and other fees may apply. Dive headfirst into adventure on a 5-night cruise to discover the wonders of Asia. Depart from Hong Kong, China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region.",
-      "RewardPageTitle": "A Cruise for Two - 5 Night Okinawa-Ishigaki 12/13"
+      "ChangeHistory": []
     },
     {
       "AwardID": 11012,
       "OfferID": 40317,
       "Partner": "Royal Caribbean",
       "Reward title": "8 Night Best of Japan",
+      "RewardPageTitle": "8 Night Best of Japan",
       "Port": "Spectrum of the Seas",
       "Points": 450000,
       "PointHistory": [
@@ -1026,15 +1148,15 @@
       "ExpireTime": "2026-07-31T18:59:59+00:00",
       "IsPremium": false,
       "RewardURL": null,
-      "ChangeHistory": [],
       "RewardDescription": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Shanghai (Baoshan), China for 8 nights sailing on 9/11/2026 in an interior cabin. Taxes, gratuities, and other fees may apply. Dive headfirst into adventure on a 8-night cruise to discover the wonders of Asia. Depart from Shanghai (Baoshan), China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region.",
-      "RewardPageTitle": "A Cruise for Two - 8 Night Best of Japan 9/11"
+      "ChangeHistory": []
     },
     {
       "AwardID": 11021,
       "OfferID": 40326,
       "Partner": "Royal Caribbean",
       "Reward title": "8 Night Best of Asia",
+      "RewardPageTitle": "8 Night Best of Asia",
       "Port": "Spectrum of the Seas",
       "Points": 450000,
       "PointHistory": [
@@ -1051,15 +1173,15 @@
       "ExpireTime": "2026-08-01T06:59:59+00:00",
       "IsPremium": false,
       "RewardURL": null,
-      "ChangeHistory": [],
       "RewardDescription": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Hong Kong, China for 8 nights sailing on 1/03/2027 in an interior cabin. Taxes, gratuities, and other fees may apply. Dive headfirst into adventure on a 8-night cruise to discover the wonders of Asia. Depart from Hong Kong, China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region.",
-      "RewardPageTitle": "A Cruise for Two - 8 Night Japan & S. Korea 2027"
+      "ChangeHistory": []
     },
     {
       "AwardID": 11019,
       "OfferID": 40324,
       "Partner": "Royal Caribbean",
       "Reward title": "8 Night Best of Japan",
+      "RewardPageTitle": "8 Night Best of Japan",
       "Port": "Spectrum of the Seas",
       "Points": 450000,
       "PointHistory": [
@@ -1076,15 +1198,15 @@
       "ExpireTime": "2026-08-01T06:59:59+00:00",
       "IsPremium": false,
       "RewardURL": null,
-      "ChangeHistory": [],
       "RewardDescription": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Shanghai (Baoshan), China for 8 nights sailing on 10/24/2026 in an interior cabin. Taxes, gratuities, and other fees may apply. Dive headfirst into adventure on a 8-night cruise to discover the wonders of Asia. Depart from Shanghai (Baoshan), China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region.",
-      "RewardPageTitle": "A Cruise for Two - 8 Night Best of Japan 10/24"
+      "ChangeHistory": []
     },
     {
       "AwardID": 11022,
       "OfferID": 40327,
       "Partner": "Royal Caribbean",
       "Reward title": "9 Night Best of Japan",
+      "RewardPageTitle": "9 Night Best of Japan",
       "Port": "Spectrum of the Seas",
       "Points": 500000,
       "PointHistory": [
@@ -1101,15 +1223,15 @@
       "ExpireTime": "2026-08-01T06:59:59+00:00",
       "IsPremium": false,
       "RewardURL": null,
-      "ChangeHistory": [],
       "RewardDescription": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Hong Kong, China for 9 nights sailing on 12/20/2026 in an interior cabin. Taxes, gratuities, and other fees may apply. Dive headfirst into adventure on a 9-night cruise to discover the wonders of Asia. Depart from Hong Kong, China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region.",
-      "RewardPageTitle": "A Cruise for Two - 9 Night Best of Japan 12/20"
+      "ChangeHistory": []
     },
     {
       "AwardID": 10371,
       "OfferID": 40341,
       "Partner": "Virgin Voyages",
       "Reward title": "VV $1,200 Special Rate",
+      "RewardPageTitle": "VV $1,200 Special Rate",
       "Port": "Various Ports",
       "Points": 100000,
       "PointHistory": [
@@ -1123,9 +1245,10 @@
       "SnipeText": "NEW PORTS",
       "SnipeCategory": "Custom",
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-04T15:56:59.7039919+00:00",
+      "ExpireTime": "2026-08-04T18:22:29.2032136+00:00",
       "IsPremium": false,
       "RewardURL": null,
+      "RewardDescription": "Now, exclusively with myVIP, enjoy a highly discounted rate with added benefits on your next voyage from ports in San Juan & North America. Set Sail with a $1,200 double-occupancy rate for a 6-Night Cruise in an UPGRADED SEA TERRACE on Virgin Voyages out of San Juan & North America! Complimentary beverages at the casino bar and waived withdrawal fees are included in this offer. Taxes & Port Fees apply. Sailings subject to change. Ready for an adults-only escape at sea? Virgin Voyages is redefining the cruise experience with award-winning dining, immersive entertainment, and luxurious, always-included perks—no buffets, no kids, no ordinary cruises",
       "ChangeHistory": [
         {
           "observed_at": "2026-07-05T12:51:52+00:00",
@@ -1156,16 +1279,25 @@
               "to": "2026-08-04T15:56:59.7039919+00:00"
             }
           ]
+        },
+        {
+          "observed_at": "2026-07-05T18:22:29+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-08-04T15:56:59.7039919+00:00",
+              "to": "2026-08-04T18:22:29.2032136+00:00"
+            }
+          ]
         }
-      ],
-      "RewardDescription": "Now, exclusively with myVIP, enjoy a highly discounted rate with added benefits on your next voyage from ports in San Juan & North America. Set Sail with a $1,200 double-occupancy rate for a 6-Night Cruise in an UPGRADED SEA TERRACE on Virgin Voyages out of San Juan & North America! Complimentary beverages at the casino bar and waived withdrawal fees are included in this offer. Taxes & Port Fees apply. Sailings subject to change. Ready for an adults-only escape at sea? Virgin Voyages is redefining the cruise experience with award-winning dining, immersive entertainment, and luxurious, always-included perks—no buffets, no kids, no ordinary cruises",
-      "RewardPageTitle": "Virgin Voyages $1,200 Exclusive Rate for 6-Nights"
+      ]
     },
     {
       "AwardID": 10369,
       "OfferID": 40339,
       "Partner": "Virgin Voyages",
       "Reward title": "VV $1000 Special Rate",
+      "RewardPageTitle": "VV $1000 Special Rate",
       "Port": "Various Ports",
       "Points": 100000,
       "PointHistory": [
@@ -1179,9 +1311,10 @@
       "SnipeText": "NEW PORTS",
       "SnipeCategory": "Custom",
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-04T15:56:59.7039919+00:00",
+      "ExpireTime": "2026-08-04T18:22:29.2032136+00:00",
       "IsPremium": false,
       "RewardURL": null,
+      "RewardDescription": "Now, exclusively with myVIP, enjoy a highly discounted rate with added benefits on your next voyage from ports in San Juan & North America. Set Sail with a $1000 double-occupancy rate for a 5-Night Cruise in an UPGRADED SEA TERRACE on Virgin Voyages out of San Juan & North America! Complimentary beverages at the casino bar and waived withdrawal fees are included in this offer. Taxes & Port Fees apply. Sailings subject to change. Ready for an adults-only escape at sea? Virgin Voyages is redefining the cruise experience with award-winning dining, immersive entertainment, and luxurious, always-included perks—no buffets, no kids, no ordinary cruises.",
       "ChangeHistory": [
         {
           "observed_at": "2026-07-05T12:51:52+00:00",
@@ -1212,16 +1345,25 @@
               "to": "2026-08-04T15:56:59.7039919+00:00"
             }
           ]
+        },
+        {
+          "observed_at": "2026-07-05T18:22:29+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-08-04T15:56:59.7039919+00:00",
+              "to": "2026-08-04T18:22:29.2032136+00:00"
+            }
+          ]
         }
-      ],
-      "RewardDescription": "Now, exclusively with myVIP, enjoy a highly discounted rate with added benefits on your next voyage from ports in San Juan & North America. Set Sail with a $1000 double-occupancy rate for a 5-Night Cruise in an UPGRADED SEA TERRACE on Virgin Voyages out of San Juan & North America! Complimentary beverages at the casino bar and waived withdrawal fees are included in this offer. Taxes & Port Fees apply. Sailings subject to change. Ready for an adults-only escape at sea? Virgin Voyages is redefining the cruise experience with award-winning dining, immersive entertainment, and luxurious, always-included perks—no buffets, no kids, no ordinary cruises.",
-      "RewardPageTitle": "Virgin Voyages $1000 Exclusive Rate for 5-Nights"
+      ]
     },
     {
       "AwardID": 10370,
       "OfferID": 40340,
       "Partner": "Virgin Voyages",
       "Reward title": "VV $1,400 Special Rate",
+      "RewardPageTitle": "VV $1,400 Special Rate",
       "Port": "Various Ports",
       "Points": 100000,
       "PointHistory": [
@@ -1235,9 +1377,10 @@
       "SnipeText": "NEW PORTS",
       "SnipeCategory": "Custom",
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-04T15:56:59.7039919+00:00",
+      "ExpireTime": "2026-08-04T18:22:29.2032136+00:00",
       "IsPremium": false,
       "RewardURL": null,
+      "RewardDescription": "Now, exclusively with myVIP, enjoy a highly discounted rate with added benefits on your next voyage from ports in San Juan & North America. Set Sail with a $1,400 double-occupancy rate for a 7-Night Cruise in an UPGRADED SEA TERRACE on Virgin Voyages out of San Juan & North America! Complimentary beverages at the casino bar and waived withdrawal fees are included in this offer. Taxes & Port Fees apply. Sailings subject to change. Ready for an adults-only escape at sea? Virgin Voyages is redefining the cruise experience with award-winning dining, immersive entertainment, and luxurious, always-included perks—no buffets, no kids, no ordinary cruises.",
       "ChangeHistory": [
         {
           "observed_at": "2026-07-05T12:51:52+00:00",
@@ -1268,10 +1411,18 @@
               "to": "2026-08-04T15:56:59.7039919+00:00"
             }
           ]
+        },
+        {
+          "observed_at": "2026-07-05T18:22:29+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-08-04T15:56:59.7039919+00:00",
+              "to": "2026-08-04T18:22:29.2032136+00:00"
+            }
+          ]
         }
-      ],
-      "RewardDescription": "Now, exclusively with myVIP, enjoy a highly discounted rate with added benefits on your next voyage from ports in San Juan & North America. Set Sail with a $1,400 double-occupancy rate for a 7-Night Cruise in an UPGRADED SEA TERRACE on Virgin Voyages out of San Juan & North America! Complimentary beverages at the casino bar and waived withdrawal fees are included in this offer. Taxes & Port Fees apply. Sailings subject to change. Ready for an adults-only escape at sea? Virgin Voyages is redefining the cruise experience with award-winning dining, immersive entertainment, and luxurious, always-included perks—no buffets, no kids, no ordinary cruises.",
-      "RewardPageTitle": "Virgin Voyages $1,400 Exclusive Rate for 7-Nights"
+      ]
     }
   ]
 }
