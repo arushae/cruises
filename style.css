@@ -60,8 +60,6 @@ td.sold-out { color: #9b3131; font-weight: 700; }
 .reward-details-content ul { margin: 0 0 14px; padding-left: 1.3rem; color: #52616b; }
 .reward-details-content li + li { margin-top: 6px; }
 .reward-link { display: inline-block; font-weight: 700; }
-tr.ncl td { background: #fff4c7; }
-tr.ncl td:first-child { box-shadow: inset 4px 0 #f2b705; }
 .snipe { display: inline-block; margin-top: 5px; padding: 2px 6px; border-radius: 4px; background: #e8f5f6; color: #086772; font-size: .72rem; font-weight: 700; }
 .muted { color: #77858e; }
 .empty-state { margin: 0; padding: 36px; text-align: center; color: #697780; }
