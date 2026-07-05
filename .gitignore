@@ -1,0 +1,4 @@
+.reward-data/snapshot_*.json
+.DS_Store
+__pycache__/
+*.pyc
