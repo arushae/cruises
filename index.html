@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>myVIP Cruise Rewards</title>
-  <link rel="stylesheet" href="style.css?v=20260705-12">
+  <link rel="stylesheet" href="style.css?v=20260705-25">
 </head>
 <body>
   <main>
@@ -38,15 +38,16 @@
       <div class="table-wrap">
         <table class="reward-table">
           <colgroup>
-            <col class="col-partner"><col class="col-reward"><col class="col-port">
-            <col class="col-points"><col class="col-quantity">
+            <col class="col-toggle"><col class="col-partner"><col class="col-reward"><col class="col-points">
+            <col class="col-port"><col class="col-quantity">
             <col class="col-expires"><col class="col-premium">
           </colgroup>
           <thead><tr>
+          <th class="toggle-header" aria-label="Expand row"></th>
           <th><button class="sort-button" data-sort="Partner">Partner <span aria-hidden="true"></span></button></th>
           <th><button class="sort-button" data-sort="Reward title">Reward <span aria-hidden="true"></span></button></th>
-          <th><button class="sort-button" data-sort="Port">Port <span aria-hidden="true"></span></button></th>
           <th><button class="sort-button" data-sort="Points">Points <span aria-hidden="true"></span></button></th>
+          <th><button class="sort-button" data-sort="Port">Port <span aria-hidden="true"></span></button><button class="column-help-button" type="button" title="While this field is named 'port', it has been populated with inconsistent data, ranging from the port, general location of the cruise or the ship." aria-label="Port field note: While this field is named port, it has been populated with inconsistent data, ranging from the port, general location of the cruise or the ship.">?</button></th>
           <th><button class="sort-button" data-sort="Quantity">Quantity <span aria-hidden="true"></span></button></th>
           <th><button class="sort-button" data-sort="ExpireTime">Expiry <span aria-hidden="true"></span></button></th>
           <th><button class="sort-button" data-sort="IsPremium">Premium <span aria-hidden="true"></span></button></th>
@@ -60,15 +61,16 @@
       <div class="table-wrap">
         <table class="reward-table">
           <colgroup>
-            <col class="col-partner"><col class="col-reward"><col class="col-port">
-            <col class="col-points"><col class="col-quantity">
+            <col class="col-toggle"><col class="col-partner"><col class="col-reward"><col class="col-points">
+            <col class="col-port"><col class="col-quantity">
             <col class="col-expires"><col class="col-premium">
           </colgroup>
           <thead><tr>
+          <th class="toggle-header" aria-label="Expand row"></th>
           <th><button class="sort-button" data-sort="Partner">Partner <span aria-hidden="true"></span></button></th>
           <th><button class="sort-button" data-sort="Reward title">Reward <span aria-hidden="true"></span></button></th>
-          <th><button class="sort-button" data-sort="Port">Port <span aria-hidden="true"></span></button></th>
           <th><button class="sort-button" data-sort="Points">Points <span aria-hidden="true"></span></button></th>
+          <th><button class="sort-button" data-sort="Port">Port <span aria-hidden="true"></span></button><button class="column-help-button" type="button" title="While this field is named 'port', it has been populated with inconsistent data, ranging from the port, general location of the cruise or the ship." aria-label="Port field note: While this field is named port, it has been populated with inconsistent data, ranging from the port, general location of the cruise or the ship.">?</button></th>
           <th><button class="sort-button" data-sort="Quantity">Quantity <span aria-hidden="true"></span></button></th>
           <th><button class="sort-button" data-sort="ExpireTime">Expiry <span aria-hidden="true"></span></button></th>
           <th><button class="sort-button" data-sort="IsPremium">Premium <span aria-hidden="true"></span></button></th>
@@ -82,15 +84,16 @@
       <div class="table-wrap">
         <table class="reward-table">
           <colgroup>
-            <col class="col-partner"><col class="col-reward"><col class="col-port">
-            <col class="col-points"><col class="col-quantity">
+            <col class="col-toggle"><col class="col-partner"><col class="col-reward"><col class="col-points">
+            <col class="col-port"><col class="col-quantity">
             <col class="col-expires"><col class="col-premium">
           </colgroup>
           <thead><tr>
+          <th class="toggle-header" aria-label="Expand row"></th>
           <th><button class="sort-button" data-sort="Partner">Partner <span aria-hidden="true"></span></button></th>
           <th><button class="sort-button" data-sort="Reward title">Reward <span aria-hidden="true"></span></button></th>
-          <th><button class="sort-button" data-sort="Port">Port <span aria-hidden="true"></span></button></th>
           <th><button class="sort-button" data-sort="Points">Points <span aria-hidden="true"></span></button></th>
+          <th><button class="sort-button" data-sort="Port">Port <span aria-hidden="true"></span></button><button class="column-help-button" type="button" title="While this field is named 'port', it has been populated with inconsistent data, ranging from the port, general location of the cruise or the ship." aria-label="Port field note: While this field is named port, it has been populated with inconsistent data, ranging from the port, general location of the cruise or the ship.">?</button></th>
           <th><button class="sort-button" data-sort="Quantity">Quantity <span aria-hidden="true"></span></button></th>
           <th><button class="sort-button" data-sort="ExpireTime">Expiry <span aria-hidden="true"></span></button></th>
           <th><button class="sort-button" data-sort="IsPremium">Premium <span aria-hidden="true"></span></button></th>
@@ -133,6 +136,18 @@
       </table>
     </div>
   </dialog>
-  <script src="app.js?v=20260705-12"></script>
+  <dialog id="column-help-dialog" aria-labelledby="column-help-title">
+    <div class="dialog-header">
+      <div>
+        <p class="eyebrow">Column note</p>
+        <h2 id="column-help-title">Port</h2>
+      </div>
+      <button id="column-help-close" class="dialog-close" type="button" aria-label="Close column note">×</button>
+    </div>
+    <div class="dialog-body">
+      <p id="column-help-text"></p>
+    </div>
+  </dialog>
+  <script src="app.js?v=20260705-25"></script>
 </body>
 </html>

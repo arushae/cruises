@@ -27,7 +27,12 @@ const checkHistoryDialog = document.querySelector('#check-history-dialog');
 const checkHistoryTitle = document.querySelector('#check-history-title');
 const checkHistoryBody = document.querySelector('#check-history-body');
 const checkHistoryClose = document.querySelector('#check-history-close');
+const columnHelpDialog = document.querySelector('#column-help-dialog');
+const columnHelpTitle = document.querySelector('#column-help-title');
+const columnHelpText = document.querySelector('#column-help-text');
+const columnHelpClose = document.querySelector('#column-help-close');
 const EXPIRE_TIME_CHANGE_DISPLAY_THRESHOLD_MS = 12 * 60 * 60 * 1000;
+const PORT_COLUMN_HELP = "While this field is named 'port', it has been populated with inconsistent data, ranging from the port, general location of the cruise or the ship.";
 
 function text(value) { return value == null || value === '' ? '—' : String(value); }
 function formatDate(value, multiline = false) {
@@ -152,21 +157,24 @@ function createRewardRows(reward) {
   row.setAttribute('aria-expanded', 'false');
   row.setAttribute('aria-controls', detailId);
   row.dataset.awardId = reward.AwardID;
+  const toggleCell = addCell(row, '', 'toggle-cell');
+  toggleCell.textContent = '';
+  toggleCell.setAttribute('aria-hidden', 'true');
   addCell(row, reward.Partner);
-  const titleCell = addCell(row, reward['Reward title']);
+  const titleCell = addCell(row, reward['Reward title'], 'reward-title-cell');
   if (reward.SnipeText) {
     const badge = document.createElement('span');
     badge.className = 'snipe';
     badge.textContent = reward.SnipeText;
     titleCell.append(document.createElement('br'), badge);
   }
-  addCell(row, reward.Port);
   const pointsCell = addCell(row, formatNumber(reward.Points), 'points');
   const pointHistory = Array.isArray(reward.PointHistory) ? reward.PointHistory : [];
   const previousDifferent = [...pointHistory].reverse().find((entry) => entry.value !== reward.Points);
   if (previousDifferent) {
     addInlineHistoryButton(pointsCell, reward, 'points', `(previously seen\nat ${formatNumber(previousDifferent.value)})`);
   }
+  addCell(row, reward.Port);
   const quantityCell = addCell(row, reward.Quantity, reward.Quantity === 0 ? 'quantity sold-out' : 'quantity');
   if (
     reward.HighestQuantityObserved != null
@@ -188,7 +196,7 @@ function createRewardRows(reward) {
   detailRow.className = 'reward-details';
   detailRow.hidden = true;
   const detailCell = document.createElement('td');
-  detailCell.colSpan = 7;
+  detailCell.colSpan = 8;
   const detailContent = document.createElement('div');
   detailContent.className = 'reward-details-content';
 
@@ -338,11 +346,11 @@ async function loadRewards() {
     state.rewards = Array.isArray(data.rewards) ? data.rewards : [];
     state.expiredRewards = Array.isArray(expiredData.rewards) ? expiredData.rewards : [];
     state.checkHistory = Array.isArray(data.check_history) ? data.check_history : [data.checked_at].filter(Boolean);
-    checkedAt.textContent = `Last checked: ${formatDate(data.checked_at, true)}`;
+    checkedAt.textContent = `Last checked:\n${formatDate(data.checked_at)}`;
     sourceLink.href = data.source_url || '#';
     updatePartners();
     render();
-    refreshStatus.textContent = 'Data loaded';
+    refreshStatus.textContent = '';
   } catch (error) {
     refreshStatus.textContent = `Could not load rewards.json (${error.message})`;
   }
@@ -441,7 +449,20 @@ function openCheckHistory() {
   checkHistoryDialog.showModal();
 }
 
+function openColumnHelp(title, textContent) {
+  columnHelpTitle.textContent = title;
+  columnHelpText.textContent = textContent;
+  columnHelpDialog.showModal();
+}
+
 document.addEventListener('click', (event) => {
+  const columnHelpButton = event.target.closest('.column-help-button');
+  if (columnHelpButton) {
+    event.preventDefault();
+    event.stopPropagation();
+    openColumnHelp('Port', PORT_COLUMN_HELP);
+    return;
+  }
   const historyButton = event.target.closest('.point-history-button');
   if (historyButton) {
     event.preventDefault();
@@ -472,3 +493,4 @@ function toggleRewardRow(row) {
 pointHistoryClose.addEventListener('click', () => pointHistoryDialog.close());
 checkHistoryButton.addEventListener('click', openCheckHistory);
 checkHistoryClose.addEventListener('click', () => checkHistoryDialog.close());
+columnHelpClose.addEventListener('click', () => columnHelpDialog.close());
