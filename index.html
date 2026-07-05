@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>myVIP Cruise Rewards</title>
-  <link rel="stylesheet" href="style.css?v=20260705-5">
+  <link rel="stylesheet" href="style.css?v=20260705-11">
 </head>
 <body>
   <main>
@@ -15,7 +15,7 @@
       </div>
       <div class="status">
         <span id="refresh-status">Loading rewards…</span>
-        <span class="status-line"><span id="checked-at"></span><button id="check-history-button" class="header-info-button" type="button" title="View all check times" aria-label="View all check times">i</button></span>
+        <span class="status-line"><span id="checked-at"></span><button id="check-history-button" class="header-info-button" type="button" title="View all check times" aria-label="View all check times">?</button></span>
       </div>
     </header>
 
@@ -39,8 +39,8 @@
         <table class="reward-table">
           <colgroup>
             <col class="col-partner"><col class="col-reward"><col class="col-port">
-            <col class="col-points"><col class="col-quantity"><col class="col-previous">
-            <col class="col-offer"><col class="col-expires"><col class="col-premium">
+            <col class="col-points"><col class="col-quantity">
+            <col class="col-expires"><col class="col-premium">
           </colgroup>
           <thead><tr>
           <th><button class="sort-button" data-sort="Partner">Partner <span aria-hidden="true"></span></button></th>
@@ -48,8 +48,6 @@
           <th><button class="sort-button" data-sort="Port">Port <span aria-hidden="true"></span></button></th>
           <th><button class="sort-button" data-sort="Points">Points <span aria-hidden="true"></span></button></th>
           <th><button class="sort-button" data-sort="Quantity">Quantity <span aria-hidden="true"></span></button></th>
-          <th><button class="sort-button" data-sort="HighestQuantityObserved">Previously observed <span aria-hidden="true"></span></button></th>
-          <th><button class="sort-button" data-sort="OfferID">Offer <span aria-hidden="true"></span></button></th>
           <th><button class="sort-button" data-sort="ExpireTime">Expires <span aria-hidden="true"></span></button></th>
           <th><button class="sort-button" data-sort="IsPremium">Premium <span aria-hidden="true"></span></button></th>
         </tr></thead><tbody id="available-body"></tbody></table>
@@ -63,8 +61,8 @@
         <table class="reward-table">
           <colgroup>
             <col class="col-partner"><col class="col-reward"><col class="col-port">
-            <col class="col-points"><col class="col-quantity"><col class="col-previous">
-            <col class="col-offer"><col class="col-expires"><col class="col-premium">
+            <col class="col-points"><col class="col-quantity">
+            <col class="col-expires"><col class="col-premium">
           </colgroup>
           <thead><tr>
           <th><button class="sort-button" data-sort="Partner">Partner <span aria-hidden="true"></span></button></th>
@@ -72,8 +70,6 @@
           <th><button class="sort-button" data-sort="Port">Port <span aria-hidden="true"></span></button></th>
           <th><button class="sort-button" data-sort="Points">Points <span aria-hidden="true"></span></button></th>
           <th><button class="sort-button" data-sort="Quantity">Quantity <span aria-hidden="true"></span></button></th>
-          <th><button class="sort-button" data-sort="HighestQuantityObserved">Previously observed <span aria-hidden="true"></span></button></th>
-          <th><button class="sort-button" data-sort="OfferID">Offer <span aria-hidden="true"></span></button></th>
           <th><button class="sort-button" data-sort="ExpireTime">Expires <span aria-hidden="true"></span></button></th>
           <th><button class="sort-button" data-sort="IsPremium">Premium <span aria-hidden="true"></span></button></th>
         </tr></thead><tbody id="sold-out-body"></tbody></table>
@@ -87,8 +83,8 @@
         <table class="reward-table">
           <colgroup>
             <col class="col-partner"><col class="col-reward"><col class="col-port">
-            <col class="col-points"><col class="col-quantity"><col class="col-previous">
-            <col class="col-offer"><col class="col-expires"><col class="col-premium">
+            <col class="col-points"><col class="col-quantity">
+            <col class="col-expires"><col class="col-premium">
           </colgroup>
           <thead><tr>
           <th><button class="sort-button" data-sort="Partner">Partner <span aria-hidden="true"></span></button></th>
@@ -96,8 +92,6 @@
           <th><button class="sort-button" data-sort="Port">Port <span aria-hidden="true"></span></button></th>
           <th><button class="sort-button" data-sort="Points">Points <span aria-hidden="true"></span></button></th>
           <th><button class="sort-button" data-sort="Quantity">Quantity <span aria-hidden="true"></span></button></th>
-          <th><button class="sort-button" data-sort="HighestQuantityObserved">Previously observed <span aria-hidden="true"></span></button></th>
-          <th><button class="sort-button" data-sort="OfferID">Offer <span aria-hidden="true"></span></button></th>
           <th><button class="sort-button" data-sort="ExpireTime">Expires <span aria-hidden="true"></span></button></th>
           <th><button class="sort-button" data-sort="IsPremium">Premium <span aria-hidden="true"></span></button></th>
         </tr></thead><tbody id="expired-body"></tbody></table>
@@ -105,20 +99,20 @@
       </div>
     </section>
 
-    <footer>Data from <a id="source-link" target="_blank" rel="noopener">myVIP</a>. Automatically checks for new data every 5 minutes.</footer>
+    <footer>Data from <a id="source-link" target="_blank" rel="noopener">myVIP</a>.</footer>
   </main>
 
   <dialog id="points-history-dialog" aria-labelledby="points-history-title">
     <div class="dialog-header">
       <div>
-        <p class="eyebrow">Points audit trail</p>
+        <p class="eyebrow">Value audit trail</p>
         <h2 id="points-history-title">Point history</h2>
       </div>
       <button id="points-history-close" class="dialog-close" type="button" aria-label="Close point history">×</button>
     </div>
     <div class="dialog-table-wrap">
       <table>
-        <thead><tr><th>Date</th><th>Time</th><th>Points</th></tr></thead>
+        <thead><tr><th>Date</th><th>Time</th><th id="value-history-heading">Points</th></tr></thead>
         <tbody id="points-history-body"></tbody>
       </table>
     </div>
@@ -139,6 +133,6 @@
       </table>
     </div>
   </dialog>
-  <script src="app.js?v=20260705-5"></script>
+  <script src="app.js?v=20260705-11"></script>
 </body>
 </html>
