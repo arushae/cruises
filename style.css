@@ -13,13 +13,14 @@ h1 { margin: 0; font-size: clamp(2rem, 5vw, 3.4rem); letter-spacing: -.04em; }
 .filters { display: grid; grid-template-columns: minmax(240px, 1fr) minmax(180px, 280px) auto; gap: 16px; align-items: end; background: white; padding: 18px; border-radius: 14px; box-shadow: 0 12px 32px rgb(35 55 65 / 6%); }
 label span { display: block; font-size: .78rem; font-weight: 700; margin-bottom: 6px; }
 input, select { width: 100%; border: 1px solid #bdc9cf; border-radius: 8px; padding: 10px 12px; font: inherit; background: white; }
+select { appearance: none; padding-right: 42px; background-color: white; background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.5 4.75L8 10.25L13.5 4.75' fill='none' stroke='%23087f8c' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 12px center; background-size: 16px 16px; }
 input:focus, select:focus { outline: 3px solid #8dd9dc; border-color: #087f8c; }
 #result-count { margin: 0 0 10px; color: #5d6b75; font-size: 12px; white-space: nowrap; }
 .reward-section { margin-top: 30px; }
 .section-heading { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; margin: 0 4px 10px; }
 .section-heading h2 { margin: 0; font-size: 1.25rem; letter-spacing: -.02em; }
 .section-heading span { color: #6c7a83; font-size: 12px; }
-.sold-out-section .section-heading h2 { color: #9b3131; }
+.sold-out-section .section-heading h2, .expired-section .section-heading h2 { color: #6c7a83; }
 .expired-section { opacity: .82; }
 .table-wrap { overflow-x: auto; background: white; border-radius: 14px; box-shadow: 0 12px 32px rgb(35 55 65 / 8%); }
 table { width: 100%; border-collapse: collapse; font-size: .9rem; }
@@ -59,8 +60,8 @@ td.sold-out { color: #9b3131; font-weight: 700; }
 .reward-row { cursor: pointer; }
 .reward-row:hover td { filter: brightness(.97); }
 .reward-row:focus-visible { outline: 3px solid #8dd9dc; outline-offset: -3px; }
-.reward-row td.toggle-cell::before { display: block; width: 9px; height: 9px; margin: 1px auto 0; border-right: 2px solid #087f8c; border-bottom: 2px solid #087f8c; content: ""; transform: rotate(45deg); transform-origin: 50% 50%; transition: transform .15s ease; }
-.reward-row[aria-expanded="true"] td.toggle-cell::before { transform: rotate(225deg); }
+.reward-row td.toggle-cell::before { display: block; width: 16px; height: 16px; margin: 0 auto; background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.5 4.75L8 10.25L13.5 4.75' fill='none' stroke='%23087f8c' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: center; background-size: 16px 16px; content: ""; transform: rotate(0deg); transform-origin: 50% 50%; transition: transform .15s ease; }
+.reward-row[aria-expanded="true"] td.toggle-cell::before { transform: rotate(180deg); }
 .reward-details[hidden] { display: none; }
 .reward-details td { padding: 0; background: #f6f9fa; }
 .reward-details-content { position: sticky; left: 0; width: min(calc(100vw - 32px), 720px); max-width: min(calc(100vw - 32px), 720px); padding: 18px 28px 22px 44px; border-bottom: 1px solid #dce5e8; font-size: .9rem; overflow-wrap: anywhere; }
@@ -75,6 +76,9 @@ td.sold-out { color: #9b3131; font-weight: 700; }
 .reward-details-content li + li { margin-top: 6px; }
 .reward-link { display: inline-block; font-weight: 700; }
 .snipe { display: inline-block; margin-top: 5px; padding: 2px 6px; border-radius: 4px; background: #e8f5f6; color: #086772; font-size: .72rem; font-weight: 700; }
+.snipe-sold-out { background: #edf1f3; color: #53636e; }
+.snipe-left { background: #ffe8e8; color: #9b3131; }
+.snipe-new-ports { background: #fff4bf; color: #7a5b00; }
 .muted { color: #77858e; }
 .empty-state { margin: 0; padding: 36px; text-align: center; color: #697780; }
 dialog { width: min(620px, calc(100% - 32px)); max-height: calc(100vh - 48px); padding: 0; border: 0; border-radius: 16px; color: #16212a; box-shadow: 0 24px 80px rgb(20 40 50 / 30%); }

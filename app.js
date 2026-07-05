@@ -77,6 +77,15 @@ function addCell(row, value, className = '') {
   return cell;
 }
 
+function snipeClass(reward) {
+  const snipeText = String(reward.SnipeText || '').toLocaleLowerCase();
+  const snipeCategory = String(reward.SnipeCategory || '').toLocaleLowerCase();
+  if (snipeCategory === 'soldout' || snipeText.includes('sold out')) return 'snipe snipe-sold-out';
+  if (snipeCategory === 'nleft' || /\b\d+\s+left\b/.test(snipeText)) return 'snipe snipe-left';
+  if (snipeText.includes('new port')) return 'snipe snipe-new-ports';
+  return 'snipe';
+}
+
 function compareRewards(a, b) {
   if (!state.sortApplied) {
     const partnerDifference = String(a.Partner || '').localeCompare(
@@ -164,7 +173,7 @@ function createRewardRows(reward) {
   const titleCell = addCell(row, reward['Reward title'], 'reward-title-cell');
   if (reward.SnipeText) {
     const badge = document.createElement('span');
-    badge.className = 'snipe';
+    badge.className = snipeClass(reward);
     badge.textContent = reward.SnipeText;
     titleCell.append(document.createElement('br'), badge);
   }
