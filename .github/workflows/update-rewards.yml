@@ -1,0 +1,40 @@
+name: Update cruise rewards
+
+on:
+  schedule:
+    - cron: "7,22,37,52 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-rewards
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out website
+        uses: actions/checkout@v4
+
+      - name: Fetch current rewards
+        env:
+          MYVIP_SITE_DIR: ${{ github.workspace }}
+          MYVIP_SNAPSHOT_DIR: ${{ github.workspace }}/.reward-data
+          MYVIP_DISABLE_NOTIFICATIONS: "1"
+        run: python3 myvip_reward_watch.py
+
+      - name: Publish changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add rewards.json .reward-data/latest.json
+          if git diff --cached --quiet; then
+            echo "No data changes to publish."
+          else
+            git commit -m "Update cruise rewards"
+            git push
+          fi
+
