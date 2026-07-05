@@ -29,6 +29,7 @@ WEBSITE_FIELDS = [
     "OfferID",
     "Partner",
     "Reward title",
+    "RewardPageTitle",
     "Port",
     "Points",
     "PointHistory",
@@ -40,6 +41,7 @@ WEBSITE_FIELDS = [
     "ExpireTime",
     "IsPremium",
     "RewardURL",
+    "RewardDescription",
     "ChangeHistory",
 ]
 
@@ -86,6 +88,7 @@ def extract_rewards(data: dict) -> dict:
                 "OfferID": award.get("OfferID"),
                 "Partner": partner,
                 "Reward title": title,
+                "RewardPageTitle": title,
                 "Port": port,
                 "Points": award.get("Price"),
                 "Quantity": award.get("Quantity"),
@@ -95,6 +98,7 @@ def extract_rewards(data: dict) -> dict:
                 "ExpireTime": award.get("ExpireTime"),
                 "IsPremium": award.get("IsPremium"),
                 "RewardURL": award.get("ForwardLink"),
+                "RewardDescription": award.get("ShortDescription"),
             }
 
     return rewards
@@ -235,6 +239,11 @@ def save_website_data(rewards: dict) -> None:
     for reward in rewards.values():
         website_reward = {field: reward.get(field) for field in WEBSITE_FIELDS}
         award_id = str(reward.get("AwardID"))
+        previous_reward = previous_rewards_by_id.get(award_id)
+        if not website_reward.get("RewardPageTitle") and previous_reward:
+            website_reward["RewardPageTitle"] = previous_reward.get("RewardPageTitle")
+        if not website_reward.get("RewardDescription") and previous_reward:
+            website_reward["RewardDescription"] = previous_reward.get("RewardDescription")
         current_quantity = reward.get("Quantity")
         observed_quantities = [previous_highs.get(award_id)]
         if isinstance(current_quantity, (int, float)) and not isinstance(current_quantity, bool):
@@ -249,7 +258,6 @@ def save_website_data(rewards: dict) -> None:
             or snapshot_point_histories.get(award_id)
             or []
         )
-        previous_reward = previous_rewards_by_id.get(award_id)
         if not point_history and previous_reward and previous_checked_at:
             point_history.append({
                 "observed_at": previous_checked_at,
