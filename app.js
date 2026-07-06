@@ -88,6 +88,40 @@ function snipeClass(reward) {
   return 'snipe';
 }
 
+function arushaNotes(reward) {
+  const notes = [];
+  const seen = new Set();
+  const addNote = (note) => {
+    const cleanNote = String(note || '').trim();
+    if (!cleanNote || seen.has(cleanNote)) return;
+    seen.add(cleanNote);
+    notes.push(cleanNote);
+  };
+  (reward.ArushaNotes || []).forEach(addNote);
+  addNote(reward.PointHistoryNote);
+  (reward.ChangeHistory || []).forEach((event) => addNote(event.note));
+  if (quantityGoesUpAndDown(reward)) addNote(QUANTITY_REPLENISHMENT_NOTE);
+  return notes;
+}
+
+function quantityGoesUpAndDown(reward) {
+  let hasQuantityIncrease = false;
+  let hasQuantityDecrease = false;
+  const changeHistory = Array.isArray(reward.ChangeHistory) ? reward.ChangeHistory : [];
+  changeHistory.forEach((event) => {
+    (event.changes || [])
+      .filter((change) => change.field === 'Quantity')
+      .forEach((change) => {
+        const fromValue = Number(change.from);
+        const toValue = Number(change.to);
+        if (Number.isNaN(fromValue) || Number.isNaN(toValue)) return;
+        if (toValue > fromValue) hasQuantityIncrease = true;
+        if (toValue < fromValue) hasQuantityDecrease = true;
+      });
+  });
+  return hasQuantityIncrease && hasQuantityDecrease;
+}
+
 function compareRewards(a, b) {
   if (!state.sortApplied) {
     const partnerDifference = String(a.Partner || '').localeCompare(
@@ -239,6 +273,21 @@ function createRewardRows(reward) {
   offerMeta.append(offerLabel, ` ${text(reward.OfferID)}`);
   detailContent.appendChild(offerMeta);
 
+  const notes = arushaNotes(reward);
+  if (notes.length) {
+    const notesHeading = document.createElement('h3');
+    notesHeading.textContent = "Arusha's notes";
+    detailContent.appendChild(notesHeading);
+    const notesList = document.createElement('ul');
+    notesList.className = 'arusha-notes';
+    notes.forEach((note) => {
+      const item = document.createElement('li');
+      item.textContent = note;
+      notesList.appendChild(item);
+    });
+    detailContent.appendChild(notesList);
+  }
+
   const heading = document.createElement('h3');
   heading.textContent = 'Observed changes';
   detailContent.appendChild(heading);
@@ -385,8 +434,8 @@ function openPointHistory(awardId) {
   if (!reward) return;
   pointHistoryTitle.textContent = `${reward.Partner} — ${reward['Reward title']}`;
   valueHistoryHeading.textContent = 'Points';
-  valueHistoryNote.hidden = true;
-  valueHistoryNote.textContent = '';
+  valueHistoryNote.hidden = !reward.PointHistoryNote;
+  valueHistoryNote.textContent = reward.PointHistoryNote || '';
   const history = Array.isArray(reward.PointHistory) ? reward.PointHistory : [];
   const rows = history.length ? history.map((entry) => {
     const row = document.createElement('tr');
@@ -420,24 +469,17 @@ function openQuantityHistory(awardId) {
     rowsData.push({ observed_at: observedAt, value });
   };
   const changeHistory = Array.isArray(reward.ChangeHistory) ? reward.ChangeHistory : [];
-  let hasQuantityIncrease = false;
-  let hasQuantityDecrease = false;
   changeHistory.forEach((event) => {
     (event.changes || [])
       .filter((change) => change.field === 'Quantity')
       .forEach((change) => {
-        const fromValue = Number(change.from);
-        const toValue = Number(change.to);
-        if (!Number.isNaN(fromValue) && !Number.isNaN(toValue)) {
-          if (toValue > fromValue) hasQuantityIncrease = true;
-          if (toValue < fromValue) hasQuantityDecrease = true;
-        }
         addHistoryValue(event.observed_at, change.from);
         addHistoryValue(event.observed_at, change.to);
       });
   });
-  valueHistoryNote.hidden = !(hasQuantityIncrease && hasQuantityDecrease);
-  valueHistoryNote.textContent = hasQuantityIncrease && hasQuantityDecrease ? QUANTITY_REPLENISHMENT_NOTE : '';
+  const showQuantityNote = quantityGoesUpAndDown(reward);
+  valueHistoryNote.hidden = !showQuantityNote;
+  valueHistoryNote.textContent = showQuantityNote ? QUANTITY_REPLENISHMENT_NOTE : '';
   if (reward.HighestQuantityObserved != null && reward.HighestQuantityObserved !== '') {
     addHistoryValue(reward.checked_at || state.checkHistory[0], reward.HighestQuantityObserved);
   }

@@ -8,6 +8,9 @@
       "Port": "Mexican Riviera",
       "Points": 250000,
       "PointHistory": [],
+      "ArushaNotes": [
+        "Arusha manually added this reward retrospectively"
+      ],
       "Quantity": null,
       "HighestQuantityObserved": null,
       "SnipeText": null,
@@ -29,6 +32,9 @@
       "Port": "Vancouver/Alaska",
       "Points": 250000,
       "PointHistory": [],
+      "ArushaNotes": [
+        "Arusha manually added this reward retrospectively"
+      ],
       "Quantity": null,
       "HighestQuantityObserved": null,
       "SnipeText": null,
@@ -52,6 +58,11 @@
         { "observed_at": "2025-11-27T00:00:00Z", "value": 500000 },
         { "observed_at": "2025-11-28T00:00:00Z", "value": 250000 },
         { "observed_at": "2025-11-29T00:00:00Z", "value": 500000 }
+      ],
+      "PointHistoryNote": "I purchased this deal on 22 Nov 2025 for 500k points, but on Black Friday (28 Nov) it dropped to 250k points.",
+      "ArushaNotes": [
+        "Arusha manually added this reward retrospectively",
+        "I purchased this deal on 22 Nov 2025 for 500k points, but on Black Friday (28 Nov) it dropped to 250k points."
       ],
       "Quantity": null,
       "HighestQuantityObserved": null,

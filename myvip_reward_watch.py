@@ -48,6 +48,8 @@ WEBSITE_FIELDS = [
     "RewardURL",
     "RewardDescription",
     "RewardUseByText",
+    "ArushaNotes",
+    "PointHistoryNote",
     "ChangeHistory",
 ]
 
@@ -325,6 +327,10 @@ def save_website_data(rewards: dict) -> None:
             website_reward["RewardDescription"] = previous_reward.get("RewardDescription")
         if not website_reward.get("RewardUseByText") and previous_reward:
             website_reward["RewardUseByText"] = previous_reward.get("RewardUseByText")
+        if previous_reward and previous_reward.get("ArushaNotes"):
+            website_reward["ArushaNotes"] = previous_reward.get("ArushaNotes")
+        if previous_reward and previous_reward.get("PointHistoryNote"):
+            website_reward["PointHistoryNote"] = previous_reward.get("PointHistoryNote")
         current_quantity = reward.get("Quantity")
         observed_quantities = [previous_highs.get(award_id)]
         if isinstance(current_quantity, (int, float)) and not isinstance(current_quantity, bool):

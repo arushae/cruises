@@ -76,6 +76,7 @@ td.sold-out { color: #9b3131; font-weight: 700; }
 .reward-meta strong { color: #263843; }
 .reward-details-content ul { margin: 0 0 14px; padding-left: 1.3rem; color: #52616b; }
 .reward-details-content li + li { margin-top: 6px; }
+.arusha-notes { color: #374a56; }
 .reward-link { display: inline-block; font-weight: 700; }
 .snipe { display: inline-block; margin-top: 5px; padding: 2px 6px; border-radius: 4px; background: #e8f5f6; color: #086772; font-size: .72rem; font-weight: 700; }
 .snipe-sold-out { background: #edf1f3; color: #53636e; }
