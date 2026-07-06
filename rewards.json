@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-07-06T13:07:25+00:00",
+  "checked_at": "2026-07-06T13:22:27+00:00",
   "check_history": [
     "2026-07-05T09:51:27",
     "2026-07-05T11:04:19",
@@ -96,7 +96,8 @@
     "2026-07-06T12:22:25+00:00",
     "2026-07-06T12:37:25+00:00",
     "2026-07-06T12:52:25+00:00",
-    "2026-07-06T13:07:25+00:00"
+    "2026-07-06T13:07:25+00:00",
+    "2026-07-06T13:22:27+00:00"
   ],
   "source_url": "https://loyalty-award-api.myvip.co/api/proxy/rewards/section/destination/8",
   "rewards": [
@@ -119,7 +120,7 @@
       "SnipeText": null,
       "SnipeCategory": null,
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-05T13:07:17.3535785+00:00",
+      "ExpireTime": "2026-08-05T13:22:21.4937679+00:00",
       "DeparturePorts": null,
       "Sailings": null,
       "Ships": null,
@@ -127,7 +128,7 @@
       "RewardURL": null,
       "ImageURL": "https://pscdn-a.akamaihd.net:443/rewards/media/Images/11000Images_cropped_1.png",
       "RewardDescription": "Our award-winning ships are designed for you to enjoy as you choose while cruising to beautiful destinations around the world. Add a wide range of superb dining options and spectacular entertainment and you’ll experience your best vacation ever.",
-      "RewardUseByText": "This reward must be redeemed by 8/5/2026 1:07:24 PM (UTC).",
+      "RewardUseByText": "This reward must be redeemed by 8/5/2026 1:22:26 PM (UTC).",
       "ArushaNotes": null,
       "PointHistoryNote": null,
       "ChangeHistory": [
@@ -1395,6 +1396,21 @@
               "to": "This reward must be redeemed by 8/5/2026 1:07:24 PM (UTC)."
             }
           ]
+        },
+        {
+          "observed_at": "2026-07-06T13:22:27+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-08-05T13:07:17.3535785+00:00",
+              "to": "2026-08-05T13:22:21.4937679+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 8/5/2026 1:07:24 PM (UTC).",
+              "to": "This reward must be redeemed by 8/5/2026 1:22:26 PM (UTC)."
+            }
+          ]
         }
       ]
     },
@@ -1417,7 +1433,7 @@
       "SnipeText": null,
       "SnipeCategory": null,
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-05T13:07:17.3535785+00:00",
+      "ExpireTime": "2026-08-05T13:22:21.4937679+00:00",
       "DeparturePorts": null,
       "Sailings": null,
       "Ships": null,
@@ -1425,7 +1441,7 @@
       "RewardURL": null,
       "ImageURL": "https://pscdn-a.akamaihd.net:443/rewards/media/Images/11001Images_cropped_1.png",
       "RewardDescription": "Our award-winning ships are designed for you to enjoy as you choose while cruising to beautiful destinations around the world. Add a wide range of superb dining options and spectacular entertainment and you’ll experience your best vacation ever.",
-      "RewardUseByText": "This reward must be redeemed by 8/5/2026 1:07:25 PM (UTC).",
+      "RewardUseByText": "This reward must be redeemed by 8/5/2026 1:22:27 PM (UTC).",
       "ArushaNotes": null,
       "PointHistoryNote": null,
       "ChangeHistory": [
@@ -2693,6 +2709,21 @@
               "to": "This reward must be redeemed by 8/5/2026 1:07:25 PM (UTC)."
             }
           ]
+        },
+        {
+          "observed_at": "2026-07-06T13:22:27+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-08-05T13:07:17.3535785+00:00",
+              "to": "2026-08-05T13:22:21.4937679+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 8/5/2026 1:07:25 PM (UTC).",
+              "to": "This reward must be redeemed by 8/5/2026 1:22:27 PM (UTC)."
+            }
+          ]
         }
       ]
     },
@@ -2715,7 +2746,7 @@
       "SnipeText": null,
       "SnipeCategory": null,
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-05T13:07:17.3535785+00:00",
+      "ExpireTime": "2026-08-05T13:22:21.4937679+00:00",
       "DeparturePorts": null,
       "Sailings": null,
       "Ships": null,
@@ -2723,7 +2754,7 @@
       "RewardURL": null,
       "ImageURL": "https://pscdn-a.akamaihd.net:443/rewards/media/Images/11002Images_cropped_1.png",
       "RewardDescription": "Our award-winning ships are designed for you to enjoy as you choose while cruising to beautiful destinations around the world. Add a wide range of superb dining options and spectacular entertainment and you’ll experience your best vacation ever.",
-      "RewardUseByText": "This reward must be redeemed by 8/5/2026 1:07:25 PM (UTC).",
+      "RewardUseByText": "This reward must be redeemed by 8/5/2026 1:22:27 PM (UTC).",
       "ArushaNotes": null,
       "PointHistoryNote": "I redeemed this deal on 19 Jun 2026 and used it for a cruise from Istanbul despite it saying it was for sailings from San Diego. I don't know if San Diego is a mistake or they were just bending the rules for me. You can call the number in the Ts & Cs and double check validity before purchasing the reward.",
       "ChangeHistory": [
@@ -3991,6 +4022,21 @@
               "to": "This reward must be redeemed by 8/5/2026 1:07:25 PM (UTC)."
             }
           ]
+        },
+        {
+          "observed_at": "2026-07-06T13:22:27+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-08-05T13:07:17.3535785+00:00",
+              "to": "2026-08-05T13:22:21.4937679+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 8/5/2026 1:07:25 PM (UTC).",
+              "to": "This reward must be redeemed by 8/5/2026 1:22:27 PM (UTC)."
+            }
+          ]
         }
       ]
     },
@@ -4013,7 +4059,7 @@
       "SnipeText": null,
       "SnipeCategory": null,
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-05T13:07:17.3535785+00:00",
+      "ExpireTime": "2026-08-05T13:22:21.4937679+00:00",
       "DeparturePorts": null,
       "Sailings": null,
       "Ships": null,
@@ -4021,7 +4067,7 @@
       "RewardURL": null,
       "ImageURL": "https://pscdn-a.akamaihd.net:443/rewards/media/Images/894Images_cropped.png",
       "RewardDescription": "This reward entitles you to $25 in Free Play inside Casino Royale, with the purchase of a Royal Caribbean International cruise. Experience the most innovative and exciting cruise line in the travel industry. You will enjoy casual and fine dining, 24 hour room service, daily entertainment, activities and spa facilities, in some of the world’s most breathtaking locations.\n\nContact Royal Caribbean’s Casino Royale Reservation Center at clubroyale@rccl.com in order to redeem this offer.",
-      "RewardUseByText": "This reward must be redeemed by 8/5/2026 1:07:17 PM (UTC).",
+      "RewardUseByText": "This reward must be redeemed by 8/5/2026 1:22:21 PM (UTC).",
       "ArushaNotes": null,
       "PointHistoryNote": null,
       "ChangeHistory": [
@@ -5299,6 +5345,21 @@
               "to": "This reward must be redeemed by 8/5/2026 1:07:17 PM (UTC)."
             }
           ]
+        },
+        {
+          "observed_at": "2026-07-06T13:22:27+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-08-05T13:07:17.3535785+00:00",
+              "to": "2026-08-05T13:22:21.4937679+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 8/5/2026 1:07:17 PM (UTC).",
+              "to": "This reward must be redeemed by 8/5/2026 1:22:21 PM (UTC)."
+            }
+          ]
         }
       ]
     },
@@ -5321,7 +5382,7 @@
       "SnipeText": null,
       "SnipeCategory": null,
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-05T13:07:17.3535785+00:00",
+      "ExpireTime": "2026-08-05T13:22:21.4937679+00:00",
       "DeparturePorts": null,
       "Sailings": null,
       "Ships": null,
@@ -5329,7 +5390,7 @@
       "RewardURL": null,
       "ImageURL": "https://pscdn-a.akamaihd.net:443/rewards/media/Images/RCI_casino_713_BJ_cropped.jpg",
       "RewardDescription": "This reward entitles you to $50 in Free Play inside Casino Royale, with the purchase of a Royal Caribbean International cruise. Experience the most innovative and exciting cruise line in the travel industry. You will enjoy casual and fine dining, 24 hour room service, daily entertainment, activities and spa facilities, in some of the world’s most breathtaking locations.\n\nContact Royal Caribbean’s Casino Royale Reservation Center at clubroyale@rccl.com in order to redeem this offer.",
-      "RewardUseByText": "This reward must be redeemed by 8/5/2026 1:07:17 PM (UTC).",
+      "RewardUseByText": "This reward must be redeemed by 8/5/2026 1:22:21 PM (UTC).",
       "ArushaNotes": null,
       "PointHistoryNote": null,
       "ChangeHistory": [
@@ -6617,6 +6678,21 @@
               "to": "This reward must be redeemed by 8/5/2026 1:07:17 PM (UTC)."
             }
           ]
+        },
+        {
+          "observed_at": "2026-07-06T13:22:27+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-08-05T13:07:17.3535785+00:00",
+              "to": "2026-08-05T13:22:21.4937679+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 8/5/2026 1:07:17 PM (UTC).",
+              "to": "This reward must be redeemed by 8/5/2026 1:22:21 PM (UTC)."
+            }
+          ]
         }
       ]
     },
@@ -6639,7 +6715,7 @@
       "SnipeText": null,
       "SnipeCategory": null,
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-05T13:07:17.3535785+00:00",
+      "ExpireTime": "2026-08-05T13:22:21.4937679+00:00",
       "DeparturePorts": null,
       "Sailings": null,
       "Ships": null,
@@ -6647,7 +6723,7 @@
       "RewardURL": null,
       "ImageURL": "https://pscdn-a.akamaihd.net:443/rewards/media/Images/2485_Gallery_cropped.png",
       "RewardDescription": "Enjoy the exclusive Wild Card 10% discount from myVEGAS when you purchase an Interior, Ocean View, or Balcony Stateroom.\n\nContact Royal Caribbean’s Casino Royale Reservation Center at clubroyale@rccl.com in order to redeem this offer.",
-      "RewardUseByText": "This reward must be redeemed by 8/5/2026 1:07:18 PM (UTC).",
+      "RewardUseByText": "This reward must be redeemed by 8/5/2026 1:22:22 PM (UTC).",
       "ArushaNotes": null,
       "PointHistoryNote": null,
       "ChangeHistory": [
@@ -7960,6 +8036,21 @@
               "to": "This reward must be redeemed by 8/5/2026 1:07:18 PM (UTC)."
             }
           ]
+        },
+        {
+          "observed_at": "2026-07-06T13:22:27+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-08-05T13:07:17.3535785+00:00",
+              "to": "2026-08-05T13:22:21.4937679+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 8/5/2026 1:07:18 PM (UTC).",
+              "to": "This reward must be redeemed by 8/5/2026 1:22:22 PM (UTC)."
+            }
+          ]
         }
       ]
     },
@@ -7982,7 +8073,7 @@
       "SnipeText": null,
       "SnipeCategory": null,
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-05T13:07:17.3535785+00:00",
+      "ExpireTime": "2026-08-05T13:22:21.4937679+00:00",
       "DeparturePorts": null,
       "Sailings": null,
       "Ships": null,
@@ -7990,7 +8081,7 @@
       "RewardURL": null,
       "ImageURL": "https://pscdn-a.akamaihd.net:443/rewards/media/Images/4338_Gallery_cropped.png",
       "RewardDescription": "This reward entitles you to a $100 Onboard Credit, with the purchase of a Royal Caribbean International cruise (new booking only).\n\nContact Royal Caribbean’s Casino Royale Reservation Center at clubroyale@rccl.com in order to redeem this offer.",
-      "RewardUseByText": "This reward must be redeemed by 8/5/2026 1:07:18 PM (UTC).",
+      "RewardUseByText": "This reward must be redeemed by 8/5/2026 1:22:22 PM (UTC).",
       "ArushaNotes": null,
       "PointHistoryNote": null,
       "ChangeHistory": [
@@ -9338,6 +9429,21 @@
               "to": "This reward must be redeemed by 8/5/2026 1:07:18 PM (UTC)."
             }
           ]
+        },
+        {
+          "observed_at": "2026-07-06T13:22:27+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-08-05T13:07:17.3535785+00:00",
+              "to": "2026-08-05T13:22:21.4937679+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 8/5/2026 1:07:18 PM (UTC).",
+              "to": "This reward must be redeemed by 8/5/2026 1:22:22 PM (UTC)."
+            }
+          ]
         }
       ]
     },
@@ -9360,7 +9466,7 @@
       "SnipeText": null,
       "SnipeCategory": null,
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-05T13:07:17.3535785+00:00",
+      "ExpireTime": "2026-08-05T13:22:21.4937679+00:00",
       "DeparturePorts": null,
       "Sailings": null,
       "Ships": null,
@@ -9368,7 +9474,7 @@
       "RewardURL": null,
       "ImageURL": "https://pscdn-a.akamaihd.net:443/rewards/media/Images/4719_Gallery_cropped.png",
       "RewardDescription": "This reward entitles you to a $100 FREEPLAY, with the purchase of a Royal Caribbean International cruise (new booking only). Must be redeemed within 30 days of a new cruise reservation.\n\nContact Royal Caribbean’s Casino Royale Reservation Center at clubroyale@rccl.com in order to redeem this offer.",
-      "RewardUseByText": "This reward must be redeemed by 8/5/2026 1:07:18 PM (UTC).",
+      "RewardUseByText": "This reward must be redeemed by 8/5/2026 1:22:22 PM (UTC).",
       "ArushaNotes": null,
       "PointHistoryNote": null,
       "ChangeHistory": [
@@ -10651,6 +10757,21 @@
               "to": "This reward must be redeemed by 8/5/2026 1:07:18 PM (UTC)."
             }
           ]
+        },
+        {
+          "observed_at": "2026-07-06T13:22:27+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-08-05T13:07:17.3535785+00:00",
+              "to": "2026-08-05T13:22:21.4937679+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 8/5/2026 1:07:18 PM (UTC).",
+              "to": "This reward must be redeemed by 8/5/2026 1:22:22 PM (UTC)."
+            }
+          ]
         }
       ]
     },
@@ -10673,7 +10794,7 @@
       "SnipeText": null,
       "SnipeCategory": null,
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-05T13:07:17.3535785+00:00",
+      "ExpireTime": "2026-08-05T13:22:21.4937679+00:00",
       "DeparturePorts": null,
       "Sailings": null,
       "Ships": null,
@@ -10681,7 +10802,7 @@
       "RewardURL": null,
       "ImageURL": "https://pscdn-a.akamaihd.net:443/rewards/media/Images/6713_Gallery_cropped.png",
       "RewardDescription": "This reward entitles you to a $150 FREEPLAY, with the purchase of a Royal Caribbean International cruise (new booking only). Must be redeemed within 30 days of a new cruise reservation.\n\nContact Royal Caribbean’s Casino Royale Reservation Center at clubroyale@rccl.com in order to redeem this offer.",
-      "RewardUseByText": "This reward must be redeemed by 8/5/2026 1:07:18 PM (UTC).",
+      "RewardUseByText": "This reward must be redeemed by 8/5/2026 1:22:22 PM (UTC).",
       "ArushaNotes": null,
       "PointHistoryNote": null,
       "ChangeHistory": [
@@ -12004,6 +12125,21 @@
               "to": "This reward must be redeemed by 8/5/2026 1:07:18 PM (UTC)."
             }
           ]
+        },
+        {
+          "observed_at": "2026-07-06T13:22:27+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-08-05T13:07:17.3535785+00:00",
+              "to": "2026-08-05T13:22:21.4937679+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 8/5/2026 1:07:18 PM (UTC).",
+              "to": "This reward must be redeemed by 8/5/2026 1:22:22 PM (UTC)."
+            }
+          ]
         }
       ]
     },
@@ -12490,7 +12626,7 @@
       "SnipeText": "1 left",
       "SnipeCategory": "NLeft",
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-05T13:07:17.3535785+00:00",
+      "ExpireTime": "2026-08-05T13:22:21.4937679+00:00",
       "DeparturePorts": "Shanghai (Baoshan), China",
       "Sailings": "9/23/2026",
       "Ships": "Spectrum of the Seas",
@@ -12498,7 +12634,7 @@
       "RewardURL": null,
       "ImageURL": "https://pscdn-a.akamaihd.net:443/rewards/media/Images/11014Images_cropped_1.png",
       "RewardDescription": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Shanghai (Baoshan), China for 4 nights sailing on 9/23/2026 in an interior cabin. Taxes, gratuities, and other fees may apply. \n\nDive headfirst into adventure on a 4-night cruise to discover the wonders of Asia. Depart from Shanghai (Baoshan), China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region.",
-      "RewardUseByText": "This reward must be redeemed by 8/5/2026 1:07:21 PM (UTC).",
+      "RewardUseByText": "This reward must be redeemed by 8/5/2026 1:22:24 PM (UTC).",
       "ArushaNotes": null,
       "PointHistoryNote": null,
       "ChangeHistory": [
@@ -13781,6 +13917,21 @@
               "to": "This reward must be redeemed by 8/5/2026 1:07:21 PM (UTC)."
             }
           ]
+        },
+        {
+          "observed_at": "2026-07-06T13:22:27+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-08-05T13:07:17.3535785+00:00",
+              "to": "2026-08-05T13:22:21.4937679+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 8/5/2026 1:07:21 PM (UTC).",
+              "to": "This reward must be redeemed by 8/5/2026 1:22:24 PM (UTC)."
+            }
+          ]
         }
       ]
     },
@@ -14353,7 +14504,7 @@
       "SnipeText": "NEW PORTS",
       "SnipeCategory": "Custom",
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-05T13:07:17.3535785+00:00",
+      "ExpireTime": "2026-08-05T13:22:21.4937679+00:00",
       "DeparturePorts": "San Juan & North America",
       "Sailings": null,
       "Ships": null,
@@ -14361,7 +14512,7 @@
       "RewardURL": null,
       "ImageURL": "https://pscdn-a.akamaihd.net:443/rewards/media/Images/10371Images_cropped_1.png",
       "RewardDescription": "Now, exclusively with myVIP, enjoy a highly discounted rate with added benefits on your next voyage from ports in San Juan & North America. \n\nSet Sail with a $1,200 double-occupancy rate for a 6-Night Cruise in an UPGRADED SEA TERRACE on Virgin Voyages out of San Juan & North America! Complimentary beverages at the casino bar and waived withdrawal fees are included in this offer. Taxes & Port Fees apply. Sailings subject to change. \n\nReady for an adults-only escape at sea? Virgin Voyages is redefining the cruise experience with award-winning dining, immersive entertainment, and luxurious, always-included perks—no buffets, no kids, no ordinary cruises",
-      "RewardUseByText": "This reward must be redeemed by 8/5/2026 1:07:24 PM (UTC).",
+      "RewardUseByText": "This reward must be redeemed by 8/5/2026 1:22:26 PM (UTC).",
       "ArushaNotes": null,
       "PointHistoryNote": null,
       "ChangeHistory": [
@@ -15634,6 +15785,21 @@
               "to": "This reward must be redeemed by 8/5/2026 1:07:24 PM (UTC)."
             }
           ]
+        },
+        {
+          "observed_at": "2026-07-06T13:22:27+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-08-05T13:07:17.3535785+00:00",
+              "to": "2026-08-05T13:22:21.4937679+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 8/5/2026 1:07:24 PM (UTC).",
+              "to": "This reward must be redeemed by 8/5/2026 1:22:26 PM (UTC)."
+            }
+          ]
         }
       ]
     },
@@ -15656,7 +15822,7 @@
       "SnipeText": "NEW PORTS",
       "SnipeCategory": "Custom",
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-05T13:07:17.3535785+00:00",
+      "ExpireTime": "2026-08-05T13:22:21.4937679+00:00",
       "DeparturePorts": "San Juan & North America",
       "Sailings": null,
       "Ships": null,
@@ -15664,7 +15830,7 @@
       "RewardURL": null,
       "ImageURL": "https://pscdn-a.akamaihd.net:443/rewards/media/Images/10369Images_cropped_1.png",
       "RewardDescription": "Now, exclusively with myVIP, enjoy a highly discounted rate with added benefits on your next voyage from ports in San Juan & North America. \n\nSet Sail with a $1000 double-occupancy rate for a 5-Night Cruise in an UPGRADED SEA TERRACE on Virgin Voyages out of San Juan & North America! Complimentary beverages at the casino bar and waived withdrawal fees are included in this offer. Taxes & Port Fees apply. Sailings subject to change. \n\nReady for an adults-only escape at sea? Virgin Voyages is redefining the cruise experience with award-winning dining, immersive entertainment, and luxurious, always-included perks—no buffets, no kids, no ordinary cruises.",
-      "RewardUseByText": "This reward must be redeemed by 8/5/2026 1:07:24 PM (UTC).",
+      "RewardUseByText": "This reward must be redeemed by 8/5/2026 1:22:26 PM (UTC).",
       "ArushaNotes": null,
       "PointHistoryNote": null,
       "ChangeHistory": [
@@ -16937,6 +17103,21 @@
               "to": "This reward must be redeemed by 8/5/2026 1:07:24 PM (UTC)."
             }
           ]
+        },
+        {
+          "observed_at": "2026-07-06T13:22:27+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-08-05T13:07:17.3535785+00:00",
+              "to": "2026-08-05T13:22:21.4937679+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 8/5/2026 1:07:24 PM (UTC).",
+              "to": "This reward must be redeemed by 8/5/2026 1:22:26 PM (UTC)."
+            }
+          ]
         }
       ]
     },
@@ -16959,7 +17140,7 @@
       "SnipeText": "NEW PORTS",
       "SnipeCategory": "Custom",
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-05T13:07:17.3535785+00:00",
+      "ExpireTime": "2026-08-05T13:22:21.4937679+00:00",
       "DeparturePorts": "San Juan & North America",
       "Sailings": null,
       "Ships": null,
@@ -16967,7 +17148,7 @@
       "RewardURL": null,
       "ImageURL": "https://pscdn-a.akamaihd.net:443/rewards/media/Images/10370Images_cropped_1.png",
       "RewardDescription": "Now, exclusively with myVIP, enjoy a highly discounted rate with added benefits on your next voyage from ports in San Juan & North America. \n\nSet Sail with a $1,400 double-occupancy rate for a 7-Night Cruise in an UPGRADED SEA TERRACE on Virgin Voyages out of San Juan & North America! Complimentary beverages at the casino bar and waived withdrawal fees are included in this offer. Taxes & Port Fees apply. Sailings subject to change. \n\nReady for an adults-only escape at sea? Virgin Voyages is redefining the cruise experience with award-winning dining, immersive entertainment, and luxurious, always-included perks—no buffets, no kids, no ordinary cruises.",
-      "RewardUseByText": "This reward must be redeemed by 8/5/2026 1:07:24 PM (UTC).",
+      "RewardUseByText": "This reward must be redeemed by 8/5/2026 1:22:26 PM (UTC).",
       "ArushaNotes": null,
       "PointHistoryNote": null,
       "ChangeHistory": [
@@ -18238,6 +18419,21 @@
               "field": "RewardUseByText",
               "from": "This reward must be redeemed by 8/5/2026 12:52:25 PM (UTC).",
               "to": "This reward must be redeemed by 8/5/2026 1:07:24 PM (UTC)."
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-07-06T13:22:27+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-08-05T13:07:17.3535785+00:00",
+              "to": "2026-08-05T13:22:21.4937679+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 8/5/2026 1:07:24 PM (UTC).",
+              "to": "This reward must be redeemed by 8/5/2026 1:22:26 PM (UTC)."
             }
           ]
         }
