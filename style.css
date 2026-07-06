@@ -187,8 +187,8 @@ a { color: #087f8c; }
 }
 @media (min-width: 1025px) {
   .reward-details-content {
-    width: calc(100vw - 32px);
-    max-width: calc(100vw - 32px);
+    width: min(calc(100vw - 32px), 1040px);
+    max-width: min(calc(100vw - 32px), 1040px);
     min-height: 220px;
   }
 
