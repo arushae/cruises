@@ -42,6 +42,7 @@ WEBSITE_FIELDS = [
     "Port",
     "Points",
     "PointHistory",
+    "FirstObserved",
     "Quantity",
     "HighestQuantityObserved",
     "SnipeText",
@@ -566,6 +567,12 @@ def save_website_data(rewards: dict, checked_at: str) -> None:
         if previous_reward and previous_reward.get("PointHistoryNote"):
             website_reward["PointHistoryNote"] = previous_reward.get("PointHistoryNote")
         apply_manual_reward_notes(website_reward)
+        if previous_reward and previous_reward.get("FirstObserved"):
+            website_reward["FirstObserved"] = previous_reward.get("FirstObserved")
+        elif not previous_reward:
+            website_reward["FirstObserved"] = checked_at
+        elif not website_reward.get("FirstObserved"):
+            website_reward["FirstObserved"] = "Unknown"
         current_quantity = reward.get("Quantity")
         observed_quantities = [previous_highs.get(award_id)]
         if isinstance(current_quantity, (int, float)) and not isinstance(current_quantity, bool):

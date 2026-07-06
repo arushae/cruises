@@ -1,5 +1,5 @@
 const REFRESH_INTERVAL = 5 * 60 * 1000;
-const state = { rewards: [], expiredRewards: [], checkHistory: [], sortKey: 'Partner', sortDirection: 'asc', sortApplied: false, newDealAwardId: null };
+const state = { rewards: [], expiredRewards: [], checkHistory: [], sortKey: 'Partner', sortDirection: 'asc', sortApplied: false, newDealAwardId: null, loading: true };
 
 const searchInput = document.querySelector('#search');
 const partnerFilter = document.querySelector('#partner-filter');
@@ -416,9 +416,9 @@ function formatNumber(value) {
 }
 
 function firstObservedAt(reward) {
-  const history = Array.isArray(reward.PointHistory) ? reward.PointHistory : [];
-  const firstEntry = history.find((entry) => entry && entry.observed_at);
-  return firstEntry ? firstEntry.observed_at : null;
+  const observedAt = reward.FirstObserved;
+  if (!observedAt || observedAt === 'Unknown') return null;
+  return observedAt;
 }
 
 function newestFirstSeenReward(rewards, checkedAtValue) {
@@ -481,6 +481,7 @@ function scrollToNewDealRow(event) {
     row.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'nearest' });
     row.focus({ preventScroll: true });
     window.history.replaceState(null, '', `#${row.id}`);
+    window.setTimeout(() => openRewardRow(row), 650);
   });
 }
 
@@ -660,6 +661,13 @@ function createRewardRows(reward) {
   const changeHistory = Array.isArray(reward.ChangeHistory) ? reward.ChangeHistory : [];
   const changeList = document.createElement('ul');
   let displayedChanges = 0;
+  const bornAt = firstObservedAt(reward);
+  if (bornAt) {
+    const bornItem = document.createElement('li');
+    bornItem.textContent = `${formatHistoryDate(bornAt)}, ${formatHistoryTime(bornAt)} — Reward first observed.`;
+    changeList.appendChild(bornItem);
+    displayedChanges += 1;
+  }
   if (changeHistory.length) {
     changeHistory.forEach((event) => {
       if (event.note) {
@@ -709,8 +717,16 @@ function createRewardRows(reward) {
   return [row, detailRow];
 }
 
-function renderTable(body, rewards, emptyState) {
+function renderTable(body, rewards, emptyState, emptyText, loadingText) {
   body.replaceChildren(...rewards.flatMap(createRewardRows));
+  if (state.loading && rewards.length === 0) {
+    emptyState.classList.add('is-loading');
+    emptyState.textContent = loadingText;
+    emptyState.hidden = false;
+    return;
+  }
+  emptyState.classList.remove('is-loading');
+  emptyState.textContent = emptyText;
   emptyState.hidden = rewards.length !== 0;
 }
 
@@ -750,9 +766,9 @@ function render() {
   const available = filtered.filter((reward) => reward.Quantity !== 0);
   const soldOut = filtered.filter((reward) => reward.Quantity === 0);
 
-  renderTable(availableBody, available, availableEmpty);
-  renderTable(soldOutBody, soldOut, soldOutEmpty);
-  renderTable(expiredBody, expired, expiredEmpty);
+  renderTable(availableBody, available, availableEmpty, 'No available rewards match these filters.', 'Loading available rewards…');
+  renderTable(soldOutBody, soldOut, soldOutEmpty, 'No sold-out rewards match these filters.', 'Loading sold-out rewards…');
+  renderTable(expiredBody, expired, expiredEmpty, 'No expired rewards recorded yet.', 'Loading expired rewards…');
 
   resultCount.textContent = `${filtered.length + expired.length} of ${state.rewards.length + state.expiredRewards.length} rewards`;
   availableCount.textContent = `${available.length} rewards`;
@@ -772,6 +788,8 @@ function updatePartners() {
 
 async function loadRewards() {
   refreshStatus.textContent = 'Checking for updated data…';
+  state.loading = true;
+  render();
   try {
     const cacheBuster = Date.now();
     const [response, expiredResponse] = await Promise.all([
@@ -788,9 +806,12 @@ async function loadRewards() {
     sourceLink.href = data.source_url || '#';
     updateNewDealBanner(data.checked_at);
     updatePartners();
+    state.loading = false;
     render();
     refreshStatus.textContent = '';
   } catch (error) {
+    state.loading = false;
+    render();
     refreshStatus.textContent = `Could not load rewards.json (${error.message})`;
   }
 }
@@ -985,8 +1006,26 @@ function toggleRewardRow(row) {
   const detailRow = document.getElementById(row.getAttribute('aria-controls'));
   if (!detailRow) return;
   const expanded = row.getAttribute('aria-expanded') === 'true';
-  row.setAttribute('aria-expanded', String(!expanded));
-  detailRow.hidden = expanded;
+  if (expanded) closeRewardRow(row);
+  else openRewardRow(row);
+}
+
+function openRewardRow(row) {
+  const detailRow = document.getElementById(row.getAttribute('aria-controls'));
+  if (!detailRow) return;
+  row.setAttribute('aria-expanded', 'true');
+  detailRow.hidden = false;
+  window.requestAnimationFrame(() => detailRow.classList.add('is-open'));
+}
+
+function closeRewardRow(row) {
+  const detailRow = document.getElementById(row.getAttribute('aria-controls'));
+  if (!detailRow) return;
+  row.setAttribute('aria-expanded', 'false');
+  detailRow.classList.remove('is-open');
+  window.setTimeout(() => {
+    if (row.getAttribute('aria-expanded') !== 'true') detailRow.hidden = true;
+  }, 360);
 }
 pointHistoryClose.addEventListener('click', () => pointHistoryDialog.close());
 checkHistoryButton.addEventListener('click', openCheckHistory);
