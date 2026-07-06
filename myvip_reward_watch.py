@@ -50,6 +50,7 @@ WEBSITE_FIELDS = [
     "Ships",
     "IsPremium",
     "RewardURL",
+    "ImageURL",
     "RewardDescription",
     "RewardUseByText",
     "ArushaNotes",
@@ -111,7 +112,7 @@ def extract_detail_columns(reward: dict) -> None:
         sailings = ", ".join(dict.fromkeys(sailing_matches))
     else:
         match = re.search(
-            r"\bselect sailings through\s+(.+?)(?:\s+on\b|[.;]|$)",
+            r"\b(?:select sailings|sail from now)\s+through\s+(.+?)(?:\s+on\b|[.;]|$)",
             description,
             flags=re.IGNORECASE,
         )
@@ -182,6 +183,7 @@ def enrich_rewards_with_detail(rewards: dict) -> None:
             continue
 
         reward["RewardPageTitle"] = clean_detail_text(detail.get("Title")) or reward.get("RewardPageTitle")
+        reward["ImageURL"] = detail.get("ImageURL") or detail.get("GalleryImageURL") or reward.get("ImageURL")
         reward["RewardDescription"] = (
             clean_detail_text(detail.get("Description"))
             or clean_detail_text(detail.get("ShortDescription"))
@@ -233,6 +235,7 @@ def extract_rewards(data: dict) -> dict:
                 "Ships": None,
                 "IsPremium": award.get("IsPremium"),
                 "RewardURL": award.get("ForwardLink"),
+                "ImageURL": award.get("ImageURL") or award.get("GalleryImageURL"),
                 "RewardDescription": award.get("ShortDescription"),
                 "RewardUseByText": None,
             }
@@ -384,6 +387,8 @@ def save_website_data(rewards: dict) -> None:
             website_reward["RewardDescription"] = previous_reward.get("RewardDescription")
         if not website_reward.get("RewardUseByText") and previous_reward:
             website_reward["RewardUseByText"] = previous_reward.get("RewardUseByText")
+        if not website_reward.get("ImageURL") and previous_reward:
+            website_reward["ImageURL"] = previous_reward.get("ImageURL")
         for detail_field in ("DeparturePorts", "Sailings", "Ships"):
             if not website_reward.get(detail_field) and previous_reward:
                 website_reward[detail_field] = previous_reward.get(detail_field)

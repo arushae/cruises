@@ -104,6 +104,94 @@ function addCell(row, value, className = '') {
   return cell;
 }
 
+function createRewardImagePorthole(reward) {
+  const svgNS = 'http://www.w3.org/2000/svg';
+  const xlinkNS = 'http://www.w3.org/1999/xlink';
+  const safeId = String(reward.AwardID || reward.OfferID || Math.random())
+    .replace(/[^a-z0-9_-]/gi, '-');
+  const clipId = `reward-image-clip-${safeId}`;
+  const titleId = `reward-image-title-${safeId}`;
+
+  const figure = document.createElement('figure');
+  figure.className = 'reward-image-porthole';
+  figure.setAttribute('role', 'img');
+  figure.setAttribute('aria-label', reward.RewardPageTitle || reward['Reward title'] || 'Reward image');
+
+  const svg = document.createElementNS(svgNS, 'svg');
+  svg.setAttribute('viewBox', '0 0 240 240');
+  svg.setAttribute('aria-hidden', 'true');
+  svg.setAttribute('focusable', 'false');
+
+  const title = document.createElementNS(svgNS, 'title');
+  title.id = titleId;
+  title.textContent = reward.RewardPageTitle || reward['Reward title'] || 'Reward image';
+  svg.appendChild(title);
+
+  const defs = document.createElementNS(svgNS, 'defs');
+  const clipPath = document.createElementNS(svgNS, 'clipPath');
+  clipPath.id = clipId;
+  const clipCircle = document.createElementNS(svgNS, 'circle');
+  clipCircle.setAttribute('cx', '120');
+  clipCircle.setAttribute('cy', '120');
+  clipCircle.setAttribute('r', '78');
+  clipPath.appendChild(clipCircle);
+  defs.appendChild(clipPath);
+  svg.appendChild(defs);
+
+  const outerRing = document.createElementNS(svgNS, 'circle');
+  outerRing.setAttribute('cx', '120');
+  outerRing.setAttribute('cy', '120');
+  outerRing.setAttribute('r', '111');
+  outerRing.setAttribute('fill', '#b8c2c8');
+  outerRing.setAttribute('stroke', '#6f7e87');
+  outerRing.setAttribute('stroke-width', '8');
+  svg.appendChild(outerRing);
+
+  const innerRing = document.createElementNS(svgNS, 'circle');
+  innerRing.setAttribute('cx', '120');
+  innerRing.setAttribute('cy', '120');
+  innerRing.setAttribute('r', '88');
+  innerRing.setAttribute('fill', '#eef3f5');
+  innerRing.setAttribute('stroke', '#778690');
+  innerRing.setAttribute('stroke-width', '7');
+  svg.appendChild(innerRing);
+
+  const image = document.createElementNS(svgNS, 'image');
+  image.setAttribute('x', '42');
+  image.setAttribute('y', '42');
+  image.setAttribute('width', '156');
+  image.setAttribute('height', '156');
+  image.setAttribute('preserveAspectRatio', 'xMidYMid slice');
+  image.setAttribute('clip-path', `url(#${clipId})`);
+  image.setAttribute('href', reward.ImageURL);
+  image.setAttributeNS(xlinkNS, 'href', reward.ImageURL);
+  svg.appendChild(image);
+
+  const glassRing = document.createElementNS(svgNS, 'circle');
+  glassRing.setAttribute('cx', '120');
+  glassRing.setAttribute('cy', '120');
+  glassRing.setAttribute('r', '78');
+  glassRing.setAttribute('fill', 'none');
+  glassRing.setAttribute('stroke', 'rgba(255, 255, 255, 0.58)');
+  glassRing.setAttribute('stroke-width', '4');
+  svg.appendChild(glassRing);
+
+  for (let index = 0; index < 12; index += 1) {
+    const angle = (index / 12) * Math.PI * 2 - Math.PI / 2;
+    const bolt = document.createElementNS(svgNS, 'circle');
+    bolt.setAttribute('cx', String(120 + Math.cos(angle) * 99));
+    bolt.setAttribute('cy', String(120 + Math.sin(angle) * 99));
+    bolt.setAttribute('r', '5.5');
+    bolt.setAttribute('fill', '#eef3f5');
+    bolt.setAttribute('stroke', '#65747d');
+    bolt.setAttribute('stroke-width', '2');
+    svg.appendChild(bolt);
+  }
+
+  figure.appendChild(svg);
+  return figure;
+}
+
 function snipeClass(reward) {
   const snipeText = String(reward.SnipeText || '').toLocaleLowerCase();
   const snipeCategory = String(reward.SnipeCategory || '').toLocaleLowerCase();
@@ -271,6 +359,10 @@ function createRewardRows(reward) {
   detailCell.colSpan = 12;
   const detailContent = document.createElement('div');
   detailContent.className = 'reward-details-content';
+
+  if (reward.ImageURL) {
+    detailContent.appendChild(createRewardImagePorthole(reward));
+  }
 
   if (reward.RewardPageTitle) {
     const pageTitle = document.createElement('h3');
