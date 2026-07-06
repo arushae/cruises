@@ -26,6 +26,7 @@ const valueHistoryNote = document.querySelector('#value-history-note');
 const checkHistoryButton = document.querySelector('#check-history-button');
 const checkHistoryDialog = document.querySelector('#check-history-dialog');
 const checkHistoryTitle = document.querySelector('#check-history-title');
+const checkHistorySubtitle = document.querySelector('#check-history-subtitle');
 const checkHistoryBody = document.querySelector('#check-history-body');
 const checkHistoryClose = document.querySelector('#check-history-close');
 const columnHelpDialog = document.querySelector('#column-help-dialog');
@@ -798,13 +799,30 @@ function openQuantityHistory(awardId) {
 }
 
 function openCheckHistory() {
-  checkHistoryTitle.textContent = `Site check history (${state.checkHistory.length})`;
-  checkHistoryBody.replaceChildren(...[...state.checkHistory].reverse().map((observedAt) => {
+  const todayLabel = formatHistoryDate(new Date().toISOString());
+  const olderCounts = new Map();
+  const rows = [];
+  [...state.checkHistory].reverse().forEach((observedAt) => {
+    const dateLabel = formatHistoryDate(observedAt);
+    if (dateLabel === todayLabel) {
+      const row = document.createElement('tr');
+      addCell(row, dateLabel);
+      addCell(row, formatHistoryTime(observedAt));
+      rows.push(row);
+      return;
+    }
+    olderCounts.set(dateLabel, (olderCounts.get(dateLabel) || 0) + 1);
+  });
+  olderCounts.forEach((count, dateLabel) => {
     const row = document.createElement('tr');
-    addCell(row, formatHistoryDate(observedAt));
-    addCell(row, formatHistoryTime(observedAt));
-    return row;
-  }));
+    addCell(row, dateLabel);
+    addCell(row, `${count} ${count === 1 ? 'check' : 'checks'}`);
+    rows.push(row);
+  });
+  const days = new Set(state.checkHistory.map((observedAt) => formatHistoryDate(observedAt))).size;
+  checkHistoryTitle.textContent = `${state.checkHistory.length} site checks over ${days} ${days === 1 ? 'day' : 'days'}`;
+  checkHistorySubtitle.textContent = 'Since 05 July 2026';
+  checkHistoryBody.replaceChildren(...rows);
   checkHistoryDialog.showModal();
 }
 
