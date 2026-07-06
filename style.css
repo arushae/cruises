@@ -139,7 +139,7 @@ dialog::backdrop { background: rgb(18 35 44 / 55%); backdrop-filter: blur(3px); 
 .dialog-header { display: flex; justify-content: space-between; align-items: start; gap: 20px; padding: 22px 24px 16px; border-bottom: 1px solid #e2e8eb; }
 .dialog-header h2 { margin: 0; font-size: 1.2rem; }
 .dialog-subtitle { margin: 5px 0 0; color: #6c7a83; font-size: 12px; }
-.dialog-close { width: 2rem; height: 2rem; padding: 0; border: 0; border-radius: 50%; color: #53636e; background: #eef3f5; font: 1.5rem/1 sans-serif; cursor: pointer; }
+.dialog-close { display: inline-flex; flex: 0 0 2rem; justify-content: center; align-items: center; width: 2rem; height: 2rem; aspect-ratio: 1; padding: 0; border: 0; border-radius: 50%; color: #53636e; background: #eef3f5; font: 1.5rem/1 sans-serif; cursor: pointer; }
 .dialog-table-wrap { max-height: 60vh; overflow: auto; padding: 0 24px 24px; }
 .dialog-note { margin: 18px 0 14px; padding: 12px 14px; border-left: 4px solid #7bbbc0; border-radius: 8px; color: #374a56; background: #e8f5f6; line-height: 1.45; }
 .dialog-table-wrap th { position: sticky; top: 0; }
