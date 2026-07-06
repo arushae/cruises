@@ -1,5 +1,5 @@
 const REFRESH_INTERVAL = 5 * 60 * 1000;
-const state = { rewards: [], expiredRewards: [], checkHistory: [], sortKey: 'Partner', sortDirection: 'asc', sortApplied: false };
+const state = { rewards: [], expiredRewards: [], checkHistory: [], sortKey: 'Partner', sortDirection: 'asc', sortApplied: false, newDealAwardId: null };
 
 const searchInput = document.querySelector('#search');
 const partnerFilter = document.querySelector('#partner-filter');
@@ -16,6 +16,10 @@ const resultCount = document.querySelector('#result-count');
 const checkedAt = document.querySelector('#checked-at');
 const refreshStatus = document.querySelector('#refresh-status');
 const sourceLink = document.querySelector('#source-link');
+const newDealBanner = document.querySelector('#new-deal-banner');
+const newDealTitle = document.querySelector('#new-deal-title');
+const newDealMeta = document.querySelector('#new-deal-meta');
+const newDealLink = document.querySelector('#new-deal-link');
 const sortButtons = document.querySelectorAll('.sort-button');
 const pointHistoryDialog = document.querySelector('#points-history-dialog');
 const pointHistoryTitle = document.querySelector('#points-history-title');
@@ -34,6 +38,7 @@ const columnHelpTitle = document.querySelector('#column-help-title');
 const columnHelpText = document.querySelector('#column-help-text');
 const columnHelpClose = document.querySelector('#column-help-close');
 const EXPIRE_TIME_CHANGE_DISPLAY_THRESHOLD_MS = 12 * 60 * 60 * 1000;
+const NEW_DEAL_ALERT_WINDOW_MS = 48 * 60 * 60 * 1000;
 const PORT_COLUMN_HELP = "While this field is named 'port', it has been populated with inconsistent data, ranging from the port, general location of the cruise or the ship.";
 const QUANTITY_REPLENISHMENT_NOTE = "It looks as if these rewards are automatically replenished from time to time and the quantity is just a failsafe in case there's a sudden run on them!";
 const KONAMI_CODE = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'];
@@ -410,6 +415,75 @@ function formatNumber(value) {
   return typeof value === 'number' ? value.toLocaleString() : text(value);
 }
 
+function firstObservedAt(reward) {
+  const history = Array.isArray(reward.PointHistory) ? reward.PointHistory : [];
+  const firstEntry = history.find((entry) => entry && entry.observed_at);
+  return firstEntry ? firstEntry.observed_at : null;
+}
+
+function newestFirstSeenReward(rewards, checkedAtValue) {
+  const checkedTime = new Date(checkedAtValue).getTime();
+  const candidates = rewards
+    .map((reward) => {
+      const observedAt = firstObservedAt(reward);
+      const observedTime = new Date(observedAt).getTime();
+      return { reward, observedAt, observedTime };
+    })
+    .filter((item) => item.observedAt && !Number.isNaN(item.observedTime))
+    .sort((left, right) => right.observedTime - left.observedTime);
+  if (!candidates.length) return null;
+
+  const newest = candidates[0];
+  if (!Number.isNaN(checkedTime) && checkedTime - newest.observedTime > NEW_DEAL_ALERT_WINDOW_MS) return null;
+  return newest;
+}
+
+function newDealQuantityText(reward) {
+  if (reward.Quantity === 0) return 'sold out';
+  if (typeof reward.Quantity === 'number') return `${formatNumber(reward.Quantity)} left`;
+  return 'quantity unknown';
+}
+
+function updateNewDealBanner(checkedAtValue) {
+  if (!newDealBanner || !newDealTitle || !newDealMeta || !newDealLink) return;
+  const newest = newestFirstSeenReward(state.rewards, checkedAtValue);
+  if (!newest) {
+    state.newDealAwardId = null;
+    newDealBanner.hidden = true;
+    return;
+  }
+
+  const { reward, observedAt } = newest;
+  state.newDealAwardId = reward.AwardID;
+  newDealTitle.textContent = `${reward.Partner || 'New reward'} — ${reward.RewardPageTitle || reward['Reward title'] || 'Untitled reward'}`;
+  newDealMeta.textContent = [
+    `${formatNumber(reward.Points)} points`,
+    newDealQuantityText(reward),
+    reward.DeparturePorts || reward.Port,
+    reward.Sailings,
+    `first seen ${formatDate(observedAt)}`,
+  ].filter(Boolean).join(' · ');
+  newDealLink.href = `#reward-row-${encodeURIComponent(reward.AwardID)}`;
+  newDealBanner.hidden = false;
+}
+
+function scrollToNewDealRow(event) {
+  if (!state.newDealAwardId) return;
+  if (event) event.preventDefault();
+  if (searchInput.value || partnerFilter.value) {
+    searchInput.value = '';
+    partnerFilter.value = '';
+    render();
+  }
+  window.requestAnimationFrame(() => {
+    const row = document.querySelector(`#reward-row-${CSS.escape(String(state.newDealAwardId))}`);
+    if (!row) return;
+    row.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'nearest' });
+    row.focus({ preventScroll: true });
+    window.history.replaceState(null, '', `#${row.id}`);
+  });
+}
+
 function addInlineHistoryButton(cell, reward, type, labelText) {
   const historyWrap = document.createElement('span');
   historyWrap.className = 'previous-history';
@@ -443,7 +517,10 @@ function addRewardNoteButton(cell, reward) {
 function createRewardRows(reward) {
   const row = document.createElement('tr');
   const detailId = `reward-details-${reward.AwardID}`;
+  const isNewDeal = state.newDealAwardId != null && String(state.newDealAwardId) === String(reward.AwardID);
   row.classList.add('reward-row');
+  if (isNewDeal) row.classList.add('new-deal-row');
+  row.id = `reward-row-${reward.AwardID}`;
   row.tabIndex = 0;
   row.setAttribute('role', 'button');
   row.setAttribute('aria-expanded', 'false');
@@ -454,11 +531,17 @@ function createRewardRows(reward) {
   toggleCell.setAttribute('aria-hidden', 'true');
   addCell(row, reward.Partner);
   const titleCell = addCell(row, reward['Reward title'], 'reward-title-cell');
+  if (isNewDeal) {
+    const newDealPill = document.createElement('span');
+    newDealPill.className = 'new-deal-pill';
+    newDealPill.textContent = 'New deal';
+    titleCell.append(document.createElement('br'), newDealPill);
+  }
   if (reward.SnipeText) {
     const badge = document.createElement('span');
     badge.className = snipeClass(reward);
     badge.textContent = reward.SnipeText;
-    titleCell.append(document.createElement('br'), badge);
+    titleCell.append(isNewDeal ? ' ' : document.createElement('br'), badge);
   }
   const pointsCell = addCell(row, `👑 ${formatNumber(reward.Points)}`, 'points');
   const pointHistory = Array.isArray(reward.PointHistory) ? reward.PointHistory : [];
@@ -703,6 +786,7 @@ async function loadRewards() {
     state.checkHistory = Array.isArray(data.check_history) ? data.check_history : [data.checked_at].filter(Boolean);
     checkedAt.textContent = `Last checked:\n${formatDate(data.checked_at)}`;
     sourceLink.href = data.source_url || '#';
+    updateNewDealBanner(data.checked_at);
     updatePartners();
     render();
     refreshStatus.textContent = '';
@@ -713,6 +797,7 @@ async function loadRewards() {
 
 searchInput.addEventListener('input', render);
 partnerFilter.addEventListener('change', render);
+if (newDealLink) newDealLink.addEventListener('click', scrollToNewDealRow);
 sortButtons.forEach((button) => button.addEventListener('click', () => {
   const key = button.dataset.sort;
   state.sortApplied = true;

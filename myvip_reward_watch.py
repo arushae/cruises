@@ -64,6 +64,17 @@ WEBSITE_FIELDS = [
     "ChangeHistory",
 ]
 
+SAN_DIEGO_NOTE_40273 = (
+    "I redeemed this deal on 19 Jun 2026 and used it for a cruise from Istanbul "
+    "despite it saying it was for sailings from San Diego. I don't know if San Diego "
+    "is a mistake or they were just bending the rules for me. You can call the number "
+    "in the Ts & Cs and double check validity before purchasing the reward."
+)
+
+MANUAL_REWARD_NOTES_BY_OFFER_ID = {
+    40273: SAN_DIEGO_NOTE_40273,
+}
+
 
 def fetch_json(url: str) -> dict:
     request = Request(
@@ -92,6 +103,23 @@ def clean_detail_text(value: str | None) -> str | None:
     text = re.sub(r"\n[ \t]+", "\n", text)
     text = re.sub(r"\n{3,}", "\n\n", text)
     return text.strip() or None
+
+
+def apply_manual_reward_notes(website_reward: dict) -> None:
+    note = MANUAL_REWARD_NOTES_BY_OFFER_ID.get(website_reward.get("OfferID"))
+    if not note:
+        return
+
+    notes = [
+        existing_note
+        for existing_note in (website_reward.get("ArushaNotes") or [])
+        if existing_note
+    ]
+    if note not in notes:
+        notes.append(note)
+
+    website_reward["ArushaNotes"] = notes
+    website_reward["PointHistoryNote"] = note
 
 
 def strip_reward_symbol(value: str | None) -> str | None:
@@ -537,6 +565,7 @@ def save_website_data(rewards: dict, checked_at: str) -> None:
             website_reward["ArushaNotes"] = previous_reward.get("ArushaNotes")
         if previous_reward and previous_reward.get("PointHistoryNote"):
             website_reward["PointHistoryNote"] = previous_reward.get("PointHistoryNote")
+        apply_manual_reward_notes(website_reward)
         current_quantity = reward.get("Quantity")
         observed_quantities = [previous_highs.get(award_id)]
         if isinstance(current_quantity, (int, float)) and not isinstance(current_quantity, bool):
