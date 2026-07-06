@@ -32,7 +32,7 @@ input:focus, select:focus { outline: 3px solid #8dd9dc; border-color: #087f8c; }
 table { width: 100%; border-collapse: collapse; font-size: .9rem; }
 .reward-table { width: max(100%, 1640px); table-layout: fixed; }
 .reward-table .col-toggle { width: 34px; min-width: 34px; }
-.reward-table .col-partner { width: 110px; min-width: 110px; }
+.reward-table .col-partner { width: 100px; min-width: 100px; }
 .reward-table .col-reward { width: 200px; min-width: 200px; }
 .reward-table .col-points { width: 120px; min-width: 120px; }
 .reward-table .col-port { width: 150px; min-width: 150px; }
@@ -195,7 +195,7 @@ a { color: #087f8c; }
 
   .reward-table thead th:nth-child(3),
   .reward-table tbody tr:not(.reward-details) td:nth-child(3) {
-    left: 144px;
+    left: 134px;
     z-index: 5;
     overflow: visible;
   }
@@ -204,9 +204,9 @@ a { color: #087f8c; }
   .reward-table tbody tr:not(.reward-details) td:nth-child(3)::after {
     position: absolute;
     top: 0;
-    right: -18px;
+    right: -9px;
     bottom: 0;
-    width: 18px;
+    width: 9px;
     background: linear-gradient(90deg, rgb(20 40 50 / 12%), rgb(20 40 50 / 0%));
     content: "";
     pointer-events: none;

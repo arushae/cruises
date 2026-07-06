@@ -439,11 +439,6 @@ function createRewardRows(reward) {
   if (previousDifferent) {
     addInlineHistoryButton(pointsCell, reward, 'points', `(previously\nseen at ${formatNumber(previousDifferent.value)})`);
   }
-  const portCell = addCell(row, reward.Port);
-  if (hasSanDiegoPortException(reward)) {
-    portCell.classList.add('port-note-highlight');
-    addRewardNoteButton(portCell, reward);
-  }
   const quantityCell = addCell(row, reward.Quantity, reward.Quantity === 0 ? 'quantity sold-out' : 'quantity');
   if (
     reward.HighestQuantityObserved != null
@@ -466,6 +461,11 @@ function createRewardRows(reward) {
   addCell(row, formatSailings(reward.Sailings));
   addCell(row, reward.Ships);
   addCell(row, reward.IsPremium ? 'Yes' : 'No');
+  const portCell = addCell(row, reward.Port);
+  if (hasSanDiegoPortException(reward)) {
+    portCell.classList.add('port-note-highlight');
+    addRewardNoteButton(portCell, reward);
+  }
   addCell(row, reward.OfferID, 'offer-id');
 
   const detailRow = document.createElement('tr');
