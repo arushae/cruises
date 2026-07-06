@@ -5,8 +5,7 @@ main { width: min(1400px, calc(100% - 32px)); margin: 36px auto; }
 header { display: flex; justify-content: space-between; gap: 24px; align-items: end; margin-bottom: 24px; }
 .eyebrow { color: #16212a; font-weight: 750; text-transform: uppercase; letter-spacing: .1em; font-size: .75rem; margin: 0 0 6px; }
 h1 { margin: 0; font-size: clamp(2rem, 5vw, 3.4rem); letter-spacing: -.04em; }
-.intro { max-width: 760px; margin: 14px 0 0; color: #52616b; font-size: 14px; line-height: 1.55; }
-.intro-disclaimer { display: inline-block; margin-top: 8px; font-size: 12px; line-height: 1.2; }
+.intro { max-width: 760px; margin: 14px 0 0; color: #52616b; font-size: 16px; line-height: 1.55; }
 .title-boat { position: relative; display: inline-block; cursor: help; letter-spacing: 0; }
 .title-boat:focus-visible { outline: 3px solid #8dd9dc; border-radius: 8px; outline-offset: 4px; }
 .title-boat::after { position: absolute; left: 0; bottom: calc(100% + 10px); z-index: 20; width: max-content; max-width: min(280px, 80vw); padding: 8px 10px; border-radius: 8px; color: white; background: #16212a; box-shadow: 0 10px 28px rgb(20 40 50 / 22%); font-size: .82rem; font-weight: 700; line-height: 1.2; letter-spacing: 0; content: attr(data-tooltip); opacity: 0; pointer-events: none; transform: translateY(4px); transition: opacity .15s ease, transform .15s ease; }
@@ -25,12 +24,14 @@ h1 { margin: 0; font-size: clamp(2rem, 5vw, 3.4rem); letter-spacing: -.04em; }
 .new-deal-meta { margin: 3px 0 0; color: #335c3e; font-size: 12px; line-height: 1.35; }
 .new-deal-link { justify-self: end; padding: 8px 11px; border: 1px solid #16803a; border-radius: 999px; color: #0f6d31; background: rgb(255 255 255 / 72%); font-size: 12px; font-weight: 800; text-decoration: none; white-space: nowrap; }
 .new-deal-link:hover { color: white; background: #16803a; }
-.filters { display: grid; grid-template-columns: minmax(240px, 1fr) minmax(180px, 280px) auto; gap: 16px; align-items: end; background: white; padding: 18px; border-radius: 14px; box-shadow: 0 12px 32px rgb(35 55 65 / 6%); }
+.filters { display: grid; grid-template-columns: minmax(240px, 360px) minmax(180px, 240px) 1fr; justify-content: start; gap: 16px; align-items: end; background: white; padding: 18px; border-radius: 14px; box-shadow: 0 12px 32px rgb(35 55 65 / 6%); }
 label span { display: block; font-size: .78rem; font-weight: 700; margin-bottom: 6px; }
 input, select { width: 100%; border: 1px solid #bdc9cf; border-radius: 8px; padding: 10px 12px; font: inherit; background: white; }
+#search { max-width: 360px; }
+#partner-filter { max-width: 240px; }
 select { appearance: none; padding-right: 42px; background-color: white; background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.5 4.75L8 10.25L13.5 4.75' fill='none' stroke='%23087f8c' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 12px center; background-size: 16px 16px; }
 input:focus, select:focus { outline: 3px solid #8dd9dc; border-color: #087f8c; }
-#result-count { margin: 0 0 10px; color: #5d6b75; font-size: 12px; white-space: nowrap; }
+#result-count { justify-self: end; margin: 0 0 10px; color: #5d6b75; font-size: 12px; text-align: right; white-space: nowrap; }
 .reward-section { width: calc(100vw - ((100vw - min(1400px, calc(100vw - 32px))) / 2)); margin-top: 30px; margin-right: calc(50% - 50vw); }
 .section-heading { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; margin: 0 4px 10px; }
 .section-heading h2 { margin: 0; font-size: 1.25rem; letter-spacing: -.02em; }
@@ -146,6 +147,10 @@ dialog::backdrop { background: rgb(18 35 44 / 55%); backdrop-filter: blur(3px); 
 .dialog-body { padding: 20px 24px 24px; color: #263843; line-height: 1.55; }
 .dialog-body p { margin: 0; }
 footer { color: #6c7a83; font-size: .82rem; padding: 18px 4px; }
+footer p { margin: 0; }
+footer p + p { margin-top: 6px; }
+.footer-small { font-size: 12px; line-height: 1.2; }
+.footer-credit { margin-top: 12px; padding-top: 12px; border-top: 1px solid #dce5e8; }
 a { color: #087f8c; }
 .duck-pond { position: fixed; inset: 0; z-index: 9999; overflow: hidden; pointer-events: none; }
 .konami-duck { position: absolute; top: var(--duck-top); right: -5rem; display: inline-block; width: calc(var(--duck-size) * 1.65); height: var(--duck-size); background-image: url("data:image/svg+xml,%3Csvg width='110' height='70' viewBox='0 0 110 70' xmlns='http://www.w3.org/2000/svg'%3E%3Cellipse cx='57' cy='45' rx='39' ry='19' fill='%23ffd84d' stroke='%23d9a91e' stroke-width='4'/%3E%3Ccircle cx='35' cy='28' r='18' fill='%23ffd84d' stroke='%23d9a91e' stroke-width='4'/%3E%3Cpath d='M18 28c-9-4-16-2-16 4 0 7 9 10 19 6' fill='%23ff8f2f' stroke='%23c75f16' stroke-width='4' stroke-linejoin='round'/%3E%3Ccircle cx='30' cy='23' r='2.8' fill='%2316212a'/%3E%3Cpath d='M55 34c9 2 20 7 26 17-13 4-28 2-39-5 2-7 6-11 13-12z' fill='%23ffe780' stroke='%23d9a91e' stroke-width='3' stroke-linejoin='round'/%3E%3Cpath d='M20 58c17 8 54 9 78 0' fill='none' stroke='%237bbbc0' stroke-width='4' stroke-linecap='round' opacity='.65'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: center; background-size: contain; filter: drop-shadow(0 6px 8px rgb(20 40 50 / 20%)); animation: duck-swim var(--duck-duration) linear var(--duck-delay) forwards, duck-bob .7s ease-in-out var(--duck-delay) infinite alternate; }
@@ -245,5 +250,5 @@ a { color: #087f8c; }
   }
 }
 @media (max-width: 720px) { main { width: min(100% - 16px, 1400px); margin-top: 18px; } header { align-items: start; flex-direction: column; } .status { text-align: left; } .status-line { justify-content: flex-start; } .new-deal-banner { grid-template-columns: 1fr; align-items: start; padding: 15px; } .new-deal-link { justify-self: start; } .filters { grid-template-columns: 1fr; } #result-count { margin: 0; } .reward-section { width: calc(100vw - 8px); } .reward-details-content { width: calc(100vw - 16px); max-width: calc(100vw - 16px); padding: 16px 18px 20px 32px; } }
-@media (max-width: 767px) { .reward-table { width: 1350px; } .reward-table .col-reward { width: 160px; min-width: 160px; } }
+@media (max-width: 767px) { #search, #partner-filter { max-width: none; } .reward-table { width: 1350px; } .reward-table .col-reward { width: 160px; min-width: 160px; } }
 @media (prefers-reduced-motion: reduce) { .reward-details-content { transition: none; transform: none; } .empty-state.is-loading::before { animation: none; } }
