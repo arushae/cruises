@@ -88,6 +88,24 @@ function formatDate(value, multiline = false) {
   return multiline ? `${datePart}\n${timePart}` : `${datePart}, ${timePart}`;
 }
 
+function addExpiryCell(row, value) {
+  const cell = document.createElement('td');
+  cell.className = 'expiry';
+  const [datePart, timePart] = String(formatDate(value, true)).split('\n');
+  const date = document.createElement('span');
+  date.className = 'expiry-date';
+  date.textContent = datePart || 'Unknown';
+  cell.appendChild(date);
+  if (timePart) {
+    const time = document.createElement('span');
+    time.className = 'expiry-time';
+    time.textContent = timePart;
+    cell.appendChild(time);
+  }
+  row.appendChild(cell);
+  return cell;
+}
+
 function formatHistoryDate(value) {
   const date = new Date(value);
   return Number.isNaN(date.getTime()) ? text(value) : new Intl.DateTimeFormat('en-GB', {
@@ -442,12 +460,20 @@ function createRewardRows(reward) {
     badge.textContent = reward.SnipeText;
     titleCell.append(document.createElement('br'), badge);
   }
-  const pointsCell = addCell(row, formatNumber(reward.Points), 'points');
+  const pointsCell = addCell(row, `👑 ${formatNumber(reward.Points)}`, 'points');
   const pointHistory = Array.isArray(reward.PointHistory) ? reward.PointHistory : [];
   const previousDifferent = [...pointHistory].reverse().find((entry) => entry.value !== reward.Points);
   if (previousDifferent) {
     addInlineHistoryButton(pointsCell, reward, 'points', `(previously\nseen at ${formatNumber(previousDifferent.value)})`);
   }
+  addExpiryCell(row, reward.ExpireTime);
+  const departurePortsCell = addCell(row, departurePortsValue(reward));
+  if (hasSanDiegoPortException(reward)) {
+    departurePortsCell.classList.add('port-note-highlight');
+    addRewardNoteButton(departurePortsCell, reward);
+  }
+  addCell(row, formatSailings(reward.Sailings));
+  addCell(row, reward.Ships);
   const quantityCell = addCell(row, reward.Quantity, reward.Quantity === 0 ? 'quantity sold-out' : 'quantity');
   if (
     reward.HighestQuantityObserved != null
@@ -461,14 +487,6 @@ function createRewardRows(reward) {
       `(previously\nseen at ${formatNumber(reward.HighestQuantityObserved)})`,
     );
   }
-  addCell(row, formatDate(reward.ExpireTime, true), 'expiry');
-  const departurePortsCell = addCell(row, departurePortsValue(reward));
-  if (hasSanDiegoPortException(reward)) {
-    departurePortsCell.classList.add('port-note-highlight');
-    addRewardNoteButton(departurePortsCell, reward);
-  }
-  addCell(row, formatSailings(reward.Sailings));
-  addCell(row, reward.Ships);
   addCell(row, reward.IsPremium ? 'Yes' : 'No');
   const portCell = addCell(row, reward.Port);
   if (hasSanDiegoPortException(reward)) {
