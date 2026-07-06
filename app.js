@@ -84,7 +84,20 @@ function formatShortDate(date) {
 
 function formatSailings(value) {
   if (!value) return value;
-  return String(value)
+  const rawValue = String(value).trim();
+  const exactSlashDate = rawValue.match(/^(\d{1,2})\/(\d{1,2})\/(\d{4})$/);
+  if (exactSlashDate) {
+    const [, month, day, year] = exactSlashDate;
+    const date = new Date(Date.UTC(Number(year), Number(month) - 1, Number(day)));
+    return Number.isNaN(date.getTime()) ? rawValue : `${formatShortDate(date)} only`;
+  }
+  const exactLongDate = rawValue.match(/^(January|February|March|April|May|June|July|August|September|October|November|December)\s+(\d{1,2}),\s+(\d{4})$/);
+  if (exactLongDate) {
+    const [, monthName, day, year] = exactLongDate;
+    const date = new Date(`${monthName} ${day}, ${year} UTC`);
+    return Number.isNaN(date.getTime()) ? rawValue : `${formatShortDate(date)} only`;
+  }
+  return rawValue
     .replace(/\b(\d{1,2})\/(\d{1,2})\/(\d{4})\b/g, (_match, month, day, year) => {
       const date = new Date(Date.UTC(Number(year), Number(month) - 1, Number(day)));
       return Number.isNaN(date.getTime()) ? _match : formatShortDate(date);
