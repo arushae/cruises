@@ -42,6 +42,11 @@ const NEW_DEAL_ALERT_WINDOW_MS = 48 * 60 * 60 * 1000;
 const PORT_COLUMN_HELP = "While this field is named 'port', it has been populated with inconsistent data, ranging from the port, general location of the cruise or the ship.";
 const QUANTITY_REPLENISHMENT_NOTE = "It looks as if these rewards are automatically replenished from time to time and the quantity is just a failsafe in case there's a sudden run on them!";
 const KONAMI_CODE = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'];
+const tableWrapScrollListeners = new WeakSet();
+let floatingTableHeader;
+let floatingHeaderTable;
+let floatingHeaderSource;
+let floatingHeaderFrame;
 let konamiProgress = 0;
 
 function addLadyShipsEmoji(value) {
@@ -515,6 +520,18 @@ function addRewardNoteButton(cell, reward) {
   cell.append(' ', historyButton);
 }
 
+function addSanDiegoPortCorrection(container, reward, includeNoteButton = false) {
+  container.textContent = '';
+  const originalPort = document.createElement('span');
+  originalPort.className = 'port-strikeout';
+  originalPort.textContent = 'San Diego';
+  const correctedPort = document.createElement('span');
+  correctedPort.className = 'port-correction';
+  correctedPort.textContent = 'Various Ports';
+  container.append(originalPort, document.createElement('br'), correctedPort);
+  if (includeNoteButton) addRewardNoteButton(container, reward);
+}
+
 function createRewardRows(reward) {
   const row = document.createElement('tr');
   const detailId = `reward-details-${reward.AwardID}`;
@@ -544,7 +561,19 @@ function createRewardRows(reward) {
     badge.textContent = reward.SnipeText;
     titleCell.append(isNewDeal ? ' ' : document.createElement('br'), badge);
   }
-  const pointsCell = addCell(row, `👑 ${formatNumber(reward.Points)}`, 'points');
+  const pointsCell = document.createElement('td');
+  pointsCell.className = 'points';
+  row.appendChild(pointsCell);
+  if (reward.StrikeOutPrice != null && reward.StrikeOutPrice !== '') {
+    const strikeOutPrice = document.createElement('span');
+    strikeOutPrice.className = 'strikeout-points';
+    strikeOutPrice.textContent = formatNumber(reward.StrikeOutPrice);
+    pointsCell.append(strikeOutPrice);
+  }
+  const currentPoints = document.createElement('span');
+  currentPoints.className = 'current-points';
+  currentPoints.textContent = `👑 ${formatNumber(reward.Points)}`;
+  pointsCell.append(currentPoints);
   const pointHistory = Array.isArray(reward.PointHistory) ? reward.PointHistory : [];
   const previousDifferent = [...pointHistory].reverse().find((entry) => entry.value !== reward.Points);
   if (previousDifferent) {
@@ -554,7 +583,7 @@ function createRewardRows(reward) {
   const departurePortsCell = addCell(row, departurePortsValue(reward));
   if (hasSanDiegoPortException(reward)) {
     departurePortsCell.classList.add('port-note-highlight');
-    addRewardNoteButton(departurePortsCell, reward);
+    addSanDiegoPortCorrection(departurePortsCell, reward, true);
   }
   addCell(row, formatSailings(reward.Sailings));
   addCell(row, reward.Ships);
@@ -575,7 +604,7 @@ function createRewardRows(reward) {
   const portCell = addCell(row, reward.Port);
   if (hasSanDiegoPortException(reward)) {
     portCell.classList.add('port-note-highlight');
-    addRewardNoteButton(portCell, reward);
+    addSanDiegoPortCorrection(portCell, reward, true);
   }
   addCell(row, reward.OfferID, 'offer-id');
 
@@ -631,7 +660,19 @@ function createRewardRows(reward) {
       const term = document.createElement('dt');
       term.textContent = label;
       const description = document.createElement('dd');
-      description.textContent = addDisplayFlourishes(value);
+      if (label === 'Points' && reward.StrikeOutPrice != null && reward.StrikeOutPrice !== '') {
+        const strikeOutPrice = document.createElement('span');
+        strikeOutPrice.className = 'meta-strikeout-points';
+        strikeOutPrice.textContent = formatNumber(reward.StrikeOutPrice);
+        const currentPoints = document.createElement('span');
+        currentPoints.className = 'meta-current-points';
+        currentPoints.textContent = addDisplayFlourishes(value);
+        description.append(strikeOutPrice, ' ', currentPoints);
+      } else if (label === 'Departure ports' && hasSanDiegoPortException(reward)) {
+        addSanDiegoPortCorrection(description, reward);
+      } else {
+        description.textContent = addDisplayFlourishes(value);
+      }
       metaList.append(icon, term, description);
     });
     detailContent.appendChild(metaList);
@@ -744,6 +785,80 @@ function updateSortHeaders() {
   });
 }
 
+function applySort(key) {
+  state.sortApplied = true;
+  if (state.sortKey === key) state.sortDirection = state.sortDirection === 'asc' ? 'desc' : 'asc';
+  else {
+    state.sortKey = key;
+    state.sortDirection = 'asc';
+  }
+  render();
+}
+
+function ensureFloatingTableHeader() {
+  if (floatingTableHeader) return floatingTableHeader;
+  floatingTableHeader = document.createElement('div');
+  floatingTableHeader.className = 'floating-table-header';
+  floatingTableHeader.setAttribute('aria-hidden', 'true');
+  document.body.appendChild(floatingTableHeader);
+  return floatingTableHeader;
+}
+
+function buildFloatingTableHeader(tableWrap) {
+  const table = tableWrap.querySelector('.reward-table');
+  const colgroup = table?.querySelector('colgroup');
+  const thead = table?.querySelector('thead');
+  if (!table || !colgroup || !thead) return;
+  const clone = document.createElement('table');
+  clone.className = table.className;
+  clone.style.width = `${table.offsetWidth}px`;
+  clone.append(colgroup.cloneNode(true), thead.cloneNode(true));
+  ensureFloatingTableHeader().replaceChildren(clone);
+  floatingHeaderTable = clone;
+  floatingHeaderSource = tableWrap;
+}
+
+function updateFloatingTableHeader() {
+  floatingHeaderFrame = null;
+  const header = ensureFloatingTableHeader();
+  const activeWrap = Array.from(document.querySelectorAll('.table-wrap')).find((tableWrap) => {
+    const rect = tableWrap.getBoundingClientRect();
+    const headerHeight = tableWrap.querySelector('thead')?.getBoundingClientRect().height || 0;
+    return rect.top < 0 && rect.bottom > headerHeight;
+  });
+
+  if (!activeWrap) {
+    header.classList.remove('is-visible');
+    floatingHeaderSource = null;
+    return;
+  }
+
+  if (floatingHeaderSource !== activeWrap) buildFloatingTableHeader(activeWrap);
+  const rect = activeWrap.getBoundingClientRect();
+  const sourceTable = activeWrap.querySelector('.reward-table');
+  const sourceHeader = activeWrap.querySelector('thead');
+  if (!floatingHeaderTable || !sourceTable || !sourceHeader) return;
+  floatingHeaderTable.style.width = `${sourceTable.offsetWidth}px`;
+  floatingHeaderTable.style.transform = `translateX(${-activeWrap.scrollLeft}px)`;
+  header.style.left = `${rect.left}px`;
+  header.style.width = `${activeWrap.clientWidth}px`;
+  header.style.height = `${sourceHeader.getBoundingClientRect().height}px`;
+  header.classList.add('is-visible');
+}
+
+function scheduleFloatingTableHeaderUpdate() {
+  if (floatingHeaderFrame) return;
+  floatingHeaderFrame = requestAnimationFrame(updateFloatingTableHeader);
+}
+
+function registerTableWrapScrollListeners() {
+  document.querySelectorAll('.table-wrap').forEach((tableWrap) => {
+    if (tableWrapScrollListeners.has(tableWrap)) return;
+    tableWrap.addEventListener('scroll', scheduleFloatingTableHeaderUpdate, { passive: true });
+    tableWrapScrollListeners.add(tableWrap);
+  });
+}
+
 function render() {
   const query = searchInput.value.trim().toLocaleLowerCase();
   const partner = partnerFilter.value;
@@ -775,6 +890,9 @@ function render() {
   soldOutCount.textContent = `${soldOut.length} rewards`;
   expiredCount.textContent = `${expired.length} rewards`;
   updateSortHeaders();
+  floatingHeaderSource = null;
+  registerTableWrapScrollListeners();
+  scheduleFloatingTableHeaderUpdate();
 }
 
 function updatePartners() {
@@ -820,15 +938,10 @@ searchInput.addEventListener('input', render);
 partnerFilter.addEventListener('change', render);
 if (newDealLink) newDealLink.addEventListener('click', scrollToNewDealRow);
 sortButtons.forEach((button) => button.addEventListener('click', () => {
-  const key = button.dataset.sort;
-  state.sortApplied = true;
-  if (state.sortKey === key) state.sortDirection = state.sortDirection === 'asc' ? 'desc' : 'asc';
-  else {
-    state.sortKey = key;
-    state.sortDirection = 'asc';
-  }
-  render();
+  applySort(button.dataset.sort);
 }));
+window.addEventListener('scroll', scheduleFloatingTableHeaderUpdate, { passive: true });
+window.addEventListener('resize', scheduleFloatingTableHeaderUpdate);
 loadRewards();
 setInterval(loadRewards, REFRESH_INTERVAL);
 
@@ -939,6 +1052,13 @@ function openColumnHelp(title, textContent) {
 }
 
 document.addEventListener('click', (event) => {
+  const floatingSortButton = event.target.closest('.floating-table-header .sort-button');
+  if (floatingSortButton) {
+    event.preventDefault();
+    event.stopPropagation();
+    applySort(floatingSortButton.dataset.sort);
+    return;
+  }
   const columnHelpButton = event.target.closest('.column-help-button');
   if (columnHelpButton) {
     event.preventDefault();
