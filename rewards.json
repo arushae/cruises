@@ -1294,7 +1294,10 @@
             }
           ]
         }
-      ]
+      ],
+      "DeparturePorts": null,
+      "Sailings": null,
+      "Ships": null
     },
     {
       "AwardID": 11001,
@@ -2496,7 +2499,10 @@
             }
           ]
         }
-      ]
+      ],
+      "DeparturePorts": null,
+      "Sailings": null,
+      "Ships": null
     },
     {
       "AwardID": 11002,
@@ -3698,7 +3704,10 @@
             }
           ]
         }
-      ]
+      ],
+      "DeparturePorts": null,
+      "Sailings": null,
+      "Ships": null
     },
     {
       "AwardID": 894,
@@ -4910,7 +4919,10 @@
             }
           ]
         }
-      ]
+      ],
+      "DeparturePorts": null,
+      "Sailings": null,
+      "Ships": null
     },
     {
       "AwardID": 892,
@@ -6132,7 +6144,10 @@
             }
           ]
         }
-      ]
+      ],
+      "DeparturePorts": null,
+      "Sailings": null,
+      "Ships": null
     },
     {
       "AwardID": 2485,
@@ -7379,7 +7394,10 @@
             }
           ]
         }
-      ]
+      ],
+      "DeparturePorts": null,
+      "Sailings": null,
+      "Ships": null
     },
     {
       "AwardID": 4338,
@@ -8661,7 +8679,10 @@
             }
           ]
         }
-      ]
+      ],
+      "DeparturePorts": null,
+      "Sailings": null,
+      "Ships": null
     },
     {
       "AwardID": 4719,
@@ -9878,7 +9899,10 @@
             }
           ]
         }
-      ]
+      ],
+      "DeparturePorts": null,
+      "Sailings": null,
+      "Ships": null
     },
     {
       "AwardID": 6713,
@@ -11135,7 +11159,10 @@
             }
           ]
         }
-      ]
+      ],
+      "DeparturePorts": null,
+      "Sailings": null,
+      "Ships": null
     },
     {
       "AwardID": 11015,
@@ -11227,7 +11254,10 @@
             }
           ]
         }
-      ]
+      ],
+      "DeparturePorts": "Shanghai (Baoshan), China",
+      "Sailings": "9/27/2026",
+      "Ships": "Spectrum of the Seas"
     },
     {
       "AwardID": 11009,
@@ -11269,7 +11299,10 @@
             }
           ]
         }
-      ]
+      ],
+      "DeparturePorts": "Shanghai (Baoshan), China",
+      "Sailings": "8/24/2026",
+      "Ships": "Spectrum of the Seas"
     },
     {
       "AwardID": 11024,
@@ -11311,7 +11344,10 @@
             }
           ]
         }
-      ]
+      ],
+      "DeparturePorts": "Hong Kong, China",
+      "Sailings": "11/16/2026",
+      "Ships": "Spectrum of the Seas"
     },
     {
       "AwardID": 11018,
@@ -11353,7 +11389,10 @@
             }
           ]
         }
-      ]
+      ],
+      "DeparturePorts": "Shanghai (Baoshan), China",
+      "Sailings": "10/20/2026",
+      "Ships": "Spectrum of the Seas"
     },
     {
       "AwardID": 11007,
@@ -11395,7 +11434,10 @@
             }
           ]
         }
-      ]
+      ],
+      "DeparturePorts": "Shanghai (Baoshan), China",
+      "Sailings": "7/27/2026",
+      "Ships": "Spectrum of the Seas"
     },
     {
       "AwardID": 11010,
@@ -11437,7 +11479,10 @@
             }
           ]
         }
-      ]
+      ],
+      "DeparturePorts": "Shanghai (Baoshan), China",
+      "Sailings": "8/28/2026",
+      "Ships": "Spectrum of the Seas"
     },
     {
       "AwardID": 11013,
@@ -11479,7 +11524,10 @@
             }
           ]
         }
-      ]
+      ],
+      "DeparturePorts": "Shanghai (Baoshan), China",
+      "Sailings": "9/19/2026",
+      "Ships": "Spectrum of the Seas"
     },
     {
       "AwardID": 11016,
@@ -11551,7 +11599,10 @@
             }
           ]
         }
-      ]
+      ],
+      "DeparturePorts": "Shanghai (Baoshan), China",
+      "Sailings": "10/07/2026",
+      "Ships": "Spectrum of the Seas"
     },
     {
       "AwardID": 11014,
@@ -12768,7 +12819,10 @@
             }
           ]
         }
-      ]
+      ],
+      "DeparturePorts": "Shanghai (Baoshan), China",
+      "Sailings": "9/23/2026",
+      "Ships": "Spectrum of the Seas"
     },
     {
       "AwardID": 11006,
@@ -12810,7 +12864,10 @@
             }
           ]
         }
-      ]
+      ],
+      "DeparturePorts": "Shanghai (Baoshan), China",
+      "Sailings": "7/23/2026",
+      "Ships": "Spectrum of the Seas"
     },
     {
       "AwardID": 11025,
@@ -12852,7 +12909,10 @@
             }
           ]
         }
-      ]
+      ],
+      "DeparturePorts": "Hong Kong, China",
+      "Sailings": "11/06/2026",
+      "Ships": "Spectrum of the Seas"
     },
     {
       "AwardID": 11008,
@@ -12894,7 +12954,10 @@
             }
           ]
         }
-      ]
+      ],
+      "DeparturePorts": "Shanghai (Baoshan), China",
+      "Sailings": "8/03/2026",
+      "Ships": "Spectrum of the Seas"
     },
     {
       "AwardID": 11011,
@@ -12936,7 +12999,10 @@
             }
           ]
         }
-      ]
+      ],
+      "DeparturePorts": "Shanghai (Baoshan), China",
+      "Sailings": "9/01/2026",
+      "Ships": "Spectrum of the Seas"
     },
     {
       "AwardID": 11017,
@@ -12978,7 +13044,10 @@
             }
           ]
         }
-      ]
+      ],
+      "DeparturePorts": "Shanghai (Baoshan), China",
+      "Sailings": "10/11/2026",
+      "Ships": "Spectrum of the Seas"
     },
     {
       "AwardID": 11020,
@@ -13020,7 +13089,10 @@
             }
           ]
         }
-      ]
+      ],
+      "DeparturePorts": "Shanghai (Baoshan), China",
+      "Sailings": "11/01/2026",
+      "Ships": "Spectrum of the Seas"
     },
     {
       "AwardID": 11023,
@@ -13062,7 +13134,10 @@
             }
           ]
         }
-      ]
+      ],
+      "DeparturePorts": "Hong Kong, China",
+      "Sailings": "12/13/2026",
+      "Ships": "Spectrum of the Seas"
     },
     {
       "AwardID": 11012,
@@ -13104,7 +13179,10 @@
             }
           ]
         }
-      ]
+      ],
+      "DeparturePorts": "Shanghai (Baoshan), China",
+      "Sailings": "9/11/2026",
+      "Ships": "Spectrum of the Seas"
     },
     {
       "AwardID": 11021,
@@ -13146,7 +13224,10 @@
             }
           ]
         }
-      ]
+      ],
+      "DeparturePorts": "Hong Kong, China",
+      "Sailings": "1/03/2027",
+      "Ships": "Spectrum of the Seas"
     },
     {
       "AwardID": 11019,
@@ -13188,7 +13269,10 @@
             }
           ]
         }
-      ]
+      ],
+      "DeparturePorts": "Shanghai (Baoshan), China",
+      "Sailings": "10/24/2026",
+      "Ships": "Spectrum of the Seas"
     },
     {
       "AwardID": 11022,
@@ -13233,7 +13317,10 @@
       ],
       "ArushaNotes": [
         "This one sold out particularly fast – I think the same day it went live."
-      ]
+      ],
+      "DeparturePorts": "Hong Kong, China",
+      "Sailings": "12/20/2026",
+      "Ships": "Spectrum of the Seas"
     },
     {
       "AwardID": 10371,
@@ -14440,7 +14527,10 @@
             }
           ]
         }
-      ]
+      ],
+      "DeparturePorts": "San Juan & North America",
+      "Sailings": null,
+      "Ships": null
     },
     {
       "AwardID": 10369,
@@ -15647,7 +15737,10 @@
             }
           ]
         }
-      ]
+      ],
+      "DeparturePorts": "San Juan & North America",
+      "Sailings": null,
+      "Ships": null
     },
     {
       "AwardID": 10370,
@@ -16854,7 +16947,10 @@
             }
           ]
         }
-      ]
+      ],
+      "DeparturePorts": "San Juan & North America",
+      "Sailings": null,
+      "Ships": null
     }
   ]
 }

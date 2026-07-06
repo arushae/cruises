@@ -20,8 +20,13 @@
       "IsPremium": false,
       "RewardURL": null,
       "ChangeHistory": [
-        { "note": "Arusha manually added this reward retrospectively" }
-      ]
+        {
+          "note": "Arusha manually added this reward retrospectively"
+        }
+      ],
+      "DeparturePorts": null,
+      "Sailings": null,
+      "Ships": null
     },
     {
       "AwardID": "manual-expired-ncl-vancouver-alaska",
@@ -44,20 +49,36 @@
       "IsPremium": false,
       "RewardURL": null,
       "ChangeHistory": [
-        { "note": "Arusha manually added this reward retrospectively" }
-      ]
+        {
+          "note": "Arusha manually added this reward retrospectively"
+        }
+      ],
+      "DeparturePorts": "Whittier, Alaska and Vancouver, Canada",
+      "Sailings": "Select sailings through September 14, 2026",
+      "Ships": "Norwegian Jade"
     },
     {
       "AwardID": "manual-expired-ncl-1000-off-black-friday-2025",
       "OfferID": null,
       "Partner": "Norwegian Cruise Line",
       "Reward title": "Enjoy $1000 off at NCL",
+      "RewardPageTitle": "$1,000 Holiday Dollars Off Your Next Cruise",
+      "RewardDescription": "Give yourself the ultimate holiday treat — set sail with Norwegian Cruise Line and enjoy $1,000 off your dream vacation.",
       "Port": "Various Ports",
       "Points": 500000,
       "PointHistory": [
-        { "observed_at": "2025-11-27T00:00:00Z", "value": 500000 },
-        { "observed_at": "2025-11-28T00:00:00Z", "value": 250000 },
-        { "observed_at": "2025-11-29T00:00:00Z", "value": 500000 }
+        {
+          "observed_at": "2025-11-27T00:00:00Z",
+          "value": 500000
+        },
+        {
+          "observed_at": "2025-11-28T00:00:00Z",
+          "value": 250000
+        },
+        {
+          "observed_at": "2025-11-29T00:00:00Z",
+          "value": 500000
+        }
       ],
       "PointHistoryNote": "I purchased this deal on 22 Nov 2025 for 500k points, but on Black Friday (28 Nov) it dropped to 250k points.",
       "ArushaNotes": [
@@ -73,20 +94,33 @@
       "IsPremium": false,
       "RewardURL": null,
       "ChangeHistory": [
-        { "note": "Arusha manually added this reward retrospectively" },
+        {
+          "note": "Arusha manually added this reward retrospectively"
+        },
         {
           "observed_at": "2025-11-28T00:00:00Z",
           "changes": [
-            { "field": "Points", "from": 500000, "to": 250000 }
+            {
+              "field": "Points",
+              "from": 500000,
+              "to": 250000
+            }
           ]
         },
         {
           "observed_at": "2025-11-29T00:00:00Z",
           "changes": [
-            { "field": "Points", "from": 250000, "to": 500000 }
+            {
+              "field": "Points",
+              "from": 250000,
+              "to": 500000
+            }
           ]
         }
-      ]
+      ],
+      "DeparturePorts": null,
+      "Sailings": null,
+      "Ships": null
     }
   ]
 }

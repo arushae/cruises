@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>myVIP Cruise Rewards</title>
-  <link rel="stylesheet" href="style.css?v=20260706-7">
+  <link rel="stylesheet" href="style.css?v=20260706-10">
 </head>
 <body>
   <main>
@@ -40,7 +40,7 @@
           <colgroup>
             <col class="col-toggle"><col class="col-partner"><col class="col-reward"><col class="col-points">
             <col class="col-port"><col class="col-quantity">
-            <col class="col-expires"><col class="col-premium">
+            <col class="col-expires"><col class="col-departure-ports"><col class="col-sailings"><col class="col-ships"><col class="col-premium"><col class="col-offer-id">
           </colgroup>
           <thead><tr>
           <th class="toggle-header" aria-label="Expand row"></th>
@@ -50,7 +50,11 @@
           <th><span class="column-label">Port</span><button class="column-help-button" type="button" title="While this field is named 'port', it has been populated with inconsistent data, ranging from the port, general location of the cruise or the ship." aria-label="Port field note: While this field is named port, it has been populated with inconsistent data, ranging from the port, general location of the cruise or the ship.">?</button></th>
           <th><button class="sort-button" data-sort="Quantity">Quantity <span aria-hidden="true"></span></button></th>
           <th><button class="sort-button" data-sort="ExpireTime">Expiry <span aria-hidden="true"></span></button></th>
+          <th><button class="sort-button" data-sort="DeparturePorts">Departure ports <span aria-hidden="true"></span></button></th>
+          <th><button class="sort-button" data-sort="Sailings">Sailings <span aria-hidden="true"></span></button></th>
+          <th><button class="sort-button" data-sort="Ships">Ships <span aria-hidden="true"></span></button></th>
           <th><button class="sort-button" data-sort="IsPremium">Premium <span aria-hidden="true"></span></button></th>
+          <th><button class="sort-button" data-sort="OfferID">Offer ID <span aria-hidden="true"></span></button></th>
         </tr></thead><tbody id="available-body"></tbody></table>
         <p id="available-empty" class="empty-state" hidden>No available rewards match these filters.</p>
       </div>
@@ -63,7 +67,7 @@
           <colgroup>
             <col class="col-toggle"><col class="col-partner"><col class="col-reward"><col class="col-points">
             <col class="col-port"><col class="col-quantity">
-            <col class="col-expires"><col class="col-premium">
+            <col class="col-expires"><col class="col-departure-ports"><col class="col-sailings"><col class="col-ships"><col class="col-premium"><col class="col-offer-id">
           </colgroup>
           <thead><tr>
           <th class="toggle-header" aria-label="Expand row"></th>
@@ -73,7 +77,11 @@
           <th><span class="column-label">Port</span><button class="column-help-button" type="button" title="While this field is named 'port', it has been populated with inconsistent data, ranging from the port, general location of the cruise or the ship." aria-label="Port field note: While this field is named port, it has been populated with inconsistent data, ranging from the port, general location of the cruise or the ship.">?</button></th>
           <th><button class="sort-button" data-sort="Quantity">Quantity <span aria-hidden="true"></span></button></th>
           <th><button class="sort-button" data-sort="ExpireTime">Expiry <span aria-hidden="true"></span></button></th>
+          <th><button class="sort-button" data-sort="DeparturePorts">Departure ports <span aria-hidden="true"></span></button></th>
+          <th><button class="sort-button" data-sort="Sailings">Sailings <span aria-hidden="true"></span></button></th>
+          <th><button class="sort-button" data-sort="Ships">Ships <span aria-hidden="true"></span></button></th>
           <th><button class="sort-button" data-sort="IsPremium">Premium <span aria-hidden="true"></span></button></th>
+          <th><button class="sort-button" data-sort="OfferID">Offer ID <span aria-hidden="true"></span></button></th>
         </tr></thead><tbody id="sold-out-body"></tbody></table>
         <p id="sold-out-empty" class="empty-state" hidden>No sold-out rewards match these filters.</p>
       </div>
@@ -86,7 +94,7 @@
           <colgroup>
             <col class="col-toggle"><col class="col-partner"><col class="col-reward"><col class="col-points">
             <col class="col-port"><col class="col-quantity">
-            <col class="col-expires"><col class="col-premium">
+            <col class="col-expires"><col class="col-departure-ports"><col class="col-sailings"><col class="col-ships"><col class="col-premium"><col class="col-offer-id">
           </colgroup>
           <thead><tr>
           <th class="toggle-header" aria-label="Expand row"></th>
@@ -96,7 +104,11 @@
           <th><span class="column-label">Port</span><button class="column-help-button" type="button" title="While this field is named 'port', it has been populated with inconsistent data, ranging from the port, general location of the cruise or the ship." aria-label="Port field note: While this field is named port, it has been populated with inconsistent data, ranging from the port, general location of the cruise or the ship.">?</button></th>
           <th><button class="sort-button" data-sort="Quantity">Quantity <span aria-hidden="true"></span></button></th>
           <th><button class="sort-button" data-sort="ExpireTime">Expiry <span aria-hidden="true"></span></button></th>
+          <th><button class="sort-button" data-sort="DeparturePorts">Departure ports <span aria-hidden="true"></span></button></th>
+          <th><button class="sort-button" data-sort="Sailings">Sailings <span aria-hidden="true"></span></button></th>
+          <th><button class="sort-button" data-sort="Ships">Ships <span aria-hidden="true"></span></button></th>
           <th><button class="sort-button" data-sort="IsPremium">Premium <span aria-hidden="true"></span></button></th>
+          <th><button class="sort-button" data-sort="OfferID">Offer ID <span aria-hidden="true"></span></button></th>
         </tr></thead><tbody id="expired-body"></tbody></table>
         <p id="expired-empty" class="empty-state">No expired rewards recorded yet.</p>
       </div>
@@ -149,6 +161,6 @@
       <p id="column-help-text"></p>
     </div>
   </dialog>
-  <script src="app.js?v=20260706-7"></script>
+  <script src="app.js?v=20260706-10"></script>
 </body>
 </html>

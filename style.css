@@ -24,15 +24,19 @@ input:focus, select:focus { outline: 3px solid #8dd9dc; border-color: #087f8c; }
 .expired-section { opacity: .82; }
 .table-wrap { overflow-x: auto; background: white; border-radius: 14px; box-shadow: 0 12px 32px rgb(35 55 65 / 8%); }
 table { width: 100%; border-collapse: collapse; font-size: .9rem; }
-.reward-table { width: max(100%, 1180px); table-layout: fixed; }
+.reward-table { width: max(100%, 1640px); table-layout: fixed; }
 .reward-table .col-toggle { width: 34px; min-width: 34px; }
 .reward-table .col-partner { width: 110px; min-width: 110px; }
 .reward-table .col-reward { width: 220px; min-width: 220px; }
 .reward-table .col-points { width: 155px; min-width: 155px; }
-.reward-table .col-port { width: 190px; min-width: 190px; }
+.reward-table .col-port { width: 150px; min-width: 150px; }
 .reward-table .col-quantity { width: 165px; min-width: 165px; }
-.reward-table .col-expires { width: 220px; min-width: 220px; }
+.reward-table .col-expires { width: 150px; min-width: 150px; }
+.reward-table .col-departure-ports { width: 170px; min-width: 170px; }
+.reward-table .col-sailings { width: 150px; min-width: 150px; }
+.reward-table .col-ships { width: 160px; min-width: 160px; }
 .reward-table .col-premium { width: 86px; min-width: 86px; }
+.reward-table .col-offer-id { width: 100px; min-width: 100px; }
 th { text-align: left; color: #53636e; background: #f8fafb; font-size: .72rem; text-transform: uppercase; letter-spacing: .05em; }
 th, td { padding: 13px 14px; border-bottom: 1px solid #edf1f3; vertical-align: top; }
 .toggle-header, td.toggle-cell { padding-left: 16px; padding-right: 6px; text-align: center; }
@@ -51,6 +55,7 @@ th[aria-sort="ascending"] .sort-button span::after { content: "▲"; }
 th[aria-sort="descending"] .sort-button span::after { content: "▼"; }
 th:not([aria-sort]) .sort-button span::after { content: "↕"; color: #93a0a8; }
 td.points { text-align: left; font-variant-numeric: tabular-nums; font-weight: 750; }
+td.offer-id { font-variant-numeric: tabular-nums; }
 td.expiry, #checked-at { white-space: pre-line; }
 .previous-history { display: inline-flex; align-items: center; gap: 6px; margin-top: 3px; }
 .previous-points { display: inline-block; color: #687781; font-size: .74rem; font-weight: 500; line-height: 1.25; white-space: pre-line; overflow-wrap: anywhere; }

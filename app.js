@@ -71,6 +71,31 @@ function formatHistoryTime(value) {
   }).format(date);
 }
 
+function formatShortDate(date) {
+  return new Intl.DateTimeFormat('en-GB', {
+    day: '2-digit',
+    month: 'short',
+    year: 'numeric',
+    timeZone: 'UTC',
+  }).format(date);
+}
+
+function formatSailings(value) {
+  if (!value) return value;
+  return String(value)
+    .replace(/\b(\d{1,2})\/(\d{1,2})\/(\d{4})\b/g, (_match, month, day, year) => {
+      const date = new Date(Date.UTC(Number(year), Number(month) - 1, Number(day)));
+      return Number.isNaN(date.getTime()) ? _match : formatShortDate(date);
+    })
+    .replace(
+      /\b(January|February|March|April|May|June|July|August|September|October|November|December)\s+(\d{1,2}),\s+(\d{4})\b/g,
+      (_match, monthName, day, year) => {
+        const date = new Date(`${monthName} ${day}, ${year} UTC`);
+        return Number.isNaN(date.getTime()) ? _match : formatShortDate(date);
+      },
+    );
+}
+
 function addCell(row, value, className = '') {
   const cell = document.createElement('td');
   cell.textContent = text(value);
@@ -232,14 +257,18 @@ function createRewardRows(reward) {
     );
   }
   addCell(row, formatDate(reward.ExpireTime, true), 'expiry');
+  addCell(row, reward.DeparturePorts);
+  addCell(row, formatSailings(reward.Sailings));
+  addCell(row, reward.Ships);
   addCell(row, reward.IsPremium ? 'Yes' : 'No');
+  addCell(row, reward.OfferID, 'offer-id');
 
   const detailRow = document.createElement('tr');
   detailRow.id = detailId;
   detailRow.className = 'reward-details';
   detailRow.hidden = true;
   const detailCell = document.createElement('td');
-  detailCell.colSpan = 8;
+  detailCell.colSpan = 12;
   const detailContent = document.createElement('div');
   detailContent.className = 'reward-details-content';
 
@@ -361,7 +390,16 @@ function render() {
   const query = searchInput.value.trim().toLocaleLowerCase();
   const partner = partnerFilter.value;
   const matchesFilters = (reward) => {
-    const haystack = [reward.Partner, reward['Reward title'], reward.Port, reward.SnipeText, reward.SnipeCategory].join(' ').toLocaleLowerCase();
+    const haystack = [
+      reward.Partner,
+      reward['Reward title'],
+      reward.Port,
+      reward.DeparturePorts,
+      reward.Sailings,
+      reward.Ships,
+      reward.SnipeText,
+      reward.SnipeCategory,
+    ].join(' ').toLocaleLowerCase();
     return (!partner || reward.Partner === partner) && (!query || haystack.includes(query));
   };
   const filtered = state.rewards.filter(matchesFilters).sort(compareRewards);

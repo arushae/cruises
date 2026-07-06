@@ -27,6 +27,7 @@ CHANGE_FIELDS = [
     "SnipeText", "SnipeCategory", "StrikeOutPrice", "ExpireTime", "IsPremium",
     "RewardDescription",
     "RewardUseByText",
+    "DeparturePorts", "Sailings", "Ships",
 ]
 
 WEBSITE_FIELDS = [
@@ -44,6 +45,9 @@ WEBSITE_FIELDS = [
     "SnipeCategory",
     "StrikeOutPrice",
     "ExpireTime",
+    "DeparturePorts",
+    "Sailings",
+    "Ships",
     "IsPremium",
     "RewardURL",
     "RewardDescription",
@@ -81,6 +85,55 @@ def clean_detail_text(value: str | None) -> str | None:
     text = re.sub(r"\n[ \t]+", "\n", text)
     text = re.sub(r"\n{3,}", "\n\n", text)
     return text.strip() or None
+
+
+def extract_detail_columns(reward: dict) -> None:
+    description = reward.get("RewardDescription") or ""
+
+    departure_ports = None
+    for pattern in (
+        r"\bout of\s+(.+?)\s+for\s+\d+\s+nights?\s+sailing\b",
+        r"\bfrom\s+(.+?)\s+to\s+.+?\bsail\b",
+        r"\bfrom ports in\s+(.+?)\.",
+    ):
+        match = re.search(pattern, description, flags=re.IGNORECASE | re.DOTALL)
+        if match:
+            departure_ports = re.sub(r"\s+", " ", match.group(1)).strip(" .")
+            break
+
+    sailings = None
+    sailing_matches = re.findall(
+        r"\bsailing on\s+([0-9]{1,2}/[0-9]{1,2}/[0-9]{4})",
+        description,
+        flags=re.IGNORECASE,
+    )
+    if sailing_matches:
+        sailings = ", ".join(dict.fromkeys(sailing_matches))
+    else:
+        match = re.search(
+            r"\bselect sailings through\s+(.+?)(?:\s+on\b|[.;]|$)",
+            description,
+            flags=re.IGNORECASE,
+        )
+        if match:
+            sailings = f"Select sailings through {match.group(1).strip()}"
+
+    ships = None
+    ship_matches = []
+    ship_matches.extend(re.findall(
+        r"\bon\s+(?:Royal Caribbeans\s+|Royal Caribbean's\s+)?([A-Z][A-Za-z'’]+\s+of\s+the\s+Seas)\b",
+        description,
+    ))
+    ship_matches.extend(re.findall(
+        r"\bon\s+(?:The\s+)?(Norwegian\s+[A-Z][A-Za-z'’]+)\b",
+        description,
+    ))
+    if ship_matches:
+        ships = ", ".join(dict.fromkeys(ship.strip(" .") for ship in ship_matches)) or None
+
+    reward["DeparturePorts"] = departure_ports or reward.get("DeparturePorts")
+    reward["Sailings"] = sailings or reward.get("Sailings")
+    reward["Ships"] = ships or reward.get("Ships")
 
 
 def extract_use_by_text(popouts: list[dict] | None) -> str | None:
@@ -135,6 +188,7 @@ def enrich_rewards_with_detail(rewards: dict) -> None:
             or reward.get("RewardDescription")
         )
         reward["RewardUseByText"] = extract_use_by_text(detail.get("Popouts"))
+        extract_detail_columns(reward)
 
 
 def extract_rewards(data: dict) -> dict:
@@ -174,6 +228,9 @@ def extract_rewards(data: dict) -> dict:
                 "SnipeCategory": award.get("SnipeCategory"),
                 "StrikeOutPrice": award.get("StrikeOutPrice"),
                 "ExpireTime": award.get("ExpireTime"),
+                "DeparturePorts": None,
+                "Sailings": None,
+                "Ships": None,
                 "IsPremium": award.get("IsPremium"),
                 "RewardURL": award.get("ForwardLink"),
                 "RewardDescription": award.get("ShortDescription"),
@@ -327,6 +384,9 @@ def save_website_data(rewards: dict) -> None:
             website_reward["RewardDescription"] = previous_reward.get("RewardDescription")
         if not website_reward.get("RewardUseByText") and previous_reward:
             website_reward["RewardUseByText"] = previous_reward.get("RewardUseByText")
+        for detail_field in ("DeparturePorts", "Sailings", "Ships"):
+            if not website_reward.get(detail_field) and previous_reward:
+                website_reward[detail_field] = previous_reward.get(detail_field)
         if previous_reward and previous_reward.get("ArushaNotes"):
             website_reward["ArushaNotes"] = previous_reward.get("ArushaNotes")
         if previous_reward and previous_reward.get("PointHistoryNote"):
