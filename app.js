@@ -22,6 +22,7 @@ const pointHistoryTitle = document.querySelector('#points-history-title');
 const pointHistoryBody = document.querySelector('#points-history-body');
 const pointHistoryClose = document.querySelector('#points-history-close');
 const valueHistoryHeading = document.querySelector('#value-history-heading');
+const valueHistoryNote = document.querySelector('#value-history-note');
 const checkHistoryButton = document.querySelector('#check-history-button');
 const checkHistoryDialog = document.querySelector('#check-history-dialog');
 const checkHistoryTitle = document.querySelector('#check-history-title');
@@ -33,6 +34,7 @@ const columnHelpText = document.querySelector('#column-help-text');
 const columnHelpClose = document.querySelector('#column-help-close');
 const EXPIRE_TIME_CHANGE_DISPLAY_THRESHOLD_MS = 12 * 60 * 60 * 1000;
 const PORT_COLUMN_HELP = "While this field is named 'port', it has been populated with inconsistent data, ranging from the port, general location of the cruise or the ship.";
+const QUANTITY_REPLENISHMENT_NOTE = "It looks as if these rewards are automatically replenished from time to time and the quantity is just a failsafe in case there's a sudden run on them!";
 
 function text(value) { return value == null || value === '' ? '—' : String(value); }
 function formatDate(value, multiline = false) {
@@ -138,6 +140,8 @@ function formatNumber(value) {
 }
 
 function addInlineHistoryButton(cell, reward, type, labelText) {
+  const historyWrap = document.createElement('span');
+  historyWrap.className = 'previous-history';
   const previousLabel = document.createElement('span');
   previousLabel.className = 'previous-points';
   previousLabel.textContent = labelText;
@@ -149,7 +153,8 @@ function addInlineHistoryButton(cell, reward, type, labelText) {
   historyButton.setAttribute('aria-label', `View ${type} history for ${reward['Reward title']}`);
   historyButton.title = `View ${type} history`;
   historyButton.textContent = '?';
-  cell.append(document.createElement('br'), previousLabel, historyButton);
+  historyWrap.append(historyButton, previousLabel);
+  cell.append(document.createElement('br'), historyWrap);
 }
 
 function createRewardRows(reward) {
@@ -176,7 +181,7 @@ function createRewardRows(reward) {
   const pointHistory = Array.isArray(reward.PointHistory) ? reward.PointHistory : [];
   const previousDifferent = [...pointHistory].reverse().find((entry) => entry.value !== reward.Points);
   if (previousDifferent) {
-    addInlineHistoryButton(pointsCell, reward, 'points', `(previously seen\nat ${formatNumber(previousDifferent.value)})`);
+    addInlineHistoryButton(pointsCell, reward, 'points', `(previously\nseen at ${formatNumber(previousDifferent.value)})`);
   }
   addCell(row, reward.Port);
   const quantityCell = addCell(row, reward.Quantity, reward.Quantity === 0 ? 'quantity sold-out' : 'quantity');
@@ -189,7 +194,7 @@ function createRewardRows(reward) {
       quantityCell,
       reward,
       'quantity',
-      `(previously seen\nat ${formatNumber(reward.HighestQuantityObserved)})`,
+      `(previously\nseen at ${formatNumber(reward.HighestQuantityObserved)})`,
     );
   }
   addCell(row, formatDate(reward.ExpireTime, true), 'expiry');
@@ -380,6 +385,8 @@ function openPointHistory(awardId) {
   if (!reward) return;
   pointHistoryTitle.textContent = `${reward.Partner} — ${reward['Reward title']}`;
   valueHistoryHeading.textContent = 'Points';
+  valueHistoryNote.hidden = true;
+  valueHistoryNote.textContent = '';
   const history = Array.isArray(reward.PointHistory) ? reward.PointHistory : [];
   const rows = history.length ? history.map((entry) => {
     const row = document.createElement('tr');
@@ -413,14 +420,24 @@ function openQuantityHistory(awardId) {
     rowsData.push({ observed_at: observedAt, value });
   };
   const changeHistory = Array.isArray(reward.ChangeHistory) ? reward.ChangeHistory : [];
+  let hasQuantityIncrease = false;
+  let hasQuantityDecrease = false;
   changeHistory.forEach((event) => {
     (event.changes || [])
       .filter((change) => change.field === 'Quantity')
       .forEach((change) => {
+        const fromValue = Number(change.from);
+        const toValue = Number(change.to);
+        if (!Number.isNaN(fromValue) && !Number.isNaN(toValue)) {
+          if (toValue > fromValue) hasQuantityIncrease = true;
+          if (toValue < fromValue) hasQuantityDecrease = true;
+        }
         addHistoryValue(event.observed_at, change.from);
         addHistoryValue(event.observed_at, change.to);
       });
   });
+  valueHistoryNote.hidden = !(hasQuantityIncrease && hasQuantityDecrease);
+  valueHistoryNote.textContent = hasQuantityIncrease && hasQuantityDecrease ? QUANTITY_REPLENISHMENT_NOTE : '';
   if (reward.HighestQuantityObserved != null && reward.HighestQuantityObserved !== '') {
     addHistoryValue(reward.checked_at || state.checkHistory[0], reward.HighestQuantityObserved);
   }

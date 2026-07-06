@@ -52,8 +52,9 @@ th[aria-sort="descending"] .sort-button span::after { content: "▼"; }
 th:not([aria-sort]) .sort-button span::after { content: "↕"; color: #93a0a8; }
 td.points { text-align: left; font-variant-numeric: tabular-nums; font-weight: 750; }
 td.expiry, #checked-at { white-space: pre-line; }
-.previous-points { display: block; margin-top: 3px; color: #687781; font-size: .74rem; font-weight: 500; line-height: 1.25; white-space: pre-line; overflow-wrap: anywhere; }
-.point-history-button { position: relative; width: 1.35rem; height: 1.35rem; margin-left: 6px; padding: 0; border: 1px solid #7bbbc0; border-radius: 50%; color: #087f8c; background: #e8f5f6; font: 700 .75rem/1 sans-serif; cursor: pointer; }
+.previous-history { display: inline-flex; align-items: center; gap: 6px; margin-top: 3px; }
+.previous-points { display: inline-block; color: #687781; font-size: .74rem; font-weight: 500; line-height: 1.25; white-space: pre-line; overflow-wrap: anywhere; }
+.point-history-button { position: relative; flex: 0 0 auto; width: 1.35rem; height: 1.35rem; padding: 0; border: 1px solid #7bbbc0; border-radius: 50%; color: #087f8c; background: #e8f5f6; font: 700 .75rem/1 sans-serif; cursor: pointer; }
 .point-history-button:hover { color: white; background: #087f8c; }
 .point-history-button:focus-visible, .header-info-button:focus-visible, .dialog-close:focus-visible { outline: 3px solid #8dd9dc; outline-offset: 2px; }
 td.quantity { font-variant-numeric: tabular-nums; white-space: nowrap; }
@@ -88,6 +89,7 @@ dialog::backdrop { background: rgb(18 35 44 / 55%); backdrop-filter: blur(3px); 
 .dialog-header h2 { margin: 0; font-size: 1.2rem; }
 .dialog-close { width: 2rem; height: 2rem; padding: 0; border: 0; border-radius: 50%; color: #53636e; background: #eef3f5; font: 1.5rem/1 sans-serif; cursor: pointer; }
 .dialog-table-wrap { max-height: 60vh; overflow: auto; padding: 0 24px 24px; }
+.dialog-note { margin: 18px 0 14px; padding: 12px 14px; border-left: 4px solid #7bbbc0; border-radius: 8px; color: #374a56; background: #e8f5f6; line-height: 1.45; }
 .dialog-table-wrap th { position: sticky; top: 0; }
 .dialog-body { padding: 20px 24px 24px; color: #263843; line-height: 1.55; }
 .dialog-body p { margin: 0; }
