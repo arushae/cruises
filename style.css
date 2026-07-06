@@ -33,13 +33,13 @@ input:focus, select:focus { outline: 3px solid #8dd9dc; border-color: #087f8c; }
 table { width: 100%; border-collapse: collapse; font-size: 14px; }
 .reward-table { width: max(100%, 1640px); table-layout: fixed; }
 .reward-table .col-toggle { width: 34px; min-width: 34px; }
-.reward-table .col-partner { width: 100px; min-width: 100px; }
+.reward-table .col-partner { width: 90px; min-width: 90px; }
 .reward-table .col-reward { width: 200px; min-width: 200px; }
 .reward-table .col-points { width: 140px; min-width: 140px; }
 .reward-table .col-port { width: 150px; min-width: 150px; }
 .reward-table .col-quantity { width: 120px; min-width: 120px; }
-.reward-table .col-expires { width: 150px; min-width: 150px; }
-.reward-table .col-departure-ports { width: 150px; min-width: 150px; }
+.reward-table .col-expires { width: 120px; min-width: 120px; }
+.reward-table .col-departure-ports { width: 130px; min-width: 130px; }
 .reward-table .col-sailings { width: 110px; min-width: 110px; }
 .reward-table .col-ships { width: 110px; min-width: 110px; }
 .reward-table .col-premium { width: 86px; min-width: 86px; }

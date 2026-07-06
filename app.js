@@ -60,6 +60,7 @@ function hasSanDiegoPortException(reward) {
 
 function metaIcon(label) {
   return {
+    Points: '👑',
     'Use by date': '📅',
     'Departure ports': '📍',
     Sailings: '🗓️',
@@ -206,8 +207,8 @@ function createRewardImagePorthole(reward) {
   outerRing.setAttribute('cy', '120');
   outerRing.setAttribute('r', '111');
   outerRing.setAttribute('fill', '#b8c2c8');
-  outerRing.setAttribute('stroke', '#6f7e87');
-  outerRing.setAttribute('stroke-width', '8');
+  outerRing.setAttribute('stroke', '#87959c');
+  outerRing.setAttribute('stroke-width', '6');
   svg.appendChild(outerRing);
 
   const innerRing = document.createElementNS(svgNS, 'circle');
@@ -215,8 +216,8 @@ function createRewardImagePorthole(reward) {
   innerRing.setAttribute('cy', '120');
   innerRing.setAttribute('r', '88');
   innerRing.setAttribute('fill', '#eef3f5');
-  innerRing.setAttribute('stroke', '#778690');
-  innerRing.setAttribute('stroke-width', '7');
+  innerRing.setAttribute('stroke', '#87959c');
+  innerRing.setAttribute('stroke-width', '5');
   svg.appendChild(innerRing);
 
   const image = document.createElementNS(svgNS, 'image');
@@ -236,7 +237,7 @@ function createRewardImagePorthole(reward) {
   glassRing.setAttribute('r', '78');
   glassRing.setAttribute('fill', 'none');
   glassRing.setAttribute('stroke', 'rgba(255, 255, 255, 0.58)');
-  glassRing.setAttribute('stroke-width', '4');
+  glassRing.setAttribute('stroke-width', '2');
   svg.appendChild(glassRing);
 
   for (let index = 0; index < 12; index += 1) {
@@ -244,10 +245,8 @@ function createRewardImagePorthole(reward) {
     const bolt = document.createElementNS(svgNS, 'circle');
     bolt.setAttribute('cx', String(120 + Math.cos(angle) * 99));
     bolt.setAttribute('cy', String(120 + Math.sin(angle) * 99));
-    bolt.setAttribute('r', '5.5');
-    bolt.setAttribute('fill', '#eef3f5');
-    bolt.setAttribute('stroke', '#65747d');
-    bolt.setAttribute('stroke-width', '2');
+    bolt.setAttribute('r', '4.5');
+    bolt.setAttribute('fill', '#87959c');
     svg.appendChild(bolt);
   }
 
@@ -529,6 +528,7 @@ function createRewardRows(reward) {
 
   const redemptionLimit = redemptionLimitNote(reward);
   const metaRows = [
+    ['Points', formatNumber(reward.Points)],
     ['Use by date', reward.RewardUseByText],
     ['Departure ports', departurePortsValue(reward)],
     ['Sailings', formatSailings(reward.Sailings)],
