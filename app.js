@@ -35,6 +35,8 @@ const columnHelpClose = document.querySelector('#column-help-close');
 const EXPIRE_TIME_CHANGE_DISPLAY_THRESHOLD_MS = 12 * 60 * 60 * 1000;
 const PORT_COLUMN_HELP = "While this field is named 'port', it has been populated with inconsistent data, ranging from the port, general location of the cruise or the ship.";
 const QUANTITY_REPLENISHMENT_NOTE = "It looks as if these rewards are automatically replenished from time to time and the quantity is just a failsafe in case there's a sudden run on them!";
+const KONAMI_CODE = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'];
+let konamiProgress = 0;
 
 function text(value) { return value == null || value === '' ? '—' : String(value); }
 function formatDate(value, multiline = false) {
@@ -304,6 +306,18 @@ function addInlineHistoryButton(cell, reward, type, labelText) {
   cell.append(document.createElement('br'), historyWrap);
 }
 
+function addRewardNoteButton(cell, reward) {
+  const historyButton = document.createElement('button');
+  historyButton.type = 'button';
+  historyButton.className = 'point-history-button inline-note-button';
+  historyButton.dataset.awardId = reward.AwardID;
+  historyButton.dataset.historyType = 'points';
+  historyButton.setAttribute('aria-label', `View note for ${reward['Reward title']}`);
+  historyButton.title = 'View note';
+  historyButton.textContent = '?';
+  cell.append(' ', historyButton);
+}
+
 function createRewardRows(reward) {
   const row = document.createElement('tr');
   const detailId = `reward-details-${reward.AwardID}`;
@@ -330,7 +344,11 @@ function createRewardRows(reward) {
   if (previousDifferent) {
     addInlineHistoryButton(pointsCell, reward, 'points', `(previously\nseen at ${formatNumber(previousDifferent.value)})`);
   }
-  addCell(row, reward.Port);
+  const portCell = addCell(row, reward.Port);
+  if (Number(reward.OfferID) === 40273 && reward.PointHistoryNote) {
+    portCell.classList.add('port-note-highlight');
+    addRewardNoteButton(portCell, reward);
+  }
   const quantityCell = addCell(row, reward.Quantity, reward.Quantity === 0 ? 'quantity sold-out' : 'quantity');
   if (
     reward.HighestQuantityObserved != null
@@ -675,6 +693,37 @@ document.addEventListener('keydown', (event) => {
     toggleRewardRow(rewardRow);
   }
 });
+
+document.addEventListener('keydown', (event) => {
+  if (event.target.closest('input, select, textarea')) return;
+  const expectedKey = KONAMI_CODE[konamiProgress];
+  const pressedKey = event.key.length === 1 ? event.key.toLowerCase() : event.key;
+  konamiProgress = pressedKey === expectedKey ? konamiProgress + 1 : (pressedKey === KONAMI_CODE[0] ? 1 : 0);
+  if (konamiProgress === KONAMI_CODE.length) {
+    konamiProgress = 0;
+    launchDuckSwim();
+  }
+});
+
+function launchDuckSwim() {
+  const pond = document.createElement('div');
+  pond.className = 'duck-pond';
+  pond.setAttribute('aria-hidden', 'true');
+  document.body.appendChild(pond);
+
+  const duckCount = 9;
+  for (let index = 0; index < duckCount; index += 1) {
+    const duck = document.createElement('span');
+    duck.className = 'konami-duck';
+    duck.style.setProperty('--duck-top', `${14 + ((index * 9) % 66)}vh`);
+    duck.style.setProperty('--duck-delay', `${index * 0.28}s`);
+    duck.style.setProperty('--duck-duration', `${6.2 + (index % 4) * 0.7}s`);
+    duck.style.setProperty('--duck-size', `${2.2 + (index % 3) * 0.45}rem`);
+    pond.appendChild(duck);
+  }
+
+  window.setTimeout(() => pond.remove(), 10500);
+}
 
 function toggleRewardRow(row) {
   const detailRow = document.getElementById(row.getAttribute('aria-controls'));
