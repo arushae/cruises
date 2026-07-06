@@ -38,7 +38,36 @@ const QUANTITY_REPLENISHMENT_NOTE = "It looks as if these rewards are automatica
 const KONAMI_CODE = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'];
 let konamiProgress = 0;
 
-function text(value) { return value == null || value === '' ? '—' : String(value); }
+function addLadyShipsEmoji(value) {
+  return String(value).replace(/\bLady Ships\b(?!\s*💃)/gi, (match) => `${match} 💃`);
+}
+
+function addDisplayFlourishes(value) {
+  return addLadyShipsEmoji(value)
+    .replace(/\bPride of America\b(?!®)/gi, (match) => `${match}®`);
+}
+
+function text(value) { return value == null || value === '' ? '—' : addDisplayFlourishes(value); }
+
+function departurePortsValue(reward) {
+  return reward.DeparturePorts || reward.Port;
+}
+
+function hasSanDiegoPortException(reward) {
+  return Number(reward.OfferID) === 40273 && reward.PointHistoryNote;
+}
+
+function metaIcon(label) {
+  return {
+    'Use by date': '📅',
+    'Departure ports': '📍',
+    Sailings: '🗓️',
+    Ships: '🚢',
+    'Redemption limit': '🔁',
+    'Offer ID': '#',
+  }[label] || '';
+}
+
 function formatDate(value, multiline = false) {
   if (!value) return 'Unknown';
   const date = new Date(value);
@@ -226,10 +255,58 @@ function arushaNotes(reward) {
     notes.push(cleanNote);
   };
   (reward.ArushaNotes || []).forEach(addNote);
+  if (String(reward.Partner || '').toLocaleLowerCase().includes('norwegian cruise line')) {
+    addNote('NCL offers can be used in conjunction with CruiseNext credits.');
+  }
   addNote(reward.PointHistoryNote);
   (reward.ChangeHistory || []).forEach((event) => addNote(event.note));
   if (quantityGoesUpAndDown(reward)) addNote(QUANTITY_REPLENISHMENT_NOTE);
   return notes;
+}
+
+function redemptionLimitNote(reward) {
+  const termsText = String(reward.RewardTermsText || '').replace(/\s+/g, ' ').trim();
+  if (!termsText) return '';
+
+  const sentences = termsText.match(/[^.!?]+[.!?]+/g) || [termsText];
+  const cleanSentences = sentences
+    .map((sentence) => sentence.trim())
+    .filter(Boolean);
+  const candidates = cleanSentences.filter((sentence) => {
+    const lowerSentence = sentence.toLocaleLowerCase();
+    return (
+      /\blimit(?:ed)?\b/.test(lowerSentence)
+      && (
+        /\bper\b/.test(lowerSentence)
+        || /\bevery\b/.test(lowerSentence)
+        || /\b\d+\s+days?\b/.test(lowerSentence)
+        || /\bpurchase\b/.test(lowerSentence)
+      )
+    );
+  });
+  const preferred = (
+    candidates.find((sentence) => /90\s+days?|in-app reward purchase/i.test(sentence))
+    || candidates.find((sentence) => /this reward is limited/i.test(sentence))
+    || candidates[0]
+  );
+  return preferred || '';
+}
+
+function createRewardPageLink(reward) {
+  const link = document.createElement('a');
+  link.href = `https://myvip.co/rewardstore/${encodeURIComponent(reward.OfferID)}`;
+  link.target = '_blank';
+  link.rel = 'noopener';
+  link.className = 'reward-link';
+  const linkText = document.createElement('span');
+  linkText.className = 'reward-link-text';
+  linkText.textContent = 'Reward page';
+  const linkArrow = document.createElement('span');
+  linkArrow.className = 'reward-link-arrow';
+  linkArrow.setAttribute('aria-hidden', 'true');
+  linkArrow.textContent = '↗';
+  link.append(linkText, ' ', linkArrow);
+  return link;
 }
 
 function quantityGoesUpAndDown(reward) {
@@ -267,6 +344,11 @@ function compareRewards(a, b) {
   let left = a[state.sortKey];
   let right = b[state.sortKey];
 
+  if (state.sortKey === 'DeparturePorts') {
+    left = departurePortsValue(a);
+    right = departurePortsValue(b);
+  }
+
   if (state.sortKey === 'ExpireTime') {
     left = left ? new Date(left).getTime() : null;
     right = right ? new Date(right).getTime() : null;
@@ -289,7 +371,7 @@ function formatChangeValue(field, value) {
 }
 
 function shouldDisplayObservedChange(change) {
-  if (['RewardDescription', 'RewardUseByText', 'SnipeText'].includes(change.field)) return false;
+  if (['RewardDescription', 'RewardUseByText', 'RewardTermsText', 'RewardTermsExtractedAt', 'SnipeText'].includes(change.field)) return false;
   if (change.field !== 'ExpireTime') return true;
   const fromTime = new Date(change.from).getTime();
   const toTime = new Date(change.to).getTime();
@@ -358,7 +440,7 @@ function createRewardRows(reward) {
     addInlineHistoryButton(pointsCell, reward, 'points', `(previously\nseen at ${formatNumber(previousDifferent.value)})`);
   }
   const portCell = addCell(row, reward.Port);
-  if (Number(reward.OfferID) === 40273 && reward.PointHistoryNote) {
+  if (hasSanDiegoPortException(reward)) {
     portCell.classList.add('port-note-highlight');
     addRewardNoteButton(portCell, reward);
   }
@@ -376,7 +458,11 @@ function createRewardRows(reward) {
     );
   }
   addCell(row, formatDate(reward.ExpireTime, true), 'expiry');
-  addCell(row, reward.DeparturePorts);
+  const departurePortsCell = addCell(row, departurePortsValue(reward));
+  if (hasSanDiegoPortException(reward)) {
+    departurePortsCell.classList.add('port-note-highlight');
+    addRewardNoteButton(departurePortsCell, reward);
+  }
   addCell(row, formatSailings(reward.Sailings));
   addCell(row, reward.Ships);
   addCell(row, reward.IsPremium ? 'Yes' : 'No');
@@ -409,25 +495,40 @@ function createRewardRows(reward) {
     detailContent.appendChild(description);
   }
 
-  if (reward.RewardUseByText) {
-    const useBy = document.createElement('p');
-    useBy.className = 'reward-use-by';
-    const useByLabel = document.createElement('strong');
-    useByLabel.textContent = 'Use by date:';
-    useBy.append(useByLabel, ` ${reward.RewardUseByText}`);
-    detailContent.appendChild(useBy);
+  if (reward.OfferID != null && reward.OfferID !== '') {
+    detailContent.appendChild(createRewardPageLink(reward));
   }
 
-  const offerMeta = document.createElement('p');
-  offerMeta.className = 'reward-meta';
-  const offerLabel = document.createElement('strong');
-  offerLabel.textContent = 'Offer ID:';
-  offerMeta.append(offerLabel, ` ${text(reward.OfferID)}`);
-  detailContent.appendChild(offerMeta);
+  const redemptionLimit = redemptionLimitNote(reward);
+  const metaRows = [
+    ['Use by date', reward.RewardUseByText],
+    ['Departure ports', departurePortsValue(reward)],
+    ['Sailings', formatSailings(reward.Sailings)],
+    ['Ships', reward.Ships],
+    ['Redemption limit', redemptionLimit],
+    ['Offer ID', text(reward.OfferID)],
+  ].filter(([, value]) => value != null && value !== '');
+  if (metaRows.length) {
+    const metaList = document.createElement('dl');
+    metaList.className = 'reward-meta-list detail-section-divider';
+    metaRows.forEach(([label, value]) => {
+      const icon = document.createElement('span');
+      icon.className = 'reward-meta-icon';
+      icon.setAttribute('aria-hidden', 'true');
+      icon.textContent = metaIcon(label);
+      const term = document.createElement('dt');
+      term.textContent = label;
+      const description = document.createElement('dd');
+      description.textContent = addDisplayFlourishes(value);
+      metaList.append(icon, term, description);
+    });
+    detailContent.appendChild(metaList);
+  }
 
   const notes = arushaNotes(reward);
   if (notes.length) {
     const notesHeading = document.createElement('h3');
+    notesHeading.className = 'detail-section-heading';
     notesHeading.textContent = "Arusha's notes";
     detailContent.appendChild(notesHeading);
     const notesList = document.createElement('ul');
@@ -441,7 +542,8 @@ function createRewardRows(reward) {
   }
 
   const heading = document.createElement('h3');
-  heading.textContent = 'Observed changes';
+  heading.className = 'detail-section-heading';
+  heading.textContent = "🦜 Captain Pistachio's observed changes";
   detailContent.appendChild(heading);
 
   const changeHistory = Array.isArray(reward.ChangeHistory) ? reward.ChangeHistory : [];
@@ -471,15 +573,21 @@ function createRewardRows(reward) {
   }
   detailContent.appendChild(changeList);
 
-  if (reward.OfferID != null && reward.OfferID !== '') {
-    const link = document.createElement('a');
-    link.href = `https://myvip.co/rewardstore/${encodeURIComponent(reward.OfferID)}`;
-    link.target = '_blank';
-    link.rel = 'noopener';
-    link.className = 'reward-link';
-    link.textContent = 'Open the actual reward page ↗';
-    detailContent.appendChild(link);
-  } else {
+  if (reward.RewardTermsText) {
+    const terms = document.createElement('details');
+    terms.className = 'reward-terms';
+    const termsSummary = document.createElement('summary');
+    termsSummary.textContent = 'Terms and conditions';
+    const termsExtractedAt = document.createElement('p');
+    termsExtractedAt.className = 'reward-terms-date';
+    termsExtractedAt.textContent = `Extracted ${formatDate(reward.RewardTermsExtractedAt || state.checkHistory[state.checkHistory.length - 1])}`;
+    const termsBody = document.createElement('p');
+    termsBody.textContent = addDisplayFlourishes(reward.RewardTermsText);
+    terms.append(termsSummary, termsExtractedAt, termsBody);
+    detailContent.appendChild(terms);
+  }
+
+  if (reward.OfferID == null || reward.OfferID === '') {
     const unavailable = document.createElement('p');
     unavailable.className = 'muted';
     unavailable.textContent = 'No offer number is available for this reward.';
@@ -517,7 +625,7 @@ function render() {
       reward.Partner,
       reward['Reward title'],
       reward.Port,
-      reward.DeparturePorts,
+      departurePortsValue(reward),
       reward.Sailings,
       reward.Ships,
       reward.SnipeText,

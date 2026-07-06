@@ -27,6 +27,8 @@ CHANGE_FIELDS = [
     "SnipeText", "SnipeCategory", "StrikeOutPrice", "ExpireTime", "IsPremium",
     "RewardDescription",
     "RewardUseByText",
+    "RewardTermsText",
+    "RewardTermsExtractedAt",
     "DeparturePorts", "Sailings", "Ships",
 ]
 
@@ -53,6 +55,8 @@ WEBSITE_FIELDS = [
     "ImageURL",
     "RewardDescription",
     "RewardUseByText",
+    "RewardTermsText",
+    "RewardTermsExtractedAt",
     "ArushaNotes",
     "PointHistoryNote",
     "ChangeHistory",
@@ -88,8 +92,40 @@ def clean_detail_text(value: str | None) -> str | None:
     return text.strip() or None
 
 
+def strip_reward_symbol(value: str | None) -> str | None:
+    if not value:
+        return None
+    return re.sub(r"\s*[®™]\s*", "", value).strip(" .") or None
+
+
+def unique_join(values: list[str | None]) -> str | None:
+    cleaned = []
+    seen = set()
+    for value in values:
+        clean_value = strip_reward_symbol(re.sub(r"\s+", " ", value).strip(" .")) if value else None
+        if not clean_value:
+            continue
+        key = clean_value.casefold()
+        if key in seen:
+            continue
+        seen.add(key)
+        cleaned.append(clean_value)
+    return ", ".join(cleaned) or None
+
+
+def is_plausible_departure_port(value: str | None) -> bool:
+    if not value:
+        return False
+    return not re.search(
+        r"\b(myvip|myvegas|reward|offer|royal caribbean|norwegian cruise line|virgin voyages|reservation|purchase|redeem|casino royale)\b",
+        value,
+        flags=re.IGNORECASE,
+    )
+
+
 def extract_detail_columns(reward: dict) -> None:
     description = reward.get("RewardDescription") or ""
+    terms = reward.get("RewardTermsText") or ""
 
     departure_ports = None
     for pattern in (
@@ -99,8 +135,20 @@ def extract_detail_columns(reward: dict) -> None:
     ):
         match = re.search(pattern, description, flags=re.IGNORECASE | re.DOTALL)
         if match:
-            departure_ports = re.sub(r"\s+", " ", match.group(1)).strip(" .")
-            break
+            possible_departure_ports = re.sub(r"\s+", " ", match.group(1)).strip(" .")
+            if is_plausible_departure_port(possible_departure_ports):
+                departure_ports = possible_departure_ports
+                break
+    if not departure_ports:
+        match = re.search(
+            r"\bdepart(?:ing|ure)\s+from\s+(.+?)(?:\.|,|;|\s+by\b|\s+on\b)",
+            terms,
+            flags=re.IGNORECASE | re.DOTALL,
+        )
+        if match:
+            possible_departure_ports = re.sub(r"\s+", " ", match.group(1)).strip(" .")
+            if is_plausible_departure_port(possible_departure_ports):
+                departure_ports = possible_departure_ports
 
     sailings = None
     sailing_matches = re.findall(
@@ -118,6 +166,14 @@ def extract_detail_columns(reward: dict) -> None:
         )
         if match:
             sailings = f"Select sailings through {match.group(1).strip()}"
+    if not sailings:
+        match = re.search(
+            r"\bvalid\s+for\s+sailings\s+departing\s+by\s+(.+?)(?:\.|;|$)",
+            terms,
+            flags=re.IGNORECASE,
+        )
+        if match:
+            sailings = f"Sailings departing by {match.group(1).strip()}"
 
     ships = None
     ship_matches = []
@@ -129,10 +185,21 @@ def extract_detail_columns(reward: dict) -> None:
         r"\bon\s+(?:The\s+)?(Norwegian\s+[A-Z][A-Za-z'’]+)\b",
         description,
     ))
-    if ship_matches:
-        ships = ", ".join(dict.fromkeys(ship.strip(" .") for ship in ship_matches)) or None
+    if re.search(r"\bLady Ships\b", terms, flags=re.IGNORECASE):
+        ship_matches.append("Virgin Voyages Lady Ships")
+    exclusion_matches = [
+        f"Excludes {ship}"
+        for ship in re.findall(
+            r"\bnot\s+valid\s+on\s+(.+?)\s+sailings\b",
+            terms,
+            flags=re.IGNORECASE,
+        )
+    ]
+    ships = unique_join(ship_matches + exclusion_matches)
 
-    reward["DeparturePorts"] = departure_ports or reward.get("DeparturePorts")
+    reward["DeparturePorts"] = departure_ports or (
+        reward.get("DeparturePorts") if is_plausible_departure_port(reward.get("DeparturePorts")) else None
+    )
     reward["Sailings"] = sailings or reward.get("Sailings")
     reward["Ships"] = ships or reward.get("Ships")
 
@@ -162,7 +229,18 @@ def extract_use_by_text(popouts: list[dict] | None) -> str | None:
     return None
 
 
-def enrich_rewards_with_detail(rewards: dict) -> None:
+def extract_terms_text(detail: dict) -> str | None:
+    for popout in detail.get("Popouts") or []:
+        title = clean_detail_text(popout.get("Title"))
+        if title and re.search(r"terms\s+and\s+conditions", title, re.IGNORECASE):
+            terms_text = clean_detail_text(popout.get("Body"))
+            if terms_text:
+                return terms_text
+
+    return clean_detail_text(detail.get("TermsAndConditionsExtended"))
+
+
+def enrich_rewards_with_detail(rewards: dict, checked_at: str | None = None) -> None:
     detail_cache = {}
 
     for reward in rewards.values():
@@ -190,6 +268,9 @@ def enrich_rewards_with_detail(rewards: dict) -> None:
             or reward.get("RewardDescription")
         )
         reward["RewardUseByText"] = extract_use_by_text(detail.get("Popouts"))
+        reward["RewardTermsText"] = extract_terms_text(detail)
+        if reward.get("RewardTermsText"):
+            reward["RewardTermsExtractedAt"] = checked_at or datetime.now().astimezone().isoformat(timespec="seconds")
         extract_detail_columns(reward)
 
 
@@ -251,14 +332,14 @@ def load_previous_snapshot() -> dict | None:
         return json.load(f)
 
 
-def save_snapshot(rewards: dict) -> None:
+def save_snapshot(rewards: dict, checked_at: str) -> None:
     SNAPSHOT_DIR.mkdir(parents=True, exist_ok=True)
 
-    timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+    timestamp = re.sub(r"[^0-9A-Za-z]+", "_", checked_at).strip("_")
     dated_file = SNAPSHOT_DIR / f"snapshot_{timestamp}.json"
 
     payload = {
-        "checked_at": datetime.now().isoformat(timespec="seconds"),
+        "checked_at": checked_at,
         "source_url": API_URL,
         "rewards": rewards,
     }
@@ -270,10 +351,9 @@ def save_snapshot(rewards: dict) -> None:
         json.dump(payload, f, indent=2, ensure_ascii=False)
 
 
-def save_website_data(rewards: dict) -> None:
+def save_website_data(rewards: dict, checked_at: str) -> None:
     """Write a stable, sorted data file for the local rewards website."""
     WEBSITE_DATA_FILE.parent.mkdir(parents=True, exist_ok=True)
-    checked_at = datetime.now().astimezone().isoformat(timespec="seconds")
 
     previous_highs = {}
     previous_point_histories = {}
@@ -387,6 +467,10 @@ def save_website_data(rewards: dict) -> None:
             website_reward["RewardDescription"] = previous_reward.get("RewardDescription")
         if not website_reward.get("RewardUseByText") and previous_reward:
             website_reward["RewardUseByText"] = previous_reward.get("RewardUseByText")
+        if not website_reward.get("RewardTermsText") and previous_reward:
+            website_reward["RewardTermsText"] = previous_reward.get("RewardTermsText")
+        if not website_reward.get("RewardTermsExtractedAt") and previous_reward:
+            website_reward["RewardTermsExtractedAt"] = previous_reward.get("RewardTermsExtractedAt")
         if not website_reward.get("ImageURL") and previous_reward:
             website_reward["ImageURL"] = previous_reward.get("ImageURL")
         for detail_field in ("DeparturePorts", "Sailings", "Ships"):
@@ -543,6 +627,7 @@ def notify_mac(title: str, message: str) -> None:
     )
 
 def main() -> int:
+    checked_at = datetime.now().astimezone().isoformat(timespec="seconds")
     try:
         data = fetch_json(API_URL)
     except HTTPError as e:
@@ -556,12 +641,12 @@ def main() -> int:
         return 1
 
     current_rewards = extract_rewards(data)
-    enrich_rewards_with_detail(current_rewards)
+    enrich_rewards_with_detail(current_rewards, checked_at)
     previous_payload = load_previous_snapshot()
 
     messages = compare_rewards(previous_payload, current_rewards)
-    save_snapshot(current_rewards)
-    save_website_data(current_rewards)
+    save_snapshot(current_rewards, checked_at)
+    save_website_data(current_rewards, checked_at)
 
     print(f"Checked {len(current_rewards)} unique rewards.")
     print()

@@ -56,6 +56,8 @@ td.toggle-cell { position: relative; }
 .sort-button:focus-visible { outline: 3px solid #8dd9dc; }
 .sort-button span { display: inline-block; flex: 0 0 .8em; width: .8em; color: #087f8c; font-size: .9rem; }
 .column-label { font-weight: 750; line-height: 1.25; }
+.icon-column-label { display: inline-flex; align-items: center; vertical-align: middle; }
+.fa-column-icon { display: block; width: 12px; height: 16px; fill: #087f8c; }
 .column-help-button { width: 1rem; height: 1rem; margin-left: 5px; padding: 0; border: 1px solid #7bbbc0; border-radius: 50%; color: #087f8c; background: #e8f5f6; font: 700 .62rem/1 sans-serif; cursor: pointer; vertical-align: middle; }
 .column-help-button:hover { color: white; background: #087f8c; }
 .column-help-button:focus-visible { outline: 3px solid #8dd9dc; outline-offset: 2px; }
@@ -84,17 +86,28 @@ td.sold-out { color: #6c7a83; font-weight: 400; }
 .reward-details td { padding: 0; background: #f6f9fa; }
 .reward-details-content { position: sticky; left: 0; width: min(calc(100vw - 32px), 720px); max-width: min(calc(100vw - 32px), 720px); padding: 18px 28px 22px 44px; border-bottom: 1px solid #dce5e8; font-size: .9rem; overflow-wrap: anywhere; }
 .reward-details-content h3 { margin: 0 0 10px; font-size: .95rem; }
+.reward-details-content .detail-section-heading { margin-top: 16px; padding-top: 16px; border-top: 1px solid #dce5e8; }
+.reward-details-content .detail-section-divider { margin-top: 16px; padding-top: 16px; border-top: 1px solid #dce5e8; }
 .reward-image-porthole { display: none; }
 .reward-page-title { color: #17252f; font-size: 1.05rem !important; letter-spacing: -.01em; }
 .reward-description { margin: 0 0 14px; color: #263843; line-height: 1.55; }
-.reward-use-by { margin: -4px 0 14px; color: #374a56; line-height: 1.45; }
-.reward-use-by strong { color: #263843; }
-.reward-meta { margin: 0 0 12px; color: #52616b; font-size: .86rem; }
-.reward-meta strong { color: #263843; }
+.reward-meta-list { display: grid; grid-template-columns: 1.35rem max-content minmax(0, 1fr); gap: 6px 12px; margin: 0 0 14px; color: #52616b; font-size: .86rem; line-height: 1.45; }
+.reward-meta-icon { display: inline-flex; justify-content: center; color: #087f8c; font-weight: 700; line-height: 1.45; }
+.reward-meta-list dt { color: #263843; font-weight: 700; }
+.reward-meta-list dd { margin: 0; }
+.reward-terms { margin: 16px 0 14px; padding-top: 16px; border-top: 1px solid #dce5e8; color: #374a56; }
+.reward-terms summary { display: inline-flex; align-items: center; gap: 7px; width: fit-content; color: #087f8c; font-weight: 750; cursor: pointer; list-style: none; }
+.reward-terms summary::-webkit-details-marker { display: none; }
+.reward-terms summary::before { display: inline-block; flex: 0 0 auto; width: 16px; height: 16px; background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.5 4.75L8 10.25L13.5 4.75' fill='none' stroke='%23087f8c' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: center; background-size: 16px 16px; content: ""; transform: rotate(0deg); transform-origin: 50% 50%; transition: transform .15s ease; }
+.reward-terms[open] summary::before { transform: rotate(180deg); }
+.reward-terms-date { margin: 10px 0 0; color: #6c7a83; font-size: .78rem; font-weight: 700; }
+.reward-terms p:not(.reward-terms-date) { margin: 10px 0 0; padding: 12px 14px; border-left: 4px solid #dce5e8; border-radius: 8px; background: #fff; font-size: 12px; line-height: 1.5; white-space: pre-line; }
 .reward-details-content ul { margin: 0 0 14px; padding-left: 1.3rem; color: #52616b; }
 .reward-details-content li + li { margin-top: 6px; }
 .arusha-notes { color: #374a56; }
-.reward-link { display: inline-block; font-weight: 700; }
+.reward-link { display: inline-block; margin: -4px 0 14px; font-weight: 700; text-decoration: none; }
+.reward-link-text { text-decoration: underline; text-underline-offset: 2px; }
+.reward-link-arrow { display: inline-block; text-decoration: none; }
 .snipe { display: inline-block; margin-top: 5px; padding: 2px 6px; border-radius: 4px; background: #e8f5f6; color: #086772; font-size: .72rem; font-weight: 700; }
 .snipe-sold-out { background: #edf1f3; color: #53636e; }
 .snipe-left { background: #ffe8e8; color: #9b3131; }
