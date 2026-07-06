@@ -445,6 +445,26 @@ def save_website_data(rewards: dict, checked_at: str) -> None:
     previous_check_history = []
     previous_rewards = []
     previous_checked_at = None
+
+    def numeric_quantity(value):
+        return value if isinstance(value, (int, float)) and not isinstance(value, bool) else None
+
+    def quantity_values_from_change_history(change_history):
+        values = []
+        if not isinstance(change_history, list):
+            return values
+        for event in change_history:
+            if not isinstance(event, dict):
+                continue
+            for change in event.get("changes", []):
+                if not isinstance(change, dict) or change.get("field") != "Quantity":
+                    continue
+                for key in ("from", "to"):
+                    value = numeric_quantity(change.get(key))
+                    if value is not None:
+                        values.append(value)
+        return values
+
     if WEBSITE_DATA_FILE.exists():
         try:
             with WEBSITE_DATA_FILE.open("r", encoding="utf-8") as f:
@@ -463,9 +483,10 @@ def save_website_data(rewards: dict, checked_at: str) -> None:
                     reward.get("HighestQuantityObserved"),
                 ]
                 numeric_quantities = [
-                    value for value in quantities
-                    if isinstance(value, (int, float)) and not isinstance(value, bool)
+                    value for value in (numeric_quantity(item) for item in quantities)
+                    if value is not None
                 ]
+                numeric_quantities.extend(quantity_values_from_change_history(reward.get("ChangeHistory")))
                 if numeric_quantities:
                     previous_highs[award_id] = max(numeric_quantities)
                 history = reward.get("PointHistory")
@@ -493,6 +514,7 @@ def save_website_data(rewards: dict, checked_at: str) -> None:
 
     snapshot_point_histories = {}
     snapshot_change_histories = {}
+    snapshot_quantity_highs = {}
     snapshot_previous_rewards = {}
     snapshot_check_history = []
     for snapshot_file in sorted(SNAPSHOT_DIR.glob("snapshot_*.json")):
@@ -506,6 +528,12 @@ def save_website_data(rewards: dict, checked_at: str) -> None:
                 snapshot_check_history.append(observed_at)
             for award_id, reward in snapshot.get("rewards", {}).items():
                 award_id = str(award_id)
+                quantity = numeric_quantity(reward.get("Quantity"))
+                if quantity is not None:
+                    snapshot_quantity_highs[award_id] = max(
+                        quantity,
+                        snapshot_quantity_highs.get(award_id, quantity),
+                    )
                 value = reward.get("Points")
                 history = snapshot_point_histories.setdefault(award_id, [])
                 if not history or history[-1]["value"] != value:
@@ -574,8 +602,11 @@ def save_website_data(rewards: dict, checked_at: str) -> None:
         elif not website_reward.get("FirstObserved"):
             website_reward["FirstObserved"] = "Unknown"
         current_quantity = reward.get("Quantity")
-        observed_quantities = [previous_highs.get(award_id)]
-        if isinstance(current_quantity, (int, float)) and not isinstance(current_quantity, bool):
+        observed_quantities = [
+            previous_highs.get(award_id),
+            snapshot_quantity_highs.get(award_id),
+        ]
+        if numeric_quantity(current_quantity) is not None:
             observed_quantities.append(current_quantity)
         numeric_quantities = [value for value in observed_quantities if value is not None]
         website_reward["HighestQuantityObserved"] = (

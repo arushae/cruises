@@ -1019,25 +1019,41 @@ function openQuantityHistory(awardId) {
 
 function openCheckHistory() {
   const todayLabel = formatHistoryDate(new Date().toISOString());
-  const olderCounts = new Map();
+  const countsByDate = new Map();
+  const todaysChecks = [];
   const rows = [];
-  [...state.checkHistory].reverse().forEach((observedAt) => {
+  state.checkHistory.forEach((observedAt) => {
     const dateLabel = formatHistoryDate(observedAt);
     if (dateLabel === todayLabel) {
-      const row = document.createElement('tr');
-      addCell(row, dateLabel);
-      addCell(row, formatHistoryTime(observedAt));
-      rows.push(row);
-      return;
+      todaysChecks.push(observedAt);
     }
-    olderCounts.set(dateLabel, (olderCounts.get(dateLabel) || 0) + 1);
+    countsByDate.set(dateLabel, (countsByDate.get(dateLabel) || 0) + 1);
   });
-  olderCounts.forEach((count, dateLabel) => {
+
+  [...countsByDate.entries()].reverse().forEach(([dateLabel, count]) => {
     const row = document.createElement('tr');
     addCell(row, dateLabel);
-    addCell(row, `${count} ${count === 1 ? 'check' : 'checks'}`);
+    if (dateLabel === todayLabel && todaysChecks.length) {
+      const cell = document.createElement('td');
+      const details = document.createElement('details');
+      details.className = 'check-history-accordion';
+      const summary = document.createElement('summary');
+      summary.textContent = `${count} ${count === 1 ? 'check' : 'checks'}`;
+      const list = document.createElement('ul');
+      [...todaysChecks].reverse().forEach((observedAt) => {
+        const item = document.createElement('li');
+        item.textContent = formatHistoryTime(observedAt);
+        list.appendChild(item);
+      });
+      details.append(summary, list);
+      cell.appendChild(details);
+      row.appendChild(cell);
+    } else {
+      addCell(row, `${count} ${count === 1 ? 'check' : 'checks'}`);
+    }
     rows.push(row);
   });
+
   const days = new Set(state.checkHistory.map((observedAt) => formatHistoryDate(observedAt))).size;
   checkHistoryTitle.textContent = `${state.checkHistory.length} site checks over ${days} ${days === 1 ? 'day' : 'days'}`;
   checkHistorySubtitle.textContent = 'Since 05 July 2026';

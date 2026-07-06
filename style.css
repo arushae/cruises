@@ -155,6 +155,9 @@ dialog::backdrop { background: rgb(18 35 44 / 55%); backdrop-filter: blur(3px); 
 .dialog-table-wrap { max-height: 60vh; overflow: auto; padding: 0 24px 24px; }
 .dialog-note { margin: 18px 0 14px; padding: 12px 14px; border-left: 4px solid #7bbbc0; border-radius: 8px; color: #374a56; background: #e8f5f6; line-height: 1.45; }
 .dialog-table-wrap th { position: sticky; top: 0; }
+.check-history-accordion summary { width: fit-content; color: #087f8c; font-weight: 750; cursor: pointer; }
+.check-history-accordion summary:focus-visible { outline: 3px solid #8dd9dc; outline-offset: 3px; border-radius: 4px; }
+.check-history-accordion ul { margin: 8px 0 0; padding-left: 1.2rem; color: #53636e; font-size: 12px; line-height: 1.55; }
 .dialog-body { padding: 20px 24px 24px; color: #263843; line-height: 1.55; }
 .dialog-body p { margin: 0; }
 footer { color: #6c7a83; font-size: .82rem; padding: 18px 4px; }
