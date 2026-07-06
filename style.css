@@ -34,9 +34,9 @@ table { width: 100%; border-collapse: collapse; font-size: .9rem; }
 .reward-table .col-toggle { width: 34px; min-width: 34px; }
 .reward-table .col-partner { width: 110px; min-width: 110px; }
 .reward-table .col-reward { width: 200px; min-width: 200px; }
-.reward-table .col-points { width: 155px; min-width: 155px; }
+.reward-table .col-points { width: 120px; min-width: 120px; }
 .reward-table .col-port { width: 150px; min-width: 150px; }
-.reward-table .col-quantity { width: 165px; min-width: 165px; }
+.reward-table .col-quantity { width: 120px; min-width: 120px; }
 .reward-table .col-expires { width: 150px; min-width: 150px; }
 .reward-table .col-departure-ports { width: 170px; min-width: 170px; }
 .reward-table .col-sailings { width: 150px; min-width: 150px; }
@@ -115,6 +115,7 @@ footer { color: #6c7a83; font-size: .82rem; padding: 18px 4px; }
 a { color: #087f8c; }
 .duck-pond { position: fixed; inset: 0; z-index: 9999; overflow: hidden; pointer-events: none; }
 .konami-duck { position: absolute; top: var(--duck-top); right: -5rem; display: inline-block; width: calc(var(--duck-size) * 1.65); height: var(--duck-size); background-image: url("data:image/svg+xml,%3Csvg width='110' height='70' viewBox='0 0 110 70' xmlns='http://www.w3.org/2000/svg'%3E%3Cellipse cx='57' cy='45' rx='39' ry='19' fill='%23ffd84d' stroke='%23d9a91e' stroke-width='4'/%3E%3Ccircle cx='35' cy='28' r='18' fill='%23ffd84d' stroke='%23d9a91e' stroke-width='4'/%3E%3Cpath d='M18 28c-9-4-16-2-16 4 0 7 9 10 19 6' fill='%23ff8f2f' stroke='%23c75f16' stroke-width='4' stroke-linejoin='round'/%3E%3Ccircle cx='30' cy='23' r='2.8' fill='%2316212a'/%3E%3Cpath d='M55 34c9 2 20 7 26 17-13 4-28 2-39-5 2-7 6-11 13-12z' fill='%23ffe780' stroke='%23d9a91e' stroke-width='3' stroke-linejoin='round'/%3E%3Cpath d='M20 58c17 8 54 9 78 0' fill='none' stroke='%237bbbc0' stroke-width='4' stroke-linecap='round' opacity='.65'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: center; background-size: contain; filter: drop-shadow(0 6px 8px rgb(20 40 50 / 20%)); animation: duck-swim var(--duck-duration) linear var(--duck-delay) forwards, duck-bob .7s ease-in-out var(--duck-delay) infinite alternate; }
+.konami-parrot { position: absolute; top: 72vh; right: -8rem; display: inline-block; font-size: 6rem; filter: drop-shadow(0 8px 12px rgb(20 40 50 / 22%)); animation: parrot-herd 7.4s linear 3.1s forwards, parrot-hop .38s ease-in-out 3.1s infinite alternate; }
 @keyframes duck-swim {
   from { transform: translateX(8vw); }
   to { transform: translateX(calc(-100vw - 8rem)); }
@@ -122,6 +123,14 @@ a { color: #087f8c; }
 @keyframes duck-bob {
   from { margin-top: 0; }
   to { margin-top: 10px; }
+}
+@keyframes parrot-herd {
+  from { transform: translateX(12vw); }
+  to { transform: translateX(calc(-100vw - 12rem)); }
+}
+@keyframes parrot-hop {
+  from { margin-top: 0; }
+  to { margin-top: -24px; }
 }
 @media (min-width: 1025px) {
   .reward-details-content {

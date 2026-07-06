@@ -722,7 +722,12 @@ function launchDuckSwim() {
     pond.appendChild(duck);
   }
 
-  window.setTimeout(() => pond.remove(), 10500);
+  const parrot = document.createElement('span');
+  parrot.className = 'konami-parrot';
+  parrot.textContent = '🦜';
+  pond.appendChild(parrot);
+
+  window.setTimeout(() => pond.remove(), 12500);
 }
 
 function toggleRewardRow(row) {
