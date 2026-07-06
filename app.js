@@ -265,7 +265,11 @@ function arushaNotes(reward) {
 }
 
 function redemptionLimitNote(reward) {
-  const termsText = String(reward.RewardTermsText || '').replace(/\s+/g, ' ').trim();
+  const limitText = [
+    reward.RewardPageLimitText,
+    reward.RewardTermsText,
+  ].filter(Boolean).join(' ');
+  const termsText = String(limitText || '').replace(/\s+/g, ' ').trim();
   if (!termsText) return '';
 
   const sentences = termsText.match(/[^.!?]+[.!?]+/g) || [termsText];
@@ -284,12 +288,17 @@ function redemptionLimitNote(reward) {
       )
     );
   });
-  const preferred = (
-    candidates.find((sentence) => /90\s+days?|in-app reward purchase/i.test(sentence))
-    || candidates.find((sentence) => /this reward is limited/i.test(sentence))
-    || candidates[0]
-  );
-  return preferred || '';
+  const preferred = [
+    cleanSentences.find((sentence) => /RCCL\s+Comp\s+Cruise\s+rewards\s+are\s+limited\s+to\s+2\s+purchases\s+in\s+a\s+90\s+day\s+period/i.test(sentence)),
+    candidates.find((sentence) => /90\s+days?|in-app reward purchase/i.test(sentence)),
+    cleanSentences.find((sentence) => /limit\s+one\s+cruise\s+reward\s+per\s+player,\s+per\s+sailing/i.test(sentence)),
+    cleanSentences.find((sentence) => /only\s+one\s+reward\s+may\s+be\s+used\s+per\s+sailing/i.test(sentence)),
+    candidates.find((sentence) => /this reward is limited/i.test(sentence)),
+    candidates[0],
+  ].filter(Boolean).map((sentence) => (
+    sentence.replace(/\s+and\s+is\s+not\s+valid\s+on\s+Pride\s+of\s+America®?\s+sailings/iu, '')
+  ));
+  return Array.from(new Set(preferred)).join(' ');
 }
 
 function createRewardPageLink(reward) {
@@ -371,7 +380,7 @@ function formatChangeValue(field, value) {
 }
 
 function shouldDisplayObservedChange(change) {
-  if (['RewardDescription', 'RewardUseByText', 'RewardTermsText', 'RewardTermsExtractedAt', 'SnipeText'].includes(change.field)) return false;
+  if (['RewardDescription', 'RewardUseByText', 'RewardPageLimitText', 'RewardTermsText', 'RewardTermsExtractedAt', 'SnipeText'].includes(change.field)) return false;
   if (change.field !== 'ExpireTime') return true;
   const fromTime = new Date(change.from).getTime();
   const toTime = new Date(change.to).getTime();
@@ -529,7 +538,7 @@ function createRewardRows(reward) {
   if (notes.length) {
     const notesHeading = document.createElement('h3');
     notesHeading.className = 'detail-section-heading';
-    notesHeading.textContent = "Arusha's notes";
+    notesHeading.textContent = "📝 Arusha's notes";
     detailContent.appendChild(notesHeading);
     const notesList = document.createElement('ul');
     notesList.className = 'arusha-notes';

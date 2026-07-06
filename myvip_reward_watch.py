@@ -27,6 +27,7 @@ CHANGE_FIELDS = [
     "SnipeText", "SnipeCategory", "StrikeOutPrice", "ExpireTime", "IsPremium",
     "RewardDescription",
     "RewardUseByText",
+    "RewardPageLimitText",
     "RewardTermsText",
     "RewardTermsExtractedAt",
     "DeparturePorts", "Sailings", "Ships",
@@ -55,6 +56,7 @@ WEBSITE_FIELDS = [
     "ImageURL",
     "RewardDescription",
     "RewardUseByText",
+    "RewardPageLimitText",
     "RewardTermsText",
     "RewardTermsExtractedAt",
     "ArushaNotes",
@@ -229,6 +231,57 @@ def extract_use_by_text(popouts: list[dict] | None) -> str | None:
     return None
 
 
+def split_detail_sentences(text: str | None) -> list[str]:
+    if not text:
+        return []
+    compact_text = re.sub(r"\s+", " ", text).strip()
+    return [
+        sentence.strip()
+        for sentence in re.findall(r"[^.!?]+[.!?]+|[^.!?]+$", compact_text)
+        if sentence.strip()
+    ]
+
+
+def extract_page_limit_text(detail: dict) -> str | None:
+    """Extract useful redemption-limit text from page sections outside Ts & Cs."""
+    snippets = []
+    for popout in detail.get("Popouts") or []:
+        title = clean_detail_text(popout.get("Title")) or ""
+        if re.search(r"terms\s+and\s+conditions", title, re.IGNORECASE):
+            continue
+        body = clean_detail_text(popout.get("Body"))
+        if body:
+            body = re.sub(
+                r"\b(?:Use by Date|Customer Redemption Steps|Pre-Purchase)\b",
+                ". ",
+                body,
+                flags=re.IGNORECASE,
+            )
+            snippets.append(body)
+
+    useful_sentences = []
+    seen = set()
+    for sentence in split_detail_sentences(" ".join(snippets)):
+        lower_sentence = sentence.casefold()
+        is_limit = (
+            re.search(r"\blimit(?:ed)?\b", lower_sentence)
+            and (
+                re.search(r"\bper\b", lower_sentence)
+                or re.search(r"\b\d+\s+purchases?\b", lower_sentence)
+                or re.search(r"\b\d+\s+days?\b", lower_sentence)
+            )
+        )
+        if not is_limit:
+            continue
+        key = lower_sentence
+        if key in seen:
+            continue
+        seen.add(key)
+        useful_sentences.append(sentence)
+
+    return " ".join(useful_sentences) or None
+
+
 def extract_terms_text(detail: dict) -> str | None:
     for popout in detail.get("Popouts") or []:
         title = clean_detail_text(popout.get("Title"))
@@ -268,6 +321,7 @@ def enrich_rewards_with_detail(rewards: dict, checked_at: str | None = None) -> 
             or reward.get("RewardDescription")
         )
         reward["RewardUseByText"] = extract_use_by_text(detail.get("Popouts"))
+        reward["RewardPageLimitText"] = extract_page_limit_text(detail)
         reward["RewardTermsText"] = extract_terms_text(detail)
         if reward.get("RewardTermsText"):
             reward["RewardTermsExtractedAt"] = checked_at or datetime.now().astimezone().isoformat(timespec="seconds")
@@ -319,6 +373,7 @@ def extract_rewards(data: dict) -> dict:
                 "ImageURL": award.get("ImageURL") or award.get("GalleryImageURL"),
                 "RewardDescription": award.get("ShortDescription"),
                 "RewardUseByText": None,
+                "RewardPageLimitText": None,
             }
 
     return rewards
@@ -467,6 +522,8 @@ def save_website_data(rewards: dict, checked_at: str) -> None:
             website_reward["RewardDescription"] = previous_reward.get("RewardDescription")
         if not website_reward.get("RewardUseByText") and previous_reward:
             website_reward["RewardUseByText"] = previous_reward.get("RewardUseByText")
+        if not website_reward.get("RewardPageLimitText") and previous_reward:
+            website_reward["RewardPageLimitText"] = previous_reward.get("RewardPageLimitText")
         if not website_reward.get("RewardTermsText") and previous_reward:
             website_reward["RewardTermsText"] = previous_reward.get("RewardTermsText")
         if not website_reward.get("RewardTermsExtractedAt") and previous_reward:
