@@ -276,6 +276,18 @@ function snipeClass(reward) {
   return 'snipe';
 }
 
+function appendTitleBadge(titleCell, badge, forceNewLine = false) {
+  const needsSpace = titleCell.querySelector('.snipe, .new-deal-pill') && !forceNewLine;
+  titleCell.append(needsSpace ? ' ' : document.createElement('br'), badge);
+}
+
+function createStatusBadge(label, className) {
+  const badge = document.createElement('span');
+  badge.className = `snipe ${className}`;
+  badge.textContent = label;
+  return badge;
+}
+
 function arushaNotes(reward) {
   const notes = [];
   const seen = new Set();
@@ -535,7 +547,7 @@ function addSanDiegoPortCorrection(container, reward, includeNoteButton = false)
   if (includeNoteButton) addRewardNoteButton(container, reward);
 }
 
-function createRewardRows(reward) {
+function createRewardRows(reward, tableStatus = '') {
   const row = document.createElement('tr');
   const detailId = `reward-details-${reward.AwardID}`;
   const isNewDeal = state.newDealAwardId != null && String(state.newDealAwardId) === String(reward.AwardID);
@@ -562,8 +574,10 @@ function createRewardRows(reward) {
     const badge = document.createElement('span');
     badge.className = snipeClass(reward);
     badge.textContent = reward.SnipeText;
-    titleCell.append(isNewDeal ? ' ' : document.createElement('br'), badge);
+    appendTitleBadge(titleCell, badge);
   }
+  if (tableStatus === 'pulled') appendTitleBadge(titleCell, createStatusBadge('Pulled', 'snipe-pulled'));
+  if (tableStatus === 'expired') appendTitleBadge(titleCell, createStatusBadge('Expired', 'snipe-expired'));
   const pointsCell = document.createElement('td');
   pointsCell.className = 'points';
   row.appendChild(pointsCell);
@@ -761,8 +775,8 @@ function createRewardRows(reward) {
   return [row, detailRow];
 }
 
-function renderTable(body, rewards, emptyState, emptyText, loadingText) {
-  body.replaceChildren(...rewards.flatMap(createRewardRows));
+function renderTable(body, rewards, emptyState, emptyText, loadingText, tableStatus = '') {
+  body.replaceChildren(...rewards.flatMap((reward) => createRewardRows(reward, tableStatus)));
   if (state.loading && rewards.length === 0) {
     emptyState.classList.add('is-loading');
     emptyState.textContent = loadingText;
@@ -886,9 +900,9 @@ function render() {
   const soldOut = filtered.filter((reward) => reward.Quantity === 0);
 
   renderTable(availableBody, available, availableEmpty, 'No available rewards match these filters.', 'Loading available rewards…');
-  renderTable(soldOutBody, soldOut, soldOutEmpty, 'No sold-out rewards match these filters.', 'Loading sold-out rewards…');
-  renderTable(pulledBody, pulled, pulledEmpty, 'No pulled rewards match these filters.', 'Loading pulled rewards…');
-  renderTable(expiredBody, expired, expiredEmpty, 'No expired rewards recorded yet.', 'Loading expired rewards…');
+  renderTable(soldOutBody, soldOut, soldOutEmpty, 'No sold-out rewards match these filters.', 'Loading sold-out rewards…', 'sold-out');
+  renderTable(pulledBody, pulled, pulledEmpty, 'No pulled rewards match these filters.', 'Loading pulled rewards…', 'pulled');
+  renderTable(expiredBody, expired, expiredEmpty, 'No expired rewards recorded yet.', 'Loading expired rewards…', 'expired');
 
   resultCount.textContent = `${filtered.length + pulled.length + expired.length} of ${state.rewards.length + state.pulledRewards.length + state.expiredRewards.length} rewards`;
   availableCount.textContent = `${available.length} rewards`;

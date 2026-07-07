@@ -139,9 +139,11 @@ td.sold-out { color: #6c7a83; font-weight: 400; }
 .snipe { display: inline-block; margin-top: 5px; padding: 2px 6px; border-radius: 4px; background: #e8f5f6; color: #086772; font-size: .72rem; font-weight: 700; }
 .new-deal-pill { display: inline-block; margin-top: 5px; padding: 2px 7px; border-radius: 999px; background: #e3f8e6; color: #137333; font-size: .72rem; font-weight: 800; }
 .new-deal-row { scroll-margin-top: 18px; }
-.snipe-sold-out { background: #edf1f3; color: #53636e; }
-.snipe-left { background: #ffe8e8; color: #9b3131; }
+.snipe-sold-out { background: #ffe8e8; color: #9b3131; }
+.snipe-left { background: #fff0d9; color: #a44f00; }
 .snipe-new-ports { background: #fff4bf; color: #7a5b00; }
+.snipe-expired { background: #edf1f3; color: #53636e; }
+.snipe-pulled { background: #f0e7ff; color: #673ab7; }
 .muted { color: #77858e; }
 .empty-state { margin: 0; padding: 36px; text-align: center; color: #697780; }
 .empty-state.is-loading::before { display: inline-block; width: 1rem; height: 1rem; margin-right: 8px; border: 2px solid #cfe1e4; border-top-color: #087f8c; border-radius: 50%; vertical-align: -0.18em; content: ""; animation: spin .75s linear infinite; }
