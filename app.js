@@ -49,6 +49,7 @@ function addLadyShipsEmoji(value) {
 
 function addDisplayFlourishes(value) {
   return addLadyShipsEmoji(value)
+    .replace(/\bExcludes\s+Pride of America®?\b/gi, 'Any (excluding Pride of America®)')
     .replace(/\bPride of America\b(?!®)/gi, (match) => `${match}®`);
 }
 

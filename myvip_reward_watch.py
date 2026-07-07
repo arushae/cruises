@@ -220,7 +220,7 @@ def extract_detail_columns(reward: dict) -> None:
     if re.search(r"\bLady Ships\b", terms, flags=re.IGNORECASE):
         ship_matches.append("Virgin Voyages Lady Ships")
     exclusion_matches = [
-        f"Excludes {ship}"
+        f"Any (excluding {ship})"
         for ship in re.findall(
             r"\bnot\s+valid\s+on\s+(.+?)\s+sailings\b",
             terms,
