@@ -21,6 +21,7 @@ LATEST_FILE = SNAPSHOT_DIR / "latest.json"
 WEBSITE_DATA_FILE = Path(
     os.environ.get("MYVIP_SITE_DIR", Path.home() / "myvip-reward-site")
 ) / "rewards.json"
+PULLED_DATA_FILE = WEBSITE_DATA_FILE.with_name("pulled.json")
 
 CHANGE_FIELDS = [
     "OfferID", "Partner", "Reward title", "Port", "Points", "Quantity",
@@ -444,6 +445,7 @@ def save_website_data(rewards: dict, checked_at: str) -> None:
     previous_change_histories = {}
     previous_check_history = []
     previous_rewards = []
+    previous_pulled_rewards = []
     previous_checked_at = None
 
     def numeric_quantity(value):
@@ -464,6 +466,22 @@ def save_website_data(rewards: dict, checked_at: str) -> None:
                     if value is not None:
                         values.append(value)
         return values
+
+    def parsed_datetime(value):
+        if not isinstance(value, str) or not value:
+            return None
+        try:
+            return datetime.fromisoformat(value.replace("Z", "+00:00"))
+        except ValueError:
+            return None
+
+    checked_at_datetime = parsed_datetime(checked_at)
+
+    def is_future_expiry(value):
+        expiry_datetime = parsed_datetime(value)
+        if expiry_datetime is None or checked_at_datetime is None:
+            return True
+        return expiry_datetime > checked_at_datetime
 
     if WEBSITE_DATA_FILE.exists():
         try:
@@ -512,10 +530,21 @@ def save_website_data(rewards: dict, checked_at: str) -> None:
             previous_change_histories = {}
             previous_check_history = []
 
+    if PULLED_DATA_FILE.exists():
+        try:
+            with PULLED_DATA_FILE.open("r", encoding="utf-8") as f:
+                previous_pulled_payload = json.load(f)
+            previous_pulled_rewards = previous_pulled_payload.get("rewards", [])
+        except (OSError, json.JSONDecodeError, AttributeError):
+            previous_pulled_rewards = []
+
     snapshot_point_histories = {}
     snapshot_change_histories = {}
     snapshot_quantity_highs = {}
     snapshot_previous_rewards = {}
+    snapshot_last_seen_at = {}
+    snapshot_pulled_at = {}
+    previous_snapshot_ids = None
     snapshot_check_history = []
     for snapshot_file in sorted(SNAPSHOT_DIR.glob("snapshot_*.json")):
         try:
@@ -526,8 +555,15 @@ def save_website_data(rewards: dict, checked_at: str) -> None:
                 continue
             if not snapshot_check_history or snapshot_check_history[-1] != observed_at:
                 snapshot_check_history.append(observed_at)
-            for award_id, reward in snapshot.get("rewards", {}).items():
+            snapshot_rewards = snapshot.get("rewards", {})
+            current_snapshot_ids = {str(award_id) for award_id in snapshot_rewards}
+            if previous_snapshot_ids is not None:
+                for removed_award_id in previous_snapshot_ids - current_snapshot_ids:
+                    snapshot_pulled_at.setdefault(removed_award_id, observed_at)
+            previous_snapshot_ids = current_snapshot_ids
+            for award_id, reward in snapshot_rewards.items():
                 award_id = str(award_id)
+                snapshot_last_seen_at[award_id] = observed_at
                 quantity = numeric_quantity(reward.get("Quantity"))
                 if quantity is not None:
                     snapshot_quantity_highs[award_id] = max(
@@ -564,6 +600,9 @@ def save_website_data(rewards: dict, checked_at: str) -> None:
 
     previous_rewards_by_id = {
         str(reward.get("AwardID")): reward for reward in previous_rewards
+    }
+    previous_pulled_by_id = {
+        str(reward.get("AwardID")): reward for reward in previous_pulled_rewards
     }
 
     website_rewards = []
@@ -654,6 +693,44 @@ def save_website_data(rewards: dict, checked_at: str) -> None:
         website_reward["ChangeHistory"] = change_history
         website_rewards.append(website_reward)
 
+    current_award_ids = {str(reward.get("AwardID")) for reward in website_rewards}
+    observed_rewards_by_id = {
+        **snapshot_previous_rewards,
+        **previous_pulled_by_id,
+        **previous_rewards_by_id,
+    }
+    pulled_rewards = []
+    for award_id, observed_reward in observed_rewards_by_id.items():
+        if award_id in current_award_ids:
+            continue
+        if not is_future_expiry(observed_reward.get("ExpireTime")):
+            continue
+        pulled_reward = {field: observed_reward.get(field) for field in WEBSITE_FIELDS}
+        pulled_reward["PulledAt"] = (
+            observed_reward.get("PulledAt")
+            or snapshot_pulled_at.get(award_id)
+            or checked_at
+        )
+        pulled_reward["LastObservedAt"] = (
+            observed_reward.get("LastObservedAt")
+            or snapshot_last_seen_at.get(award_id)
+            or previous_checked_at
+        )
+        existing_change_history = pulled_reward.get("ChangeHistory")
+        pulled_reward["ChangeHistory"] = (
+            existing_change_history if isinstance(existing_change_history, list) else []
+        )
+        if pulled_reward["PulledAt"] and not any(
+            event.get("note") == "Reward disappeared from the live myVIP feed."
+            for event in pulled_reward["ChangeHistory"]
+            if isinstance(event, dict)
+        ):
+            pulled_reward["ChangeHistory"].append({
+                "observed_at": pulled_reward["PulledAt"],
+                "note": "Reward disappeared from the live myVIP feed.",
+            })
+        pulled_rewards.append(pulled_reward)
+
     sorted_rewards = sorted(
         website_rewards,
         key=lambda reward: (
@@ -674,6 +751,23 @@ def save_website_data(rewards: dict, checked_at: str) -> None:
         json.dump(payload, f, indent=2, ensure_ascii=False)
         f.write("\n")
     temporary_file.replace(WEBSITE_DATA_FILE)
+
+    pulled_payload = {
+        "checked_at": checked_at,
+        "source_url": API_URL,
+        "rewards": sorted(
+            pulled_rewards,
+            key=lambda reward: (
+                (reward.get("Partner") or "").casefold(),
+                reward.get("Points") if isinstance(reward.get("Points"), (int, float)) else float("inf"),
+            ),
+        ),
+    }
+    temporary_pulled_file = PULLED_DATA_FILE.with_suffix(".json.tmp")
+    with temporary_pulled_file.open("w", encoding="utf-8") as f:
+        json.dump(pulled_payload, f, indent=2, ensure_ascii=False)
+        f.write("\n")
+    temporary_pulled_file.replace(PULLED_DATA_FILE)
 
 
 def reward_label(reward: dict) -> str:

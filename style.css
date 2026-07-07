@@ -36,8 +36,8 @@ input:focus, select:focus { outline: 3px solid #8dd9dc; border-color: #087f8c; }
 .section-heading { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; width: 100%; margin: 0 0 10px; }
 .section-heading h2 { margin: 0; font-size: 1.25rem; letter-spacing: -.02em; }
 .section-heading span { color: #6c7a83; font-size: 12px; }
-.sold-out-section .section-heading h2, .expired-section .section-heading h2 { color: #6c7a83; }
-.expired-section { opacity: .82; }
+.sold-out-section .section-heading h2, .pulled-section .section-heading h2, .expired-section .section-heading h2 { color: #6c7a83; }
+.pulled-section, .expired-section { opacity: .82; }
 .table-wrap { overflow-x: auto; background: white; border-radius: 14px 0 0 14px; box-shadow: 0 12px 32px rgb(35 55 65 / 8%); mask-image: linear-gradient(90deg, #000 calc(100% - 56px), transparent); -webkit-mask-image: linear-gradient(90deg, #000 calc(100% - 56px), transparent); }
 .floating-table-header { position: fixed; top: 0; z-index: 40; display: none; overflow: hidden; background: white; box-shadow: 0 9px 9px -9px rgb(20 40 50 / 12%); pointer-events: auto; }
 .floating-table-header.is-visible { display: block; }

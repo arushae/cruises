@@ -1,16 +1,19 @@
 const REFRESH_INTERVAL = 5 * 60 * 1000;
-const state = { rewards: [], expiredRewards: [], checkHistory: [], sortKey: 'Partner', sortDirection: 'asc', sortApplied: false, newDealAwardId: null, loading: true };
+const state = { rewards: [], pulledRewards: [], expiredRewards: [], checkHistory: [], sortKey: 'Partner', sortDirection: 'asc', sortApplied: false, newDealAwardId: null, loading: true };
 
 const searchInput = document.querySelector('#search');
 const partnerFilter = document.querySelector('#partner-filter');
 const availableBody = document.querySelector('#available-body');
 const soldOutBody = document.querySelector('#sold-out-body');
+const pulledBody = document.querySelector('#pulled-body');
 const expiredBody = document.querySelector('#expired-body');
 const availableEmpty = document.querySelector('#available-empty');
 const soldOutEmpty = document.querySelector('#sold-out-empty');
+const pulledEmpty = document.querySelector('#pulled-empty');
 const expiredEmpty = document.querySelector('#expired-empty');
 const availableCount = document.querySelector('#available-count');
 const soldOutCount = document.querySelector('#sold-out-count');
+const pulledCount = document.querySelector('#pulled-count');
 const expiredCount = document.querySelector('#expired-count');
 const resultCount = document.querySelector('#result-count');
 const checkedAt = document.querySelector('#checked-at');
@@ -876,6 +879,7 @@ function render() {
     return (!partner || reward.Partner === partner) && (!query || haystack.includes(query));
   };
   const filtered = state.rewards.filter(matchesFilters).sort(compareRewards);
+  const pulled = state.pulledRewards.filter(matchesFilters).sort(compareRewards);
   const expired = state.expiredRewards.filter(matchesFilters).sort(compareRewards);
 
   const available = filtered.filter((reward) => reward.Quantity !== 0);
@@ -883,11 +887,13 @@ function render() {
 
   renderTable(availableBody, available, availableEmpty, 'No available rewards match these filters.', 'Loading available rewards…');
   renderTable(soldOutBody, soldOut, soldOutEmpty, 'No sold-out rewards match these filters.', 'Loading sold-out rewards…');
+  renderTable(pulledBody, pulled, pulledEmpty, 'No pulled rewards match these filters.', 'Loading pulled rewards…');
   renderTable(expiredBody, expired, expiredEmpty, 'No expired rewards recorded yet.', 'Loading expired rewards…');
 
-  resultCount.textContent = `${filtered.length + expired.length} of ${state.rewards.length + state.expiredRewards.length} rewards`;
+  resultCount.textContent = `${filtered.length + pulled.length + expired.length} of ${state.rewards.length + state.pulledRewards.length + state.expiredRewards.length} rewards`;
   availableCount.textContent = `${available.length} rewards`;
   soldOutCount.textContent = `${soldOut.length} rewards`;
+  pulledCount.textContent = `${pulled.length} rewards`;
   expiredCount.textContent = `${expired.length} rewards`;
   updateSortHeaders();
   floatingHeaderSource = null;
@@ -897,7 +903,7 @@ function render() {
 
 function updatePartners() {
   const selected = partnerFilter.value;
-  const partners = [...new Set([...state.rewards, ...state.expiredRewards].map((reward) => reward.Partner).filter(Boolean))]
+  const partners = [...new Set([...state.rewards, ...state.pulledRewards, ...state.expiredRewards].map((reward) => reward.Partner).filter(Boolean))]
     .sort((a, b) => a.localeCompare(b));
   partnerFilter.replaceChildren(new Option('All partners', ''));
   partners.forEach((partner) => partnerFilter.add(new Option(partner, partner)));
@@ -910,14 +916,17 @@ async function loadRewards() {
   render();
   try {
     const cacheBuster = Date.now();
-    const [response, expiredResponse] = await Promise.all([
+    const [response, pulledResponse, expiredResponse] = await Promise.all([
       fetch(`rewards.json?t=${cacheBuster}`, { cache: 'no-store' }),
+      fetch(`pulled.json?t=${cacheBuster}`, { cache: 'no-store' }),
       fetch(`expired.json?t=${cacheBuster}`, { cache: 'no-store' }),
     ]);
     if (!response.ok) throw new Error(`rewards.json HTTP ${response.status}`);
+    if (!pulledResponse.ok) throw new Error(`pulled.json HTTP ${pulledResponse.status}`);
     if (!expiredResponse.ok) throw new Error(`expired.json HTTP ${expiredResponse.status}`);
-    const [data, expiredData] = await Promise.all([response.json(), expiredResponse.json()]);
+    const [data, pulledData, expiredData] = await Promise.all([response.json(), pulledResponse.json(), expiredResponse.json()]);
     state.rewards = Array.isArray(data.rewards) ? data.rewards : [];
+    state.pulledRewards = Array.isArray(pulledData.rewards) ? pulledData.rewards : [];
     state.expiredRewards = Array.isArray(expiredData.rewards) ? expiredData.rewards : [];
     state.checkHistory = Array.isArray(data.check_history) ? data.check_history : [data.checked_at].filter(Boolean);
     checkedAt.textContent = `Last checked:\n${formatDate(data.checked_at)}`;
@@ -946,7 +955,7 @@ loadRewards();
 setInterval(loadRewards, REFRESH_INTERVAL);
 
 function openPointHistory(awardId) {
-  const reward = [...state.rewards, ...state.expiredRewards].find((item) => String(item.AwardID) === String(awardId));
+  const reward = [...state.rewards, ...state.pulledRewards, ...state.expiredRewards].find((item) => String(item.AwardID) === String(awardId));
   if (!reward) return;
   pointHistoryTitle.textContent = `${reward.Partner} — ${reward['Reward title']}`;
   valueHistoryHeading.textContent = 'Points';
@@ -972,7 +981,7 @@ function openPointHistory(awardId) {
 }
 
 function openQuantityHistory(awardId) {
-  const reward = [...state.rewards, ...state.expiredRewards].find((item) => String(item.AwardID) === String(awardId));
+  const reward = [...state.rewards, ...state.pulledRewards, ...state.expiredRewards].find((item) => String(item.AwardID) === String(awardId));
   if (!reward) return;
   pointHistoryTitle.textContent = `${reward.Partner} — ${reward['Reward title']}`;
   valueHistoryHeading.textContent = 'Quantity';

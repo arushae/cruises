@@ -1,0 +1,44 @@
+{
+  "checked_at": "2026-07-07T12:07:15+00:00",
+  "source_url": "https://loyalty-award-api.myvip.co/api/proxy/rewards/section/destination/8",
+  "rewards": [
+    {
+      "AwardID": 11005,
+      "OfferID": 40310,
+      "Partner": "Royal Caribbean",
+      "Reward title": "4 Night Seoul Cruise",
+      "RewardPageTitle": "A Cruise for Two - 4 Night Seoul Cruise 7/11",
+      "Port": "Spectrum of the Seas",
+      "Points": 115000,
+      "PointHistory": null,
+      "FirstObserved": null,
+      "Quantity": 3,
+      "HighestQuantityObserved": null,
+      "SnipeText": "3 left",
+      "SnipeCategory": "NLeft",
+      "StrikeOutPrice": 230000,
+      "ExpireTime": "2026-07-12T06:59:59+00:00",
+      "DeparturePorts": "Shanghai (Baoshan), China",
+      "Sailings": "7/11/2026",
+      "Ships": "Spectrum of the Seas",
+      "IsPremium": false,
+      "RewardURL": null,
+      "ImageURL": "https://pscdn-a.akamaihd.net:443/rewards/media/Images/11005Images_cropped_3.png",
+      "RewardDescription": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Shanghai (Baoshan), China for 4 nights sailing on 7/11/2026 in an interior cabin. Taxes, gratuities, and other fees may apply. \n\nDive headfirst into adventure on a 4-night cruise to discover the wonders of Asia. Depart from Shanghai (Baoshan), China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region.",
+      "RewardUseByText": "This reward must be redeemed by 7/12/2026 6:59:59 AM (UTC).",
+      "RewardPageLimitText": "RCCL Comp Cruise rewards are limited to 2 purchases in a 90 day period. Limit one cruise reward per player, per sailing.",
+      "RewardTermsText": "Please allow 24 hours post purchase prior to emailing. This complimentary cruise only offer is valid for one (1) interior stateroom, including complimentary dining venues and entertainment, for the specified ship(s) and sail date(s) and stateroom category(ies) for the qualified recipient redeeming the reward and one (1) guest, double occupancy. Exclusions include, but are not limited to, all taxes, fees and port expenses, online booking fee, gratuities, applicable fuel surcharges, upgrades, additional guests in the stateroom, additional staterooms, air and ground transfers to/from the embarkation and debarkation ports, and onboard expense account items for products and services rendered. This reward applies to NEW individual bookings within 7 days and must be booked with Royal Caribbean’s Casino Royale Reservation Center at VIPClubroyale@rccl.com. Offer is nontransferable, is not combinable with any other offer and is subject to casino capacity and stateroom availability at the time of booking. This reward is not combinable with any other myVIP rewards. Must be 21 years of age or older. The guest redeeming the offer must sail on the reservation the reward was applied on. Additional guests may be added to this reservation at prevailing rates. Misrepresentation of reward will void this offer and re-fare booking to prevailing rate. This offer has no cash value and is nontransferable. Additional terms, conditions and restrictions apply. Please visit www.royalcaribbean.com/terms-and-conditions/casino-promotions, for full terms and conditions. Royal Caribbean Cruises Ltd. reserves the right to correct any errors, inaccuracies or omissions and to cancel any bookings made in error, with no further obligations to you, even after your receipt of an order confirmation or shipping notice from Royal Caribbean at any time without prior notice. ©2024 Royal Caribbean Cruises Ltd. Ships' registry: The Bahamas.\n\nYou must use your legal name on your ID.\nYou must be 21 years or over to participate.\nThis Reward is limited to 1 per myVIP player.\nPurchase & Usage Limitations: Only ONE (1) myVIP account associated with each natural person will be valid for myVIP rewards. Additional myVIP accounts associated with any natural person will not be valid for Rewards. Loyalty points or Rewards purchased on these additional accounts are not eligible for use or redemption.\n\nPurchased rewards are refundable prior to redemption for the loyalty point cost through the redemption period indicated or through the last date of availability / expiration date indicated on the reward, whichever comes first. After a reward has been redeemed by contacting the reward issuer and making a reservation, no loyalty point refunds will be provided. Reward or Loyalty Points have no cash value and are non-transferable. Terms and Conditions subject to change without notice. If there are more specific Terms and Conditions regarding refunds for a particular reward, those Terms and Conditions will prevail.",
+      "RewardTermsExtractedAt": "2026-07-07T06:52:17+00:00",
+      "ArushaNotes": null,
+      "PointHistoryNote": null,
+      "ChangeHistory": [
+        {
+          "observed_at": "2026-07-07T07:07:16+00:00",
+          "note": "Reward disappeared from the live myVIP feed."
+        }
+      ],
+      "PulledAt": "2026-07-07T07:07:16+00:00",
+      "LastObservedAt": "2026-07-07T06:52:17+00:00"
+    }
+  ]
+}
