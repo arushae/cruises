@@ -542,6 +542,7 @@ def save_website_data(rewards: dict, checked_at: str) -> None:
     snapshot_change_histories = {}
     snapshot_quantity_highs = {}
     snapshot_previous_rewards = {}
+    snapshot_first_seen_at = {}
     snapshot_last_seen_at = {}
     snapshot_pulled_at = {}
     previous_snapshot_ids = None
@@ -563,6 +564,7 @@ def save_website_data(rewards: dict, checked_at: str) -> None:
             previous_snapshot_ids = current_snapshot_ids
             for award_id, reward in snapshot_rewards.items():
                 award_id = str(award_id)
+                snapshot_first_seen_at.setdefault(award_id, observed_at)
                 snapshot_last_seen_at[award_id] = observed_at
                 quantity = numeric_quantity(reward.get("Quantity"))
                 if quantity is not None:
@@ -706,6 +708,24 @@ def save_website_data(rewards: dict, checked_at: str) -> None:
         if not is_future_expiry(observed_reward.get("ExpireTime")):
             continue
         pulled_reward = {field: observed_reward.get(field) for field in WEBSITE_FIELDS}
+        pulled_observed_quantities = [
+            previous_highs.get(award_id),
+            snapshot_quantity_highs.get(award_id),
+            numeric_quantity(observed_reward.get("HighestQuantityObserved")),
+            numeric_quantity(observed_reward.get("Quantity")),
+        ]
+        pulled_numeric_quantities = [
+            quantity for quantity in pulled_observed_quantities
+            if quantity is not None
+        ]
+        pulled_reward["HighestQuantityObserved"] = (
+            max(pulled_numeric_quantities) if pulled_numeric_quantities else None
+        )
+        pulled_point_history = pulled_reward.get("PointHistory")
+        if not isinstance(pulled_point_history, list) or not pulled_point_history:
+            pulled_reward["PointHistory"] = snapshot_point_histories.get(award_id) or []
+        if not pulled_reward.get("FirstObserved"):
+            pulled_reward["FirstObserved"] = snapshot_first_seen_at.get(award_id) or "Unknown"
         pulled_reward["PulledAt"] = (
             observed_reward.get("PulledAt")
             or snapshot_pulled_at.get(award_id)
@@ -720,6 +740,9 @@ def save_website_data(rewards: dict, checked_at: str) -> None:
         pulled_reward["ChangeHistory"] = (
             existing_change_history if isinstance(existing_change_history, list) else []
         )
+        for snapshot_event in snapshot_change_histories.get(award_id) or []:
+            if snapshot_event not in pulled_reward["ChangeHistory"]:
+                pulled_reward["ChangeHistory"].append(snapshot_event)
         if pulled_reward["PulledAt"] and not any(
             event.get("note") == "Reward disappeared from the live myVIP feed."
             for event in pulled_reward["ChangeHistory"]
