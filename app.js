@@ -3,19 +3,10 @@ const state = { rewards: [], pulledRewards: [], expiredRewards: [], checkHistory
 
 const searchInput = document.querySelector('#search');
 const partnerFilter = document.querySelector('#partner-filter');
-const availableBody = document.querySelector('#available-body');
-const soldOutBody = document.querySelector('#sold-out-body');
-const pulledBody = document.querySelector('#pulled-body');
-const expiredBody = document.querySelector('#expired-body');
-const availableEmpty = document.querySelector('#available-empty');
-const soldOutEmpty = document.querySelector('#sold-out-empty');
-const pulledEmpty = document.querySelector('#pulled-empty');
-const expiredEmpty = document.querySelector('#expired-empty');
-const availableCount = document.querySelector('#available-count');
-const soldOutCount = document.querySelector('#sold-out-count');
-const pulledCount = document.querySelector('#pulled-count');
-const expiredCount = document.querySelector('#expired-count');
-const resultCount = document.querySelector('#result-count');
+const statusFilters = document.querySelectorAll('input[name="status-filter"]');
+const rewardsBody = document.querySelector('#rewards-body');
+const rewardsEmpty = document.querySelector('#rewards-empty');
+const rewardCount = document.querySelector('#reward-count');
 const checkedAt = document.querySelector('#checked-at');
 const refreshStatus = document.querySelector('#refresh-status');
 const sourceLink = document.querySelector('#source-link');
@@ -288,6 +279,20 @@ function createStatusBadge(label, className) {
   return badge;
 }
 
+function rewardStatus(reward) {
+  if (reward.DisplayStatus) return reward.DisplayStatus;
+  if (reward.Quantity === 0) return 'sold-out';
+  return 'available';
+}
+
+function selectedStatuses() {
+  return new Set(
+    [...statusFilters]
+      .filter((checkbox) => checkbox.checked)
+      .map((checkbox) => checkbox.value),
+  );
+}
+
 function arushaNotes(reward) {
   const notes = [];
   const seen = new Set();
@@ -381,6 +386,24 @@ function quantityGoesUpAndDown(reward) {
 
 function compareRewards(a, b) {
   if (!state.sortApplied) {
+    const statusOrder = {
+      available: 0,
+      'sold-out': 1,
+      pulled: 2,
+      expired: 3,
+    };
+    const statusDifference = (
+      statusOrder[rewardStatus(a)] ?? Number.POSITIVE_INFINITY
+    ) - (
+      statusOrder[rewardStatus(b)] ?? Number.POSITIVE_INFINITY
+    );
+    if (statusDifference !== 0) return statusDifference;
+
+    const leftPoints = typeof a.Points === 'number' ? a.Points : Number.POSITIVE_INFINITY;
+    const rightPoints = typeof b.Points === 'number' ? b.Points : Number.POSITIVE_INFINITY;
+    const pointDifference = leftPoints - rightPoints;
+    if (pointDifference !== 0) return pointDifference;
+
     const partnerDifference = String(a.Partner || '').localeCompare(
       String(b.Partner || ''),
       undefined,
@@ -388,9 +411,11 @@ function compareRewards(a, b) {
     );
     if (partnerDifference !== 0) return partnerDifference;
 
-    const leftPoints = typeof a.Points === 'number' ? a.Points : Number.POSITIVE_INFINITY;
-    const rightPoints = typeof b.Points === 'number' ? b.Points : Number.POSITIVE_INFINITY;
-    return leftPoints - rightPoints;
+    return String(a['Reward title'] || '').localeCompare(
+      String(b['Reward title'] || ''),
+      undefined,
+      { numeric: true, sensitivity: 'base' },
+    );
   }
 
   let left = a[state.sortKey];
@@ -547,8 +572,9 @@ function addSanDiegoPortCorrection(container, reward, includeNoteButton = false)
   if (includeNoteButton) addRewardNoteButton(container, reward);
 }
 
-function createRewardRows(reward, tableStatus = '') {
+function createRewardRows(reward) {
   const row = document.createElement('tr');
+  const status = rewardStatus(reward);
   const detailId = `reward-details-${reward.AwardID}`;
   const isNewDeal = state.newDealAwardId != null && String(state.newDealAwardId) === String(reward.AwardID);
   row.classList.add('reward-row');
@@ -576,8 +602,8 @@ function createRewardRows(reward, tableStatus = '') {
     badge.textContent = reward.SnipeText;
     appendTitleBadge(titleCell, badge);
   }
-  if (tableStatus === 'pulled') appendTitleBadge(titleCell, createStatusBadge('Pulled', 'snipe-pulled'));
-  if (tableStatus === 'expired') appendTitleBadge(titleCell, createStatusBadge('Expired', 'snipe-expired'));
+  if (status === 'pulled') appendTitleBadge(titleCell, createStatusBadge('Pulled', 'snipe-pulled'));
+  if (status === 'expired') appendTitleBadge(titleCell, createStatusBadge('Expired', 'snipe-expired'));
   const pointsCell = document.createElement('td');
   pointsCell.className = 'points';
   row.appendChild(pointsCell);
@@ -775,8 +801,8 @@ function createRewardRows(reward, tableStatus = '') {
   return [row, detailRow];
 }
 
-function renderTable(body, rewards, emptyState, emptyText, loadingText, tableStatus = '') {
-  body.replaceChildren(...rewards.flatMap((reward) => createRewardRows(reward, tableStatus)));
+function renderTable(body, rewards, emptyState, emptyText, loadingText) {
+  body.replaceChildren(...rewards.flatMap(createRewardRows));
   if (state.loading && rewards.length === 0) {
     emptyState.classList.add('is-loading');
     emptyState.textContent = loadingText;
@@ -879,6 +905,7 @@ function registerTableWrapScrollListeners() {
 function render() {
   const query = searchInput.value.trim().toLocaleLowerCase();
   const partner = partnerFilter.value;
+  const statuses = selectedStatuses();
   const matchesFilters = (reward) => {
     const haystack = [
       reward.Partner,
@@ -890,25 +917,24 @@ function render() {
       reward.SnipeText,
       reward.SnipeCategory,
     ].join(' ').toLocaleLowerCase();
-    return (!partner || reward.Partner === partner) && (!query || haystack.includes(query));
+    return (
+      statuses.has(rewardStatus(reward))
+      && (!partner || reward.Partner === partner)
+      && (!query || haystack.includes(query))
+    );
   };
-  const filtered = state.rewards.filter(matchesFilters).sort(compareRewards);
-  const pulled = state.pulledRewards.filter(matchesFilters).sort(compareRewards);
-  const expired = state.expiredRewards.filter(matchesFilters).sort(compareRewards);
+  const currentRewards = state.rewards.map((reward) => ({
+    ...reward,
+    DisplayStatus: reward.Quantity === 0 ? 'sold-out' : 'available',
+  }));
+  const pulledRewards = state.pulledRewards.map((reward) => ({ ...reward, DisplayStatus: 'pulled' }));
+  const expiredRewards = state.expiredRewards.map((reward) => ({ ...reward, DisplayStatus: 'expired' }));
+  const allRewards = [...currentRewards, ...pulledRewards, ...expiredRewards];
+  const filtered = allRewards.filter(matchesFilters).sort(compareRewards);
 
-  const available = filtered.filter((reward) => reward.Quantity !== 0);
-  const soldOut = filtered.filter((reward) => reward.Quantity === 0);
+  renderTable(rewardsBody, filtered, rewardsEmpty, 'No rewards match these filters.', 'Loading rewards…');
 
-  renderTable(availableBody, available, availableEmpty, 'No available rewards match these filters.', 'Loading available rewards…');
-  renderTable(soldOutBody, soldOut, soldOutEmpty, 'No sold-out rewards match these filters.', 'Loading sold-out rewards…', 'sold-out');
-  renderTable(pulledBody, pulled, pulledEmpty, 'No pulled rewards match these filters.', 'Loading pulled rewards…', 'pulled');
-  renderTable(expiredBody, expired, expiredEmpty, 'No expired rewards recorded yet.', 'Loading expired rewards…', 'expired');
-
-  resultCount.textContent = `${filtered.length + pulled.length + expired.length} of ${state.rewards.length + state.pulledRewards.length + state.expiredRewards.length} rewards`;
-  availableCount.textContent = `${available.length} rewards`;
-  soldOutCount.textContent = `${soldOut.length} rewards`;
-  pulledCount.textContent = `${pulled.length} rewards`;
-  expiredCount.textContent = `${expired.length} rewards`;
+  rewardCount.textContent = `${filtered.length} of ${allRewards.length} rewards`;
   updateSortHeaders();
   floatingHeaderSource = null;
   registerTableWrapScrollListeners();
@@ -959,6 +985,7 @@ async function loadRewards() {
 
 searchInput.addEventListener('input', render);
 partnerFilter.addEventListener('change', render);
+statusFilters.forEach((checkbox) => checkbox.addEventListener('change', render));
 if (newDealLink) newDealLink.addEventListener('click', scrollToNewDealRow);
 sortButtons.forEach((button) => button.addEventListener('click', () => {
   applySort(button.dataset.sort);

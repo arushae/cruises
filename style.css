@@ -24,20 +24,33 @@ h1 { margin: 0; font-size: clamp(2rem, 5vw, 3.4rem); letter-spacing: -.04em; }
 .new-deal-meta { margin: 3px 0 0; color: #335c3e; font-size: 12px; line-height: 1.35; }
 .new-deal-link { justify-self: end; padding: 8px 11px; border: 1px solid #16803a; border-radius: 999px; color: #0f6d31; background: rgb(255 255 255 / 72%); font-size: 12px; font-weight: 800; text-decoration: none; white-space: nowrap; }
 .new-deal-link:hover { color: white; background: #16803a; }
-.filters { display: grid; grid-template-columns: minmax(240px, 360px) minmax(180px, 240px) 1fr; justify-content: start; gap: 16px; align-items: end; background: white; padding: 18px; border-radius: 14px; box-shadow: 0 12px 32px rgb(35 55 65 / 6%); }
+.filters { display: grid; grid-template-columns: minmax(180px, 240px) minmax(180px, 240px) 1fr; justify-content: start; gap: 12px 16px; align-items: end; background: white; padding: 18px; border-radius: 14px; box-shadow: 0 12px 32px rgb(35 55 65 / 6%); }
 label span { display: block; font-size: .78rem; font-weight: 700; margin-bottom: 6px; }
 input, select { width: 100%; border: 1px solid #bdc9cf; border-radius: 8px; padding: 10px 12px; font: inherit; background: white; }
-#search { max-width: 360px; }
-#partner-filter { max-width: 240px; }
+#search { max-width: 240px; }
+#partner-filter { max-width: 200px; }
 select { appearance: none; padding-right: 42px; background-color: white; background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.5 4.75L8 10.25L13.5 4.75' fill='none' stroke='%23087f8c' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 12px center; background-size: 16px 16px; }
 input:focus, select:focus { outline: 3px solid #8dd9dc; border-color: #087f8c; }
-#result-count { justify-self: end; margin: 0 0 10px; color: #5d6b75; font-size: 12px; text-align: right; white-space: nowrap; }
+.status-filters { grid-column: 3; align-self: start; justify-self: end; display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 8px; align-items: baseline; min-width: 0; margin: 0; padding: 0; border: 0; }
+.status-filters legend { width: 100%; margin: 0 0 8px; font-size: .78rem; font-weight: 700; line-height: normal; }
+.status-filters label { display: inline-flex; align-items: center; gap: 6px; color: #374a56; font-size: 13px; font-weight: 700; white-space: nowrap; }
+.status-filters input { width: auto; margin: 0; accent-color: currentColor; }
+.status-pill { padding: 5px 9px; border: 2px solid transparent; border-radius: 999px; cursor: pointer; }
+.status-pill:hover { filter: saturate(1.08) brightness(.98); }
+.status-pill:has(input:focus-visible) { outline: 3px solid #8dd9dc; outline-offset: 2px; }
+.status-pill-available { border-color: #086772; background: #e8f5f6; color: #086772; }
+.status-pill-sold-out { border-color: #9b3131; background: #ffe8e8; color: #9b3131; }
+.status-pill-pulled { border-color: #673ab7; background: #f0e7ff; color: #673ab7; }
+.status-pill-expired { border-color: #7d8990; background: #f4f6f7; color: #7d8990; }
+.status-pill-available:has(input:not(:checked)) { border-color: #086772; }
+.status-pill-sold-out:has(input:not(:checked)) { border-color: #9b3131; }
+.status-pill-pulled:has(input:not(:checked)) { border-color: #673ab7; }
+.status-pill-expired:has(input:not(:checked)) { border-color: #7d8990; }
+.status-pill:has(input:not(:checked)) { background: white; }
 .reward-section { width: 100%; margin-top: 30px; }
 .section-heading { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; width: 100%; margin: 0 0 10px; }
 .section-heading h2 { margin: 0; font-size: 1.25rem; letter-spacing: -.02em; }
 .section-heading span { color: #6c7a83; font-size: 12px; }
-.sold-out-section .section-heading h2, .pulled-section .section-heading h2, .expired-section .section-heading h2 { color: #6c7a83; }
-.pulled-section, .expired-section { opacity: .82; }
 .table-wrap { overflow-x: auto; background: white; border-radius: 14px 0 0 14px; box-shadow: 0 12px 32px rgb(35 55 65 / 8%); mask-image: linear-gradient(90deg, #000 calc(100% - 56px), transparent); -webkit-mask-image: linear-gradient(90deg, #000 calc(100% - 56px), transparent); }
 .floating-table-header { position: fixed; top: 0; z-index: 40; display: none; overflow: hidden; background: white; box-shadow: 0 9px 9px -9px rgb(20 40 50 / 12%); pointer-events: auto; }
 .floating-table-header.is-visible { display: block; }
@@ -265,6 +278,7 @@ a { color: #087f8c; }
     background: white;
   }
 }
-@media (max-width: 720px) { main { width: min(100% - 16px, 1400px); margin-top: 18px; } header { align-items: start; flex-direction: column; } .status { text-align: left; } .status-line { justify-content: flex-start; } .new-deal-banner { grid-template-columns: 1fr; align-items: start; padding: 15px; } .new-deal-link { justify-self: start; } .filters { grid-template-columns: 1fr; } #result-count { margin: 0; } .reward-details-content { width: calc(100vw - 16px); max-width: calc(100vw - 16px); padding: 16px 18px 20px 32px; } }
+@media (max-width: 980px) { .filters { grid-template-columns: minmax(180px, 240px) minmax(180px, 240px); } .status-filters { grid-column: 1 / -1; justify-self: start; justify-content: flex-start; margin-top: 2px; } }
+@media (max-width: 720px) { main { width: min(100% - 16px, 1400px); margin-top: 18px; } header { align-items: start; flex-direction: column; } .status { text-align: left; } .status-line { justify-content: flex-start; } .new-deal-banner { grid-template-columns: 1fr; align-items: start; padding: 15px; } .new-deal-link { justify-self: start; } .filters { grid-template-columns: 1fr; } .status-filters { grid-column: auto; flex-wrap: wrap; margin-bottom: 0; } .reward-details-content { width: calc(100vw - 16px); max-width: calc(100vw - 16px); padding: 16px 18px 20px 32px; } }
 @media (max-width: 767px) { #search, #partner-filter { max-width: none; } .reward-table { width: 1350px; } .reward-table .col-reward { width: 160px; min-width: 160px; } }
 @media (prefers-reduced-motion: reduce) { .reward-details-content { transition: none; transform: none; } .empty-state.is-loading::before { animation: none; } }
