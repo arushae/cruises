@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-07-09T01:52:16+00:00",
+  "checked_at": "2026-07-09T02:07:16+00:00",
   "check_history": [
     "2026-07-05T09:51:27",
     "2026-07-05T11:04:19",
@@ -360,7 +360,8 @@
     "2026-07-09T01:07:14+00:00",
     "2026-07-09T01:22:18+00:00",
     "2026-07-09T01:37:14+00:00",
-    "2026-07-09T01:52:16+00:00"
+    "2026-07-09T01:52:16+00:00",
+    "2026-07-09T02:07:16+00:00"
   ],
   "source_url": "https://loyalty-award-api.myvip.co/api/proxy/rewards/section/destination/8",
   "rewards": [
@@ -384,7 +385,7 @@
       "SnipeText": null,
       "SnipeCategory": null,
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-08T01:52:16.7778809+00:00",
+      "ExpireTime": "2026-08-08T02:07:16.5952454+00:00",
       "DeparturePorts": null,
       "Sailings": "Sailings departing by May 31, 2027",
       "Ships": "Any (excluding Pride of America)",
@@ -392,10 +393,10 @@
       "RewardURL": null,
       "ImageURL": "https://pscdn-a.akamaihd.net:443/rewards/media/Images/11000Images_cropped_1.png",
       "RewardDescription": "Our award-winning ships are designed for you to enjoy as you choose while cruising to beautiful destinations around the world. Add a wide range of superb dining options and spectacular entertainment and you’ll experience your best vacation ever.",
-      "RewardUseByText": "This reward must be redeemed by 8/8/2026 1:52:23 AM (UTC).",
+      "RewardUseByText": "This reward must be redeemed by 8/8/2026 2:07:23 AM (UTC).",
       "RewardPageLimitText": "Limit one cruise award per player, per sailing.",
       "RewardTermsText": "Limit to one Norwegian Cruise Line in-app reward purchase per 90 days. Reservations must be made\nwithin 30 days of purchase or by September 30, 2026, whichever occurs first. Valid for sailings departing\nby May 31, 2027. Only one reward may be used per sailing and is not valid on Pride of America® sailings.\nThis offer is non-refundable once purchased and is valid for new bookings only; it cannot be applied to\nexisting reservations or combined with other offers. The cruise credit is issued to the named Cruise\nCoupon Holder and may be used for one reservation. The cruise credit can only be applied to the\ncoupon holder. It is applicable for a single discount per cruise reservation and is restricted to\nredemption by the individual specifically named ('Cruise Coupon Holder') on the coupon. The Cruise\nCoupon Holder must be present onboard the sailing; otherwise, Norwegian reserves the right to charge\nthe full prevailing fare. The cruise credit applies to voyage fare only and does not cover taxes, fees,\ngratuities, or other onboard expenses. The cruise credit is issued in USD and cannot be exchanged for\nanother currency. Please allow up to 72 hours for the cruise credit to be applied to your reservation,\nafter which an updated confirmation will be sent. Reservations must be made through Norwegian’s\nCasino Reservation Centers and are subject to stateroom availability. Third and fourth guests may be\nadded, subject to availability, at an additional cost based on prevailing rates. Additional onboard\ncharges may apply. By confirming your purchase, you consent to PLAYSTUDIOS collecting your\npersonal information (name, email, address, phone number) and sharing it with Norwegian Cruise Line\nto facilitate reward redemption and related communications, in accordance with their respective\nprivacy policies. Norwegian Cruise Line Casino Management reserves the right to modify or cancel this\npromotion at any time without notice. For full terms and conditions, please visit\nncl.com/onboard/casino/terms or visit ncl.com for further information. Use of the information provided\nwill be subject to PLAYSTUDIOS privacy policy, https://www.playstudios.com/privacy-policy/.\n\nYou must use your legal name on your ID.\nYou must be 21 years or over to participate.\nThis Reward is limited to 1 per myVIP player.\nPurchase & Usage Limitations: Only ONE (1) myVIP account associated with each natural person will be valid for myVIP rewards. Additional myVIP accounts associated with any natural person will not be valid for Rewards. Loyalty points or Rewards purchased on these additional accounts are not eligible for use or redemption.\n\nPurchased awards are cancellable prior to redemption for the loyalty point cost through the redemption period indicated or through the last date of availability / expiration date indicated on the award, whichever comes first (unless otherwise stated in the terms). After an award has been redeemed by contacting the award issuer and making a reservation, no loyalty point refunds will be provided. Award or Loyalty Points have no cash value and are non-transferable. Terms and Conditions subject to change without notice. If there are more specific Terms and Conditions regarding refunds for a particular award, those Terms and Conditions will prevail.",
-      "RewardTermsExtractedAt": "2026-07-09T01:52:16+00:00",
+      "RewardTermsExtractedAt": "2026-07-09T02:07:16+00:00",
       "ArushaNotes": null,
       "PointHistoryNote": null,
       "ChangeHistory": [
@@ -5663,6 +5664,26 @@
               "to": "2026-07-09T01:52:16+00:00"
             }
           ]
+        },
+        {
+          "observed_at": "2026-07-09T02:07:16+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-08-08T01:52:16.7778809+00:00",
+              "to": "2026-08-08T02:07:16.5952454+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 8/8/2026 1:52:23 AM (UTC).",
+              "to": "This reward must be redeemed by 8/8/2026 2:07:23 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-07-09T01:52:16+00:00",
+              "to": "2026-07-09T02:07:16+00:00"
+            }
+          ]
         }
       ]
     },
@@ -5686,7 +5707,7 @@
       "SnipeText": null,
       "SnipeCategory": null,
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-08T01:52:16.7778809+00:00",
+      "ExpireTime": "2026-08-08T02:07:16.5952454+00:00",
       "DeparturePorts": null,
       "Sailings": "Sailings departing by May 31, 2027",
       "Ships": "Any (excluding Pride of America)",
@@ -5694,10 +5715,10 @@
       "RewardURL": null,
       "ImageURL": "https://pscdn-a.akamaihd.net:443/rewards/media/Images/11001Images_cropped_1.png",
       "RewardDescription": "Our award-winning ships are designed for you to enjoy as you choose while cruising to beautiful destinations around the world. Add a wide range of superb dining options and spectacular entertainment and you’ll experience your best vacation ever.",
-      "RewardUseByText": "This reward must be redeemed by 8/8/2026 1:52:23 AM (UTC).",
+      "RewardUseByText": "This reward must be redeemed by 8/8/2026 2:07:23 AM (UTC).",
       "RewardPageLimitText": "Limit one cruise award per player, per sailing.",
       "RewardTermsText": "Limit to one Norwegian Cruise Line in-app reward purchase per 90 days. Reservations must be made\nwithin 30 days of purchase or by September 30, 2026, whichever occurs first. Valid for sailings departing\nby May 31, 2027. Only one reward may be used per sailing and is not valid on Pride of America® sailings.\nThis offer is non-refundable once purchased and is valid for new bookings only; it cannot be applied to\nexisting reservations or combined with other offers. The cruise credit is issued to the named Cruise\nCoupon Holder and may be used for one reservation. The cruise credit can only be applied to the\ncoupon holder. It is applicable for a single discount per cruise reservation and is restricted to\nredemption by the individual specifically named ('Cruise Coupon Holder') on the coupon. The Cruise\nCoupon Holder must be present onboard the sailing; otherwise, Norwegian reserves the right to charge\nthe full prevailing fare. The cruise credit applies to voyage fare only and does not cover taxes, fees,\ngratuities, or other onboard expenses. The cruise credit is issued in USD and cannot be exchanged for\nanother currency. Please allow up to 72 hours for the cruise credit to be applied to your reservation,\nafter which an updated confirmation will be sent. Reservations must be made through Norwegian’s\nCasino Reservation Centers and are subject to stateroom availability. Third and fourth guests may be\nadded, subject to availability, at an additional cost based on prevailing rates. Additional onboard\ncharges may apply. By confirming your purchase, you consent to PLAYSTUDIOS collecting your\npersonal information (name, email, address, phone number) and sharing it with Norwegian Cruise Line\nto facilitate reward redemption and related communications, in accordance with their respective\nprivacy policies. Norwegian Cruise Line Casino Management reserves the right to modify or cancel this\npromotion at any time without notice. For full terms and conditions, please visit\nncl.com/onboard/casino/terms or visit ncl.com for further information. Use of the information provided\nwill be subject to PLAYSTUDIOS privacy policy, https://www.playstudios.com/privacy-policy/.\n\nYou must use your legal name on your ID.\nYou must be 21 years or over to participate.\nThis Reward is limited to 1 per myVIP player.\nPurchase & Usage Limitations: Only ONE (1) myVIP account associated with each natural person will be valid for myVIP rewards. Additional myVIP accounts associated with any natural person will not be valid for Rewards. Loyalty points or Rewards purchased on these additional accounts are not eligible for use or redemption.\n\nPurchased awards are cancellable prior to redemption for the loyalty point cost through the redemption period indicated or through the last date of availability / expiration date indicated on the award, whichever comes first (unless otherwise stated in the terms). After an award has been redeemed by contacting the award issuer and making a reservation, no loyalty point refunds will be provided. Award or Loyalty Points have no cash value and are non-transferable. Terms and Conditions subject to change without notice. If there are more specific Terms and Conditions regarding refunds for a particular award, those Terms and Conditions will prevail.",
-      "RewardTermsExtractedAt": "2026-07-09T01:52:16+00:00",
+      "RewardTermsExtractedAt": "2026-07-09T02:07:16+00:00",
       "ArushaNotes": null,
       "PointHistoryNote": null,
       "ChangeHistory": [
@@ -10965,6 +10986,26 @@
               "to": "2026-07-09T01:52:16+00:00"
             }
           ]
+        },
+        {
+          "observed_at": "2026-07-09T02:07:16+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-08-08T01:52:16.7778809+00:00",
+              "to": "2026-08-08T02:07:16.5952454+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 8/8/2026 1:52:23 AM (UTC).",
+              "to": "This reward must be redeemed by 8/8/2026 2:07:23 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-07-09T01:52:16+00:00",
+              "to": "2026-07-09T02:07:16+00:00"
+            }
+          ]
         }
       ]
     },
@@ -10988,7 +11029,7 @@
       "SnipeText": null,
       "SnipeCategory": null,
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-08T01:52:16.7778809+00:00",
+      "ExpireTime": "2026-08-08T02:07:16.5952454+00:00",
       "DeparturePorts": null,
       "Sailings": "Sailings departing by May 31, 2027",
       "Ships": "Any (excluding Pride of America)",
@@ -10996,10 +11037,10 @@
       "RewardURL": null,
       "ImageURL": "https://pscdn-a.akamaihd.net:443/rewards/media/Images/11002Images_cropped_1.png",
       "RewardDescription": "Our award-winning ships are designed for you to enjoy as you choose while cruising to beautiful destinations around the world. Add a wide range of superb dining options and spectacular entertainment and you’ll experience your best vacation ever.",
-      "RewardUseByText": "This reward must be redeemed by 8/8/2026 1:52:24 AM (UTC).",
+      "RewardUseByText": "This reward must be redeemed by 8/8/2026 2:07:23 AM (UTC).",
       "RewardPageLimitText": "Limit one cruise award per player, per sailing.",
       "RewardTermsText": "Limit to one Norwegian Cruise Line in-app reward purchase per 90 days. Reservations must be made\nwithin 30 days of purchase or by September 30, 2026, whichever occurs first. Valid for sailings departing\nby May 31, 2027. Only one reward may be used per sailing and is not valid on Pride of America® sailings.\nThis offer is non-refundable once purchased and is valid for new bookings only; it cannot be applied to\nexisting reservations or combined with other offers. The cruise credit is issued to the named Cruise\nCoupon Holder and may be used for one reservation. The cruise credit can only be applied to the\ncoupon holder. It is applicable for a single discount per cruise reservation and is restricted to\nredemption by the individual specifically named ('Cruise Coupon Holder') on the coupon. The Cruise\nCoupon Holder must be present onboard the sailing; otherwise, Norwegian reserves the right to charge\nthe full prevailing fare. The cruise credit applies to voyage fare only and does not cover taxes, fees,\ngratuities, or other onboard expenses. The cruise credit is issued in USD and cannot be exchanged for\nanother currency. Please allow up to 72 hours for the cruise credit to be applied to your reservation,\nafter which an updated confirmation will be sent. Reservations must be made through Norwegian’s\nCasino Reservation Centers and are subject to stateroom availability. Third and fourth guests may be\nadded, subject to availability, at an additional cost based on prevailing rates. Additional onboard\ncharges may apply. By confirming your purchase, you consent to PLAYSTUDIOS collecting your\npersonal information (name, email, address, phone number) and sharing it with Norwegian Cruise Line\nto facilitate reward redemption and related communications, in accordance with their respective\nprivacy policies. Norwegian Cruise Line Casino Management reserves the right to modify or cancel this\npromotion at any time without notice. For full terms and conditions, please visit\nncl.com/onboard/casino/terms or visit ncl.com for further information. Use of the information provided\nwill be subject to PLAYSTUDIOS privacy policy, https://www.playstudios.com/privacy-policy/.\n\nYou must use your legal name on your ID.\nYou must be 21 years or over to participate.\nThis Reward is limited to 1 per myVIP player.\nPurchase & Usage Limitations: Only ONE (1) myVIP account associated with each natural person will be valid for myVIP rewards. Additional myVIP accounts associated with any natural person will not be valid for Rewards. Loyalty points or Rewards purchased on these additional accounts are not eligible for use or redemption.\n\nPurchased awards are cancellable prior to redemption for the loyalty point cost through the redemption period indicated or through the last date of availability / expiration date indicated on the award, whichever comes first (unless otherwise stated in the terms). After an award has been redeemed by contacting the award issuer and making a reservation, no loyalty point refunds will be provided. Award or Loyalty Points have no cash value and are non-transferable. Terms and Conditions subject to change without notice. If there are more specific Terms and Conditions regarding refunds for a particular award, those Terms and Conditions will prevail.",
-      "RewardTermsExtractedAt": "2026-07-09T01:52:16+00:00",
+      "RewardTermsExtractedAt": "2026-07-09T02:07:16+00:00",
       "ArushaNotes": [
         "I redeemed this deal on 19 Jun 2026 and used it for a cruise from Istanbul despite it saying it was for sailings from San Diego. I don't know if San Diego is a mistake or they were just bending the rules for me. You can call the number in the Ts & Cs and double check validity before purchasing the reward."
       ],
@@ -16269,6 +16310,26 @@
               "to": "2026-07-09T01:52:16+00:00"
             }
           ]
+        },
+        {
+          "observed_at": "2026-07-09T02:07:16+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-08-08T01:52:16.7778809+00:00",
+              "to": "2026-08-08T02:07:16.5952454+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 8/8/2026 1:52:24 AM (UTC).",
+              "to": "This reward must be redeemed by 8/8/2026 2:07:23 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-07-09T01:52:16+00:00",
+              "to": "2026-07-09T02:07:16+00:00"
+            }
+          ]
         }
       ]
     },
@@ -16292,7 +16353,7 @@
       "SnipeText": null,
       "SnipeCategory": null,
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-08T01:52:16.7778809+00:00",
+      "ExpireTime": "2026-08-08T02:07:16.5952454+00:00",
       "DeparturePorts": null,
       "Sailings": null,
       "Ships": null,
@@ -16300,10 +16361,10 @@
       "RewardURL": null,
       "ImageURL": "https://pscdn-a.akamaihd.net:443/rewards/media/Images/894Images_cropped.png",
       "RewardDescription": "This reward entitles you to $25 in Free Play inside Casino Royale, with the purchase of a Royal Caribbean International cruise. Experience the most innovative and exciting cruise line in the travel industry. You will enjoy casual and fine dining, 24 hour room service, daily entertainment, activities and spa facilities, in some of the world’s most breathtaking locations.\n\nContact Royal Caribbean’s Casino Royale Reservation Center at clubroyale@rccl.com in order to redeem this offer.",
-      "RewardUseByText": "This reward must be redeemed by 8/8/2026 1:52:17 AM (UTC).",
+      "RewardUseByText": "This reward must be redeemed by 8/8/2026 2:07:16 AM (UTC).",
       "RewardPageLimitText": "Limit one cruise reward per player, per sailing.",
       "RewardTermsText": "Reward is applicable to new individual bookings only and is subject to verification. Only valid for new reservations made through Royal Caribbean’s Casino Royale Reservation Center at clubroyale@rccl.com in order to redeem this offer. Cannot be combined with any other offer from myVIP or Royal Caribbean. This offer is available to US/Canadian guests only or guests booking with the US office. Not available for reservations made through online travel sites. Only one myVEGAS Reward can be used per reservation. Booking must be made a minimum 30 days prior to departure. Free Play is in USD, non-transferable and shall not exceed $25.00. Free Play is combinable with standard/full fare rates and restricted rates. Free Play is not combinable with any other offer or promotion. Misrepresentation of reward will void this offer. Must be 21 years of age or older. Royal Caribbean International reserves the right to correct any errors, inaccuracies or omissions at any time without prior notice. ©2025 Royal Caribbean Cruises Ltd. Ships' registry: The Bahamas.\n\nYou must use your legal name on your ID.\nYou must be 21 years or over to participate.\nThis Reward is limited to 3 per myVIP player.\nPurchase & Usage Limitations: Only ONE (1) myVIP account associated with each natural person will be valid for myVIP rewards. Additional myVIP accounts associated with any natural person will not be valid for Rewards. Loyalty points or Rewards purchased on these additional accounts are not eligible for use or redemption.\n\nPurchased rewards are refundable prior to redemption for the loyalty point cost through the redemption period indicated or through the last date of availability / expiration date indicated on the reward, whichever comes first. After a reward has been redeemed by contacting the reward issuer and making a reservation, no loyalty point refunds will be provided. Reward or Loyalty Points have no cash value and are non-transferable. Terms and Conditions subject to change without notice. If there are more specific Terms and Conditions regarding refunds for a particular reward, those Terms and Conditions will prevail.",
-      "RewardTermsExtractedAt": "2026-07-09T01:52:16+00:00",
+      "RewardTermsExtractedAt": "2026-07-09T02:07:16+00:00",
       "ArushaNotes": null,
       "PointHistoryNote": null,
       "ChangeHistory": [
@@ -21601,6 +21662,26 @@
               "to": "2026-07-09T01:52:16+00:00"
             }
           ]
+        },
+        {
+          "observed_at": "2026-07-09T02:07:16+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-08-08T01:52:16.7778809+00:00",
+              "to": "2026-08-08T02:07:16.5952454+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 8/8/2026 1:52:17 AM (UTC).",
+              "to": "This reward must be redeemed by 8/8/2026 2:07:16 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-07-09T01:52:16+00:00",
+              "to": "2026-07-09T02:07:16+00:00"
+            }
+          ]
         }
       ]
     },
@@ -21624,7 +21705,7 @@
       "SnipeText": null,
       "SnipeCategory": null,
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-08T01:52:16.7778809+00:00",
+      "ExpireTime": "2026-08-08T02:07:16.5952454+00:00",
       "DeparturePorts": null,
       "Sailings": null,
       "Ships": null,
@@ -21632,10 +21713,10 @@
       "RewardURL": null,
       "ImageURL": "https://pscdn-a.akamaihd.net:443/rewards/media/Images/RCI_casino_713_BJ_cropped.jpg",
       "RewardDescription": "This reward entitles you to $50 in Free Play inside Casino Royale, with the purchase of a Royal Caribbean International cruise. Experience the most innovative and exciting cruise line in the travel industry. You will enjoy casual and fine dining, 24 hour room service, daily entertainment, activities and spa facilities, in some of the world’s most breathtaking locations.\n\nContact Royal Caribbean’s Casino Royale Reservation Center at clubroyale@rccl.com in order to redeem this offer.",
-      "RewardUseByText": "This reward must be redeemed by 8/8/2026 1:52:17 AM (UTC).",
+      "RewardUseByText": "This reward must be redeemed by 8/8/2026 2:07:17 AM (UTC).",
       "RewardPageLimitText": "Limit one cruise reward per player, per sailing.",
       "RewardTermsText": "Reward is applicable to new individual bookings only and is subject to verification. This offer is available to US/Canadian guests only or guests booking with the US office. Only valid for new reservations made though Royal Caribbean’s Casino Royale Reservation Center at clubroyale@rccl.com in order to redeem this offer. Cannot be combined with any other offer from myVIP or Royal Caribbean. \n\nNot available for reservations made through online travel sites. Only one myVEGAS Reward can be used per reservation. \n\nBooking must be made a minimum 30 days prior to departure. Free Play is in USD, non-transferable and shall not exceed $50.00. Free Play is combinable with standard/full fare rates and restricted rates. Free Play is not combinable with any other offer or promotion. Must be 21 years of age or older. Misrepresentation of reward will void this offer and refare booking to prevailing rate. Royal Caribbean International reserves the right to correct any errors, inaccuracies or omissions at any time without prior notice. ©2025 Royal Caribbean Cruises Ltd. Ships' registry: The Bahamas.\n\nYou must use your legal name on your ID.\nYou must be 21 years or over to participate.\nThis Reward is limited to 3 per myVIP player.\nPurchase & Usage Limitations: Only ONE (1) myVIP account associated with each natural person will be valid for myVIP rewards. Additional myVIP accounts associated with any natural person will not be valid for Rewards. Loyalty points or Rewards purchased on these additional accounts are not eligible for use or redemption.\n\nPurchased rewards are refundable prior to redemption for the loyalty point cost through the redemption period indicated or through the last date of availability / expiration date indicated on the reward, whichever comes first. After a reward has been redeemed by contacting the reward issuer and making a reservation, no loyalty point refunds will be provided. Reward or Loyalty Points have no cash value and are non-transferable. Terms and Conditions subject to change without notice. If there are more specific Terms and Conditions regarding refunds for a particular reward, those Terms and Conditions will prevail.",
-      "RewardTermsExtractedAt": "2026-07-09T01:52:16+00:00",
+      "RewardTermsExtractedAt": "2026-07-09T02:07:16+00:00",
       "ArushaNotes": null,
       "PointHistoryNote": null,
       "ChangeHistory": [
@@ -26928,6 +27009,26 @@
               "to": "2026-07-09T01:52:16+00:00"
             }
           ]
+        },
+        {
+          "observed_at": "2026-07-09T02:07:16+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-08-08T01:52:16.7778809+00:00",
+              "to": "2026-08-08T02:07:16.5952454+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 8/8/2026 1:52:17 AM (UTC).",
+              "to": "This reward must be redeemed by 8/8/2026 2:07:17 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-07-09T01:52:16+00:00",
+              "to": "2026-07-09T02:07:16+00:00"
+            }
+          ]
         }
       ]
     },
@@ -26951,7 +27052,7 @@
       "SnipeText": null,
       "SnipeCategory": null,
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-08T01:52:16.7778809+00:00",
+      "ExpireTime": "2026-08-08T02:07:16.5952454+00:00",
       "DeparturePorts": null,
       "Sailings": null,
       "Ships": null,
@@ -26959,10 +27060,10 @@
       "RewardURL": null,
       "ImageURL": "https://pscdn-a.akamaihd.net:443/rewards/media/Images/2485_Gallery_cropped.png",
       "RewardDescription": "Enjoy the exclusive Wild Card 10% discount from myVEGAS when you purchase an Interior, Ocean View, or Balcony Stateroom.\n\nContact Royal Caribbean’s Casino Royale Reservation Center at clubroyale@rccl.com in order to redeem this offer.",
-      "RewardUseByText": "This reward must be redeemed by 8/8/2026 1:52:17 AM (UTC).",
+      "RewardUseByText": "This reward must be redeemed by 8/8/2026 2:07:17 AM (UTC).",
       "RewardPageLimitText": "Limit one cruise reward per player, per sailing.",
       "RewardTermsText": "Please allow 24 hours post purchase prior to calling. This reward is valid for a percentage discount value toward the purchase of any cruise of your choice for the recipient and one (1) guest, double occupancy -Additional guests may be added to this reservation at prevailing rates that redeemed the reward for sailings on Royal Caribbean International ships. For existing bookings, reservations can only be repriced within 24 hours from booking creation date and if the reservation is prior final payment date. Cannot be combined with any other offer from myVIP or Royal Caribbean. This offer is available to US/Canadian guests only or guests booking with the US office. Only one PLAYSTUDIOS reward can be honored per a sailing. Cruise reservation must be redeemed and booked within 30 days of reward purchase or offer will be null and void. New reservation sail date must be within one year of reward redemption. This reward is combinable with in-market offers and other Royal Caribbean promotional offers, and is valid for any sailing, subject to casino capacity and stateroom availability at time of booking. This reward applies to new individual bookings. Contact Royal Caribbean’s Casino Royale Reservation Center at clubroyale@rccl.com in order to redeem this offer. This offer is not applicable to any Casino Royale stateroom offers, Instant Reward Certificate, Interline Rates, Family & Friends, Charters, FAM cruises or group reservations. This reward is not combinable with any other myVegas rewards. Must be 21 years of age or older. The guest redeeming the offer must sail on the reservation the reward was applied on. Misrepresentation of reward will void this offer and re-fare booking to prevailing rate. This offer has no cash value and is nontransferable. Additional terms, conditions and restrictions apply. Please visit www.royalcaribbean.com/terms-and-conditions/casino-promotions, for full terms and conditions. Royal Caribbean Cruises Ltd. reserves the right to correct any errors, inaccuracies or omissions and to cancel any bookings made in error, with no further obligations to you, even after your receipt of an order confirmation or shipping notice from Royal Caribbean at any time without prior notice. ©2025 Royal Caribbean Cruises Ltd. Ships' registry: The Bahamas.\n\nYou must use your legal name on your ID.\nYou must be 21 years or over to participate.\nThis Reward is limited to 3 per myVIP player.\nPurchase & Usage Limitations: Only ONE (1) myVIP account associated with each natural person will be valid for myVIP rewards. Additional myVIP accounts associated with any natural person will not be valid for Rewards. Loyalty points or Rewards purchased on these additional accounts are not eligible for use or redemption.\n\nPurchased rewards are refundable prior to redemption for the loyalty point cost through the redemption period indicated or through the last date of availability / expiration date indicated on the reward, whichever comes first. After a reward has been redeemed by contacting the reward issuer and making a reservation, no loyalty point refunds will be provided. Reward or Loyalty Points have no cash value and are non-transferable. Terms and Conditions subject to change without notice. If there are more specific Terms and Conditions regarding refunds for a particular reward, those Terms and Conditions will prevail.",
-      "RewardTermsExtractedAt": "2026-07-09T01:52:16+00:00",
+      "RewardTermsExtractedAt": "2026-07-09T02:07:16+00:00",
       "ArushaNotes": null,
       "PointHistoryNote": null,
       "ChangeHistory": [
@@ -32290,6 +32391,26 @@
               "to": "2026-07-09T01:52:16+00:00"
             }
           ]
+        },
+        {
+          "observed_at": "2026-07-09T02:07:16+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-08-08T01:52:16.7778809+00:00",
+              "to": "2026-08-08T02:07:16.5952454+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 8/8/2026 1:52:17 AM (UTC).",
+              "to": "This reward must be redeemed by 8/8/2026 2:07:17 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-07-09T01:52:16+00:00",
+              "to": "2026-07-09T02:07:16+00:00"
+            }
+          ]
         }
       ]
     },
@@ -32313,7 +32434,7 @@
       "SnipeText": null,
       "SnipeCategory": null,
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-08T01:52:16.7778809+00:00",
+      "ExpireTime": "2026-08-08T02:07:16.5952454+00:00",
       "DeparturePorts": null,
       "Sailings": null,
       "Ships": null,
@@ -32321,10 +32442,10 @@
       "RewardURL": null,
       "ImageURL": "https://pscdn-a.akamaihd.net:443/rewards/media/Images/4338_Gallery_cropped.png",
       "RewardDescription": "This reward entitles you to a $100 Onboard Credit, with the purchase of a Royal Caribbean International cruise (new booking only).\n\nContact Royal Caribbean’s Casino Royale Reservation Center at clubroyale@rccl.com in order to redeem this offer.",
-      "RewardUseByText": "This reward must be redeemed by 8/8/2026 1:52:17 AM (UTC).",
+      "RewardUseByText": "This reward must be redeemed by 8/8/2026 2:07:17 AM (UTC).",
       "RewardPageLimitText": "Limit one cruise reward per player, per sailing.",
       "RewardTermsText": "Please allow 24 hours post purchase prior to calling. Must be redeemed with Royal Caribbean within 30 days of purchase and applied to a new cruise reservation within 30 days of cruise creation. Cannot be combined with any other offer from myVIP or Royal Caribbean. This reward applies to new individual bookings booked with Royal Caribbean. This offer is available to US/Canadian guests only or guests booking with the US office. Contact Royal Caribbean’s Casino Royale Reservation Center at clubroyale@rccl.com in order to redeem this offer. New reservation sail date must be within one year of reward redemption. To verify the reward redemption, forwarded to Casino Royale Reservation Center at clubroyale@rccl.com. Only one myVEGAS reward can be applied to a reservation. Onboard credit is in USD, non-transferable and shall not exceed $100.00. The onboard credit value will appear on the onboard stateroom account and is non-refundable and may not be applicable to some onboard expenses. Any unused onboard credit will be voided at the end of the sailing and cannot be extended as a future cruise credit. This offer is combinable with in-market offers and other Royal Caribbean offers and is valid for any sailing, subject to availability. This offer is not applicable to any Casino Royale promotional offers, Instant Reward Certificate, Interline Rates, Family & Friends, Charters, FAM cruises or group reservations. Must be 21 years of age or older. The guest redeeming the offer must sail on the reservation the reward was applied on. Misrepresentation of reward will void this offer and re-fare booking to prevailing rate. Royal Caribbean Cruises Ltd. reserves the right to correct any errors, inaccuracies or omissions and to cancel any bookings made in error, with no further obligations to you, even after your receipt of an order confirmation or shipping notice from Royal Caribbean at any time without prior notice. ©2025 Royal Caribbean Cruises Ltd. Ships' registry: The Bahamas.\n\nYou must use your legal name on your ID.\nYou must be 21 years or over to participate.\nThis Reward is limited to 3 per myVIP player.\nPurchase & Usage Limitations: Only ONE (1) myVIP account associated with each natural person will be valid for myVIP rewards. Additional myVIP accounts associated with any natural person will not be valid for Rewards. Loyalty points or Rewards purchased on these additional accounts are not eligible for use or redemption.\n\nPurchased rewards are refundable prior to redemption for the loyalty point cost through the redemption period indicated or through the last date of availability / expiration date indicated on the reward, whichever comes first. After a reward has been redeemed by contacting the reward issuer and making a reservation, no loyalty point refunds will be provided. Reward or Loyalty Points have no cash value and are non-transferable. Terms and Conditions subject to change without notice. If there are more specific Terms and Conditions regarding refunds for a particular reward, those Terms and Conditions will prevail.",
-      "RewardTermsExtractedAt": "2026-07-09T01:52:16+00:00",
+      "RewardTermsExtractedAt": "2026-07-09T02:07:16+00:00",
       "ArushaNotes": null,
       "PointHistoryNote": null,
       "ChangeHistory": [
@@ -37822,6 +37943,26 @@
               "to": "2026-07-09T01:52:16+00:00"
             }
           ]
+        },
+        {
+          "observed_at": "2026-07-09T02:07:16+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-08-08T01:52:16.7778809+00:00",
+              "to": "2026-08-08T02:07:16.5952454+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 8/8/2026 1:52:17 AM (UTC).",
+              "to": "This reward must be redeemed by 8/8/2026 2:07:17 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-07-09T01:52:16+00:00",
+              "to": "2026-07-09T02:07:16+00:00"
+            }
+          ]
         }
       ]
     },
@@ -37845,7 +37986,7 @@
       "SnipeText": null,
       "SnipeCategory": null,
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-08T01:52:16.7778809+00:00",
+      "ExpireTime": "2026-08-08T02:07:16.5952454+00:00",
       "DeparturePorts": null,
       "Sailings": null,
       "Ships": null,
@@ -37853,10 +37994,10 @@
       "RewardURL": null,
       "ImageURL": "https://pscdn-a.akamaihd.net:443/rewards/media/Images/4719_Gallery_cropped.png",
       "RewardDescription": "This reward entitles you to a $100 FREEPLAY, with the purchase of a Royal Caribbean International cruise (new booking only). Must be redeemed within 30 days of a new cruise reservation.\n\nContact Royal Caribbean’s Casino Royale Reservation Center at clubroyale@rccl.com in order to redeem this offer.",
-      "RewardUseByText": "This reward must be redeemed by 8/8/2026 1:52:18 AM (UTC).",
+      "RewardUseByText": "This reward must be redeemed by 8/8/2026 2:07:17 AM (UTC).",
       "RewardPageLimitText": "Limit one cruise reward per player, per sailing.",
       "RewardTermsText": "Please allow 24 hours post purchase prior to calling. Reward is applicable to new individual bookings only and is subject to verification. Only valid for new reservations made through Royal Caribbean’s Casino Royale Reservation Center at clubroyale@rccl.com in order to redeem this offer. Cannot be combined with any other offer from myVIP or Royal Caribbean. This offer is available to US/Canadian guests only or guests booking with the US office. Not available for reservations made through online travel sites. Only one myVEGAS Reward can be used per reservation. Booking must be made a minimum 30 days prior to departure. Free Play is in USD, non-transferable and shall not exceed $100.00. Free Play is combinable with standard/full fare rates and restricted rates. Free Play is not combinable with any other offer or promotion. Misrepresentation of reward will void this offer. Must be 21 years of age or older. Royal Caribbean International reserves the right to correct any errors, inaccuracies or omissions at any time without prior notice. ©2025 Royal Caribbean Cruises Ltd. Ships' registry: The Bahamas.\n\nYou must use your legal name on your ID.\nYou must be 21 years or over to participate.\nThis Reward is limited to 3 per myVIP player.\nPurchase & Usage Limitations: Only ONE (1) myVIP account associated with each natural person will be valid for myVIP rewards. Additional myVIP accounts associated with any natural person will not be valid for Rewards. Loyalty points or Rewards purchased on these additional accounts are not eligible for use or redemption.\n\nPurchased rewards are refundable prior to redemption for the loyalty point cost through the redemption period indicated or through the last date of availability / expiration date indicated on the reward, whichever comes first. After a reward has been redeemed by contacting the reward issuer and making a reservation, no loyalty point refunds will be provided. Reward or Loyalty Points have no cash value and are non-transferable. Terms and Conditions subject to change without notice. If there are more specific Terms and Conditions regarding refunds for a particular reward, those Terms and Conditions will prevail.",
-      "RewardTermsExtractedAt": "2026-07-09T01:52:16+00:00",
+      "RewardTermsExtractedAt": "2026-07-09T02:07:16+00:00",
       "ArushaNotes": null,
       "PointHistoryNote": null,
       "ChangeHistory": [
@@ -43174,6 +43315,26 @@
               "to": "2026-07-09T01:52:16+00:00"
             }
           ]
+        },
+        {
+          "observed_at": "2026-07-09T02:07:16+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-08-08T01:52:16.7778809+00:00",
+              "to": "2026-08-08T02:07:16.5952454+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 8/8/2026 1:52:18 AM (UTC).",
+              "to": "This reward must be redeemed by 8/8/2026 2:07:17 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-07-09T01:52:16+00:00",
+              "to": "2026-07-09T02:07:16+00:00"
+            }
+          ]
         }
       ]
     },
@@ -43197,7 +43358,7 @@
       "SnipeText": null,
       "SnipeCategory": null,
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-08T01:52:16.7778809+00:00",
+      "ExpireTime": "2026-08-08T02:07:16.5952454+00:00",
       "DeparturePorts": null,
       "Sailings": null,
       "Ships": null,
@@ -43205,10 +43366,10 @@
       "RewardURL": null,
       "ImageURL": "https://pscdn-a.akamaihd.net:443/rewards/media/Images/6713_Gallery_cropped.png",
       "RewardDescription": "This reward entitles you to a $150 FREEPLAY, with the purchase of a Royal Caribbean International cruise (new booking only). Must be redeemed within 30 days of a new cruise reservation.\n\nContact Royal Caribbean’s Casino Royale Reservation Center at clubroyale@rccl.com in order to redeem this offer.",
-      "RewardUseByText": "This reward must be redeemed by 8/8/2026 1:52:18 AM (UTC).",
+      "RewardUseByText": "This reward must be redeemed by 8/8/2026 2:07:18 AM (UTC).",
       "RewardPageLimitText": "Limit one cruise reward per player, per sailing.",
       "RewardTermsText": "Please allow 24 hours post purchase prior to calling. Must be redeemed with Royal Caribbean within 30 days of purchase and applied to a new cruise reservation. This reward applies to new individual bookings booked with Royal Caribbean. Cannot be combined with any other offer from myVIP or Royal Caribbean. This offer is available to US/Canadian guests only or guests booking with the US office. Contact Royal Caribbean’s Casino Royale Reservation Center at clubroyale@rccl.com in order to redeem this offer. New reservation sail date must be within one year of reward redemption. To verify the reward redemption, forwarded to Casino Royale Reservation Center at clubroyale@rccl.com. Only one PLAYSTUDIOS reward can be applied to a reservation. This offer is combinable with in-market offers and other Royal Caribbean offers and is valid for any sailing, subject to availability. This offer is not applicable to any Casino Royale stateroom offers, Instant Reward Certificate, Interline Rates, Family & Friends, Charters, FAM cruises or group reservations. Must be 21 years of age or older. The guest redeeming the offer must sail on the reservation the reward was applied on. Misrepresentation of reward will void this offer and re-fare booking to prevailing rate. Free Play may be redeemed for slot credits and/or promotional table game chips to the awarded recipient. Slot credit promotional value will be credited to the Recipient’s Sea Pass account. Promotional slot credit have no cash value and may not be cashed out on specific machines and Recipient may be required to play the downloaded credits in their entirety. Any cashable winnings may be cashed out or played. Table game promotional chips may be issued at the Cashiers Desk with Recipient’s Sea Pass card. Chip denomination is subject to availability. Promotional table game chips are not transferable, not redeemable for cash or onboard credit, for casino game-play only and may not be bartered, sold, transferred, assigned, or gifted. Table game promotional chips are not allowed on contra betting on Roulette, Craps, and Baccarat games. Promotional chips stay in play until losing hand. Winning wager will be paid in value table game chips. All promotional free play must be used by the final night of the cruise. Royal Caribbean Cruises Ltd. reserves the right to correct any errors, inaccuracies or omissions and to cancel any bookings made in error, with no further obligations to you, even after your receipt of an order confirmation or shipping notice from Royal Caribbean at any time without prior notice. ©2025 Royal Caribbean Cruises Ltd. Ships' registry: The Bahamas.\n\nYou must use your legal name on your ID.\nYou must be 21 years or over to participate.\nThis Reward is limited to 2 per myVIP player.\nPurchase & Usage Limitations: Only ONE (1) myVIP account associated with each natural person will be valid for myVIP rewards. Additional myVIP accounts associated with any natural person will not be valid for Rewards. Loyalty points or Rewards purchased on these additional accounts are not eligible for use or redemption.\n\nPurchased rewards are refundable prior to redemption for the loyalty point cost through the redemption period indicated or through the last date of availability / expiration date indicated on the reward, whichever comes first. After a reward has been redeemed by contacting the reward issuer and making a reservation, no loyalty point refunds will be provided. Reward or Loyalty Points have no cash value and are non-transferable. Terms and Conditions subject to change without notice. If there are more specific Terms and Conditions regarding refunds for a particular reward, those Terms and Conditions will prevail.",
-      "RewardTermsExtractedAt": "2026-07-09T01:52:16+00:00",
+      "RewardTermsExtractedAt": "2026-07-09T02:07:16+00:00",
       "ArushaNotes": null,
       "PointHistoryNote": null,
       "ChangeHistory": [
@@ -48616,6 +48777,26 @@
               "to": "2026-07-09T01:52:16+00:00"
             }
           ]
+        },
+        {
+          "observed_at": "2026-07-09T02:07:16+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-08-08T01:52:16.7778809+00:00",
+              "to": "2026-08-08T02:07:16.5952454+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 8/8/2026 1:52:18 AM (UTC).",
+              "to": "This reward must be redeemed by 8/8/2026 2:07:18 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-07-09T01:52:16+00:00",
+              "to": "2026-07-09T02:07:16+00:00"
+            }
+          ]
         }
       ]
     },
@@ -48650,7 +48831,7 @@
       "RewardUseByText": "This reward must be redeemed by 8/1/2026 6:59:59 AM (UTC).",
       "RewardPageLimitText": "RCCL Comp Cruise rewards are limited to 2 purchases in a 90 day period. Limit one cruise reward per player, per sailing.",
       "RewardTermsText": "Please allow 24 hours post purchase prior to emailing. This complimentary cruise only offer is valid for one (1) interior stateroom, including complimentary dining venues and entertainment, for the specified ship(s) and sail date(s) and stateroom category(ies) for the qualified recipient redeeming the reward and one (1) guest, double occupancy. Exclusions include, but are not limited to, all taxes, fees and port expenses, online booking fee, gratuities, applicable fuel surcharges, upgrades, additional guests in the stateroom, additional staterooms, air and ground transfers to/from the embarkation and debarkation ports, and onboard expense account items for products and services rendered. This reward applies to NEW individual bookings within 7 days and must be booked with Royal Caribbean’s Casino Royale Reservation Center at VIPClubroyale@rccl.com. Offer is nontransferable, is not combinable with any other offer and is subject to casino capacity and stateroom availability at the time of booking. This reward is not combinable with any other myVIP rewards. Must be 21 years of age or older. The guest redeeming the offer must sail on the reservation the reward was applied on. Additional guests may be added to this reservation at prevailing rates. Misrepresentation of reward will void this offer and re-fare booking to prevailing rate. This offer has no cash value and is nontransferable. Additional terms, conditions and restrictions apply. Please visit www.royalcaribbean.com/terms-and-conditions/casino-promotions, for full terms and conditions. Royal Caribbean Cruises Ltd. reserves the right to correct any errors, inaccuracies or omissions and to cancel any bookings made in error, with no further obligations to you, even after your receipt of an order confirmation or shipping notice from Royal Caribbean at any time without prior notice. ©2024 Royal Caribbean Cruises Ltd. Ships' registry: The Bahamas.\n\nYou must use your legal name on your ID.\nYou must be 21 years or over to participate.\nThis Reward is limited to 1 per myVIP player.\nPurchase & Usage Limitations: Only ONE (1) myVIP account associated with each natural person will be valid for myVIP rewards. Additional myVIP accounts associated with any natural person will not be valid for Rewards. Loyalty points or Rewards purchased on these additional accounts are not eligible for use or redemption.\n\nPurchased rewards are refundable prior to redemption for the loyalty point cost through the redemption period indicated or through the last date of availability / expiration date indicated on the reward, whichever comes first. After a reward has been redeemed by contacting the reward issuer and making a reservation, no loyalty point refunds will be provided. Reward or Loyalty Points have no cash value and are non-transferable. Terms and Conditions subject to change without notice. If there are more specific Terms and Conditions regarding refunds for a particular reward, those Terms and Conditions will prevail.",
-      "RewardTermsExtractedAt": "2026-07-09T01:52:16+00:00",
+      "RewardTermsExtractedAt": "2026-07-09T02:07:16+00:00",
       "ArushaNotes": null,
       "PointHistoryNote": null,
       "ChangeHistory": [
@@ -51316,6 +51497,16 @@
               "field": "RewardTermsExtractedAt",
               "from": "2026-07-09T01:37:14+00:00",
               "to": "2026-07-09T01:52:16+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-07-09T02:07:16+00:00",
+          "changes": [
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-07-09T01:52:16+00:00",
+              "to": "2026-07-09T02:07:16+00:00"
             }
           ]
         }
@@ -51352,7 +51543,7 @@
       "RewardUseByText": "This reward must be redeemed by 8/1/2026 6:59:59 AM (UTC).",
       "RewardPageLimitText": "RCCL Comp Cruise rewards are limited to 2 purchases in a 90 day period. Limit one cruise reward per player, per sailing.",
       "RewardTermsText": "Please allow 24 hours post purchase prior to emailing. This complimentary cruise only offer is valid for one (1) interior stateroom, including complimentary dining venues and entertainment, for the specified ship(s) and sail date(s) and stateroom category(ies) for the qualified recipient redeeming the reward and one (1) guest, double occupancy. Exclusions include, but are not limited to, all taxes, fees and port expenses, online booking fee, gratuities, applicable fuel surcharges, upgrades, additional guests in the stateroom, additional staterooms, air and ground transfers to/from the embarkation and debarkation ports, and onboard expense account items for products and services rendered. This reward applies to NEW individual bookings within 7 days and must be booked with Royal Caribbean’s Casino Royale Reservation Center at VIPClubroyale@rccl.com. Offer is nontransferable, is not combinable with any other offer and is subject to casino capacity and stateroom availability at the time of booking. This reward is not combinable with any other myVIP rewards. Must be 21 years of age or older. The guest redeeming the offer must sail on the reservation the reward was applied on. Additional guests may be added to this reservation at prevailing rates. Misrepresentation of reward will void this offer and re-fare booking to prevailing rate. This offer has no cash value and is nontransferable. Additional terms, conditions and restrictions apply. Please visit www.royalcaribbean.com/terms-and-conditions/casino-promotions, for full terms and conditions. Royal Caribbean Cruises Ltd. reserves the right to correct any errors, inaccuracies or omissions and to cancel any bookings made in error, with no further obligations to you, even after your receipt of an order confirmation or shipping notice from Royal Caribbean at any time without prior notice. ©2024 Royal Caribbean Cruises Ltd. Ships' registry: The Bahamas.\n\nYou must use your legal name on your ID.\nYou must be 21 years or over to participate.\nThis Reward is limited to 1 per myVIP player.\nPurchase & Usage Limitations: Only ONE (1) myVIP account associated with each natural person will be valid for myVIP rewards. Additional myVIP accounts associated with any natural person will not be valid for Rewards. Loyalty points or Rewards purchased on these additional accounts are not eligible for use or redemption.\n\nPurchased rewards are refundable prior to redemption for the loyalty point cost through the redemption period indicated or through the last date of availability / expiration date indicated on the reward, whichever comes first. After a reward has been redeemed by contacting the reward issuer and making a reservation, no loyalty point refunds will be provided. Reward or Loyalty Points have no cash value and are non-transferable. Terms and Conditions subject to change without notice. If there are more specific Terms and Conditions regarding refunds for a particular reward, those Terms and Conditions will prevail.",
-      "RewardTermsExtractedAt": "2026-07-09T01:52:16+00:00",
+      "RewardTermsExtractedAt": "2026-07-09T02:07:16+00:00",
       "ArushaNotes": null,
       "PointHistoryNote": null,
       "ChangeHistory": [
@@ -53988,6 +54179,16 @@
               "field": "RewardTermsExtractedAt",
               "from": "2026-07-09T01:37:14+00:00",
               "to": "2026-07-09T01:52:16+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-07-09T02:07:16+00:00",
+          "changes": [
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-07-09T01:52:16+00:00",
+              "to": "2026-07-09T02:07:16+00:00"
             }
           ]
         }
@@ -54024,7 +54225,7 @@
       "RewardUseByText": "This reward must be redeemed by 8/1/2026 6:59:59 AM (UTC).",
       "RewardPageLimitText": "RCCL Comp Cruise rewards are limited to 2 purchases in a 90 day period. Limit one cruise reward per player, per sailing.",
       "RewardTermsText": "Please allow 24 hours post purchase prior to emailing. This complimentary cruise only offer is valid for one (1) interior stateroom, including complimentary dining venues and entertainment, for the specified ship(s) and sail date(s) and stateroom category(ies) for the qualified recipient redeeming the reward and one (1) guest, double occupancy. Exclusions include, but are not limited to, all taxes, fees and port expenses, online booking fee, gratuities, applicable fuel surcharges, upgrades, additional guests in the stateroom, additional staterooms, air and ground transfers to/from the embarkation and debarkation ports, and onboard expense account items for products and services rendered. This reward applies to NEW individual bookings within 7 days and must be booked with Royal Caribbean’s Casino Royale Reservation Center at VIPClubroyale@rccl.com. Offer is nontransferable, is not combinable with any other offer and is subject to casino capacity and stateroom availability at the time of booking. This reward is not combinable with any other myVIP rewards. Must be 21 years of age or older. The guest redeeming the offer must sail on the reservation the reward was applied on. Additional guests may be added to this reservation at prevailing rates. Misrepresentation of reward will void this offer and re-fare booking to prevailing rate. This offer has no cash value and is nontransferable. Additional terms, conditions and restrictions apply. Please visit www.royalcaribbean.com/terms-and-conditions/casino-promotions, for full terms and conditions. Royal Caribbean Cruises Ltd. reserves the right to correct any errors, inaccuracies or omissions and to cancel any bookings made in error, with no further obligations to you, even after your receipt of an order confirmation or shipping notice from Royal Caribbean at any time without prior notice. ©2024 Royal Caribbean Cruises Ltd. Ships' registry: The Bahamas.\n\nYou must use your legal name on your ID.\nYou must be 21 years or over to participate.\nThis Reward is limited to 1 per myVIP player.\nPurchase & Usage Limitations: Only ONE (1) myVIP account associated with each natural person will be valid for myVIP rewards. Additional myVIP accounts associated with any natural person will not be valid for Rewards. Loyalty points or Rewards purchased on these additional accounts are not eligible for use or redemption.\n\nPurchased rewards are refundable prior to redemption for the loyalty point cost through the redemption period indicated or through the last date of availability / expiration date indicated on the reward, whichever comes first. After a reward has been redeemed by contacting the reward issuer and making a reservation, no loyalty point refunds will be provided. Reward or Loyalty Points have no cash value and are non-transferable. Terms and Conditions subject to change without notice. If there are more specific Terms and Conditions regarding refunds for a particular reward, those Terms and Conditions will prevail.",
-      "RewardTermsExtractedAt": "2026-07-09T01:52:16+00:00",
+      "RewardTermsExtractedAt": "2026-07-09T02:07:16+00:00",
       "ArushaNotes": null,
       "PointHistoryNote": null,
       "ChangeHistory": [
@@ -56662,6 +56863,16 @@
               "to": "2026-07-09T01:52:16+00:00"
             }
           ]
+        },
+        {
+          "observed_at": "2026-07-09T02:07:16+00:00",
+          "changes": [
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-07-09T01:52:16+00:00",
+              "to": "2026-07-09T02:07:16+00:00"
+            }
+          ]
         }
       ]
     },
@@ -56696,7 +56907,7 @@
       "RewardUseByText": "This reward must be redeemed by 8/1/2026 6:59:59 AM (UTC).",
       "RewardPageLimitText": "RCCL Comp Cruise rewards are limited to 2 purchases in a 90 day period. Limit one cruise reward per player, per sailing.",
       "RewardTermsText": "Please allow 24 hours post purchase prior to emailing. This complimentary cruise only offer is valid for one (1) interior stateroom, including complimentary dining venues and entertainment, for the specified ship(s) and sail date(s) and stateroom category(ies) for the qualified recipient redeeming the reward and one (1) guest, double occupancy. Exclusions include, but are not limited to, all taxes, fees and port expenses, online booking fee, gratuities, applicable fuel surcharges, upgrades, additional guests in the stateroom, additional staterooms, air and ground transfers to/from the embarkation and debarkation ports, and onboard expense account items for products and services rendered. This reward applies to NEW individual bookings within 7 days and must be booked with Royal Caribbean’s Casino Royale Reservation Center at VIPClubroyale@rccl.com. Offer is nontransferable, is not combinable with any other offer and is subject to casino capacity and stateroom availability at the time of booking. This reward is not combinable with any other myVIP rewards. Must be 21 years of age or older. The guest redeeming the offer must sail on the reservation the reward was applied on. Additional guests may be added to this reservation at prevailing rates. Misrepresentation of reward will void this offer and re-fare booking to prevailing rate. This offer has no cash value and is nontransferable. Additional terms, conditions and restrictions apply. Please visit www.royalcaribbean.com/terms-and-conditions/casino-promotions, for full terms and conditions. Royal Caribbean Cruises Ltd. reserves the right to correct any errors, inaccuracies or omissions and to cancel any bookings made in error, with no further obligations to you, even after your receipt of an order confirmation or shipping notice from Royal Caribbean at any time without prior notice. ©2024 Royal Caribbean Cruises Ltd. Ships' registry: The Bahamas.\n\nYou must use your legal name on your ID.\nYou must be 21 years or over to participate.\nThis Reward is limited to 1 per myVIP player.\nPurchase & Usage Limitations: Only ONE (1) myVIP account associated with each natural person will be valid for myVIP rewards. Additional myVIP accounts associated with any natural person will not be valid for Rewards. Loyalty points or Rewards purchased on these additional accounts are not eligible for use or redemption.\n\nPurchased rewards are refundable prior to redemption for the loyalty point cost through the redemption period indicated or through the last date of availability / expiration date indicated on the reward, whichever comes first. After a reward has been redeemed by contacting the reward issuer and making a reservation, no loyalty point refunds will be provided. Reward or Loyalty Points have no cash value and are non-transferable. Terms and Conditions subject to change without notice. If there are more specific Terms and Conditions regarding refunds for a particular reward, those Terms and Conditions will prevail.",
-      "RewardTermsExtractedAt": "2026-07-09T01:52:16+00:00",
+      "RewardTermsExtractedAt": "2026-07-09T02:07:16+00:00",
       "ArushaNotes": null,
       "PointHistoryNote": null,
       "ChangeHistory": [
@@ -59364,6 +59575,16 @@
               "to": "2026-07-09T01:52:16+00:00"
             }
           ]
+        },
+        {
+          "observed_at": "2026-07-09T02:07:16+00:00",
+          "changes": [
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-07-09T01:52:16+00:00",
+              "to": "2026-07-09T02:07:16+00:00"
+            }
+          ]
         }
       ]
     },
@@ -59398,7 +59619,7 @@
       "RewardUseByText": "This reward must be redeemed by 7/28/2026 6:59:59 AM (UTC).",
       "RewardPageLimitText": "RCCL Comp Cruise rewards are limited to 2 purchases in a 90 day period. Limit one cruise reward per player, per sailing.",
       "RewardTermsText": "Please allow 24 hours post purchase prior to emailing. This complimentary cruise only offer is valid for one (1) interior stateroom, including complimentary dining venues and entertainment, for the specified ship(s) and sail date(s) and stateroom category(ies) for the qualified recipient redeeming the reward and one (1) guest, double occupancy. Exclusions include, but are not limited to, all taxes, fees and port expenses, online booking fee, gratuities, applicable fuel surcharges, upgrades, additional guests in the stateroom, additional staterooms, air and ground transfers to/from the embarkation and debarkation ports, and onboard expense account items for products and services rendered. This reward applies to NEW individual bookings within 7 days and must be booked with Royal Caribbean’s Casino Royale Reservation Center at VIPClubroyale@rccl.com. Offer is nontransferable, is not combinable with any other offer and is subject to casino capacity and stateroom availability at the time of booking. This reward is not combinable with any other myVIP rewards. Must be 21 years of age or older. The guest redeeming the offer must sail on the reservation the reward was applied on. Additional guests may be added to this reservation at prevailing rates. Misrepresentation of reward will void this offer and re-fare booking to prevailing rate. This offer has no cash value and is nontransferable. Additional terms, conditions and restrictions apply. Please visit www.royalcaribbean.com/terms-and-conditions/casino-promotions, for full terms and conditions. Royal Caribbean Cruises Ltd. reserves the right to correct any errors, inaccuracies or omissions and to cancel any bookings made in error, with no further obligations to you, even after your receipt of an order confirmation or shipping notice from Royal Caribbean at any time without prior notice. ©2024 Royal Caribbean Cruises Ltd. Ships' registry: The Bahamas.\n\nYou must use your legal name on your ID.\nYou must be 21 years or over to participate.\nThis Reward is limited to 1 per myVIP player.\nPurchase & Usage Limitations: Only ONE (1) myVIP account associated with each natural person will be valid for myVIP rewards. Additional myVIP accounts associated with any natural person will not be valid for Rewards. Loyalty points or Rewards purchased on these additional accounts are not eligible for use or redemption.\n\nPurchased rewards are refundable prior to redemption for the loyalty point cost through the redemption period indicated or through the last date of availability / expiration date indicated on the reward, whichever comes first. After a reward has been redeemed by contacting the reward issuer and making a reservation, no loyalty point refunds will be provided. Reward or Loyalty Points have no cash value and are non-transferable. Terms and Conditions subject to change without notice. If there are more specific Terms and Conditions regarding refunds for a particular reward, those Terms and Conditions will prevail.",
-      "RewardTermsExtractedAt": "2026-07-09T01:52:16+00:00",
+      "RewardTermsExtractedAt": "2026-07-09T02:07:16+00:00",
       "ArushaNotes": null,
       "PointHistoryNote": null,
       "ChangeHistory": [
@@ -62091,6 +62312,16 @@
               "to": "2026-07-09T01:52:16+00:00"
             }
           ]
+        },
+        {
+          "observed_at": "2026-07-09T02:07:16+00:00",
+          "changes": [
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-07-09T01:52:16+00:00",
+              "to": "2026-07-09T02:07:16+00:00"
+            }
+          ]
         }
       ]
     },
@@ -62125,7 +62356,7 @@
       "RewardUseByText": "This reward must be redeemed by 7/31/2026 6:59:59 PM (UTC).",
       "RewardPageLimitText": "RCCL Comp Cruise rewards are limited to 2 purchases in a 90 day period. Limit one cruise reward per player, per sailing.",
       "RewardTermsText": "Please allow 24 hours post purchase prior to emailing. This complimentary cruise only offer is valid for one (1) interior stateroom, including complimentary dining venues and entertainment, for the specified ship(s) and sail date(s) and stateroom category(ies) for the qualified recipient redeeming the reward and one (1) guest, double occupancy. Exclusions include, but are not limited to, all taxes, fees and port expenses, online booking fee, gratuities, applicable fuel surcharges, upgrades, additional guests in the stateroom, additional staterooms, air and ground transfers to/from the embarkation and debarkation ports, and onboard expense account items for products and services rendered. This reward applies to NEW individual bookings within 7 days and must be booked with Royal Caribbean’s Casino Royale Reservation Center at VIPClubroyale@rccl.com. Offer is nontransferable, is not combinable with any other offer and is subject to casino capacity and stateroom availability at the time of booking. This reward is not combinable with any other myVIP rewards. Must be 21 years of age or older. The guest redeeming the offer must sail on the reservation the reward was applied on. Additional guests may be added to this reservation at prevailing rates. Misrepresentation of reward will void this offer and re-fare booking to prevailing rate. This offer has no cash value and is nontransferable. Additional terms, conditions and restrictions apply. Please visit www.royalcaribbean.com/terms-and-conditions/casino-promotions, for full terms and conditions. Royal Caribbean Cruises Ltd. reserves the right to correct any errors, inaccuracies or omissions and to cancel any bookings made in error, with no further obligations to you, even after your receipt of an order confirmation or shipping notice from Royal Caribbean at any time without prior notice. ©2024 Royal Caribbean Cruises Ltd. Ships' registry: The Bahamas.\n\nYou must use your legal name on your ID.\nYou must be 21 years or over to participate.\nThis Reward is limited to 1 per myVIP player.\nPurchase & Usage Limitations: Only ONE (1) myVIP account associated with each natural person will be valid for myVIP rewards. Additional myVIP accounts associated with any natural person will not be valid for Rewards. Loyalty points or Rewards purchased on these additional accounts are not eligible for use or redemption.\n\nPurchased rewards are refundable prior to redemption for the loyalty point cost through the redemption period indicated or through the last date of availability / expiration date indicated on the reward, whichever comes first. After a reward has been redeemed by contacting the reward issuer and making a reservation, no loyalty point refunds will be provided. Reward or Loyalty Points have no cash value and are non-transferable. Terms and Conditions subject to change without notice. If there are more specific Terms and Conditions regarding refunds for a particular reward, those Terms and Conditions will prevail.",
-      "RewardTermsExtractedAt": "2026-07-09T01:52:16+00:00",
+      "RewardTermsExtractedAt": "2026-07-09T02:07:16+00:00",
       "ArushaNotes": null,
       "PointHistoryNote": null,
       "ChangeHistory": [
@@ -64761,6 +64992,16 @@
               "field": "RewardTermsExtractedAt",
               "from": "2026-07-09T01:37:14+00:00",
               "to": "2026-07-09T01:52:16+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-07-09T02:07:16+00:00",
+          "changes": [
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-07-09T01:52:16+00:00",
+              "to": "2026-07-09T02:07:16+00:00"
             }
           ]
         }
@@ -64797,7 +65038,7 @@
       "RewardUseByText": "This reward must be redeemed by 8/1/2026 6:59:59 AM (UTC).",
       "RewardPageLimitText": "RCCL Comp Cruise rewards are limited to 2 purchases in a 90 day period. Limit one cruise reward per player, per sailing.",
       "RewardTermsText": "Please allow 24 hours post purchase prior to emailing. This complimentary cruise only offer is valid for one (1) interior stateroom, including complimentary dining venues and entertainment, for the specified ship(s) and sail date(s) and stateroom category(ies) for the qualified recipient redeeming the reward and one (1) guest, double occupancy. Exclusions include, but are not limited to, all taxes, fees and port expenses, online booking fee, gratuities, applicable fuel surcharges, upgrades, additional guests in the stateroom, additional staterooms, air and ground transfers to/from the embarkation and debarkation ports, and onboard expense account items for products and services rendered. This reward applies to NEW individual bookings within 7 days and must be booked with Royal Caribbean’s Casino Royale Reservation Center at VIPClubroyale@rccl.com. Offer is nontransferable, is not combinable with any other offer and is subject to casino capacity and stateroom availability at the time of booking. This reward is not combinable with any other myVIP rewards. Must be 21 years of age or older. The guest redeeming the offer must sail on the reservation the reward was applied on. Additional guests may be added to this reservation at prevailing rates. Misrepresentation of reward will void this offer and re-fare booking to prevailing rate. This offer has no cash value and is nontransferable. Additional terms, conditions and restrictions apply. Please visit www.royalcaribbean.com/terms-and-conditions/casino-promotions, for full terms and conditions. Royal Caribbean Cruises Ltd. reserves the right to correct any errors, inaccuracies or omissions and to cancel any bookings made in error, with no further obligations to you, even after your receipt of an order confirmation or shipping notice from Royal Caribbean at any time without prior notice. ©2024 Royal Caribbean Cruises Ltd. Ships' registry: The Bahamas.\n\nYou must use your legal name on your ID.\nYou must be 21 years or over to participate.\nThis Reward is limited to 1 per myVIP player.\nPurchase & Usage Limitations: Only ONE (1) myVIP account associated with each natural person will be valid for myVIP rewards. Additional myVIP accounts associated with any natural person will not be valid for Rewards. Loyalty points or Rewards purchased on these additional accounts are not eligible for use or redemption.\n\nPurchased rewards are refundable prior to redemption for the loyalty point cost through the redemption period indicated or through the last date of availability / expiration date indicated on the reward, whichever comes first. After a reward has been redeemed by contacting the reward issuer and making a reservation, no loyalty point refunds will be provided. Reward or Loyalty Points have no cash value and are non-transferable. Terms and Conditions subject to change without notice. If there are more specific Terms and Conditions regarding refunds for a particular reward, those Terms and Conditions will prevail.",
-      "RewardTermsExtractedAt": "2026-07-09T01:52:16+00:00",
+      "RewardTermsExtractedAt": "2026-07-09T02:07:16+00:00",
       "ArushaNotes": null,
       "PointHistoryNote": null,
       "ChangeHistory": [
@@ -67435,6 +67676,16 @@
               "to": "2026-07-09T01:52:16+00:00"
             }
           ]
+        },
+        {
+          "observed_at": "2026-07-09T02:07:16+00:00",
+          "changes": [
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-07-09T01:52:16+00:00",
+              "to": "2026-07-09T02:07:16+00:00"
+            }
+          ]
         }
       ]
     },
@@ -67469,7 +67720,7 @@
       "RewardUseByText": "This reward must be redeemed by 8/1/2026 6:59:59 AM (UTC).",
       "RewardPageLimitText": "RCCL Comp Cruise rewards are limited to 2 purchases in a 90 day period. Limit one cruise reward per player, per sailing.",
       "RewardTermsText": "Please allow 24 hours post purchase prior to emailing. This complimentary cruise only offer is valid for one (1) interior stateroom, including complimentary dining venues and entertainment, for the specified ship(s) and sail date(s) and stateroom category(ies) for the qualified recipient redeeming the reward and one (1) guest, double occupancy. Exclusions include, but are not limited to, all taxes, fees and port expenses, online booking fee, gratuities, applicable fuel surcharges, upgrades, additional guests in the stateroom, additional staterooms, air and ground transfers to/from the embarkation and debarkation ports, and onboard expense account items for products and services rendered. This reward applies to NEW individual bookings within 7 days and must be booked with Royal Caribbean’s Casino Royale Reservation Center at VIPClubroyale@rccl.com. Offer is nontransferable, is not combinable with any other offer and is subject to casino capacity and stateroom availability at the time of booking. This reward is not combinable with any other myVIP rewards. Must be 21 years of age or older. The guest redeeming the offer must sail on the reservation the reward was applied on. Additional guests may be added to this reservation at prevailing rates. Misrepresentation of reward will void this offer and re-fare booking to prevailing rate. This offer has no cash value and is nontransferable. Additional terms, conditions and restrictions apply. Please visit www.royalcaribbean.com/terms-and-conditions/casino-promotions, for full terms and conditions. Royal Caribbean Cruises Ltd. reserves the right to correct any errors, inaccuracies or omissions and to cancel any bookings made in error, with no further obligations to you, even after your receipt of an order confirmation or shipping notice from Royal Caribbean at any time without prior notice. ©2024 Royal Caribbean Cruises Ltd. Ships' registry: The Bahamas.\n\nYou must use your legal name on your ID.\nYou must be 21 years or over to participate.\nThis Reward is limited to 1 per myVIP player.\nPurchase & Usage Limitations: Only ONE (1) myVIP account associated with each natural person will be valid for myVIP rewards. Additional myVIP accounts associated with any natural person will not be valid for Rewards. Loyalty points or Rewards purchased on these additional accounts are not eligible for use or redemption.\n\nPurchased rewards are refundable prior to redemption for the loyalty point cost through the redemption period indicated or through the last date of availability / expiration date indicated on the reward, whichever comes first. After a reward has been redeemed by contacting the reward issuer and making a reservation, no loyalty point refunds will be provided. Reward or Loyalty Points have no cash value and are non-transferable. Terms and Conditions subject to change without notice. If there are more specific Terms and Conditions regarding refunds for a particular reward, those Terms and Conditions will prevail.",
-      "RewardTermsExtractedAt": "2026-07-09T01:52:16+00:00",
+      "RewardTermsExtractedAt": "2026-07-09T02:07:16+00:00",
       "ArushaNotes": null,
       "PointHistoryNote": null,
       "ChangeHistory": [
@@ -70122,6 +70373,16 @@
               "to": "2026-07-09T01:52:16+00:00"
             }
           ]
+        },
+        {
+          "observed_at": "2026-07-09T02:07:16+00:00",
+          "changes": [
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-07-09T01:52:16+00:00",
+              "to": "2026-07-09T02:07:16+00:00"
+            }
+          ]
         }
       ]
     },
@@ -70145,7 +70406,7 @@
       "SnipeText": "sold out",
       "SnipeCategory": "SoldOut",
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-08T01:52:16.7778809+00:00",
+      "ExpireTime": "2026-08-08T02:07:16.5952454+00:00",
       "DeparturePorts": "Shanghai (Baoshan), China",
       "Sailings": "9/23/2026",
       "Ships": "Spectrum of the Seas",
@@ -70153,10 +70414,10 @@
       "RewardURL": null,
       "ImageURL": "https://pscdn-a.akamaihd.net:443/rewards/media/Images/11014Images_cropped_1.png",
       "RewardDescription": "Enjoy a sailing for 2 on Royal Caribbeans Spectrum of the Seas out of Shanghai (Baoshan), China for 4 nights sailing on 9/23/2026 in an interior cabin. Taxes, gratuities, and other fees may apply. \n\nDive headfirst into adventure on a 4-night cruise to discover the wonders of Asia. Depart from Shanghai (Baoshan), China on Spectrum of the Seas for your epic journey through unforgettable landscapes and world-renowned cities. Gaze in awe and wonder at wow-worthy architecture and natural beauty as you travel throughout the region.",
-      "RewardUseByText": "This reward must be redeemed by 8/8/2026 1:52:20 AM (UTC).",
+      "RewardUseByText": "This reward must be redeemed by 8/8/2026 2:07:20 AM (UTC).",
       "RewardPageLimitText": "RCCL Comp Cruise rewards are limited to 2 purchases in a 90 day period. Limit one cruise reward per player, per sailing.",
       "RewardTermsText": "Please allow 24 hours post purchase prior to emailing. This complimentary cruise only offer is valid for one (1) interior stateroom, including complimentary dining venues and entertainment, for the specified ship(s) and sail date(s) and stateroom category(ies) for the qualified recipient redeeming the reward and one (1) guest, double occupancy. Exclusions include, but are not limited to, all taxes, fees and port expenses, online booking fee, gratuities, applicable fuel surcharges, upgrades, additional guests in the stateroom, additional staterooms, air and ground transfers to/from the embarkation and debarkation ports, and onboard expense account items for products and services rendered. This reward applies to NEW individual bookings within 7 days and must be booked with Royal Caribbean’s Casino Royale Reservation Center at VIPClubroyale@rccl.com. Offer is nontransferable, is not combinable with any other offer and is subject to casino capacity and stateroom availability at the time of booking. This reward is not combinable with any other myVIP rewards. Must be 21 years of age or older. The guest redeeming the offer must sail on the reservation the reward was applied on. Additional guests may be added to this reservation at prevailing rates. Misrepresentation of reward will void this offer and re-fare booking to prevailing rate. This offer has no cash value and is nontransferable. Additional terms, conditions and restrictions apply. Please visit www.royalcaribbean.com/terms-and-conditions/casino-promotions, for full terms and conditions. Royal Caribbean Cruises Ltd. reserves the right to correct any errors, inaccuracies or omissions and to cancel any bookings made in error, with no further obligations to you, even after your receipt of an order confirmation or shipping notice from Royal Caribbean at any time without prior notice. ©2024 Royal Caribbean Cruises Ltd. Ships' registry: The Bahamas.\n\nYou must use your legal name on your ID.\nYou must be 21 years or over to participate.\nThis Reward is limited to 1 per myVIP player.\nPurchase & Usage Limitations: Only ONE (1) myVIP account associated with each natural person will be valid for myVIP rewards. Additional myVIP accounts associated with any natural person will not be valid for Rewards. Loyalty points or Rewards purchased on these additional accounts are not eligible for use or redemption.\n\nPurchased rewards are refundable prior to redemption for the loyalty point cost through the redemption period indicated or through the last date of availability / expiration date indicated on the reward, whichever comes first. After a reward has been redeemed by contacting the reward issuer and making a reservation, no loyalty point refunds will be provided. Reward or Loyalty Points have no cash value and are non-transferable. Terms and Conditions subject to change without notice. If there are more specific Terms and Conditions regarding refunds for a particular reward, those Terms and Conditions will prevail.",
-      "RewardTermsExtractedAt": "2026-07-09T01:52:16+00:00",
+      "RewardTermsExtractedAt": "2026-07-09T02:07:16+00:00",
       "ArushaNotes": null,
       "PointHistoryNote": null,
       "ChangeHistory": [
@@ -75439,6 +75700,26 @@
               "to": "2026-07-09T01:52:16+00:00"
             }
           ]
+        },
+        {
+          "observed_at": "2026-07-09T02:07:16+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-08-08T01:52:16.7778809+00:00",
+              "to": "2026-08-08T02:07:16.5952454+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 8/8/2026 1:52:20 AM (UTC).",
+              "to": "This reward must be redeemed by 8/8/2026 2:07:20 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-07-09T01:52:16+00:00",
+              "to": "2026-07-09T02:07:16+00:00"
+            }
+          ]
         }
       ]
     },
@@ -75473,7 +75754,7 @@
       "RewardUseByText": "This reward must be redeemed by 7/24/2026 6:59:59 AM (UTC).",
       "RewardPageLimitText": "RCCL Comp Cruise rewards are limited to 2 purchases in a 90 day period. Limit one cruise reward per player, per sailing.",
       "RewardTermsText": "Please allow 24 hours post purchase prior to emailing. This complimentary cruise only offer is valid for one (1) interior stateroom, including complimentary dining venues and entertainment, for the specified ship(s) and sail date(s) and stateroom category(ies) for the qualified recipient redeeming the reward and one (1) guest, double occupancy. Exclusions include, but are not limited to, all taxes, fees and port expenses, online booking fee, gratuities, applicable fuel surcharges, upgrades, additional guests in the stateroom, additional staterooms, air and ground transfers to/from the embarkation and debarkation ports, and onboard expense account items for products and services rendered. This reward applies to NEW individual bookings within 7 days and must be booked with Royal Caribbean’s Casino Royale Reservation Center at VIPClubroyale@rccl.com. Offer is nontransferable, is not combinable with any other offer and is subject to casino capacity and stateroom availability at the time of booking. This reward is not combinable with any other myVIP rewards. Must be 21 years of age or older. The guest redeeming the offer must sail on the reservation the reward was applied on. Additional guests may be added to this reservation at prevailing rates. Misrepresentation of reward will void this offer and re-fare booking to prevailing rate. This offer has no cash value and is nontransferable. Additional terms, conditions and restrictions apply. Please visit www.royalcaribbean.com/terms-and-conditions/casino-promotions, for full terms and conditions. Royal Caribbean Cruises Ltd. reserves the right to correct any errors, inaccuracies or omissions and to cancel any bookings made in error, with no further obligations to you, even after your receipt of an order confirmation or shipping notice from Royal Caribbean at any time without prior notice. ©2024 Royal Caribbean Cruises Ltd. Ships' registry: The Bahamas.\n\nYou must use your legal name on your ID.\nYou must be 21 years or over to participate.\nThis Reward is limited to 1 per myVIP player.\nPurchase & Usage Limitations: Only ONE (1) myVIP account associated with each natural person will be valid for myVIP rewards. Additional myVIP accounts associated with any natural person will not be valid for Rewards. Loyalty points or Rewards purchased on these additional accounts are not eligible for use or redemption.\n\nPurchased rewards are refundable prior to redemption for the loyalty point cost through the redemption period indicated or through the last date of availability / expiration date indicated on the reward, whichever comes first. After a reward has been redeemed by contacting the reward issuer and making a reservation, no loyalty point refunds will be provided. Reward or Loyalty Points have no cash value and are non-transferable. Terms and Conditions subject to change without notice. If there are more specific Terms and Conditions regarding refunds for a particular reward, those Terms and Conditions will prevail.",
-      "RewardTermsExtractedAt": "2026-07-09T01:52:16+00:00",
+      "RewardTermsExtractedAt": "2026-07-09T02:07:16+00:00",
       "ArushaNotes": null,
       "PointHistoryNote": null,
       "ChangeHistory": [
@@ -78131,6 +78412,16 @@
               "to": "2026-07-09T01:52:16+00:00"
             }
           ]
+        },
+        {
+          "observed_at": "2026-07-09T02:07:16+00:00",
+          "changes": [
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-07-09T01:52:16+00:00",
+              "to": "2026-07-09T02:07:16+00:00"
+            }
+          ]
         }
       ]
     },
@@ -78165,7 +78456,7 @@
       "RewardUseByText": "This reward must be redeemed by 8/1/2026 6:59:59 AM (UTC).",
       "RewardPageLimitText": "RCCL Comp Cruise rewards are limited to 2 purchases in a 90 day period. Limit one cruise reward per player, per sailing.",
       "RewardTermsText": "Please allow 24 hours post purchase prior to emailing. This complimentary cruise only offer is valid for one (1) interior stateroom, including complimentary dining venues and entertainment, for the specified ship(s) and sail date(s) and stateroom category(ies) for the qualified recipient redeeming the reward and one (1) guest, double occupancy. Exclusions include, but are not limited to, all taxes, fees and port expenses, online booking fee, gratuities, applicable fuel surcharges, upgrades, additional guests in the stateroom, additional staterooms, air and ground transfers to/from the embarkation and debarkation ports, and onboard expense account items for products and services rendered. This reward applies to NEW individual bookings within 7 days and must be booked with Royal Caribbean’s Casino Royale Reservation Center at VIPClubroyale@rccl.com. Offer is nontransferable, is not combinable with any other offer and is subject to casino capacity and stateroom availability at the time of booking. This reward is not combinable with any other myVIP rewards. Must be 21 years of age or older. The guest redeeming the offer must sail on the reservation the reward was applied on. Additional guests may be added to this reservation at prevailing rates. Misrepresentation of reward will void this offer and re-fare booking to prevailing rate. This offer has no cash value and is nontransferable. Additional terms, conditions and restrictions apply. Please visit www.royalcaribbean.com/terms-and-conditions/casino-promotions, for full terms and conditions. Royal Caribbean Cruises Ltd. reserves the right to correct any errors, inaccuracies or omissions and to cancel any bookings made in error, with no further obligations to you, even after your receipt of an order confirmation or shipping notice from Royal Caribbean at any time without prior notice. ©2024 Royal Caribbean Cruises Ltd. Ships' registry: The Bahamas.\n\nYou must use your legal name on your ID.\nYou must be 21 years or over to participate.\nThis Reward is limited to 1 per myVIP player.\nPurchase & Usage Limitations: Only ONE (1) myVIP account associated with each natural person will be valid for myVIP rewards. Additional myVIP accounts associated with any natural person will not be valid for Rewards. Loyalty points or Rewards purchased on these additional accounts are not eligible for use or redemption.\n\nPurchased rewards are refundable prior to redemption for the loyalty point cost through the redemption period indicated or through the last date of availability / expiration date indicated on the reward, whichever comes first. After a reward has been redeemed by contacting the reward issuer and making a reservation, no loyalty point refunds will be provided. Reward or Loyalty Points have no cash value and are non-transferable. Terms and Conditions subject to change without notice. If there are more specific Terms and Conditions regarding refunds for a particular reward, those Terms and Conditions will prevail.",
-      "RewardTermsExtractedAt": "2026-07-09T01:52:16+00:00",
+      "RewardTermsExtractedAt": "2026-07-09T02:07:16+00:00",
       "ArushaNotes": null,
       "PointHistoryNote": null,
       "ChangeHistory": [
@@ -80801,6 +81092,16 @@
               "field": "RewardTermsExtractedAt",
               "from": "2026-07-09T01:37:14+00:00",
               "to": "2026-07-09T01:52:16+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-07-09T02:07:16+00:00",
+          "changes": [
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-07-09T01:52:16+00:00",
+              "to": "2026-07-09T02:07:16+00:00"
             }
           ]
         }
@@ -80837,7 +81138,7 @@
       "RewardUseByText": "This reward must be redeemed by 8/1/2026 6:59:59 AM (UTC).",
       "RewardPageLimitText": "RCCL Comp Cruise rewards are limited to 2 purchases in a 90 day period. Limit one cruise reward per player, per sailing.",
       "RewardTermsText": "Please allow 24 hours post purchase prior to emailing. This complimentary cruise only offer is valid for one (1) interior stateroom, including complimentary dining venues and entertainment, for the specified ship(s) and sail date(s) and stateroom category(ies) for the qualified recipient redeeming the reward and one (1) guest, double occupancy. Exclusions include, but are not limited to, all taxes, fees and port expenses, online booking fee, gratuities, applicable fuel surcharges, upgrades, additional guests in the stateroom, additional staterooms, air and ground transfers to/from the embarkation and debarkation ports, and onboard expense account items for products and services rendered. This reward applies to NEW individual bookings within 7 days and must be booked with Royal Caribbean’s Casino Royale Reservation Center at VIPClubroyale@rccl.com. Offer is nontransferable, is not combinable with any other offer and is subject to casino capacity and stateroom availability at the time of booking. This reward is not combinable with any other myVIP rewards. Must be 21 years of age or older. The guest redeeming the offer must sail on the reservation the reward was applied on. Additional guests may be added to this reservation at prevailing rates. Misrepresentation of reward will void this offer and re-fare booking to prevailing rate. This offer has no cash value and is nontransferable. Additional terms, conditions and restrictions apply. Please visit www.royalcaribbean.com/terms-and-conditions/casino-promotions, for full terms and conditions. Royal Caribbean Cruises Ltd. reserves the right to correct any errors, inaccuracies or omissions and to cancel any bookings made in error, with no further obligations to you, even after your receipt of an order confirmation or shipping notice from Royal Caribbean at any time without prior notice. ©2024 Royal Caribbean Cruises Ltd. Ships' registry: The Bahamas.\n\nYou must use your legal name on your ID.\nYou must be 21 years or over to participate.\nThis Reward is limited to 1 per myVIP player.\nPurchase & Usage Limitations: Only ONE (1) myVIP account associated with each natural person will be valid for myVIP rewards. Additional myVIP accounts associated with any natural person will not be valid for Rewards. Loyalty points or Rewards purchased on these additional accounts are not eligible for use or redemption.\n\nPurchased rewards are refundable prior to redemption for the loyalty point cost through the redemption period indicated or through the last date of availability / expiration date indicated on the reward, whichever comes first. After a reward has been redeemed by contacting the reward issuer and making a reservation, no loyalty point refunds will be provided. Reward or Loyalty Points have no cash value and are non-transferable. Terms and Conditions subject to change without notice. If there are more specific Terms and Conditions regarding refunds for a particular reward, those Terms and Conditions will prevail.",
-      "RewardTermsExtractedAt": "2026-07-09T01:52:16+00:00",
+      "RewardTermsExtractedAt": "2026-07-09T02:07:16+00:00",
       "ArushaNotes": null,
       "PointHistoryNote": null,
       "ChangeHistory": [
@@ -83473,6 +83774,16 @@
               "field": "RewardTermsExtractedAt",
               "from": "2026-07-09T01:37:14+00:00",
               "to": "2026-07-09T01:52:16+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-07-09T02:07:16+00:00",
+          "changes": [
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-07-09T01:52:16+00:00",
+              "to": "2026-07-09T02:07:16+00:00"
             }
           ]
         }
@@ -83509,7 +83820,7 @@
       "RewardUseByText": "This reward must be redeemed by 7/31/2026 6:59:59 PM (UTC).",
       "RewardPageLimitText": "RCCL Comp Cruise rewards are limited to 2 purchases in a 90 day period. Limit one cruise reward per player, per sailing.",
       "RewardTermsText": "Please allow 24 hours post purchase prior to emailing. This complimentary cruise only offer is valid for one (1) interior stateroom, including complimentary dining venues and entertainment, for the specified ship(s) and sail date(s) and stateroom category(ies) for the qualified recipient redeeming the reward and one (1) guest, double occupancy. Exclusions include, but are not limited to, all taxes, fees and port expenses, online booking fee, gratuities, applicable fuel surcharges, upgrades, additional guests in the stateroom, additional staterooms, air and ground transfers to/from the embarkation and debarkation ports, and onboard expense account items for products and services rendered. This reward applies to NEW individual bookings within 7 days and must be booked with Royal Caribbean’s Casino Royale Reservation Center at VIPClubroyale@rccl.com. Offer is nontransferable, is not combinable with any other offer and is subject to casino capacity and stateroom availability at the time of booking. This reward is not combinable with any other myVIP rewards. Must be 21 years of age or older. The guest redeeming the offer must sail on the reservation the reward was applied on. Additional guests may be added to this reservation at prevailing rates. Misrepresentation of reward will void this offer and re-fare booking to prevailing rate. This offer has no cash value and is nontransferable. Additional terms, conditions and restrictions apply. Please visit www.royalcaribbean.com/terms-and-conditions/casino-promotions, for full terms and conditions. Royal Caribbean Cruises Ltd. reserves the right to correct any errors, inaccuracies or omissions and to cancel any bookings made in error, with no further obligations to you, even after your receipt of an order confirmation or shipping notice from Royal Caribbean at any time without prior notice. ©2024 Royal Caribbean Cruises Ltd. Ships' registry: The Bahamas.\n\nYou must use your legal name on your ID.\nYou must be 21 years or over to participate.\nThis Reward is limited to 1 per myVIP player.\nPurchase & Usage Limitations: Only ONE (1) myVIP account associated with each natural person will be valid for myVIP rewards. Additional myVIP accounts associated with any natural person will not be valid for Rewards. Loyalty points or Rewards purchased on these additional accounts are not eligible for use or redemption.\n\nPurchased rewards are refundable prior to redemption for the loyalty point cost through the redemption period indicated or through the last date of availability / expiration date indicated on the reward, whichever comes first. After a reward has been redeemed by contacting the reward issuer and making a reservation, no loyalty point refunds will be provided. Reward or Loyalty Points have no cash value and are non-transferable. Terms and Conditions subject to change without notice. If there are more specific Terms and Conditions regarding refunds for a particular reward, those Terms and Conditions will prevail.",
-      "RewardTermsExtractedAt": "2026-07-09T01:52:16+00:00",
+      "RewardTermsExtractedAt": "2026-07-09T02:07:16+00:00",
       "ArushaNotes": null,
       "PointHistoryNote": null,
       "ChangeHistory": [
@@ -86145,6 +86456,16 @@
               "field": "RewardTermsExtractedAt",
               "from": "2026-07-09T01:37:14+00:00",
               "to": "2026-07-09T01:52:16+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-07-09T02:07:16+00:00",
+          "changes": [
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-07-09T01:52:16+00:00",
+              "to": "2026-07-09T02:07:16+00:00"
             }
           ]
         }
@@ -86181,7 +86502,7 @@
       "RewardUseByText": "This reward must be redeemed by 8/1/2026 6:59:59 AM (UTC).",
       "RewardPageLimitText": "RCCL Comp Cruise rewards are limited to 2 purchases in a 90 day period. Limit one cruise reward per player, per sailing.",
       "RewardTermsText": "Please allow 24 hours post purchase prior to emailing. This complimentary cruise only offer is valid for one (1) interior stateroom, including complimentary dining venues and entertainment, for the specified ship(s) and sail date(s) and stateroom category(ies) for the qualified recipient redeeming the reward and one (1) guest, double occupancy. Exclusions include, but are not limited to, all taxes, fees and port expenses, online booking fee, gratuities, applicable fuel surcharges, upgrades, additional guests in the stateroom, additional staterooms, air and ground transfers to/from the embarkation and debarkation ports, and onboard expense account items for products and services rendered. This reward applies to NEW individual bookings within 7 days and must be booked with Royal Caribbean’s Casino Royale Reservation Center at VIPClubroyale@rccl.com. Offer is nontransferable, is not combinable with any other offer and is subject to casino capacity and stateroom availability at the time of booking. This reward is not combinable with any other myVIP rewards. Must be 21 years of age or older. The guest redeeming the offer must sail on the reservation the reward was applied on. Additional guests may be added to this reservation at prevailing rates. Misrepresentation of reward will void this offer and re-fare booking to prevailing rate. This offer has no cash value and is nontransferable. Additional terms, conditions and restrictions apply. Please visit www.royalcaribbean.com/terms-and-conditions/casino-promotions, for full terms and conditions. Royal Caribbean Cruises Ltd. reserves the right to correct any errors, inaccuracies or omissions and to cancel any bookings made in error, with no further obligations to you, even after your receipt of an order confirmation or shipping notice from Royal Caribbean at any time without prior notice. ©2024 Royal Caribbean Cruises Ltd. Ships' registry: The Bahamas.\n\nYou must use your legal name on your ID.\nYou must be 21 years or over to participate.\nThis Reward is limited to 1 per myVIP player.\nPurchase & Usage Limitations: Only ONE (1) myVIP account associated with each natural person will be valid for myVIP rewards. Additional myVIP accounts associated with any natural person will not be valid for Rewards. Loyalty points or Rewards purchased on these additional accounts are not eligible for use or redemption.\n\nPurchased rewards are refundable prior to redemption for the loyalty point cost through the redemption period indicated or through the last date of availability / expiration date indicated on the reward, whichever comes first. After a reward has been redeemed by contacting the reward issuer and making a reservation, no loyalty point refunds will be provided. Reward or Loyalty Points have no cash value and are non-transferable. Terms and Conditions subject to change without notice. If there are more specific Terms and Conditions regarding refunds for a particular reward, those Terms and Conditions will prevail.",
-      "RewardTermsExtractedAt": "2026-07-09T01:52:16+00:00",
+      "RewardTermsExtractedAt": "2026-07-09T02:07:16+00:00",
       "ArushaNotes": null,
       "PointHistoryNote": null,
       "ChangeHistory": [
@@ -88817,6 +89138,16 @@
               "field": "RewardTermsExtractedAt",
               "from": "2026-07-09T01:37:14+00:00",
               "to": "2026-07-09T01:52:16+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-07-09T02:07:16+00:00",
+          "changes": [
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-07-09T01:52:16+00:00",
+              "to": "2026-07-09T02:07:16+00:00"
             }
           ]
         }
@@ -88853,7 +89184,7 @@
       "RewardUseByText": "This reward must be redeemed by 8/1/2026 6:59:59 AM (UTC).",
       "RewardPageLimitText": "RCCL Comp Cruise rewards are limited to 2 purchases in a 90 day period. Limit one cruise reward per player, per sailing.",
       "RewardTermsText": "Please allow 24 hours post purchase prior to emailing. This complimentary cruise only offer is valid for one (1) interior stateroom, including complimentary dining venues and entertainment, for the specified ship(s) and sail date(s) and stateroom category(ies) for the qualified recipient redeeming the reward and one (1) guest, double occupancy. Exclusions include, but are not limited to, all taxes, fees and port expenses, online booking fee, gratuities, applicable fuel surcharges, upgrades, additional guests in the stateroom, additional staterooms, air and ground transfers to/from the embarkation and debarkation ports, and onboard expense account items for products and services rendered. This reward applies to NEW individual bookings within 7 days and must be booked with Royal Caribbean’s Casino Royale Reservation Center at VIPClubroyale@rccl.com. Offer is nontransferable, is not combinable with any other offer and is subject to casino capacity and stateroom availability at the time of booking. This reward is not combinable with any other myVIP rewards. Must be 21 years of age or older. The guest redeeming the offer must sail on the reservation the reward was applied on. Additional guests may be added to this reservation at prevailing rates. Misrepresentation of reward will void this offer and re-fare booking to prevailing rate. This offer has no cash value and is nontransferable. Additional terms, conditions and restrictions apply. Please visit www.royalcaribbean.com/terms-and-conditions/casino-promotions, for full terms and conditions. Royal Caribbean Cruises Ltd. reserves the right to correct any errors, inaccuracies or omissions and to cancel any bookings made in error, with no further obligations to you, even after your receipt of an order confirmation or shipping notice from Royal Caribbean at any time without prior notice. ©2024 Royal Caribbean Cruises Ltd. Ships' registry: The Bahamas.\n\nYou must use your legal name on your ID.\nYou must be 21 years or over to participate.\nThis Reward is limited to 1 per myVIP player.\nPurchase & Usage Limitations: Only ONE (1) myVIP account associated with each natural person will be valid for myVIP rewards. Additional myVIP accounts associated with any natural person will not be valid for Rewards. Loyalty points or Rewards purchased on these additional accounts are not eligible for use or redemption.\n\nPurchased rewards are refundable prior to redemption for the loyalty point cost through the redemption period indicated or through the last date of availability / expiration date indicated on the reward, whichever comes first. After a reward has been redeemed by contacting the reward issuer and making a reservation, no loyalty point refunds will be provided. Reward or Loyalty Points have no cash value and are non-transferable. Terms and Conditions subject to change without notice. If there are more specific Terms and Conditions regarding refunds for a particular reward, those Terms and Conditions will prevail.",
-      "RewardTermsExtractedAt": "2026-07-09T01:52:16+00:00",
+      "RewardTermsExtractedAt": "2026-07-09T02:07:16+00:00",
       "ArushaNotes": null,
       "PointHistoryNote": null,
       "ChangeHistory": [
@@ -91489,6 +91820,16 @@
               "field": "RewardTermsExtractedAt",
               "from": "2026-07-09T01:37:14+00:00",
               "to": "2026-07-09T01:52:16+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-07-09T02:07:16+00:00",
+          "changes": [
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-07-09T01:52:16+00:00",
+              "to": "2026-07-09T02:07:16+00:00"
             }
           ]
         }
@@ -91525,7 +91866,7 @@
       "RewardUseByText": "This reward must be redeemed by 8/1/2026 6:59:59 AM (UTC).",
       "RewardPageLimitText": "RCCL Comp Cruise rewards are limited to 2 purchases in a 90 day period. Limit one cruise reward per player, per sailing.",
       "RewardTermsText": "Please allow 24 hours post purchase prior to emailing. This complimentary cruise only offer is valid for one (1) interior stateroom, including complimentary dining venues and entertainment, for the specified ship(s) and sail date(s) and stateroom category(ies) for the qualified recipient redeeming the reward and one (1) guest, double occupancy. Exclusions include, but are not limited to, all taxes, fees and port expenses, online booking fee, gratuities, applicable fuel surcharges, upgrades, additional guests in the stateroom, additional staterooms, air and ground transfers to/from the embarkation and debarkation ports, and onboard expense account items for products and services rendered. This reward applies to NEW individual bookings within 7 days and must be booked with Royal Caribbean’s Casino Royale Reservation Center at VIPClubroyale@rccl.com. Offer is nontransferable, is not combinable with any other offer and is subject to casino capacity and stateroom availability at the time of booking. This reward is not combinable with any other myVIP rewards. Must be 21 years of age or older. The guest redeeming the offer must sail on the reservation the reward was applied on. Additional guests may be added to this reservation at prevailing rates. Misrepresentation of reward will void this offer and re-fare booking to prevailing rate. This offer has no cash value and is nontransferable. Additional terms, conditions and restrictions apply. Please visit www.royalcaribbean.com/terms-and-conditions/casino-promotions, for full terms and conditions. Royal Caribbean Cruises Ltd. reserves the right to correct any errors, inaccuracies or omissions and to cancel any bookings made in error, with no further obligations to you, even after your receipt of an order confirmation or shipping notice from Royal Caribbean at any time without prior notice. ©2024 Royal Caribbean Cruises Ltd. Ships' registry: The Bahamas.\n\nYou must use your legal name on your ID.\nYou must be 21 years or over to participate.\nThis Reward is limited to 1 per myVIP player.\nPurchase & Usage Limitations: Only ONE (1) myVIP account associated with each natural person will be valid for myVIP rewards. Additional myVIP accounts associated with any natural person will not be valid for Rewards. Loyalty points or Rewards purchased on these additional accounts are not eligible for use or redemption.\n\nPurchased rewards are refundable prior to redemption for the loyalty point cost through the redemption period indicated or through the last date of availability / expiration date indicated on the reward, whichever comes first. After a reward has been redeemed by contacting the reward issuer and making a reservation, no loyalty point refunds will be provided. Reward or Loyalty Points have no cash value and are non-transferable. Terms and Conditions subject to change without notice. If there are more specific Terms and Conditions regarding refunds for a particular reward, those Terms and Conditions will prevail.",
-      "RewardTermsExtractedAt": "2026-07-09T01:52:16+00:00",
+      "RewardTermsExtractedAt": "2026-07-09T02:07:16+00:00",
       "ArushaNotes": null,
       "PointHistoryNote": null,
       "ChangeHistory": [
@@ -94161,6 +94502,16 @@
               "field": "RewardTermsExtractedAt",
               "from": "2026-07-09T01:37:14+00:00",
               "to": "2026-07-09T01:52:16+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-07-09T02:07:16+00:00",
+          "changes": [
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-07-09T01:52:16+00:00",
+              "to": "2026-07-09T02:07:16+00:00"
             }
           ]
         }
@@ -94197,7 +94548,7 @@
       "RewardUseByText": "This reward must be redeemed by 7/31/2026 6:59:59 PM (UTC).",
       "RewardPageLimitText": "RCCL Comp Cruise rewards are limited to 2 purchases in a 90 day period. Limit one cruise reward per player, per sailing.",
       "RewardTermsText": "Please allow 24 hours post purchase prior to emailing. This complimentary cruise only offer is valid for one (1) interior stateroom, including complimentary dining venues and entertainment, for the specified ship(s) and sail date(s) and stateroom category(ies) for the qualified recipient redeeming the reward and one (1) guest, double occupancy. Exclusions include, but are not limited to, all taxes, fees and port expenses, online booking fee, gratuities, applicable fuel surcharges, upgrades, additional guests in the stateroom, additional staterooms, air and ground transfers to/from the embarkation and debarkation ports, and onboard expense account items for products and services rendered. This reward applies to NEW individual bookings within 7 days and must be booked with Royal Caribbean’s Casino Royale Reservation Center at VIPClubroyale@rccl.com. Offer is nontransferable, is not combinable with any other offer and is subject to casino capacity and stateroom availability at the time of booking. This reward is not combinable with any other myVIP rewards. Must be 21 years of age or older. The guest redeeming the offer must sail on the reservation the reward was applied on. Additional guests may be added to this reservation at prevailing rates. Misrepresentation of reward will void this offer and re-fare booking to prevailing rate. This offer has no cash value and is nontransferable. Additional terms, conditions and restrictions apply. Please visit www.royalcaribbean.com/terms-and-conditions/casino-promotions, for full terms and conditions. Royal Caribbean Cruises Ltd. reserves the right to correct any errors, inaccuracies or omissions and to cancel any bookings made in error, with no further obligations to you, even after your receipt of an order confirmation or shipping notice from Royal Caribbean at any time without prior notice. ©2024 Royal Caribbean Cruises Ltd. Ships' registry: The Bahamas.\n\nYou must use your legal name on your ID.\nYou must be 21 years or over to participate.\nThis Reward is limited to 1 per myVIP player.\nPurchase & Usage Limitations: Only ONE (1) myVIP account associated with each natural person will be valid for myVIP rewards. Additional myVIP accounts associated with any natural person will not be valid for Rewards. Loyalty points or Rewards purchased on these additional accounts are not eligible for use or redemption.\n\nPurchased rewards are refundable prior to redemption for the loyalty point cost through the redemption period indicated or through the last date of availability / expiration date indicated on the reward, whichever comes first. After a reward has been redeemed by contacting the reward issuer and making a reservation, no loyalty point refunds will be provided. Reward or Loyalty Points have no cash value and are non-transferable. Terms and Conditions subject to change without notice. If there are more specific Terms and Conditions regarding refunds for a particular reward, those Terms and Conditions will prevail.",
-      "RewardTermsExtractedAt": "2026-07-09T01:52:16+00:00",
+      "RewardTermsExtractedAt": "2026-07-09T02:07:16+00:00",
       "ArushaNotes": null,
       "PointHistoryNote": null,
       "ChangeHistory": [
@@ -96833,6 +97184,16 @@
               "field": "RewardTermsExtractedAt",
               "from": "2026-07-09T01:37:14+00:00",
               "to": "2026-07-09T01:52:16+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-07-09T02:07:16+00:00",
+          "changes": [
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-07-09T01:52:16+00:00",
+              "to": "2026-07-09T02:07:16+00:00"
             }
           ]
         }
@@ -96869,7 +97230,7 @@
       "RewardUseByText": "This reward must be redeemed by 8/1/2026 6:59:59 AM (UTC).",
       "RewardPageLimitText": "RCCL Comp Cruise rewards are limited to 2 purchases in a 90 day period. Limit one cruise reward per player, per sailing.",
       "RewardTermsText": "Please allow 24 hours post purchase prior to emailing. This complimentary cruise only offer is valid for one (1) interior stateroom, including complimentary dining venues and entertainment, for the specified ship(s) and sail date(s) and stateroom category(ies) for the qualified recipient redeeming the reward and one (1) guest, double occupancy. Exclusions include, but are not limited to, all taxes, fees and port expenses, online booking fee, gratuities, applicable fuel surcharges, upgrades, additional guests in the stateroom, additional staterooms, air and ground transfers to/from the embarkation and debarkation ports, and onboard expense account items for products and services rendered. This reward applies to NEW individual bookings within 7 days and must be booked with Royal Caribbean’s Casino Royale Reservation Center at VIPClubroyale@rccl.com. Offer is nontransferable, is not combinable with any other offer and is subject to casino capacity and stateroom availability at the time of booking. This reward is not combinable with any other myVIP rewards. Must be 21 years of age or older. The guest redeeming the offer must sail on the reservation the reward was applied on. Additional guests may be added to this reservation at prevailing rates. Misrepresentation of reward will void this offer and re-fare booking to prevailing rate. This offer has no cash value and is nontransferable. Additional terms, conditions and restrictions apply. Please visit www.royalcaribbean.com/terms-and-conditions/casino-promotions, for full terms and conditions. Royal Caribbean Cruises Ltd. reserves the right to correct any errors, inaccuracies or omissions and to cancel any bookings made in error, with no further obligations to you, even after your receipt of an order confirmation or shipping notice from Royal Caribbean at any time without prior notice. ©2024 Royal Caribbean Cruises Ltd. Ships' registry: The Bahamas.\n\nYou must use your legal name on your ID.\nYou must be 21 years or over to participate.\nThis Reward is limited to 1 per myVIP player.\nPurchase & Usage Limitations: Only ONE (1) myVIP account associated with each natural person will be valid for myVIP rewards. Additional myVIP accounts associated with any natural person will not be valid for Rewards. Loyalty points or Rewards purchased on these additional accounts are not eligible for use or redemption.\n\nPurchased rewards are refundable prior to redemption for the loyalty point cost through the redemption period indicated or through the last date of availability / expiration date indicated on the reward, whichever comes first. After a reward has been redeemed by contacting the reward issuer and making a reservation, no loyalty point refunds will be provided. Reward or Loyalty Points have no cash value and are non-transferable. Terms and Conditions subject to change without notice. If there are more specific Terms and Conditions regarding refunds for a particular reward, those Terms and Conditions will prevail.",
-      "RewardTermsExtractedAt": "2026-07-09T01:52:16+00:00",
+      "RewardTermsExtractedAt": "2026-07-09T02:07:16+00:00",
       "ArushaNotes": null,
       "PointHistoryNote": null,
       "ChangeHistory": [
@@ -99505,6 +99866,16 @@
               "field": "RewardTermsExtractedAt",
               "from": "2026-07-09T01:37:14+00:00",
               "to": "2026-07-09T01:52:16+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-07-09T02:07:16+00:00",
+          "changes": [
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-07-09T01:52:16+00:00",
+              "to": "2026-07-09T02:07:16+00:00"
             }
           ]
         }
@@ -99541,7 +99912,7 @@
       "RewardUseByText": "This reward must be redeemed by 8/1/2026 6:59:59 AM (UTC).",
       "RewardPageLimitText": "RCCL Comp Cruise rewards are limited to 2 purchases in a 90 day period. Limit one cruise reward per player, per sailing.",
       "RewardTermsText": "Please allow 24 hours post purchase prior to emailing. This complimentary cruise only offer is valid for one (1) interior stateroom, including complimentary dining venues and entertainment, for the specified ship(s) and sail date(s) and stateroom category(ies) for the qualified recipient redeeming the reward and one (1) guest, double occupancy. Exclusions include, but are not limited to, all taxes, fees and port expenses, online booking fee, gratuities, applicable fuel surcharges, upgrades, additional guests in the stateroom, additional staterooms, air and ground transfers to/from the embarkation and debarkation ports, and onboard expense account items for products and services rendered. This reward applies to NEW individual bookings within 7 days and must be booked with Royal Caribbean’s Casino Royale Reservation Center at VIPClubroyale@rccl.com. Offer is nontransferable, is not combinable with any other offer and is subject to casino capacity and stateroom availability at the time of booking. This reward is not combinable with any other myVIP rewards. Must be 21 years of age or older. The guest redeeming the offer must sail on the reservation the reward was applied on. Additional guests may be added to this reservation at prevailing rates. Misrepresentation of reward will void this offer and re-fare booking to prevailing rate. This offer has no cash value and is nontransferable. Additional terms, conditions and restrictions apply. Please visit www.royalcaribbean.com/terms-and-conditions/casino-promotions, for full terms and conditions. Royal Caribbean Cruises Ltd. reserves the right to correct any errors, inaccuracies or omissions and to cancel any bookings made in error, with no further obligations to you, even after your receipt of an order confirmation or shipping notice from Royal Caribbean at any time without prior notice. ©2024 Royal Caribbean Cruises Ltd. Ships' registry: The Bahamas.\n\nYou must use your legal name on your ID.\nYou must be 21 years or over to participate.\nThis Reward is limited to 1 per myVIP player.\nPurchase & Usage Limitations: Only ONE (1) myVIP account associated with each natural person will be valid for myVIP rewards. Additional myVIP accounts associated with any natural person will not be valid for Rewards. Loyalty points or Rewards purchased on these additional accounts are not eligible for use or redemption.\n\nPurchased rewards are refundable prior to redemption for the loyalty point cost through the redemption period indicated or through the last date of availability / expiration date indicated on the reward, whichever comes first. After a reward has been redeemed by contacting the reward issuer and making a reservation, no loyalty point refunds will be provided. Reward or Loyalty Points have no cash value and are non-transferable. Terms and Conditions subject to change without notice. If there are more specific Terms and Conditions regarding refunds for a particular reward, those Terms and Conditions will prevail.",
-      "RewardTermsExtractedAt": "2026-07-09T01:52:16+00:00",
+      "RewardTermsExtractedAt": "2026-07-09T02:07:16+00:00",
       "ArushaNotes": null,
       "PointHistoryNote": null,
       "ChangeHistory": [
@@ -102179,6 +102550,16 @@
               "to": "2026-07-09T01:52:16+00:00"
             }
           ]
+        },
+        {
+          "observed_at": "2026-07-09T02:07:16+00:00",
+          "changes": [
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-07-09T01:52:16+00:00",
+              "to": "2026-07-09T02:07:16+00:00"
+            }
+          ]
         }
       ]
     },
@@ -102213,7 +102594,7 @@
       "RewardUseByText": "This reward must be redeemed by 8/1/2026 6:59:59 AM (UTC).",
       "RewardPageLimitText": "RCCL Comp Cruise rewards are limited to 2 purchases in a 90 day period. Limit one cruise reward per player, per sailing.",
       "RewardTermsText": "Please allow 24 hours post purchase prior to emailing. This complimentary cruise only offer is valid for one (1) interior stateroom, including complimentary dining venues and entertainment, for the specified ship(s) and sail date(s) and stateroom category(ies) for the qualified recipient redeeming the reward and one (1) guest, double occupancy. Exclusions include, but are not limited to, all taxes, fees and port expenses, online booking fee, gratuities, applicable fuel surcharges, upgrades, additional guests in the stateroom, additional staterooms, air and ground transfers to/from the embarkation and debarkation ports, and onboard expense account items for products and services rendered. This reward applies to NEW individual bookings within 7 days and must be booked with Royal Caribbean’s Casino Royale Reservation Center at VIPClubroyale@rccl.com. Offer is nontransferable, is not combinable with any other offer and is subject to casino capacity and stateroom availability at the time of booking. This reward is not combinable with any other myVIP rewards. Must be 21 years of age or older. The guest redeeming the offer must sail on the reservation the reward was applied on. Additional guests may be added to this reservation at prevailing rates. Misrepresentation of reward will void this offer and re-fare booking to prevailing rate. This offer has no cash value and is nontransferable. Additional terms, conditions and restrictions apply. Please visit www.royalcaribbean.com/terms-and-conditions/casino-promotions, for full terms and conditions. Royal Caribbean Cruises Ltd. reserves the right to correct any errors, inaccuracies or omissions and to cancel any bookings made in error, with no further obligations to you, even after your receipt of an order confirmation or shipping notice from Royal Caribbean at any time without prior notice. ©2024 Royal Caribbean Cruises Ltd. Ships' registry: The Bahamas.\n\nYou must use your legal name on your ID.\nYou must be 21 years or over to participate.\nThis Reward is limited to 1 per myVIP player.\nPurchase & Usage Limitations: Only ONE (1) myVIP account associated with each natural person will be valid for myVIP rewards. Additional myVIP accounts associated with any natural person will not be valid for Rewards. Loyalty points or Rewards purchased on these additional accounts are not eligible for use or redemption.\n\nPurchased rewards are refundable prior to redemption for the loyalty point cost through the redemption period indicated or through the last date of availability / expiration date indicated on the reward, whichever comes first. After a reward has been redeemed by contacting the reward issuer and making a reservation, no loyalty point refunds will be provided. Reward or Loyalty Points have no cash value and are non-transferable. Terms and Conditions subject to change without notice. If there are more specific Terms and Conditions regarding refunds for a particular reward, those Terms and Conditions will prevail.",
-      "RewardTermsExtractedAt": "2026-07-09T01:52:16+00:00",
+      "RewardTermsExtractedAt": "2026-07-09T02:07:16+00:00",
       "ArushaNotes": null,
       "PointHistoryNote": null,
       "ChangeHistory": [
@@ -104881,6 +105262,16 @@
               "to": "2026-07-09T01:52:16+00:00"
             }
           ]
+        },
+        {
+          "observed_at": "2026-07-09T02:07:16+00:00",
+          "changes": [
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-07-09T01:52:16+00:00",
+              "to": "2026-07-09T02:07:16+00:00"
+            }
+          ]
         }
       ]
     },
@@ -104904,7 +105295,7 @@
       "SnipeText": "NEW PORTS",
       "SnipeCategory": "Custom",
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-08T01:52:16.7778809+00:00",
+      "ExpireTime": "2026-08-08T02:07:16.5952454+00:00",
       "DeparturePorts": "San Juan & North America",
       "Sailings": null,
       "Ships": "Virgin Voyages Lady Ships",
@@ -104912,10 +105303,10 @@
       "RewardURL": null,
       "ImageURL": "https://pscdn-a.akamaihd.net:443/rewards/media/Images/10371Images_cropped_1.png",
       "RewardDescription": "Now, exclusively with myVIP, enjoy a highly discounted rate with added benefits on your next voyage from ports in San Juan & North America. \n\nSet Sail with a $1,200 double-occupancy rate for a 6-Night Cruise in an UPGRADED SEA TERRACE on Virgin Voyages out of San Juan & North America! Complimentary beverages at the casino bar and waived withdrawal fees are included in this offer. Taxes & Port Fees apply. Sailings subject to change. \n\nReady for an adults-only escape at sea? Virgin Voyages is redefining the cruise experience with award-winning dining, immersive entertainment, and luxurious, always-included perks—no buffets, no kids, no ordinary cruises",
-      "RewardUseByText": "This reward must be redeemed by 8/8/2026 1:52:22 AM (UTC).",
+      "RewardUseByText": "This reward must be redeemed by 8/8/2026 2:07:22 AM (UTC).",
       "RewardPageLimitText": null,
       "RewardTermsText": "I confirm that I am the Sailor named above who received the promotional email, and that all information provided is accurate to the best of my knowledge. I understand that the name of Sailor One on this booking cannot be changed, and if I am unable to attend, the booking will be canceled. I also understand that submitting this form does not guarantee a cabin on the selected voyage date until I receive a confirmation and pay the full booking amount.\n\nI acknowledge that I may only change my voyage to another available date listed on this form, and I will be responsible for any additional fees incurred. I understand that the availability of dates is subject to change and that selected dates may become unavailable at any time. This offer is for a voyage fare casino sailing, double occupancy, for the cabin specified above, and I am responsible for any other costs such as, but not limited to, taxes, fees, bar tab, shore excursions, etc.\n\nI am aware that the casino may limit the number of casino bookings I can make with Virgin Voyages, and this offer is valid based on my current and future voyages with the line. Casino benefits will follow the Sea Rollers Benefits Grid, which can be viewed at https://www.virginvoyages.com/casino/benefits-grid.\n\nI also understand that all bookings are subject to the booking cancellation policy, and I may choose to upgrade to a higher cabin or suite by paying the difference in voyage fare associated with the upgrade.\n\nCasino offers must be used in accordance with the following terms and conditions:\n\nCasino offers are valid only on Virgin Voyages for sailings on our Lady Ships for the select dates above. Offers are for new bookings only and made by the qualified sailor recipient named in the email, direct mail, and/or onboard certificate, with verifiable ratings and must be used in accordance with the following terms and conditions:\nOffers cannot be used for sailor loot or to pay for shore things, taxes, fees, or any add-ons, etc. on board.\nCasino Cabin Offers shall:\na) cover the voyage fare outside the heavily discounted rate, within this offer, and exclude all taxes, upgrades, voyage protection, transfers (unless in a. Mega Rock Star Quarter), and any applicable fuel surcharges\nb) be single or double occupancy only\nc) be non-transferable\nd) be solely for cruise redemption with no cash value\ne) not be combined with any other voyage benefits, discounts, special offers, nor promotions.\n\nCasino Cabin Offers shall not be valid for anyone other than the intended recipient and is not transferable\n\nAll Casino Cabin offers will be for the specified itinerary and stateroom category as noted on the offer. However, as long as the guest pays the difference, they may upgrade to any stateroom category within the itinerary, ship class, and voyage length as noted on this offer.\n\nThe recipient must be twenty-one (21) years of age or older and the Holder and any additional guest(s) must satisfy Virgin Voyages' Additional requirements for passage as set forth in the Virgin Voyages bedtime reading.\n\nThis casino cabin offer is nonrefundable.\n\nThis Casino cabin offer can ONLY be redeemed by filling out the form. Cannot be combine with other offers.\n\nThis Casino cabin offer cannot be used and is not applicable for charters and may not be used for customized Circle programs (i.e. value add Circle).\n\nAny tax liability, including disclosure, connected with the receipt or use of this cabin offer is the Holder’s sole responsibility and liability.\n\nVirgin Voyages reserves the right to substitute ports, change itineraries, or substitute vessels on all itineraries as more specifically provided in the Virgin Voyages bedtime reading.\n\nThe provisions of Virgin Voyages Ticket Contract (copies of which are available online at www.virginvoyages.com)are hereby incorporated by reference.\n\nTrade-in value not applicable for Virgin Voyages.\n\nIMPORTANT NOTICE: THE TICKET CONTRACT CONTAINS IMPORTANT LIMITATIONS ON THE RIGHTS OF PASSENGERS.\n\nYou must use your legal name on your ID.\nYou must be 21 years or over to participate.\nThis Reward is limited to 2 per myVIP player.\nPurchase & Usage Limitations: Only ONE (1) myVIP account associated with each natural person will be valid for myVIP rewards. Additional myVIP accounts associated with any natural person will not be valid for Rewards. Loyalty points or Rewards purchased on these additional accounts are not eligible for use or redemption.\n\nNON-REFUNDABLE",
-      "RewardTermsExtractedAt": "2026-07-09T01:52:16+00:00",
+      "RewardTermsExtractedAt": "2026-07-09T02:07:16+00:00",
       "ArushaNotes": null,
       "PointHistoryNote": null,
       "ChangeHistory": [
@@ -110178,6 +110569,26 @@
               "to": "2026-07-09T01:52:16+00:00"
             }
           ]
+        },
+        {
+          "observed_at": "2026-07-09T02:07:16+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-08-08T01:52:16.7778809+00:00",
+              "to": "2026-08-08T02:07:16.5952454+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 8/8/2026 1:52:22 AM (UTC).",
+              "to": "This reward must be redeemed by 8/8/2026 2:07:22 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-07-09T01:52:16+00:00",
+              "to": "2026-07-09T02:07:16+00:00"
+            }
+          ]
         }
       ]
     },
@@ -110201,7 +110612,7 @@
       "SnipeText": "NEW PORTS",
       "SnipeCategory": "Custom",
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-08T01:52:16.7778809+00:00",
+      "ExpireTime": "2026-08-08T02:07:16.5952454+00:00",
       "DeparturePorts": "San Juan & North America",
       "Sailings": null,
       "Ships": "Virgin Voyages Lady Ships",
@@ -110209,10 +110620,10 @@
       "RewardURL": null,
       "ImageURL": "https://pscdn-a.akamaihd.net:443/rewards/media/Images/10369Images_cropped_1.png",
       "RewardDescription": "Now, exclusively with myVIP, enjoy a highly discounted rate with added benefits on your next voyage from ports in San Juan & North America. \n\nSet Sail with a $1000 double-occupancy rate for a 5-Night Cruise in an UPGRADED SEA TERRACE on Virgin Voyages out of San Juan & North America! Complimentary beverages at the casino bar and waived withdrawal fees are included in this offer. Taxes & Port Fees apply. Sailings subject to change. \n\nReady for an adults-only escape at sea? Virgin Voyages is redefining the cruise experience with award-winning dining, immersive entertainment, and luxurious, always-included perks—no buffets, no kids, no ordinary cruises.",
-      "RewardUseByText": "This reward must be redeemed by 8/8/2026 1:52:23 AM (UTC).",
+      "RewardUseByText": "This reward must be redeemed by 8/8/2026 2:07:22 AM (UTC).",
       "RewardPageLimitText": null,
       "RewardTermsText": "I confirm that I am the Sailor named above who received the promotional email, and that all information provided is accurate to the best of my knowledge. I understand that the name of Sailor One on this booking cannot be changed, and if I am unable to attend, the booking will be canceled. I also understand that submitting this form does not guarantee a cabin on the selected voyage date until I receive a confirmation and pay the full booking amount.\n\nI acknowledge that I may only change my voyage to another available date listed on this form, and I will be responsible for any additional fees incurred. I understand that the availability of dates is subject to change and that selected dates may become unavailable at any time. This offer is for a voyage fare casino sailing, double occupancy, for the cabin specified above, and I am responsible for any other costs such as, but not limited to, taxes, fees, bar tab, shore excursions, etc.\n\nI am aware that the casino may limit the number of casino bookings I can make with Virgin Voyages, and this offer is valid based on my current and future voyages with the line. Casino benefits will follow the Sea Rollers Benefits Grid, which can be viewed at https://www.virginvoyages.com/casino/benefits-grid.\n\nI also understand that all bookings are subject to the booking cancellation policy, and I may choose to upgrade to a higher cabin or suite by paying the difference in voyage fare associated with the upgrade.\n\nCasino offers must be used in accordance with the following terms and conditions:\n\nCasino offers are valid only on Virgin Voyages for sailings on our Lady Ships for the select dates above. Offers are for new bookings only and made by the qualified sailor recipient named in the email, direct mail, and/or onboard certificate, with verifiable ratings and must be used in accordance with the following terms and conditions:\nOffers cannot be used for sailor loot or to pay for shore things, taxes, fees, or any add-ons, etc. on board.\nCasino Cabin Offers shall:\na) cover the voyage fare outside the heavily discounted rate, within this offer, and exclude all taxes, upgrades, voyage protection, transfers (unless in a. Mega Rock Star Quarter), and any applicable fuel surcharges\nb) be single or double occupancy only\nc) be non-transferable\nd) be solely for cruise redemption with no cash value\ne) not be combined with any other voyage benefits, discounts, special offers, nor promotions.\n\nCasino Cabin Offers shall not be valid for anyone other than the intended recipient and is not transferable\n\nAll Casino Cabin offers will be for the specified itinerary and stateroom category as noted on the offer. However, as long as the guest pays the difference, they may upgrade to any stateroom category within the itinerary, ship class, and voyage length as noted on this offer.\n\nThe recipient must be twenty-one (21) years of age or older and the Holder and any additional guest(s) must satisfy Virgin Voyages' Additional requirements for passage as set forth in the Virgin Voyages bedtime reading.\n\nThis casino cabin offer is nonrefundable.\n\nThis Casino cabin offer can ONLY be redeemed by filling out the form. Cannot be combine with other offers.\n\nThis Casino cabin offer cannot be used and is not applicable for charters and may not be used for customized Circle programs (i.e. value add Circle).\n\nAny tax liability, including disclosure, connected with the receipt or use of this cabin offer is the Holder’s sole responsibility and liability.\n\nVirgin Voyages reserves the right to substitute ports, change itineraries, or substitute vessels on all itineraries as more specifically provided in the Virgin Voyages bedtime reading.\n\nThe provisions of Virgin Voyages Ticket Contract (copies of which are available online at www.virginvoyages.com)are hereby incorporated by reference.\n\nTrade-in value not applicable for Virgin Voyages.\n\nIMPORTANT NOTICE: THE TICKET CONTRACT CONTAINS IMPORTANT LIMITATIONS ON THE RIGHTS OF PASSENGERS.\n\nYou must use your legal name on your ID.\nYou must be 21 years or over to participate.\nThis Reward is limited to 2 per myVIP player.\nPurchase & Usage Limitations: Only ONE (1) myVIP account associated with each natural person will be valid for myVIP rewards. Additional myVIP accounts associated with any natural person will not be valid for Rewards. Loyalty points or Rewards purchased on these additional accounts are not eligible for use or redemption.\n\nNON-REFUNDABLE",
-      "RewardTermsExtractedAt": "2026-07-09T01:52:16+00:00",
+      "RewardTermsExtractedAt": "2026-07-09T02:07:16+00:00",
       "ArushaNotes": null,
       "PointHistoryNote": null,
       "ChangeHistory": [
@@ -115475,6 +115886,26 @@
               "to": "2026-07-09T01:52:16+00:00"
             }
           ]
+        },
+        {
+          "observed_at": "2026-07-09T02:07:16+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-08-08T01:52:16.7778809+00:00",
+              "to": "2026-08-08T02:07:16.5952454+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 8/8/2026 1:52:23 AM (UTC).",
+              "to": "This reward must be redeemed by 8/8/2026 2:07:22 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-07-09T01:52:16+00:00",
+              "to": "2026-07-09T02:07:16+00:00"
+            }
+          ]
         }
       ]
     },
@@ -115498,7 +115929,7 @@
       "SnipeText": "NEW PORTS",
       "SnipeCategory": "Custom",
       "StrikeOutPrice": null,
-      "ExpireTime": "2026-08-08T01:52:16.7778809+00:00",
+      "ExpireTime": "2026-08-08T02:07:16.5952454+00:00",
       "DeparturePorts": "San Juan & North America",
       "Sailings": null,
       "Ships": "Virgin Voyages Lady Ships",
@@ -115506,10 +115937,10 @@
       "RewardURL": null,
       "ImageURL": "https://pscdn-a.akamaihd.net:443/rewards/media/Images/10370Images_cropped_1.png",
       "RewardDescription": "Now, exclusively with myVIP, enjoy a highly discounted rate with added benefits on your next voyage from ports in San Juan & North America. \n\nSet Sail with a $1,400 double-occupancy rate for a 7-Night Cruise in an UPGRADED SEA TERRACE on Virgin Voyages out of San Juan & North America! Complimentary beverages at the casino bar and waived withdrawal fees are included in this offer. Taxes & Port Fees apply. Sailings subject to change. \n\nReady for an adults-only escape at sea? Virgin Voyages is redefining the cruise experience with award-winning dining, immersive entertainment, and luxurious, always-included perks—no buffets, no kids, no ordinary cruises.",
-      "RewardUseByText": "This reward must be redeemed by 8/8/2026 1:52:23 AM (UTC).",
+      "RewardUseByText": "This reward must be redeemed by 8/8/2026 2:07:23 AM (UTC).",
       "RewardPageLimitText": null,
       "RewardTermsText": "I confirm that I am the Sailor named above who received the promotional email, and that all information provided is accurate to the best of my knowledge. I understand that the name of Sailor One on this booking cannot be changed, and if I am unable to attend, the booking will be canceled. I also understand that submitting this form does not guarantee a cabin on the selected voyage date until I receive a confirmation and pay the full booking amount.\n\nI acknowledge that I may only change my voyage to another available date listed on this form, and I will be responsible for any additional fees incurred. I understand that the availability of dates is subject to change and that selected dates may become unavailable at any time. This offer is for a voyage fare casino sailing, double occupancy, for the cabin specified above, and I am responsible for any other costs such as, but not limited to, taxes, fees, bar tab, shore excursions, etc.\n\nI am aware that the casino may limit the number of casino bookings I can make with Virgin Voyages, and this offer is valid based on my current and future voyages with the line. Casino benefits will follow the Sea Rollers Benefits Grid, which can be viewed at https://www.virginvoyages.com/casino/benefits-grid.\n\nI also understand that all bookings are subject to the booking cancellation policy, and I may choose to upgrade to a higher cabin or suite by paying the difference in voyage fare associated with the upgrade.\n\nCasino offers must be used in accordance with the following terms and conditions:\n\nCasino offers are valid only on Virgin Voyages for sailings on our Lady Ships for the select dates above. Offers are for new bookings only and made by the qualified sailor recipient named in the email, direct mail, and/or onboard certificate, with verifiable ratings and must be used in accordance with the following terms and conditions:\nOffers cannot be used for sailor loot or to pay for shore things, taxes, fees, or any add-ons, etc. on board.\nCasino Cabin Offers shall:\na) cover the voyage fare outside the heavily discounted rate, within this offer, and exclude all taxes, upgrades, voyage protection, transfers (unless in a. Mega Rock Star Quarter), and any applicable fuel surcharges\nb) be single or double occupancy only\nc) be non-transferable\nd) be solely for cruise redemption with no cash value\ne) not be combined with any other voyage benefits, discounts, special offers, nor promotions.\n\nCasino Cabin Offers shall not be valid for anyone other than the intended recipient and is not transferable\n\nAll Casino Cabin offers will be for the specified itinerary and stateroom category as noted on the offer. However, as long as the guest pays the difference, they may upgrade to any stateroom category within the itinerary, ship class, and voyage length as noted on this offer.\n\nThe recipient must be twenty-one (21) years of age or older and the Holder and any additional guest(s) must satisfy Virgin Voyages' Additional requirements for passage as set forth in the Virgin Voyages bedtime reading.\n\nThis casino cabin offer is nonrefundable.\n\nThis Casino cabin offer can ONLY be redeemed by filling out the form. Cannot be combine with other offers.\n\nThis Casino cabin offer cannot be used and is not applicable for charters and may not be used for customized Circle programs (i.e. value add Circle).\n\nAny tax liability, including disclosure, connected with the receipt or use of this cabin offer is the Holder’s sole responsibility and liability.\n\nVirgin Voyages reserves the right to substitute ports, change itineraries, or substitute vessels on all itineraries as more specifically provided in the Virgin Voyages bedtime reading.\n\nThe provisions of Virgin Voyages Ticket Contract (copies of which are available online at www.virginvoyages.com)are hereby incorporated by reference.\n\nTrade-in value not applicable for Virgin Voyages.\n\nIMPORTANT NOTICE: THE TICKET CONTRACT CONTAINS IMPORTANT LIMITATIONS ON THE RIGHTS OF PASSENGERS.\n\nYou must use your legal name on your ID.\nYou must be 21 years or over to participate.\nThis Reward is limited to 2 per myVIP player.\nPurchase & Usage Limitations: Only ONE (1) myVIP account associated with each natural person will be valid for myVIP rewards. Additional myVIP accounts associated with any natural person will not be valid for Rewards. Loyalty points or Rewards purchased on these additional accounts are not eligible for use or redemption.\n\nNON-REFUNDABLE",
-      "RewardTermsExtractedAt": "2026-07-09T01:52:16+00:00",
+      "RewardTermsExtractedAt": "2026-07-09T02:07:16+00:00",
       "ArushaNotes": null,
       "PointHistoryNote": null,
       "ChangeHistory": [
@@ -120770,6 +121201,26 @@
               "field": "RewardTermsExtractedAt",
               "from": "2026-07-09T01:37:14+00:00",
               "to": "2026-07-09T01:52:16+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-07-09T02:07:16+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-08-08T01:52:16.7778809+00:00",
+              "to": "2026-08-08T02:07:16.5952454+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 8/8/2026 1:52:23 AM (UTC).",
+              "to": "This reward must be redeemed by 8/8/2026 2:07:23 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-07-09T01:52:16+00:00",
+              "to": "2026-07-09T02:07:16+00:00"
             }
           ]
         }
