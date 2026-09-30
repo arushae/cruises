@@ -1,7 +1,3473 @@
 {
-  "checked_at": "2026-09-30T17:08:00+00:00",
+  "checked_at": "2026-09-30T17:23:09+00:00",
   "source_url": "https://loyalty-award-api.myvip.co/api/proxy/rewards/section/destination/8",
   "rewards": [
+    {
+      "AwardID": 11240,
+      "OfferID": 41233,
+      "Partner": "Norwegian Cruise Line",
+      "Reward title": "Enjoy $400 off at NCL",
+      "RewardPageTitle": "$400 off your next cruise with Norwegian",
+      "Port": "Various Ports",
+      "Points": 65000,
+      "PointHistory": [
+        {
+          "observed_at": "2026-09-29T21:08:08+00:00",
+          "value": 65000
+        }
+      ],
+      "FirstObserved": "2026-09-29T21:08:08+00:00",
+      "Quantity": null,
+      "HighestQuantityObserved": null,
+      "SnipeText": "featured",
+      "SnipeCategory": "Featured",
+      "StrikeOutPrice": null,
+      "ExpireTime": "2026-10-30T17:08:00.3903646+00:00",
+      "DeparturePorts": null,
+      "Sailings": null,
+      "Ships": "Any (excluding Pride of America)",
+      "IsPremium": false,
+      "RewardURL": null,
+      "ImageURL": "https://pscdn-a.akamaihd.net:443/rewards/media/Images/11240Images_cropped_1.png",
+      "RewardDescription": "Our award-winning ships are designed for you to enjoy as you choose while cruising to beautiful destinations around the world. Add a wide range of superb dining options and spectacular entertainment and you’ll experience your best vacation ever.",
+      "RewardUseByText": "This reward must be redeemed by 10/30/2026 5:08:00 PM (UTC).",
+      "RewardPageLimitText": "Limit one cruise award per player, per sailing.",
+      "RewardTermsText": "Limit to one Norwegian Cruise Line in-app reward purchase per 90 days. Reservations must be made\nwithin 30 days of purchase or by January 30, 2027, whichever occurs first. Valid for sailings through November 30, 2027. Only one reward may be used per sailing and is not valid on Pride of America® sailings.\nThis offer is non-refundable once purchased and is valid for new bookings only; it cannot be applied to\nexisting reservations or combined with other offers. The cruise credit is issued to the named Cruise\nCoupon Holder and may be used for one reservation. The cruise credit can only be applied to the\ncoupon holder. It is applicable for a single discount per cruise reservation and is restricted to\nredemption by the individual specifically named ('Cruise Coupon Holder') on the coupon. The Cruise\nCoupon Holder must be present onboard the sailing; otherwise, Norwegian reserves the right to charge\nthe full prevailing fare. The cruise credit applies to voyage fare only and does not cover taxes, fees,\ngratuities, or other onboard expenses. The cruise credit is issued in USD and cannot be exchanged for\nanother currency. Please allow up to 72 hours for the cruise credit to be applied to your reservation,\nafter which an updated confirmation will be sent. Reservations must be made through Norwegian’s\nCasino Reservation Centers and are subject to stateroom availability. Third and fourth guests may be\nadded, subject to availability, at an additional cost based on prevailing rates. Additional onboard\ncharges may apply. By confirming your purchase, you consent to PLAYSTUDIOS collecting your\npersonal information (name, email, address, phone number) and sharing it with Norwegian Cruise Line\nto facilitate reward redemption and related communications, in accordance with their respective\nprivacy policies. Norwegian Cruise Line Casino Management reserves the right to modify or cancel this\npromotion at any time without notice. For full terms and conditions, please visit\nncl.com/onboard/casino/terms or visit ncl.com for further information. Use of the information provided\nwill be subject to PLAYSTUDIOS privacy policy, https://www.playstudios.com/privacy-policy/.\n\nYou must use your legal name on your ID.\nYou must be 21 years or over to participate.\nThis Reward is limited to 1 per myVIP player.\nPurchase & Usage Limitations: Only ONE (1) myVIP account associated with each natural person will be valid for myVIP rewards. Additional myVIP accounts associated with any natural person will not be valid for Rewards. Loyalty points or Rewards purchased on these additional accounts are not eligible for use or redemption.\n\nPurchased awards are cancellable prior to redemption for the loyalty point cost through the redemption period indicated or through the last date of availability / expiration date indicated on the award, whichever comes first (unless otherwise stated in the terms). After an award has been redeemed by contacting the award issuer and making a reservation, no loyalty point refunds will be provided. Award or Loyalty Points have no cash value and are non-transferable. Terms and Conditions subject to change without notice. If there are more specific Terms and Conditions regarding refunds for a particular award, those Terms and Conditions will prevail.",
+      "RewardTermsExtractedAt": "2026-09-30T17:08:00+00:00",
+      "ArushaNotes": null,
+      "PointHistoryNote": null,
+      "ChangeHistory": [
+        {
+          "observed_at": "2026-09-29T21:23:14+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-29T21:08:08.7015129+00:00",
+              "to": "2026-10-29T21:23:15.1850708+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/29/2026 9:08:13 PM (UTC).",
+              "to": "This reward must be redeemed by 10/29/2026 9:23:20 PM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-29T21:08:08+00:00",
+              "to": "2026-09-29T21:23:14+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-29T21:23:14+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-29T21:08:08.7015129+00:00",
+              "to": "2026-10-29T21:23:15.1850708+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/29/2026 9:08:13 PM (UTC).",
+              "to": "This reward must be redeemed by 10/29/2026 9:23:20 PM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-29T21:08:08+00:00",
+              "to": "2026-09-29T21:23:14+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-29T21:38:15+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-29T21:23:15.1850708+00:00",
+              "to": "2026-10-29T21:38:16.1285743+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/29/2026 9:23:20 PM (UTC).",
+              "to": "This reward must be redeemed by 10/29/2026 9:38:21 PM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-29T21:23:14+00:00",
+              "to": "2026-09-29T21:38:15+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-29T21:53:00+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-29T21:38:16.1285743+00:00",
+              "to": "2026-10-29T21:53:01.0028196+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/29/2026 9:38:21 PM (UTC).",
+              "to": "This reward must be redeemed by 10/29/2026 9:53:06 PM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-29T21:38:15+00:00",
+              "to": "2026-09-29T21:53:00+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-29T22:07:58+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-29T21:53:01.0028196+00:00",
+              "to": "2026-10-29T22:07:59.1390418+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/29/2026 9:53:06 PM (UTC).",
+              "to": "This reward must be redeemed by 10/29/2026 10:08:04 PM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-29T21:53:00+00:00",
+              "to": "2026-09-29T22:07:58+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-29T22:23:06+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-29T22:07:59.1390418+00:00",
+              "to": "2026-10-29T22:23:07.237924+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/29/2026 10:08:04 PM (UTC).",
+              "to": "This reward must be redeemed by 10/29/2026 10:23:11 PM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-29T22:07:58+00:00",
+              "to": "2026-09-29T22:23:06+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-29T22:38:08+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-29T22:23:07.237924+00:00",
+              "to": "2026-10-29T22:38:08.9700575+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/29/2026 10:23:11 PM (UTC).",
+              "to": "This reward must be redeemed by 10/29/2026 10:38:13 PM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-29T22:23:06+00:00",
+              "to": "2026-09-29T22:38:08+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-29T22:53:09+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-29T22:38:08.9700575+00:00",
+              "to": "2026-10-29T22:53:09.4816242+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/29/2026 10:38:13 PM (UTC).",
+              "to": "This reward must be redeemed by 10/29/2026 10:53:14 PM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-29T22:38:08+00:00",
+              "to": "2026-09-29T22:53:09+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-29T23:07:59+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-29T22:53:09.4816242+00:00",
+              "to": "2026-10-29T23:07:59.9728685+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/29/2026 10:53:14 PM (UTC).",
+              "to": "This reward must be redeemed by 10/29/2026 11:08:04 PM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-29T22:53:09+00:00",
+              "to": "2026-09-29T23:07:59+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-29T23:23:01+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-29T23:07:59.9728685+00:00",
+              "to": "2026-10-29T23:23:02.2417658+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/29/2026 11:08:04 PM (UTC).",
+              "to": "This reward must be redeemed by 10/29/2026 11:23:08 PM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-29T23:07:59+00:00",
+              "to": "2026-09-29T23:23:01+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-29T23:38:00+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-29T23:23:02.2417658+00:00",
+              "to": "2026-10-29T23:38:01.0092709+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/29/2026 11:23:08 PM (UTC).",
+              "to": "This reward must be redeemed by 10/29/2026 11:38:07 PM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-29T23:23:01+00:00",
+              "to": "2026-09-29T23:38:00+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-29T23:40:34+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-29T23:38:01.0092709+00:00",
+              "to": "2026-10-29T23:40:34.6926562+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/29/2026 11:38:07 PM (UTC).",
+              "to": "This reward must be redeemed by 10/29/2026 11:40:39 PM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-29T23:38:00+00:00",
+              "to": "2026-09-29T23:40:34+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-29T23:53:00+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-29T23:40:34.6926562+00:00",
+              "to": "2026-10-29T23:53:00.6402773+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/29/2026 11:40:39 PM (UTC).",
+              "to": "This reward must be redeemed by 10/29/2026 11:53:04 PM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-29T23:40:34+00:00",
+              "to": "2026-09-29T23:53:00+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T00:07:58+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-29T23:53:00.6402773+00:00",
+              "to": "2026-10-30T00:07:58.2737784+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/29/2026 11:53:04 PM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 12:08:04 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-29T23:53:00+00:00",
+              "to": "2026-09-30T00:07:58+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T00:23:00+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T00:07:58.2737784+00:00",
+              "to": "2026-10-30T00:23:00.4772255+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 12:08:04 AM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 12:23:04 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T00:07:58+00:00",
+              "to": "2026-09-30T00:23:00+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T00:38:02+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T00:23:00.4772255+00:00",
+              "to": "2026-10-30T00:38:02.7683986+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 12:23:04 AM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 12:38:08 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T00:23:00+00:00",
+              "to": "2026-09-30T00:38:02+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T00:53:36+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T00:38:02.7683986+00:00",
+              "to": "2026-10-30T00:53:36.9116839+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 12:38:08 AM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 12:53:41 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T00:38:02+00:00",
+              "to": "2026-09-30T00:53:36+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T01:08:01+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T00:53:36.9116839+00:00",
+              "to": "2026-10-30T01:08:02.0908938+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 12:53:41 AM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 1:08:06 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T00:53:36+00:00",
+              "to": "2026-09-30T01:08:01+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T01:23:14+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T01:08:02.0908938+00:00",
+              "to": "2026-10-30T01:23:15.1597458+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 1:08:06 AM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 1:23:19 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T01:08:01+00:00",
+              "to": "2026-09-30T01:23:14+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T01:38:00+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T01:23:15.1597458+00:00",
+              "to": "2026-10-30T01:38:01.2290825+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 1:23:19 AM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 1:38:07 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T01:23:14+00:00",
+              "to": "2026-09-30T01:38:00+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T01:53:11+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T01:38:01.2290825+00:00",
+              "to": "2026-10-30T01:53:12.0379126+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 1:38:07 AM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 1:53:17 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T01:38:00+00:00",
+              "to": "2026-09-30T01:53:11+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T02:08:06+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T01:53:12.0379126+00:00",
+              "to": "2026-10-30T02:08:06.592315+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 1:53:17 AM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 2:08:11 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T01:53:11+00:00",
+              "to": "2026-09-30T02:08:06+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T02:23:01+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T02:08:06.592315+00:00",
+              "to": "2026-10-30T02:23:01.4775035+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 2:08:11 AM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 2:23:06 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T02:08:06+00:00",
+              "to": "2026-09-30T02:23:01+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T02:29:54+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T02:23:01.4775035+00:00",
+              "to": "2026-10-30T02:29:55.08423+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 2:23:06 AM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 2:30:00 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T02:23:01+00:00",
+              "to": "2026-09-30T02:29:54+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T02:37:58+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T02:29:55.08423+00:00",
+              "to": "2026-10-30T02:38:03.0561682+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 2:30:00 AM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 2:38:20 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T02:29:54+00:00",
+              "to": "2026-09-30T02:37:58+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T02:53:02+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T02:38:03.0561682+00:00",
+              "to": "2026-10-30T02:53:03.1071444+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 2:38:20 AM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 2:53:08 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T02:37:58+00:00",
+              "to": "2026-09-30T02:53:02+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T03:08:01+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T02:53:03.1071444+00:00",
+              "to": "2026-10-30T03:08:01.6417788+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 2:53:08 AM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 3:08:06 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T02:53:02+00:00",
+              "to": "2026-09-30T03:08:01+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T03:22:59+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T03:08:01.6417788+00:00",
+              "to": "2026-10-30T03:22:59.5864663+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 3:08:06 AM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 3:23:04 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T03:08:01+00:00",
+              "to": "2026-09-30T03:22:59+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T03:38:01+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T03:22:59.5864663+00:00",
+              "to": "2026-10-30T03:38:02.1070975+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 3:23:04 AM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 3:38:06 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T03:22:59+00:00",
+              "to": "2026-09-30T03:38:01+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T03:52:59+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T03:38:02.1070975+00:00",
+              "to": "2026-10-30T03:52:59.3523263+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 3:38:06 AM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 3:53:03 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T03:38:01+00:00",
+              "to": "2026-09-30T03:52:59+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T04:07:58+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T03:52:59.3523263+00:00",
+              "to": "2026-10-30T04:07:59.0776759+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 3:53:03 AM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 4:08:03 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T03:52:59+00:00",
+              "to": "2026-09-30T04:07:58+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T04:23:06+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T04:07:59.0776759+00:00",
+              "to": "2026-10-30T04:23:06.3856033+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 4:08:03 AM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 4:23:11 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T04:07:58+00:00",
+              "to": "2026-09-30T04:23:06+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T04:37:59+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T04:23:06.3856033+00:00",
+              "to": "2026-10-30T04:37:59.8268341+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 4:23:11 AM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 4:38:04 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T04:23:06+00:00",
+              "to": "2026-09-30T04:37:59+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T04:52:58+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T04:37:59.8268341+00:00",
+              "to": "2026-10-30T04:52:58.7239101+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 4:38:04 AM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 4:53:02 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T04:37:59+00:00",
+              "to": "2026-09-30T04:52:58+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T05:07:57+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T04:52:58.7239101+00:00",
+              "to": "2026-10-30T05:07:57.4887664+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 4:53:02 AM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 5:08:03 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T04:52:58+00:00",
+              "to": "2026-09-30T05:07:57+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T05:23:02+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T05:07:57.4887664+00:00",
+              "to": "2026-10-30T05:23:02.7165654+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 5:08:03 AM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 5:23:07 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T05:07:57+00:00",
+              "to": "2026-09-30T05:23:02+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T05:38:00+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T05:23:02.7165654+00:00",
+              "to": "2026-10-30T05:38:00.5479466+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 5:23:07 AM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 5:38:05 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T05:23:02+00:00",
+              "to": "2026-09-30T05:38:00+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T05:53:01+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T05:38:00.5479466+00:00",
+              "to": "2026-10-30T05:53:01.3566634+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 5:38:05 AM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 5:53:05 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T05:38:00+00:00",
+              "to": "2026-09-30T05:53:01+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T06:07:59+00:00",
+          "changes": [
+            {
+              "field": "SnipeText",
+              "from": null,
+              "to": "featured"
+            },
+            {
+              "field": "SnipeCategory",
+              "from": null,
+              "to": "Featured"
+            },
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T05:53:01.3566634+00:00",
+              "to": "2026-10-30T06:08:00.0018556+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 5:53:05 AM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 6:08:00 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T05:53:01+00:00",
+              "to": "2026-09-30T06:07:59+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T06:23:00+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T06:08:00.0018556+00:00",
+              "to": "2026-10-30T06:23:00.3707024+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 6:08:00 AM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 6:23:00 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T06:07:59+00:00",
+              "to": "2026-09-30T06:23:00+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T06:37:59+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T06:23:00.3707024+00:00",
+              "to": "2026-10-30T06:37:59.5308324+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 6:23:00 AM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 6:37:59 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T06:23:00+00:00",
+              "to": "2026-09-30T06:37:59+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T06:53:14+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T06:37:59.5308324+00:00",
+              "to": "2026-10-30T06:53:14.9518499+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 6:37:59 AM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 6:53:15 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T06:37:59+00:00",
+              "to": "2026-09-30T06:53:14+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T07:07:59+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T06:53:14.9518499+00:00",
+              "to": "2026-10-30T07:07:59.7726073+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 6:53:15 AM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 7:08:00 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T06:53:14+00:00",
+              "to": "2026-09-30T07:07:59+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T07:23:04+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T07:07:59.7726073+00:00",
+              "to": "2026-10-30T07:23:05.3569419+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 7:08:00 AM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 7:23:05 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T07:07:59+00:00",
+              "to": "2026-09-30T07:23:04+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T07:38:01+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T07:23:05.3569419+00:00",
+              "to": "2026-10-30T07:38:02.296165+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 7:23:05 AM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 7:38:02 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T07:23:04+00:00",
+              "to": "2026-09-30T07:38:01+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T07:53:00+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T07:38:02.296165+00:00",
+              "to": "2026-10-30T07:53:00.7232791+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 7:38:02 AM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 7:53:01 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T07:38:01+00:00",
+              "to": "2026-09-30T07:53:00+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T08:08:00+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T07:53:00.7232791+00:00",
+              "to": "2026-10-30T08:08:00.7972156+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 7:53:01 AM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 8:08:01 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T07:53:00+00:00",
+              "to": "2026-09-30T08:08:00+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T08:23:00+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T08:08:00.7972156+00:00",
+              "to": "2026-10-30T08:23:00.6650173+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 8:08:01 AM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 8:23:01 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T08:08:00+00:00",
+              "to": "2026-09-30T08:23:00+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T08:38:01+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T08:23:00.6650173+00:00",
+              "to": "2026-10-30T08:38:01.6045571+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 8:23:01 AM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 8:38:01 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T08:23:00+00:00",
+              "to": "2026-09-30T08:38:01+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T08:53:03+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T08:38:01.6045571+00:00",
+              "to": "2026-10-30T08:53:03.9048957+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 8:38:01 AM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 8:53:04 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T08:38:01+00:00",
+              "to": "2026-09-30T08:53:03+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T08:59:45+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T08:53:03.9048957+00:00",
+              "to": "2026-10-30T08:59:45.4374612+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 8:53:04 AM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 8:59:45 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T08:53:03+00:00",
+              "to": "2026-09-30T08:59:45+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T09:07:59+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T08:59:45.4374612+00:00",
+              "to": "2026-10-30T09:08:00.0720037+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 8:59:45 AM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 9:08:00 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T08:59:45+00:00",
+              "to": "2026-09-30T09:07:59+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T09:23:00+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T09:08:00.0720037+00:00",
+              "to": "2026-10-30T09:23:00.882428+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 9:08:00 AM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 9:23:01 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T09:07:59+00:00",
+              "to": "2026-09-30T09:23:00+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T09:38:34+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T09:23:00.882428+00:00",
+              "to": "2026-10-30T09:38:34.7762721+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 9:23:01 AM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 9:38:35 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T09:23:00+00:00",
+              "to": "2026-09-30T09:38:34+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T09:53:05+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T09:38:34.7762721+00:00",
+              "to": "2026-10-30T09:53:05.5733073+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 9:38:35 AM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 9:53:05 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T09:38:34+00:00",
+              "to": "2026-09-30T09:53:05+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T10:08:04+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T09:53:05.5733073+00:00",
+              "to": "2026-10-30T10:08:04.2433031+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 9:53:05 AM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 10:08:04 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T09:53:05+00:00",
+              "to": "2026-09-30T10:08:04+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T10:22:59+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T10:08:04.2433031+00:00",
+              "to": "2026-10-30T10:22:59.4710713+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 10:08:04 AM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 10:22:59 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T10:08:04+00:00",
+              "to": "2026-09-30T10:22:59+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T10:38:00+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T10:22:59.4710713+00:00",
+              "to": "2026-10-30T10:38:00.8191046+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 10:22:59 AM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 10:38:01 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T10:22:59+00:00",
+              "to": "2026-09-30T10:38:00+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T10:53:19+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T10:38:00.8191046+00:00",
+              "to": "2026-10-30T10:53:19.626003+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 10:38:01 AM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 10:53:19 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T10:38:00+00:00",
+              "to": "2026-09-30T10:53:19+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T11:08:03+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T10:53:19.626003+00:00",
+              "to": "2026-10-30T11:08:03.4130422+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 10:53:19 AM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 11:08:03 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T10:53:19+00:00",
+              "to": "2026-09-30T11:08:03+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T11:23:01+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T11:08:03.4130422+00:00",
+              "to": "2026-10-30T11:23:01.3705437+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 11:08:03 AM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 11:23:01 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T11:08:03+00:00",
+              "to": "2026-09-30T11:23:01+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T11:37:57+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T11:23:01.3705437+00:00",
+              "to": "2026-10-30T11:37:58.189571+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 11:23:01 AM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 11:37:58 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T11:23:01+00:00",
+              "to": "2026-09-30T11:37:57+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T11:53:03+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T11:37:58.189571+00:00",
+              "to": "2026-10-30T11:53:03.9279866+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 11:37:58 AM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 11:53:04 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T11:37:57+00:00",
+              "to": "2026-09-30T11:53:03+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T12:08:03+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T11:53:03.9279866+00:00",
+              "to": "2026-10-30T12:08:04.0496197+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 11:53:04 AM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 12:08:04 PM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T11:53:03+00:00",
+              "to": "2026-09-30T12:08:03+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T12:23:05+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T12:08:04.0496197+00:00",
+              "to": "2026-10-30T12:23:05.5396058+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 12:08:04 PM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 12:23:05 PM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T12:08:03+00:00",
+              "to": "2026-09-30T12:23:05+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T12:38:05+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T12:23:05.5396058+00:00",
+              "to": "2026-10-30T12:38:05.7410079+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 12:23:05 PM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 12:38:05 PM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T12:23:05+00:00",
+              "to": "2026-09-30T12:38:05+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T12:52:58+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T12:38:05.7410079+00:00",
+              "to": "2026-10-30T12:52:58.5228981+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 12:38:05 PM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 12:52:58 PM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T12:38:05+00:00",
+              "to": "2026-09-30T12:52:58+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T13:08:07+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T12:52:58.5228981+00:00",
+              "to": "2026-10-30T13:08:08.1406686+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 12:52:58 PM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 1:08:08 PM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T12:52:58+00:00",
+              "to": "2026-09-30T13:08:07+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T13:23:10+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T13:08:08.1406686+00:00",
+              "to": "2026-10-30T13:23:11.139839+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 1:08:08 PM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 1:23:11 PM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T13:08:07+00:00",
+              "to": "2026-09-30T13:23:10+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T13:38:12+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T13:23:11.139839+00:00",
+              "to": "2026-10-30T13:38:12.6763042+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 1:23:11 PM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 1:38:13 PM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T13:23:10+00:00",
+              "to": "2026-09-30T13:38:12+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T13:53:02+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T13:38:12.6763042+00:00",
+              "to": "2026-10-30T13:53:03.0551434+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 1:38:13 PM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 1:53:03 PM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T13:38:12+00:00",
+              "to": "2026-09-30T13:53:02+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T14:08:00+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T13:53:03.0551434+00:00",
+              "to": "2026-10-30T14:08:00.25961+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 1:53:03 PM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 2:08:00 PM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T13:53:02+00:00",
+              "to": "2026-09-30T14:08:00+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T14:23:01+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T14:08:00.25961+00:00",
+              "to": "2026-10-30T14:23:01.724388+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 2:08:00 PM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 2:23:02 PM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T14:08:00+00:00",
+              "to": "2026-09-30T14:23:01+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T14:38:04+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T14:23:01.724388+00:00",
+              "to": "2026-10-30T14:38:04.580039+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 2:23:02 PM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 2:38:04 PM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T14:23:01+00:00",
+              "to": "2026-09-30T14:38:04+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T14:53:04+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T14:38:04.580039+00:00",
+              "to": "2026-10-30T14:53:04.8770906+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 2:38:04 PM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 2:53:05 PM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T14:38:04+00:00",
+              "to": "2026-09-30T14:53:04+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T15:08:10+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T14:53:04.8770906+00:00",
+              "to": "2026-10-30T15:08:10.8879344+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 2:53:05 PM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 3:08:11 PM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T14:53:04+00:00",
+              "to": "2026-09-30T15:08:10+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T15:23:18+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T15:08:10.8879344+00:00",
+              "to": "2026-10-30T15:23:19.1176717+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 3:08:11 PM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 3:23:19 PM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T15:08:10+00:00",
+              "to": "2026-09-30T15:23:18+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T15:38:12+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T15:23:19.1176717+00:00",
+              "to": "2026-10-30T15:38:12.5772628+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 3:23:19 PM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 3:38:12 PM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T15:23:18+00:00",
+              "to": "2026-09-30T15:38:12+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T15:53:09+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T15:38:12.5772628+00:00",
+              "to": "2026-10-30T15:53:09.1928305+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 3:38:12 PM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 3:53:09 PM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T15:38:12+00:00",
+              "to": "2026-09-30T15:53:09+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T16:08:05+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T15:53:09.1928305+00:00",
+              "to": "2026-10-30T16:08:06.031212+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 3:53:09 PM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 4:08:06 PM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T15:53:09+00:00",
+              "to": "2026-09-30T16:08:05+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T16:23:06+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T16:08:06.031212+00:00",
+              "to": "2026-10-30T16:23:06.6858822+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 4:08:06 PM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 4:23:06 PM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T16:08:05+00:00",
+              "to": "2026-09-30T16:23:06+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T16:38:15+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T16:23:06.6858822+00:00",
+              "to": "2026-10-30T16:38:15.9474336+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 4:23:06 PM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 4:38:16 PM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T16:23:06+00:00",
+              "to": "2026-09-30T16:38:15+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T16:53:10+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T16:38:15.9474336+00:00",
+              "to": "2026-10-30T16:53:10.4243623+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 4:38:16 PM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 4:53:12 PM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T16:38:15+00:00",
+              "to": "2026-09-30T16:53:10+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T17:08:00+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T16:53:10.4243623+00:00",
+              "to": "2026-10-30T17:08:00.3903646+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 4:53:12 PM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 5:08:00 PM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T16:53:10+00:00",
+              "to": "2026-09-30T17:08:00+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T17:23:09+00:00",
+          "note": "Reward disappeared from the live myVIP feed."
+        }
+      ],
+      "PulledAt": "2026-09-30T17:23:09+00:00",
+      "LastObservedAt": "2026-09-30T17:08:00+00:00"
+    },
+    {
+      "AwardID": 11241,
+      "OfferID": 41234,
+      "Partner": "Norwegian Cruise Line",
+      "Reward title": "Enjoy $600 off at NCL",
+      "RewardPageTitle": "$600 off your next cruise with Norwegian",
+      "Port": "Various Ports",
+      "Points": 85000,
+      "PointHistory": [
+        {
+          "observed_at": "2026-09-29T21:08:08+00:00",
+          "value": 85000
+        }
+      ],
+      "FirstObserved": "2026-09-29T21:08:08+00:00",
+      "Quantity": null,
+      "HighestQuantityObserved": null,
+      "SnipeText": "featured",
+      "SnipeCategory": "Featured",
+      "StrikeOutPrice": null,
+      "ExpireTime": "2026-10-30T17:08:00.3903646+00:00",
+      "DeparturePorts": null,
+      "Sailings": null,
+      "Ships": "Any (excluding Pride of America)",
+      "IsPremium": false,
+      "RewardURL": null,
+      "ImageURL": "https://pscdn-a.akamaihd.net:443/rewards/media/Images/11241Images_cropped_1.png",
+      "RewardDescription": "Our award-winning ships are designed for you to enjoy as you choose while cruising to beautiful destinations around the world. Add a wide range of superb dining options and spectacular entertainment and you’ll experience your best vacation ever.",
+      "RewardUseByText": "This reward must be redeemed by 10/30/2026 5:08:01 PM (UTC).",
+      "RewardPageLimitText": "Limit one cruise award per player, per sailing.",
+      "RewardTermsText": "Limit to one Norwegian Cruise Line in-app reward purchase per 90 days. Reservations must be made\nwithin 30 days of purchase or by January 30, 2027, whichever occurs first. Valid for sailings through November 30, 2027. Only one reward may be used per sailing and is not valid on Pride of America® sailings.\nThis offer is non-refundable once purchased and is valid for new bookings only; it cannot be applied to\nexisting reservations or combined with other offers. The cruise credit is issued to the named Cruise\nCoupon Holder and may be used for one reservation. The cruise credit can only be applied to the\ncoupon holder. It is applicable for a single discount per cruise reservation and is restricted to\nredemption by the individual specifically named ('Cruise Coupon Holder') on the coupon. The Cruise\nCoupon Holder must be present onboard the sailing; otherwise, Norwegian reserves the right to charge\nthe full prevailing fare. The cruise credit applies to voyage fare only and does not cover taxes, fees,\ngratuities, or other onboard expenses. The cruise credit is issued in USD and cannot be exchanged for\nanother currency. Please allow up to 72 hours for the cruise credit to be applied to your reservation,\nafter which an updated confirmation will be sent. Reservations must be made through Norwegian’s\nCasino Reservation Centers and are subject to stateroom availability. Third and fourth guests may be\nadded, subject to availability, at an additional cost based on prevailing rates. Additional onboard\ncharges may apply. By confirming your purchase, you consent to PLAYSTUDIOS collecting your\npersonal information (name, email, address, phone number) and sharing it with Norwegian Cruise Line\nto facilitate reward redemption and related communications, in accordance with their respective\nprivacy policies. Norwegian Cruise Line Casino Management reserves the right to modify or cancel this\npromotion at any time without notice. For full terms and conditions, please visit\nncl.com/onboard/casino/terms or visit ncl.com for further information. Use of the information provided\nwill be subject to PLAYSTUDIOS privacy policy, https://www.playstudios.com/privacy-policy/.\n\nYou must use your legal name on your ID.\nYou must be 21 years or over to participate.\nThis Reward is limited to 1 per myVIP player.\nPurchase & Usage Limitations: Only ONE (1) myVIP account associated with each natural person will be valid for myVIP rewards. Additional myVIP accounts associated with any natural person will not be valid for Rewards. Loyalty points or Rewards purchased on these additional accounts are not eligible for use or redemption.\n\nPurchased awards are cancellable prior to redemption for the loyalty point cost through the redemption period indicated or through the last date of availability / expiration date indicated on the award, whichever comes first (unless otherwise stated in the terms). After an award has been redeemed by contacting the award issuer and making a reservation, no loyalty point refunds will be provided. Award or Loyalty Points have no cash value and are non-transferable. Terms and Conditions subject to change without notice. If there are more specific Terms and Conditions regarding refunds for a particular award, those Terms and Conditions will prevail.",
+      "RewardTermsExtractedAt": "2026-09-30T17:08:00+00:00",
+      "ArushaNotes": null,
+      "PointHistoryNote": null,
+      "ChangeHistory": [
+        {
+          "observed_at": "2026-09-29T21:23:14+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-29T21:08:08.7015129+00:00",
+              "to": "2026-10-29T21:23:15.1850708+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/29/2026 9:08:14 PM (UTC).",
+              "to": "This reward must be redeemed by 10/29/2026 9:23:20 PM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-29T21:08:08+00:00",
+              "to": "2026-09-29T21:23:14+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-29T21:23:14+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-29T21:08:08.7015129+00:00",
+              "to": "2026-10-29T21:23:15.1850708+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/29/2026 9:08:14 PM (UTC).",
+              "to": "This reward must be redeemed by 10/29/2026 9:23:20 PM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-29T21:08:08+00:00",
+              "to": "2026-09-29T21:23:14+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-29T21:38:15+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-29T21:23:15.1850708+00:00",
+              "to": "2026-10-29T21:38:16.1285743+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/29/2026 9:23:20 PM (UTC).",
+              "to": "This reward must be redeemed by 10/29/2026 9:38:21 PM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-29T21:23:14+00:00",
+              "to": "2026-09-29T21:38:15+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-29T21:53:00+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-29T21:38:16.1285743+00:00",
+              "to": "2026-10-29T21:53:01.0028196+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/29/2026 9:38:21 PM (UTC).",
+              "to": "This reward must be redeemed by 10/29/2026 9:53:06 PM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-29T21:38:15+00:00",
+              "to": "2026-09-29T21:53:00+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-29T22:07:58+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-29T21:53:01.0028196+00:00",
+              "to": "2026-10-29T22:07:59.1390418+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/29/2026 9:53:06 PM (UTC).",
+              "to": "This reward must be redeemed by 10/29/2026 10:08:04 PM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-29T21:53:00+00:00",
+              "to": "2026-09-29T22:07:58+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-29T22:23:06+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-29T22:07:59.1390418+00:00",
+              "to": "2026-10-29T22:23:07.237924+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/29/2026 10:08:04 PM (UTC).",
+              "to": "This reward must be redeemed by 10/29/2026 10:23:11 PM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-29T22:07:58+00:00",
+              "to": "2026-09-29T22:23:06+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-29T22:38:08+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-29T22:23:07.237924+00:00",
+              "to": "2026-10-29T22:38:08.9700575+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/29/2026 10:23:11 PM (UTC).",
+              "to": "This reward must be redeemed by 10/29/2026 10:38:13 PM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-29T22:23:06+00:00",
+              "to": "2026-09-29T22:38:08+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-29T22:53:09+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-29T22:38:08.9700575+00:00",
+              "to": "2026-10-29T22:53:09.4816242+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/29/2026 10:38:13 PM (UTC).",
+              "to": "This reward must be redeemed by 10/29/2026 10:53:14 PM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-29T22:38:08+00:00",
+              "to": "2026-09-29T22:53:09+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-29T23:07:59+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-29T22:53:09.4816242+00:00",
+              "to": "2026-10-29T23:07:59.9728685+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/29/2026 10:53:14 PM (UTC).",
+              "to": "This reward must be redeemed by 10/29/2026 11:08:04 PM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-29T22:53:09+00:00",
+              "to": "2026-09-29T23:07:59+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-29T23:23:01+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-29T23:07:59.9728685+00:00",
+              "to": "2026-10-29T23:23:02.2417658+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/29/2026 11:08:04 PM (UTC).",
+              "to": "This reward must be redeemed by 10/29/2026 11:23:09 PM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-29T23:07:59+00:00",
+              "to": "2026-09-29T23:23:01+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-29T23:38:00+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-29T23:23:02.2417658+00:00",
+              "to": "2026-10-29T23:38:01.0092709+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/29/2026 11:23:09 PM (UTC).",
+              "to": "This reward must be redeemed by 10/29/2026 11:38:07 PM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-29T23:23:01+00:00",
+              "to": "2026-09-29T23:38:00+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-29T23:40:34+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-29T23:38:01.0092709+00:00",
+              "to": "2026-10-29T23:40:34.6926562+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/29/2026 11:38:07 PM (UTC).",
+              "to": "This reward must be redeemed by 10/29/2026 11:40:39 PM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-29T23:38:00+00:00",
+              "to": "2026-09-29T23:40:34+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-29T23:53:00+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-29T23:40:34.6926562+00:00",
+              "to": "2026-10-29T23:53:00.6402773+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/29/2026 11:40:39 PM (UTC).",
+              "to": "This reward must be redeemed by 10/29/2026 11:53:05 PM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-29T23:40:34+00:00",
+              "to": "2026-09-29T23:53:00+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T00:07:58+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-29T23:53:00.6402773+00:00",
+              "to": "2026-10-30T00:07:58.2737784+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/29/2026 11:53:05 PM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 12:08:04 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-29T23:53:00+00:00",
+              "to": "2026-09-30T00:07:58+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T00:23:00+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T00:07:58.2737784+00:00",
+              "to": "2026-10-30T00:23:00.4772255+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 12:08:04 AM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 12:23:04 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T00:07:58+00:00",
+              "to": "2026-09-30T00:23:00+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T00:38:02+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T00:23:00.4772255+00:00",
+              "to": "2026-10-30T00:38:02.7683986+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 12:23:04 AM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 12:38:08 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T00:23:00+00:00",
+              "to": "2026-09-30T00:38:02+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T00:53:36+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T00:38:02.7683986+00:00",
+              "to": "2026-10-30T00:53:36.9116839+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 12:38:08 AM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 12:53:42 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T00:38:02+00:00",
+              "to": "2026-09-30T00:53:36+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T01:08:01+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T00:53:36.9116839+00:00",
+              "to": "2026-10-30T01:08:02.0908938+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 12:53:42 AM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 1:08:07 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T00:53:36+00:00",
+              "to": "2026-09-30T01:08:01+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T01:23:14+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T01:08:02.0908938+00:00",
+              "to": "2026-10-30T01:23:15.1597458+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 1:08:07 AM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 1:23:19 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T01:08:01+00:00",
+              "to": "2026-09-30T01:23:14+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T01:38:00+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T01:23:15.1597458+00:00",
+              "to": "2026-10-30T01:38:01.2290825+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 1:23:19 AM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 1:38:08 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T01:23:14+00:00",
+              "to": "2026-09-30T01:38:00+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T01:53:11+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T01:38:01.2290825+00:00",
+              "to": "2026-10-30T01:53:12.0379126+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 1:38:08 AM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 1:53:17 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T01:38:00+00:00",
+              "to": "2026-09-30T01:53:11+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T02:08:06+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T01:53:12.0379126+00:00",
+              "to": "2026-10-30T02:08:06.592315+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 1:53:17 AM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 2:08:11 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T01:53:11+00:00",
+              "to": "2026-09-30T02:08:06+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T02:23:01+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T02:08:06.592315+00:00",
+              "to": "2026-10-30T02:23:01.4775035+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 2:08:11 AM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 2:23:06 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T02:08:06+00:00",
+              "to": "2026-09-30T02:23:01+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T02:29:54+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T02:23:01.4775035+00:00",
+              "to": "2026-10-30T02:29:55.08423+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 2:23:06 AM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 2:30:00 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T02:23:01+00:00",
+              "to": "2026-09-30T02:29:54+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T02:37:58+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T02:29:55.08423+00:00",
+              "to": "2026-10-30T02:38:03.0561682+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 2:30:00 AM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 2:38:20 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T02:29:54+00:00",
+              "to": "2026-09-30T02:37:58+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T02:53:02+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T02:38:03.0561682+00:00",
+              "to": "2026-10-30T02:53:03.1071444+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 2:38:20 AM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 2:53:08 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T02:37:58+00:00",
+              "to": "2026-09-30T02:53:02+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T03:08:01+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T02:53:03.1071444+00:00",
+              "to": "2026-10-30T03:08:01.6417788+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 2:53:08 AM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 3:08:06 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T02:53:02+00:00",
+              "to": "2026-09-30T03:08:01+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T03:22:59+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T03:08:01.6417788+00:00",
+              "to": "2026-10-30T03:22:59.5864663+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 3:08:06 AM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 3:23:04 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T03:08:01+00:00",
+              "to": "2026-09-30T03:22:59+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T03:38:01+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T03:22:59.5864663+00:00",
+              "to": "2026-10-30T03:38:02.1070975+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 3:23:04 AM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 3:38:06 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T03:22:59+00:00",
+              "to": "2026-09-30T03:38:01+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T03:52:59+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T03:38:02.1070975+00:00",
+              "to": "2026-10-30T03:52:59.3523263+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 3:38:06 AM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 3:53:03 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T03:38:01+00:00",
+              "to": "2026-09-30T03:52:59+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T04:07:58+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T03:52:59.3523263+00:00",
+              "to": "2026-10-30T04:07:59.0776759+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 3:53:03 AM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 4:08:04 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T03:52:59+00:00",
+              "to": "2026-09-30T04:07:58+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T04:23:06+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T04:07:59.0776759+00:00",
+              "to": "2026-10-30T04:23:06.3856033+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 4:08:04 AM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 4:23:11 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T04:07:58+00:00",
+              "to": "2026-09-30T04:23:06+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T04:37:59+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T04:23:06.3856033+00:00",
+              "to": "2026-10-30T04:37:59.8268341+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 4:23:11 AM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 4:38:04 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T04:23:06+00:00",
+              "to": "2026-09-30T04:37:59+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T04:52:58+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T04:37:59.8268341+00:00",
+              "to": "2026-10-30T04:52:58.7239101+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 4:38:04 AM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 4:53:02 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T04:37:59+00:00",
+              "to": "2026-09-30T04:52:58+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T05:07:57+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T04:52:58.7239101+00:00",
+              "to": "2026-10-30T05:07:57.4887664+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 4:53:02 AM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 5:08:03 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T04:52:58+00:00",
+              "to": "2026-09-30T05:07:57+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T05:23:02+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T05:07:57.4887664+00:00",
+              "to": "2026-10-30T05:23:02.7165654+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 5:08:03 AM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 5:23:07 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T05:07:57+00:00",
+              "to": "2026-09-30T05:23:02+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T05:38:00+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T05:23:02.7165654+00:00",
+              "to": "2026-10-30T05:38:00.5479466+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 5:23:07 AM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 5:38:06 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T05:23:02+00:00",
+              "to": "2026-09-30T05:38:00+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T05:53:01+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T05:38:00.5479466+00:00",
+              "to": "2026-10-30T05:53:01.3566634+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 5:38:06 AM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 5:53:05 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T05:38:00+00:00",
+              "to": "2026-09-30T05:53:01+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T06:07:59+00:00",
+          "changes": [
+            {
+              "field": "SnipeText",
+              "from": null,
+              "to": "featured"
+            },
+            {
+              "field": "SnipeCategory",
+              "from": null,
+              "to": "Featured"
+            },
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T05:53:01.3566634+00:00",
+              "to": "2026-10-30T06:08:00.0018556+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 5:53:05 AM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 6:08:00 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T05:53:01+00:00",
+              "to": "2026-09-30T06:07:59+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T06:23:00+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T06:08:00.0018556+00:00",
+              "to": "2026-10-30T06:23:00.3707024+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 6:08:00 AM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 6:23:00 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T06:07:59+00:00",
+              "to": "2026-09-30T06:23:00+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T06:37:59+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T06:23:00.3707024+00:00",
+              "to": "2026-10-30T06:37:59.5308324+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 6:23:00 AM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 6:38:00 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T06:23:00+00:00",
+              "to": "2026-09-30T06:37:59+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T06:53:14+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T06:37:59.5308324+00:00",
+              "to": "2026-10-30T06:53:14.9518499+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 6:38:00 AM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 6:53:15 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T06:37:59+00:00",
+              "to": "2026-09-30T06:53:14+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T07:07:59+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T06:53:14.9518499+00:00",
+              "to": "2026-10-30T07:07:59.7726073+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 6:53:15 AM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 7:08:00 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T06:53:14+00:00",
+              "to": "2026-09-30T07:07:59+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T07:23:04+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T07:07:59.7726073+00:00",
+              "to": "2026-10-30T07:23:05.3569419+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 7:08:00 AM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 7:23:05 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T07:07:59+00:00",
+              "to": "2026-09-30T07:23:04+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T07:38:01+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T07:23:05.3569419+00:00",
+              "to": "2026-10-30T07:38:02.296165+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 7:23:05 AM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 7:38:03 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T07:23:04+00:00",
+              "to": "2026-09-30T07:38:01+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T07:53:00+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T07:38:02.296165+00:00",
+              "to": "2026-10-30T07:53:00.7232791+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 7:38:03 AM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 7:53:01 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T07:38:01+00:00",
+              "to": "2026-09-30T07:53:00+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T08:08:00+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T07:53:00.7232791+00:00",
+              "to": "2026-10-30T08:08:00.7972156+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 7:53:01 AM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 8:08:01 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T07:53:00+00:00",
+              "to": "2026-09-30T08:08:00+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T08:23:00+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T08:08:00.7972156+00:00",
+              "to": "2026-10-30T08:23:00.6650173+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 8:08:01 AM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 8:23:01 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T08:08:00+00:00",
+              "to": "2026-09-30T08:23:00+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T08:38:01+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T08:23:00.6650173+00:00",
+              "to": "2026-10-30T08:38:01.6045571+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 8:23:01 AM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 8:38:02 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T08:23:00+00:00",
+              "to": "2026-09-30T08:38:01+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T08:53:03+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T08:38:01.6045571+00:00",
+              "to": "2026-10-30T08:53:03.9048957+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 8:38:02 AM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 8:53:04 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T08:38:01+00:00",
+              "to": "2026-09-30T08:53:03+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T08:59:45+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T08:53:03.9048957+00:00",
+              "to": "2026-10-30T08:59:45.4374612+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 8:53:04 AM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 8:59:45 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T08:53:03+00:00",
+              "to": "2026-09-30T08:59:45+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T09:07:59+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T08:59:45.4374612+00:00",
+              "to": "2026-10-30T09:08:00.0720037+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 8:59:45 AM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 9:08:00 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T08:59:45+00:00",
+              "to": "2026-09-30T09:07:59+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T09:23:00+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T09:08:00.0720037+00:00",
+              "to": "2026-10-30T09:23:00.882428+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 9:08:00 AM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 9:23:01 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T09:07:59+00:00",
+              "to": "2026-09-30T09:23:00+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T09:38:34+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T09:23:00.882428+00:00",
+              "to": "2026-10-30T09:38:34.7762721+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 9:23:01 AM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 9:38:35 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T09:23:00+00:00",
+              "to": "2026-09-30T09:38:34+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T09:53:05+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T09:38:34.7762721+00:00",
+              "to": "2026-10-30T09:53:05.5733073+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 9:38:35 AM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 9:53:06 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T09:38:34+00:00",
+              "to": "2026-09-30T09:53:05+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T10:08:04+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T09:53:05.5733073+00:00",
+              "to": "2026-10-30T10:08:04.2433031+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 9:53:06 AM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 10:08:04 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T09:53:05+00:00",
+              "to": "2026-09-30T10:08:04+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T10:22:59+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T10:08:04.2433031+00:00",
+              "to": "2026-10-30T10:22:59.4710713+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 10:08:04 AM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 10:23:00 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T10:08:04+00:00",
+              "to": "2026-09-30T10:22:59+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T10:38:00+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T10:22:59.4710713+00:00",
+              "to": "2026-10-30T10:38:00.8191046+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 10:23:00 AM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 10:38:01 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T10:22:59+00:00",
+              "to": "2026-09-30T10:38:00+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T10:53:19+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T10:38:00.8191046+00:00",
+              "to": "2026-10-30T10:53:19.626003+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 10:38:01 AM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 10:53:20 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T10:38:00+00:00",
+              "to": "2026-09-30T10:53:19+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T11:08:03+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T10:53:19.626003+00:00",
+              "to": "2026-10-30T11:08:03.4130422+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 10:53:20 AM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 11:08:03 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T10:53:19+00:00",
+              "to": "2026-09-30T11:08:03+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T11:23:01+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T11:08:03.4130422+00:00",
+              "to": "2026-10-30T11:23:01.3705437+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 11:08:03 AM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 11:23:01 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T11:08:03+00:00",
+              "to": "2026-09-30T11:23:01+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T11:37:57+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T11:23:01.3705437+00:00",
+              "to": "2026-10-30T11:37:58.189571+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 11:23:01 AM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 11:37:58 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T11:23:01+00:00",
+              "to": "2026-09-30T11:37:57+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T11:53:03+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T11:37:58.189571+00:00",
+              "to": "2026-10-30T11:53:03.9279866+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 11:37:58 AM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 11:53:04 AM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T11:37:57+00:00",
+              "to": "2026-09-30T11:53:03+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T12:08:03+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T11:53:03.9279866+00:00",
+              "to": "2026-10-30T12:08:04.0496197+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 11:53:04 AM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 12:08:04 PM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T11:53:03+00:00",
+              "to": "2026-09-30T12:08:03+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T12:23:05+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T12:08:04.0496197+00:00",
+              "to": "2026-10-30T12:23:05.5396058+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 12:08:04 PM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 12:23:05 PM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T12:08:03+00:00",
+              "to": "2026-09-30T12:23:05+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T12:38:05+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T12:23:05.5396058+00:00",
+              "to": "2026-10-30T12:38:05.7410079+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 12:23:05 PM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 12:38:06 PM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T12:23:05+00:00",
+              "to": "2026-09-30T12:38:05+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T12:52:58+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T12:38:05.7410079+00:00",
+              "to": "2026-10-30T12:52:58.5228981+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 12:38:06 PM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 12:52:59 PM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T12:38:05+00:00",
+              "to": "2026-09-30T12:52:58+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T13:08:07+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T12:52:58.5228981+00:00",
+              "to": "2026-10-30T13:08:08.1406686+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 12:52:59 PM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 1:08:08 PM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T12:52:58+00:00",
+              "to": "2026-09-30T13:08:07+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T13:23:10+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T13:08:08.1406686+00:00",
+              "to": "2026-10-30T13:23:11.139839+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 1:08:08 PM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 1:23:11 PM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T13:08:07+00:00",
+              "to": "2026-09-30T13:23:10+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T13:38:12+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T13:23:11.139839+00:00",
+              "to": "2026-10-30T13:38:12.6763042+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 1:23:11 PM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 1:38:13 PM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T13:23:10+00:00",
+              "to": "2026-09-30T13:38:12+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T13:53:02+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T13:38:12.6763042+00:00",
+              "to": "2026-10-30T13:53:03.0551434+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 1:38:13 PM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 1:53:03 PM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T13:38:12+00:00",
+              "to": "2026-09-30T13:53:02+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T14:08:00+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T13:53:03.0551434+00:00",
+              "to": "2026-10-30T14:08:00.25961+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 1:53:03 PM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 2:08:00 PM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T13:53:02+00:00",
+              "to": "2026-09-30T14:08:00+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T14:23:01+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T14:08:00.25961+00:00",
+              "to": "2026-10-30T14:23:01.724388+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 2:08:00 PM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 2:23:02 PM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T14:08:00+00:00",
+              "to": "2026-09-30T14:23:01+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T14:38:04+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T14:23:01.724388+00:00",
+              "to": "2026-10-30T14:38:04.580039+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 2:23:02 PM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 2:38:05 PM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T14:23:01+00:00",
+              "to": "2026-09-30T14:38:04+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T14:53:04+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T14:38:04.580039+00:00",
+              "to": "2026-10-30T14:53:04.8770906+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 2:38:05 PM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 2:53:05 PM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T14:38:04+00:00",
+              "to": "2026-09-30T14:53:04+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T15:08:10+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T14:53:04.8770906+00:00",
+              "to": "2026-10-30T15:08:10.8879344+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 2:53:05 PM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 3:08:11 PM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T14:53:04+00:00",
+              "to": "2026-09-30T15:08:10+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T15:23:18+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T15:08:10.8879344+00:00",
+              "to": "2026-10-30T15:23:19.1176717+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 3:08:11 PM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 3:23:19 PM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T15:08:10+00:00",
+              "to": "2026-09-30T15:23:18+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T15:38:12+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T15:23:19.1176717+00:00",
+              "to": "2026-10-30T15:38:12.5772628+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 3:23:19 PM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 3:38:13 PM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T15:23:18+00:00",
+              "to": "2026-09-30T15:38:12+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T15:53:09+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T15:38:12.5772628+00:00",
+              "to": "2026-10-30T15:53:09.1928305+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 3:38:13 PM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 3:53:09 PM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T15:38:12+00:00",
+              "to": "2026-09-30T15:53:09+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T16:08:05+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T15:53:09.1928305+00:00",
+              "to": "2026-10-30T16:08:06.031212+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 3:53:09 PM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 4:08:06 PM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T15:53:09+00:00",
+              "to": "2026-09-30T16:08:05+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T16:23:06+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T16:08:06.031212+00:00",
+              "to": "2026-10-30T16:23:06.6858822+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 4:08:06 PM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 4:23:07 PM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T16:08:05+00:00",
+              "to": "2026-09-30T16:23:06+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T16:38:15+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T16:23:06.6858822+00:00",
+              "to": "2026-10-30T16:38:15.9474336+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 4:23:07 PM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 4:38:16 PM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T16:23:06+00:00",
+              "to": "2026-09-30T16:38:15+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T16:53:10+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T16:38:15.9474336+00:00",
+              "to": "2026-10-30T16:53:10.4243623+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 4:38:16 PM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 4:53:13 PM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T16:38:15+00:00",
+              "to": "2026-09-30T16:53:10+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T17:08:00+00:00",
+          "changes": [
+            {
+              "field": "ExpireTime",
+              "from": "2026-10-30T16:53:10.4243623+00:00",
+              "to": "2026-10-30T17:08:00.3903646+00:00"
+            },
+            {
+              "field": "RewardUseByText",
+              "from": "This reward must be redeemed by 10/30/2026 4:53:13 PM (UTC).",
+              "to": "This reward must be redeemed by 10/30/2026 5:08:01 PM (UTC)."
+            },
+            {
+              "field": "RewardTermsExtractedAt",
+              "from": "2026-09-30T16:53:10+00:00",
+              "to": "2026-09-30T17:08:00+00:00"
+            }
+          ]
+        },
+        {
+          "observed_at": "2026-09-30T17:23:09+00:00",
+          "note": "Reward disappeared from the live myVIP feed."
+        }
+      ],
+      "PulledAt": "2026-09-30T17:23:09+00:00",
+      "LastObservedAt": "2026-09-30T17:08:00+00:00"
+    },
     {
       "AwardID": 11012,
       "OfferID": 40963,
